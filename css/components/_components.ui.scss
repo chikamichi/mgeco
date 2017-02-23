@@ -1,0 +1,108 @@
+/* ==========================================================================
+   #UI
+   ========================================================================== */
+
+@include mq($until: tablet) {
+  .o-layout__item {
+    text-align: center;
+  }
+}
+
+
+.c-mgeco {
+  position: relative;
+  padding-top: $spacing;
+}
+
+
+.c-nav {
+  margin: $spacing*2 0;
+}
+
+
+.c-sidebar__link {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+
+  &--active {
+    color: black;
+    font-weight: bold;
+
+    &:after {
+      content: '>';
+      display: inline-block;
+      padding-left: 0.5em;
+      color: $grey;
+      @include inuit-font-size($inuit-global-font-size*0.8);
+    }
+  }
+}
+
+
+.c-logo {
+  margin-bottom: $spacing;
+}
+
+
+.c-main-area {
+  min-height: 1000px;
+  padding-bottom: 10*$spacing;
+}
+
+
+.c-footer__outer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.c-footer__inner {
+  padding-right: $spacing;
+  padding-left:  $spacing;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $inuit-wrapper-width;
+}
+
+.c-footer__content {
+  padding: $spacing/2 0;
+  background: white;
+}
+
+
+.c-gallery__image > img {
+  width: 288px;
+}
+
+.c-gallery__inline-caption {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  background: white;
+  text-align: center;
+  background: white;
+  background: rgba(255, 255, 255, 0.6);
+  transition: $global-transition;
+  opacity: 0;
+}
+
+.c-gallery__image:hover {
+  .c-gallery__inline-caption {
+    opacity: 1;
+  }
+}
+
+.c-gallery__inline-caption > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: black;
+  word-break: break-word;
+}
