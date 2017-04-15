@@ -1,1 +1,2 @@
-`npm run build -- --watch`
+Compile JS & CSS: `npm run build -- --watch`
+
