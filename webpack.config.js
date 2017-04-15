@@ -1,10 +1,12 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 const ExtractSassPlugin = new ExtractTextPlugin({
   // filename: '[name].[contenthash].css',
   filename: '[name].css'
 });
+const isDevelopment = process.env.NODE_ENV !== 'production';
 
 const config = {
   entry: {
@@ -31,9 +33,13 @@ const config = {
     }]
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin(),
     ExtractSassPlugin
-  ]
+  ].concat(isDevelopment ? [] : [
+    new webpack.optimize.UglifyJsPlugin({
+      beautify: false,
+      comments: false,
+    })
+  ])
 };
 
 module.exports = config

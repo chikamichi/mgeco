@@ -1,2 +1,4 @@
 images/xlarge-backup/
 images/large-backup/
+node_modules/
+dist/
