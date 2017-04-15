@@ -1,0 +1,36 @@
+{
+  "name": "prototypes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "inuitcss": "^6.0.0-beta.4",
+    "lodash": "^4.17.4",
+    "masonry-layout": "^4.1.1",
+    "sass-mq": "^3.3.2",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.4.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "webpack": "^2.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chikamichi/mgeco.git"
+  },
+  "keywords": [],
+  "author": "Jean-Denis Vauguet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chikamichi/mgeco/issues"
+  },
+  "homepage": "https://github.com/chikamichi/mgeco#readme"
+}
