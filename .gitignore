@@ -1,4 +1,6 @@
 images/xlarge-backup/
 images/large-backup/
-node_modules/
-dist/
+old_files
+old.html
+node_modules
+dist
