@@ -4,7 +4,7 @@
 
 Installing a third-party library:
 
-1. Add to package.json (or `npm i -D library_name`)
+1. Add to package.json (or `npm i -[S|D] library_name`)
 2. Require from src/js/vendors.js
 3. Rebuild the vendors DLL with `npm run build:vendor`
 

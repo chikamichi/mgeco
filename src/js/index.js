@@ -1,9 +1,11 @@
 import _ from 'lodash';
 import Masonry from 'masonry-layout';
+import imagesLoaded from 'imagesloaded';
 
-console.log('yo webpack');
 var gallery = document.getElementById('c-gallery');
-new Masonry(gallery, {
-  itemSelector: 'a',
-  columnWidth: 288
-});
+imagesLoaded(gallery, function(instance) {
+  new Masonry(instance.elements[0], {
+    itemSelector: 'a',
+    columnWidth: 288
+  });
+})

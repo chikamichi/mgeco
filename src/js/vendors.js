@@ -1,3 +1,3 @@
 require('lodash');
+require('imagesloaded');
 require('masonry-layout');
-// require('sass-mq');

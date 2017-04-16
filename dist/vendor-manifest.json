@@ -1,5 +1,5 @@
 {
-  "name": "vendor_25ac68cae54f108c6e5f",
+  "name": "vendor_6c6b54c6c192f5fbe3f6",
   "content": {
     "./node_modules/masonry-layout/node_modules/get-size/get-size.js": {
       "id": 0,
@@ -13,35 +13,35 @@
       "id": 2,
       "meta": {}
     },
-    "./node_modules/lodash/lodash.js": {
+    "./node_modules/imagesloaded/imagesloaded.js": {
       "id": 3,
       "meta": {}
     },
-    "./node_modules/masonry-layout/masonry.js": {
+    "./node_modules/imagesloaded/node_modules/ev-emitter/ev-emitter.js": {
       "id": 4,
       "meta": {}
     },
-    "./node_modules/masonry-layout/node_modules/outlayer/item.js": {
+    "./node_modules/lodash/lodash.js": {
       "id": 5,
       "meta": {}
     },
-    "./node_modules/masonry-layout/node_modules/outlayer/node_modules/fizzy-ui-utils/node_modules/desandro-matches-selector/matches-selector.js": {
+    "./node_modules/masonry-layout/masonry.js": {
       "id": 6,
       "meta": {}
     },
-    "./node_modules/masonry-layout/node_modules/outlayer/node_modules/fizzy-ui-utils/utils.js": {
+    "./node_modules/masonry-layout/node_modules/outlayer/item.js": {
       "id": 7,
       "meta": {}
     },
-    "./node_modules/masonry-layout/node_modules/outlayer/outlayer.js": {
+    "./node_modules/masonry-layout/node_modules/outlayer/node_modules/fizzy-ui-utils/node_modules/desandro-matches-selector/matches-selector.js": {
       "id": 8,
       "meta": {}
     },
-    "./node_modules/photoswipe/dist/photoswipe-ui-default.js": {
+    "./node_modules/masonry-layout/node_modules/outlayer/node_modules/fizzy-ui-utils/utils.js": {
       "id": 9,
       "meta": {}
     },
-    "./node_modules/photoswipe/dist/photoswipe.js": {
+    "./node_modules/masonry-layout/node_modules/outlayer/outlayer.js": {
       "id": 10,
       "meta": {}
     },

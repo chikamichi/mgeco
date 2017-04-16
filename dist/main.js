@@ -63,14 +63,14 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = vendor_25ac68cae54f108c6e5f;
+module.exports = vendor_6c6b54c6c192f5fbe3f6;
 
 /***/ }),
 /* 1 */
@@ -82,28 +82,38 @@ module.exports = (__webpack_require__(0))(3)
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(4)
+module.exports = (__webpack_require__(0))(5)
 
 /***/ }),
-/* 3 */,
-/* 4 */
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(6)
+
+/***/ }),
+/* 4 */,
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_masonry_layout__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_masonry_layout__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_masonry_layout___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_masonry_layout__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_imagesloaded__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_imagesloaded___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_imagesloaded__);
 
 
 
-console.log('yo webpack');
+
 var gallery = document.getElementById('c-gallery');
-new __WEBPACK_IMPORTED_MODULE_1_masonry_layout___default.a(gallery, {
-  itemSelector: 'a',
-  columnWidth: 288
-});
+__WEBPACK_IMPORTED_MODULE_2_imagesloaded___default()(gallery, function(instance) {
+  new __WEBPACK_IMPORTED_MODULE_1_masonry_layout___default.a(instance.elements[0], {
+    itemSelector: 'a',
+    columnWidth: 288
+  });
+})
 
 
 /***/ })

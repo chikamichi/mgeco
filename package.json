@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "imagesloaded": "^4.1.1",
     "inuitcss": "^6.0.0-beta.4",
     "lodash": "^4.17.4",
     "masonry-layout": "^4.1.1",
     "sass-mq": "^3.3.2",
-    "style-loader": "^0.16.1",
     "webpack": "^2.4.1"
   },
   "devDependencies": {
@@ -16,6 +16,7 @@
     "extract-text-webpack-plugin": "^2.1.0",
     "node-sass": "^4.5.2",
     "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
     "webpack": "^2.4.1"
   },
   "scripts": {
