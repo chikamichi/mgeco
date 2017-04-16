@@ -1,5 +1,5 @@
 {
-  "name": "vendor_6c6b54c6c192f5fbe3f6",
+  "name": "vendor_487853aeb36ad130b32e",
   "content": {
     "./node_modules/masonry-layout/node_modules/get-size/get-size.js": {
       "id": 0,
@@ -45,12 +45,20 @@
       "id": 10,
       "meta": {}
     },
-    "./node_modules/webpack/buildin/global.js": {
+    "./node_modules/photoswipe/dist/photoswipe-ui-default.js": {
       "id": 11,
       "meta": {}
     },
-    "./node_modules/webpack/buildin/module.js": {
+    "./node_modules/photoswipe/dist/photoswipe.js": {
       "id": 12,
+      "meta": {}
+    },
+    "./node_modules/webpack/buildin/global.js": {
+      "id": 13,
+      "meta": {}
+    },
+    "./node_modules/webpack/buildin/module.js": {
+      "id": 14,
       "meta": {}
     }
   }

@@ -25,7 +25,10 @@ const config = {
       test: /\.scss$/,
       use: ExtractSassPlugin.extract({
         use: [{
-          loader: 'css-loader'
+          loader: 'css-loader',
+          options: {
+            url: false
+          }
         }, {
           loader: 'sass-loader'
         }]

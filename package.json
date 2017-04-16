@@ -8,15 +8,18 @@
     "inuitcss": "^6.0.0-beta.4",
     "lodash": "^4.17.4",
     "masonry-layout": "^4.1.1",
+    "photoswipe": "^4.1.1",
     "sass-mq": "^3.3.2",
     "webpack": "^2.4.1"
   },
   "devDependencies": {
     "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
     "node-sass": "^4.5.2",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
+    "url-loader": "^0.5.8",
     "webpack": "^2.4.1"
   },
   "scripts": {
