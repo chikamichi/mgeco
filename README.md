@@ -19,10 +19,11 @@ TODO: build a DLL for Inuit's scss and sass-mq?
 Regenerate thumbnails from large versions:
 
 ``` sh
-cd images
+cd images/gallery
 rm -rf thumbnails
 mkdir thumbnails
-cd large
-convert "*.jpg[288x>]" -set filename:original %t '../thumbnails/%[filename:original].thumbnail.jpg'
+convert "*.jpg[288x>]" -depth 8 -quality 75% -set filename:original %t './thumbnails/%[filename:original].jpg'
+cd thumbnails
+mogrify -shave 1x1 -bordercolor white -border 1 -format jpg *.jpg
 ```
 
