@@ -33,6 +33,15 @@ const config = {
     }]
   },
   plugins: [
+    new webpack.DllReferencePlugin({
+      context: __dirname,
+      manifest: require('./dist/vendor-manifest.json'),
+    }),
+    // new webpack.DefinePlugin({
+    //   'process.env': {
+    //     'ENV': JSON.stringify(process.env.NODE_ENV),
+    //   },
+    // }),
     ExtractSassPlugin
   ].concat(isDevelopment ? [] : [
     new webpack.optimize.UglifyJsPlugin({

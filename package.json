@@ -20,7 +20,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "build:vendor": "webpack --config webpack.config.vendor.js",
+    "clean": "rimraf dist"
   },
   "repository": {
     "type": "git",
