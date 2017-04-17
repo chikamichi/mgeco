@@ -1450,6 +1450,7 @@ table {
   padding-bottom: 240px; }
 
 .c-footer__outer {
+  display: none;
   position: fixed;
   bottom: 0;
   width: 100%; }
@@ -1465,10 +1466,13 @@ table {
   padding: 12px 0;
   background: white; }
 
-.c-gallery__image > img {
-  width: 288px; }
+/* ==========================================================================
+   Gallery
+   ========================================================================== */
+.c-gallery__link {
+  display: inline-block; }
 
-.c-gallery__inline-caption {
+.c-gallery__caption {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -1481,10 +1485,10 @@ table {
   transition: 0.33333s;
   opacity: 0; }
 
-.c-gallery__image:hover .c-gallery__inline-caption {
+.c-gallery__image:hover .c-gallery__caption {
   opacity: 1; }
 
-.c-gallery__inline-caption > span {
+.c-gallery__caption > span {
   position: absolute;
   top: 50%;
   left: 50%;

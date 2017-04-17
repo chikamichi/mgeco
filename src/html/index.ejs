@@ -9,11 +9,10 @@
   <meta name="author" content="MG éco-construction">
   <meta name="viewport" content="width=device-width">
 
-  <link rel="stylesheet" href="dist/styles.css?v=1.0">
-
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+  <!-- bundled css below -->
 </head>
 
 <body class="c-mgeco">
@@ -133,23 +132,23 @@
 
         <div class="c-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/gallery/1.jpg" title="Maison roulotte Cahors" class="c-gallery__image" itemprop="contentUrl" data-size="1125x750">
-              <img src="images/gallery/thumbnails/1.jpg" alt="Maison roulotte Cahors" itemprop="thumbnail">
+          <div class="c-gallery__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class="c-gallery__link" href="images/gallery/1.jpg" title="Maison roulotte Cahors" itemprop="contentUrl" data-size="1125x750">
+              <img class="c-gallery__thumbnail" src="images/gallery/thumbnails/1.jpg" alt="Maison roulotte Cahors" itemprop="thumbnail">
             </a>
-            <figcaption itemprop="Maison roulotte Cahors">
+            <div class="c-gallery__caption" itemprop="caption description">
               <span>Maison roulotte Cahors</span>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
 
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="images/gallery/2.jpg" title="Toto" class="c-gallery__image" itemprop="contentUrl" data-size="1125x750">
-              <img src="images/gallery/thumbnails/2.jpg" alt="Toto" itemprop="thumbnail">
+          <div class="c-gallery__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class="c-gallery__link" href="images/gallery/2.jpg" title="Toto" itemprop="contentUrl" data-size="1125x750">
+              <img class="c-gallery__thumbnail" src="images/gallery/thumbnails/2.jpg" alt="Toto" itemprop="thumbnail">
             </a>
-            <figcaption itemprop="Toto">
+            <div class="c-gallery__caption" itemprop="caption description">
               <span>Toto</span>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
 
         </div>
 
@@ -170,17 +169,7 @@
     </div>
   </div>
 
-  <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <div class="slides"></div>
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol>
-  </div>
-
-  <script src="dist/vendor.js"></script>
-  <script src="dist/main.js"></script>
+  <script type="text/javascript" src="vendor.js"></script>
+  <!-- bundled js below -->
 </body>
 </html>

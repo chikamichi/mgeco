@@ -1,17 +1,27 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const ExtractSassPlugin = new ExtractTextPlugin({
+const LoadVendorDll = new webpack.DllReferencePlugin({
+  context: __dirname,
+  manifest: require('./dist/vendor-manifest.json'),
+});
+const CompileSass = new ExtractTextPlugin({
   // filename: '[name].[contenthash].css',
   filename: '[name].css'
 });
+const CompileHtml = new HtmlWebpackPlugin({
+  title: 'MG éco-construction',
+  template: 'src/html/index.ejs',
+  inject: 'body'
+});
+
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 const config = {
   entry: {
     main: './src/js/index.js',
-    styles: './src/css/main.scss'
   },
   output: {
     filename: '[name].js',
@@ -23,7 +33,7 @@ const config = {
   module: {
     rules: [{
       test: /\.scss$/,
-      use: ExtractSassPlugin.extract({
+      use: CompileSass.extract({
         use: [{
           loader: 'css-loader',
           options: {
@@ -36,16 +46,14 @@ const config = {
     }]
   },
   plugins: [
-    new webpack.DllReferencePlugin({
-      context: __dirname,
-      manifest: require('./dist/vendor-manifest.json'),
-    }),
+    LoadVendorDll,
     // new webpack.DefinePlugin({
     //   'process.env': {
     //     'ENV': JSON.stringify(process.env.NODE_ENV),
     //   },
     // }),
-    ExtractSassPlugin
+    CompileSass,
+    CompileHtml
   ].concat(isDevelopment ? [] : [
     new webpack.optimize.UglifyJsPlugin({
       beautify: false,

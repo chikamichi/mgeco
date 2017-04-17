@@ -51,6 +51,7 @@
 
 
 .c-footer__outer {
+  display: none;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -69,40 +70,3 @@
   background: white;
 }
 
-
-.c-gallery__image > img {
-  width: 288px;
-}
-
-.c-gallery__inline-caption {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  background: white;
-  text-align: center;
-  background: white;
-  background: rgba(255, 255, 255, 0.6);
-  transition: $global-transition;
-  opacity: 0;
-}
-
-.c-gallery__image:hover {
-  .c-gallery__inline-caption {
-    opacity: 1;
-  }
-}
-
-.c-gallery__inline-caption > span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 2px;
-  color: black;
-  word-break: break-word;
-}

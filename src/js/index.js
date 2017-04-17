@@ -4,6 +4,8 @@ import imagesLoaded from 'imagesloaded';
 import PhotoSwipe from 'photoswipe';
 import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default';
 
+require('./../css/main');
+
 var gallery = document.getElementsByClassName('c-gallery')[0];
 imagesLoaded(gallery, function(instance) {
   new Masonry(instance.elements[0], {
@@ -77,7 +79,7 @@ imagesLoaded(gallery, function(instance) {
 
           // find root element of slide
           var clickedListItem = closest(eTarget, function(el) {
-              return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+              return (el.classList && el.classList.contains('c-gallery__image'));
           });
 
           if(!clickedListItem) {

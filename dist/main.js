@@ -74,56 +74,63 @@ module.exports = vendor_487853aeb36ad130b32e;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = (__webpack_require__(0))(11)
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(12)
+module.exports = (__webpack_require__(0))(11)
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(3)
+module.exports = (__webpack_require__(0))(12)
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(5)
+module.exports = (__webpack_require__(0))(3)
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = (__webpack_require__(0))(5)
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
 module.exports = (__webpack_require__(0))(6)
 
 /***/ }),
-/* 6 */,
 /* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_masonry_layout__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_masonry_layout__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_masonry_layout___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_masonry_layout__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_imagesloaded__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_imagesloaded__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_imagesloaded___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_imagesloaded__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_photoswipe__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_photoswipe__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_photoswipe___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_photoswipe__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoswipe_dist_photoswipe_ui_default__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoswipe_dist_photoswipe_ui_default__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoswipe_dist_photoswipe_ui_default___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoswipe_dist_photoswipe_ui_default__);
 
 
 
 
 
+
+__webpack_require__(1);
 
 var gallery = document.getElementsByClassName('c-gallery')[0];
 __WEBPACK_IMPORTED_MODULE_2_imagesloaded___default()(gallery, function(instance) {
@@ -198,7 +205,7 @@ __WEBPACK_IMPORTED_MODULE_2_imagesloaded___default()(gallery, function(instance)
 
           // find root element of slide
           var clickedListItem = closest(eTarget, function(el) {
-              return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+              return (el.classList && el.classList.contains('c-gallery__image'));
           });
 
           if(!clickedListItem) {

@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Gallery
+   ========================================================================== */
+
+.c-gallery__link {
+  display: inline-block;
+}
+
+// .c-gallery__image {
+//   width: 288px;
+//   height: 192px;
+// }
+
+.c-gallery__caption {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  background: white;
+  text-align: center;
+  background: white;
+  background: rgba(255, 255, 255, 0.6);
+  transition: $global-transition;
+  opacity: 0;
+}
+
+.c-gallery__image:hover {
+  .c-gallery__caption {
+    opacity: 1;
+  }
+}
+
+.c-gallery__caption > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: black;
+  word-break: break-word;
+}

@@ -3,6 +3,7 @@
 * Install dependencies: `npm install`
 * Compile vendors' JS: `npm run build:vendor`
 * Compile JS & CSS: `npm run build [-- --watch]`
+* Compile for production: `NODE_ENV=production npm run build[:vendor]`
 
 ## Installing a third-party library
 
@@ -12,7 +13,11 @@
 
 Only the JS gets included in the DLL. (S)CSS files and other assets like images are better handled manually at this stage.
 
-TODO: build a DLL for Inuit's scss and sass-mq?
+## TODO
+
+* build a DLL for Inuit's scss and sass-mq?
+* build html using https://github.com/jantimon/html-webpack-plugin#configuration
+* generate image tags, including size, using EJS through a partial (loop through images)
 
 ## Processing images
 
