@@ -8,16 +8,8 @@ require('./../css/main');
 
 // TODO:
 //
-// Core idea is: Limit usage of JS & webpack to the gallery. All other pages
-// should remain easy to edit for Lisa:
-// - regular html files, with duplicated code for menu etc.
-// - scss files can be compiled using a GUI Sass Mac-OS tool
-// - end result the same as when generated through webpack
-//
-// complement code below with a dedicated webpack config to generate the gallery code based
-// on the available images. Loop through images to append a partial for
-// each image. @see https://github.com/jantimon/html-webpack-plugin/tree/master/examples/jade-loader
-// and node-js whatever lib to get the list of images to loop upon.
+// Load images asynchronously, and use Masonry#append to build the gallery
+// incrementally. Display a spinner meanwhile and prevent interactions.
 //
 // Provide a fully-automated deployment (run npm build commands upon git pushing,
 // and use GitHub hooks to fetch the latest code on the hosting server, that is).
@@ -33,6 +25,7 @@ imagesLoaded(gallery, function(instance) {
     itemSelector: 'a',
     columnWidth: 288
   });
+  gallery.style.visibility = 'visible';
 
   var initPhotoSwipeFromDOM = function(gallerySelector) {
 
