@@ -1,3 +1,20 @@
+mg-ecoconstruction.com
+======================
+
+Front-end for MG Éco, a building company.
+
+Project's end goals & constraints:
+
+* make the gallery effective (snappy, maintainable)
+* make the whole website responsive
+* improve SEO
+* KISS implementation-wise so that the non-tech client can work on/with it
+
+Core ideas:
+
+* build a custom gallery based on the popular and well maintained PhotoSwipe; build with webpack
+* build the CSS using Sass & Inuit CSS; design webpack's workflow to allow compiling the CSS using another tool
+
 ## Synopsis
 
 * Install dependencies: `npm install`

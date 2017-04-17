@@ -132,6 +132,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 __webpack_require__(1);
 
+// TODO:
+//
+// Core idea is: Limit usage of JS & webpack to the gallery. All other pages
+// should remain easy to edit for Lisa:
+// - regular html files, with duplicated code for menu etc.
+// - scss files can be compiled using a GUI Sass Mac-OS tool
+// - end result the same as when generated through webpack
+//
+// complement code below with a dedicated webpack config to generate the gallery code based
+// on the available images. Loop through images to append a partial for
+// each image. @see https://github.com/jantimon/html-webpack-plugin/tree/master/examples/jade-loader
+// and node-js whatever lib to get the list of images to loop upon.
+//
+// Provide a fully-automated deployment (run npm build commands upon git pushing,
+// and use GitHub hooks to fetch the latest code on the hosting server, that is).
+// Support a staging env (ie. htaccess at test.mg-ecoconstruction.com).
+// Use git's post-receive hook, bound to master and dev branches? => would require
+// teaching git :(
+//
+// replace legacy js below with ES2015+lodash code
+
 var gallery = document.getElementsByClassName('c-gallery')[0];
 __WEBPACK_IMPORTED_MODULE_2_imagesloaded___default()(gallery, function(instance) {
   new __WEBPACK_IMPORTED_MODULE_1_masonry_layout___default.a(instance.elements[0], {
