@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import Rx from 'rxjs/Rx';
 import Masonry from 'masonry-layout';
 import imagesLoaded from 'imagesloaded';
 import PhotoSwipe from 'photoswipe';
@@ -29,15 +29,46 @@ const gallery = new Masonry(galleryEl, {
   columnWidth: 288
 });
 
-imgLoad.on( 'progress', function( instance, image ) {
-  if (image.isLoaded) {
-    gallery.appended(image.img);
-    gallery.layout();
-    image.img.style.opacity = 1;
-  }
-});
+// imgLoad.on('progress', function( instance, image ) {
+//   if (image.isLoaded) {
+//     gallery.appended(image.img);
+//     gallery.layout();
+//     image.img.style.opacity = 1;
+//   }
+// });
+
+function closest(el, fn) {
+  return el && ( fn(el) ? el : closest(el.parentNode, fn) );
+};
+
+function revealImage(image) {
+  console.log(image, image.img);
+  const imageEl = closest(image.img, function(el) {
+    return (el.classList && el.classList.contains('c-gallery__image'));
+  });
+  gallery.appended(image);
+  gallery.layout();
+  imageEl.classList.add('loaded');
+}
 
 imgLoad.on('done', function(instance) {
+  console.log(instance);
+
+  // TODO: $images could be filled as images are loaded (.on('progress'))
+  // and the whole stream could be emitted when completed (.on('done'))
+  // thus the code below extracted out.
+  const $images = Rx.Observable.from(instance.images);
+  const $timing = Rx.Observable.interval(100);
+  const $stream = $images.zip($timing, function(a, b) { return a; });
+  $stream.subscribe(revealImage);
+
+  // let revealImageStep = _.debounce(revealImage, 2000);
+  // let dconsolelog = _.debounce(console.log, 500);
+  // _.forEach(instance.images, function(image) {
+  //   dconsolelog(image);
+  //   // revealImageStep(image);
+  // });
+
   var initPhotoSwipeFromDOM = function(gallerySelector) {
 
       // parse slide data (url, title, size ...) from DOM elements
@@ -91,9 +122,9 @@ imgLoad.on('done', function(instance) {
       };
 
       // find nearest parent element
-      var closest = function closest(el, fn) {
-          return el && ( fn(el) ? el : closest(el.parentNode, fn) );
-      };
+      // var closest = function closest(el, fn) {
+      //     return el && ( fn(el) ? el : closest(el.parentNode, fn) );
+      // };
 
       // triggers when user clicks on thumbnail
       var onThumbnailsClick = function(e) {

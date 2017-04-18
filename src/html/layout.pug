@@ -87,7 +87,7 @@ html(lang='en')
 
           .c-gallery(itemscope='', itemtype='http://schema.org/ImageGallery')
             each image in images
-              .c-gallery__image(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+              .c-gallery__image.loading(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
                 a.c-gallery__link(href=`images/gallery/${image.path}`, title=`${image.description}`, itemprop='contentUrl', data-size=`${image.dimensions}`)
                   img.c-gallery__thumbnail(src=`images/gallery/thumbnails/${image.path}`, alt=`${image.description}`, itemprop='thumbnail')
                   .c-gallery__caption(itemprop='caption description')

@@ -1470,10 +1470,24 @@ table {
    Gallery
    ========================================================================== */
 .c-gallery__thumbnail {
+  transition: opacity 1s ease-in-out;
   opacity: 0; }
+
+.c-gallery__caption {
+  visibility: hidden; }
 
 .c-gallery__link {
   display: inline-block; }
+
+.c-gallery__image.loaded .c-gallery__link {
+  background: none;
+  box-shadow: none; }
+
+.c-gallery__image.loaded .c-gallery__thumbnail {
+  opacity: 1; }
+
+.c-gallery__image.loaded .c-gallery__caption {
+  visibility: visible; }
 
 .c-gallery__caption {
   position: absolute;

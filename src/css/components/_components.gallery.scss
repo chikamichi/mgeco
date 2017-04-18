@@ -2,18 +2,51 @@
    Gallery
    ========================================================================== */
 
+
+// -----------------------------------------------------------------------------
+// Default styles applied meanwhile the gallery is loading.
+//
+// This is a "negative" state (where things are hidden) because
+// CSS transitions works better when a class is added rather than
+// removed; therefore, we're adding a .loaded class instead of
+// removing .loading one.
+// -----------------------------------------------------------------------------
+
 .c-gallery__thumbnail {
+  transition: opacity 1s ease-in-out;
   opacity: 0;
+}
+
+.c-gallery__caption {
+  visibility: hidden;
 }
 
 .c-gallery__link {
   display: inline-block;
 }
 
-// .c-gallery__image {
-//   width: 288px;
-//   height: 192px;
-// }
+// -----------------------------------------------------------------------------
+// Styles applied upon revealing an image.
+// -----------------------------------------------------------------------------
+
+.c-gallery__image.loaded {
+  .c-gallery__link {
+    background: none;
+    box-shadow: none;
+  }
+
+  .c-gallery__thumbnail {
+    opacity: 1;
+  }
+
+  .c-gallery__caption {
+    visibility: visible;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Regular styles.
+// -----------------------------------------------------------------------------
 
 .c-gallery__caption {
   position: absolute;
