@@ -8,41 +8,27 @@ require('./../css/main');
 
 // TODO:
 //
-// Load images asynchronously, and use Masonry#append to build the gallery
-// incrementally. Display a spinner meanwhile and prevent interactions.
-//
-// Provide a fully-automated deployment (run npm build commands upon git pushing,
+// - Provide a fully-automated deployment (run npm build commands upon git pushing,
 // and use GitHub hooks to fetch the latest code on the hosting server, that is).
 // Support a staging env (ie. htaccess at test.mg-ecoconstruction.com).
 // Use git's post-receive hook, bound to master and dev branches? => would require
 // teaching git :(
-//
-// replace legacy js below with ES2015+lodash code
+// - Replace legacy js below with ES2015+lodash code
+// - RxJS 5 (https://github.com/ReactiveX/rxjs) everywhere
+// - use document.querySelector[All], through their aliases $[$]
 
-const galleryImageEl = document.getElementsByClassName('c-gallery')[0];
-galleryImageEl.onclick = function(e) { e.preventDefault(); };
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
 
-const galleryEl = document.getElementsByClassName('c-gallery')[0];
-const imgLoad = imagesLoaded(galleryEl);
-const gallery = new Masonry(galleryEl, {
-  itemSelector: 'a',
-  columnWidth: 288
-});
-
-// imgLoad.on('progress', function( instance, image ) {
-//   if (image.isLoaded) {
-//     gallery.appended(image.img);
-//     gallery.layout();
-//     image.img.style.opacity = 1;
-//   }
-// });
+const $gallery = $('.c-gallery');
+const $galleryLoader = $('.c-galleryLoader');
+const $galleryProgress = $('.c-galleryLoader__progress');
 
 function closest(el, fn) {
   return el && ( fn(el) ? el : closest(el.parentNode, fn) );
 };
 
 function revealImage(image) {
-  console.log(image, image.img);
   const imageEl = closest(image.img, function(el) {
     return (el.classList && el.classList.contains('c-gallery__image'));
   });
@@ -51,23 +37,34 @@ function revealImage(image) {
   imageEl.classList.add('loaded');
 }
 
-imgLoad.on('done', function(instance) {
-  console.log(instance);
+// Start loading and tracking gallery's images, and laying them out.
+// Images are hidden at first, and will be revealed when time comes.
+const imgLoad = imagesLoaded($gallery);
+const gallery = new Masonry($gallery, {
+  itemSelector: 'a',
+  columnWidth: 288
+});
 
+// Track images being loaded and provide UI feedback about progress.
+Rx.Observable.fromEvent(imgLoad, 'progress')
+  .map(function(instance) {
+    return _.filter(instance.images, {isLoaded: true}).length / instance.images.length;
+  })
+  .subscribe(function(progress) {
+    $galleryProgress.style.width = Math.round(progress * 100) + '%';
+    if (progress == 1)
+      $galleryLoader.style.display = 'none';
+  });
+
+// Upon the full images set being loaded, start revealing them.
+imgLoad.on('done', function(instance) {
   // TODO: $images could be filled as images are loaded (.on('progress'))
   // and the whole stream could be emitted when completed (.on('done'))
   // thus the code below extracted out.
-  const $images = Rx.Observable.from(instance.images);
-  const $timing = Rx.Observable.interval(100);
-  const $stream = $images.zip($timing, function(a, b) { return a; });
-  $stream.subscribe(revealImage);
-
-  // let revealImageStep = _.debounce(revealImage, 2000);
-  // let dconsolelog = _.debounce(console.log, 500);
-  // _.forEach(instance.images, function(image) {
-  //   dconsolelog(image);
-  //   // revealImageStep(image);
-  // });
+  const images$ = Rx.Observable.from(instance.images);
+  const timing$ = Rx.Observable.interval(100);
+  const stream$ = images$.zip(timing$, function(a, b) { return a; });
+  stream$.subscribe(revealImage);
 
   var initPhotoSwipeFromDOM = function(gallerySelector) {
 
@@ -103,10 +100,10 @@ imgLoad.on('done', function(instance) {
               };
 
 
-
-              if(figureEl.children.length > 1) {
+              // TODO: shitty code, adapt to my own use-case
+              if(figureEl.children.length) {
                   // <figcaption> content
-                  item.title = figureEl.children[1].innerHTML;
+                  item.title = figureEl.children[0].getAttribute('title');
               }
 
               if(linkEl.children.length > 0) {

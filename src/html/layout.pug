@@ -34,22 +34,27 @@ html(lang='en')
             | Vous verrez un aper&ccedil;u des possibilit&eacute;s diverses que nous vous proposons :
             ul
               li
-                | Diff&eacute;rents types de
+                | Différents types de
+                |
                 b toitures
                 |  : bardeaux de bois (shakes de red cedar), bardage bois (m&eacute;l&egrave;ze), tuiles en terre cuite, toiture en zinc, bac-acier, toiture-terrasse (couverte en b&acirc;che EPDM Firestone) pouvant &ecirc;tre v&eacute;g&eacute;talis&eacute;es...
               li
-                | Diff&eacute;rents types de
+                | Différents types de
+                |
                 b finitions int&eacute;rieures
                 |  : enduit terre (ARGILUS), enduits chaux, volige peuplier, volige m&eacute;l&egrave;ze brute ou rabot&eacute;e, plancher ch&ecirc;ne, plancher fr&ecirc;ne olivier, tommettes de la tuilerie de Condat...
               li
-                | Diff&eacute;rents types de
+                | Différents types de
+                |
                 b parements ext&eacute;rieurs
                 |  : plancher acacia de pays ou ch&ecirc;ne de pays en terrasse, bardage m&eacute;l&egrave;ze, bardage Red cedar, enduits &agrave; la chaux...
               li
-                | Ainsi que diff&eacute;rents
+                | Ainsi que différents
+                |
                 b modes constructifs
                 |  : murs d&apos;ossature bois r&eacute;alis&eacute;s dans notre atelier &agrave; Limogne et assembl&eacute;s sur site, charpente traditionnelle, charpente pour toiture ronde, structure poteaux-poutres et chevrons porteurs.
             |  Comme le montrent ces images, ces modes constructifs permettent
+            |
             b toutes sortes d&apos;architectures et de finitions
             | .
           p
@@ -85,9 +90,11 @@ html(lang='en')
                 .pswp__caption
                   .pswp__caption__center
 
+          .c-galleryLoader
+            .c-galleryLoader__progress(role='progressbar')
           .c-gallery(itemscope='', itemtype='http://schema.org/ImageGallery')
             each image in images
-              .c-gallery__image.loading(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+              .c-gallery__image(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
                 a.c-gallery__link(href=`images/gallery/${image.path}`, title=`${image.description}`, itemprop='contentUrl', data-size=`${image.dimensions}`)
                   img.c-gallery__thumbnail(src=`images/gallery/thumbnails/${image.path}`, alt=`${image.description}`, itemprop='thumbnail')
                   .c-gallery__caption(itemprop='caption description')

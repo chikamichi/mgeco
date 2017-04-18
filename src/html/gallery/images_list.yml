@@ -1,16 +1,14 @@
 ---
-- path: 0.jpg
-  description: Une image
 - path: 1.jpg
-  description: Une image
+  description: Maison roulotte à Cahors
 - path: 2.jpg
-  description: Une image
+  description: Bardage mélèze couvre-joints
 - path: 3.jpg
-  description: Une image
+  description: Maison roulotte à Cahors
 - path: 4.jpg
-  description: Une image
+  description: "Terrasse extérieure : plancher chêne"
 - path: 5.jpg
-  description: Une image
+  description: Toiture zinc à joints de bout
 - path: 6.jpg
   description: Une image
 - path: 7.jpg

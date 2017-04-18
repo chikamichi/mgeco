@@ -97,7 +97,12 @@ module.exports = (__webpack_require__(0))(12)
 module.exports = (__webpack_require__(0))(3)
 
 /***/ }),
-/* 5 */,
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(5)
+
+/***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -108,7 +113,7 @@ module.exports = (__webpack_require__(0))(6)
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(_) {
 
 var _Rx = __webpack_require__(86);
 
@@ -136,43 +141,27 @@ __webpack_require__(1);
 
 // TODO:
 //
-// Load images asynchronously, and use Masonry#append to build the gallery
-// incrementally. Display a spinner meanwhile and prevent interactions.
-//
-// Provide a fully-automated deployment (run npm build commands upon git pushing,
+// - Provide a fully-automated deployment (run npm build commands upon git pushing,
 // and use GitHub hooks to fetch the latest code on the hosting server, that is).
 // Support a staging env (ie. htaccess at test.mg-ecoconstruction.com).
 // Use git's post-receive hook, bound to master and dev branches? => would require
 // teaching git :(
-//
-// replace legacy js below with ES2015+lodash code
+// - Replace legacy js below with ES2015+lodash code
+// - RxJS 5 (https://github.com/ReactiveX/rxjs) everywhere
+// - use document.querySelector[All], through their aliases $[$]
 
-var galleryImageEl = document.getElementsByClassName('c-gallery')[0];
-galleryImageEl.onclick = function (e) {
-    e.preventDefault();
-};
+var $ = document.querySelector.bind(document);
+var $$ = document.querySelectorAll.bind(document);
 
-var galleryEl = document.getElementsByClassName('c-gallery')[0];
-var imgLoad = (0, _imagesloaded2.default)(galleryEl);
-var gallery = new _masonryLayout2.default(galleryEl, {
-    itemSelector: 'a',
-    columnWidth: 288
-});
-
-// imgLoad.on('progress', function( instance, image ) {
-//   if (image.isLoaded) {
-//     gallery.appended(image.img);
-//     gallery.layout();
-//     image.img.style.opacity = 1;
-//   }
-// });
+var $gallery = $('.c-gallery');
+var $galleryLoader = $('.c-galleryLoader');
+var $galleryProgress = $('.c-galleryLoader__progress');
 
 function closest(el, fn) {
     return el && (fn(el) ? el : closest(el.parentNode, fn));
 };
 
 function revealImage(image) {
-    console.log(image, image.img);
     var imageEl = closest(image.img, function (el) {
         return el.classList && el.classList.contains('c-gallery__image');
     });
@@ -181,25 +170,33 @@ function revealImage(image) {
     imageEl.classList.add('loaded');
 }
 
-imgLoad.on('done', function (instance) {
-    console.log(instance);
+// Start loading and tracking gallery's images, and laying them out.
+// Images are hidden at first, and will be revealed when time comes.
+var imgLoad = (0, _imagesloaded2.default)($gallery);
+var gallery = new _masonryLayout2.default($gallery, {
+    itemSelector: 'a',
+    columnWidth: 288
+});
 
+// Track images being loaded and provide UI feedback about progress.
+_Rx2.default.Observable.fromEvent(imgLoad, 'progress').map(function (instance) {
+    return _.filter(instance.images, { isLoaded: true }).length / instance.images.length;
+}).subscribe(function (progress) {
+    $galleryProgress.style.width = Math.round(progress * 100) + '%';
+    if (progress == 1) $galleryLoader.style.display = 'none';
+});
+
+// Upon the full images set being loaded, start revealing them.
+imgLoad.on('done', function (instance) {
     // TODO: $images could be filled as images are loaded (.on('progress'))
     // and the whole stream could be emitted when completed (.on('done'))
     // thus the code below extracted out.
-    var $images = _Rx2.default.Observable.from(instance.images);
-    var $timing = _Rx2.default.Observable.interval(100);
-    var $stream = $images.zip($timing, function (a, b) {
+    var images$ = _Rx2.default.Observable.from(instance.images);
+    var timing$ = _Rx2.default.Observable.interval(100);
+    var stream$ = images$.zip(timing$, function (a, b) {
         return a;
     });
-    $stream.subscribe(revealImage);
-
-    // let revealImageStep = _.debounce(revealImage, 2000);
-    // let dconsolelog = _.debounce(console.log, 500);
-    // _.forEach(instance.images, function(image) {
-    //   dconsolelog(image);
-    //   // revealImageStep(image);
-    // });
+    stream$.subscribe(revealImage);
 
     var initPhotoSwipeFromDOM = function initPhotoSwipeFromDOM(gallerySelector) {
 
@@ -234,9 +231,10 @@ imgLoad.on('done', function (instance) {
                     h: parseInt(size[1], 10)
                 };
 
-                if (figureEl.children.length > 1) {
+                // TODO: shitty code, adapt to my own use-case
+                if (figureEl.children.length) {
                     // <figcaption> content
-                    item.title = figureEl.children[1].innerHTML;
+                    item.title = figureEl.children[0].getAttribute('title');
                 }
 
                 if (linkEl.children.length > 0) {
@@ -404,6 +402,7 @@ imgLoad.on('done', function (instance) {
     // execute above function
     initPhotoSwipeFromDOM('.c-gallery');
 });
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
 /* 8 */,
