@@ -19,14 +19,23 @@ require('./../css/main');
 //
 // replace legacy js below with ES2015+lodash code
 
-var gallery = document.getElementsByClassName('c-gallery')[0];
-imagesLoaded(gallery, function(instance) {
-  new Masonry(instance.elements[0], {
-    itemSelector: 'a',
-    columnWidth: 288
-  });
-  gallery.style.visibility = 'visible';
+const galleryEl = document.getElementsByClassName('c-gallery')[0];
 
+const imgLoad = imagesLoaded(galleryEl);
+const gallery = new Masonry(galleryEl, {
+  itemSelector: 'a',
+  columnWidth: 288
+});
+
+imgLoad.on( 'progress', function( instance, image ) {
+  if (image.isLoaded) {
+    gallery.appended(image.img);
+    gallery.layout();
+    image.img.style.opacity = 1;
+  }
+});
+
+imgLoad.on('done', function(instance) {
   var initPhotoSwipeFromDOM = function(gallerySelector) {
 
       // parse slide data (url, title, size ...) from DOM elements

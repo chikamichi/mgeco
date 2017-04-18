@@ -2,9 +2,9 @@
    Gallery
    ========================================================================== */
 
-// .c-gallery {
-//   visibility: hidden;
-// }
+.c-gallery__thumbnail {
+  opacity: 0;
+}
 
 .c-gallery__link {
   display: inline-block;

@@ -152,14 +152,23 @@ __webpack_require__(1);
 //
 // replace legacy js below with ES2015+lodash code
 
-var gallery = document.getElementsByClassName('c-gallery')[0];
-(0, _imagesloaded2.default)(gallery, function (instance) {
-    new _masonryLayout2.default(instance.elements[0], {
-        itemSelector: 'a',
-        columnWidth: 288
-    });
-    gallery.style.visibility = 'visible';
+var galleryEl = document.getElementsByClassName('c-gallery')[0];
 
+var imgLoad = (0, _imagesloaded2.default)(galleryEl);
+var gallery = new _masonryLayout2.default(galleryEl, {
+    itemSelector: 'a',
+    columnWidth: 288
+});
+
+imgLoad.on('progress', function (instance, image) {
+    if (image.isLoaded) {
+        gallery.appended(image.img);
+        gallery.layout();
+        image.img.style.opacity = 1;
+    }
+});
+
+imgLoad.on('done', function (instance) {
     var initPhotoSwipeFromDOM = function initPhotoSwipeFromDOM(gallerySelector) {
 
         // parse slide data (url, title, size ...) from DOM elements
