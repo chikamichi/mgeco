@@ -19,8 +19,10 @@ require('./../css/main');
 //
 // replace legacy js below with ES2015+lodash code
 
-const galleryEl = document.getElementsByClassName('c-gallery')[0];
+const galleryImageEl = document.getElementsByClassName('c-gallery')[0];
+galleryImageEl.onclick = function(e) { e.preventDefault(); };
 
+const galleryEl = document.getElementsByClassName('c-gallery')[0];
 const imgLoad = imagesLoaded(galleryEl);
 const gallery = new Masonry(galleryEl, {
   itemSelector: 'a',

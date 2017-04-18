@@ -152,8 +152,12 @@ __webpack_require__(1);
 //
 // replace legacy js below with ES2015+lodash code
 
-var galleryEl = document.getElementsByClassName('c-gallery')[0];
+var galleryImageEl = document.getElementsByClassName('c-gallery')[0];
+galleryImageEl.onclick = function (e) {
+    e.preventDefault();
+};
 
+var galleryEl = document.getElementsByClassName('c-gallery')[0];
 var imgLoad = (0, _imagesloaded2.default)(galleryEl);
 var gallery = new _masonryLayout2.default(galleryEl, {
     itemSelector: 'a',
