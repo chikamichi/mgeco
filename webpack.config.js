@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -7,6 +8,14 @@ const LoadVendorDll = new webpack.DllReferencePlugin({
   context: __dirname,
   manifest: require('./dist/vendor-manifest.json'),
 });
+const CopyLibrariesAssets = new CopyWebpackPlugin([
+  {
+    from: 'node_modules/photoswipe/dist/default-skin/**/*',
+    ignore: '*.css',
+    force: true,
+    flatten: true
+  }
+]);
 const CompileSass = new ExtractTextPlugin({
   // filename: '[name].[contenthash].css',
   filename: '[name].css'
@@ -33,6 +42,13 @@ const config = {
   },
   module: {
     rules: [{
+      test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+      loader: 'file-loader'
+      // loader: 'url-loader',
+      // options: {
+      //   limit: 10000
+      // }
+    }, {
       test: /\.js$/,
       exclude: /node_modules/,
       loader: 'babel-loader'
@@ -69,6 +85,7 @@ const config = {
     //     'ENV': JSON.stringify(process.env.NODE_ENV),
     //   },
     // }),
+    CopyLibrariesAssets,
     CompileSass,
     CompileGallery
   ].concat(isDevelopment ? [] : [
