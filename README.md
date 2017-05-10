@@ -1,34 +1,35 @@
 mg-ecoconstruction.com
 ======================
 
-Front-end for MG Éco, a building company.
+Front-end for MG Éco, a wooden frame house building company.
 
 Project's end goals & constraints:
 
-* make the gallery effective (snappy, maintainable)
-* make the whole website responsive
-* improve SEO
-* KISS implementation-wise so that the non-tech client can work on/with it
+1. make the gallery effective (snappy, maintainable)
+2. make the whole website responsive
+3. improve SEO
+4. keep it simple so that the non-tech client is then able to work on/with it
 
-Core ideas:
+How to implement / Core ideas:
 
-* build a custom gallery based on the popular and well maintained PhotoSwipe; build with webpack
-* build the CSS using Sass & Inuit CSS; design webpack's workflow to allow compiling the CSS using another tool
+* build with webpack and associated stack
+* a snappy, custom gallery based on the popular and well maintained PhotoSwipe
+* CSS using Sass & Inuit CSS (compiled with webpack, but allow for compiling using another tool)
 
 ## Synopsis
 
 * Install dependencies: `npm install`
-* Compile vendors' JS: `npm run build:vendor`
-* Compile JS & CSS: `npm run build [-- --watch]`
-* Compile for production: `NODE_ENV=production npm run build[:vendor]`
+* Compile vendors' independent JS bundle (DLL): `npm run build:vendor`
+* Compile project's JS/CSS bundle: `npm run build [-- --watch]`
+* Compile project's JS/CSS bundle for production: `NODE_ENV=production npm run build[:vendor]`
 
-## Installing a third-party library
+## Adding a third-party library
 
-1. Add to package.json (or `npm i -[S|D] library_name`)
-2. Require from src/js/vendors.js
+1. Add the library to package.json (or `npm i -[S|D] library_name`)
+2. Require the library from src/js/vendors.js
 3. Rebuild the vendors DLL with `npm run build:vendor`
 
-Only the JS gets included in the DLL. (S)CSS files and other assets like images are better handled manually at this stage.
+Only the vendor's JS assets get included in the DLL. (S)CSS files and other assets such as images are better handled manually at this stage.
 
 ## TODO
 
@@ -48,4 +49,3 @@ convert "*.jpg[288x>]" -depth 8 -quality 75% -set filename:original %t './thumbn
 cd thumbnails
 mogrify -shave 1x1 -bordercolor white -border 1 -format jpg *.jpg
 ```
-
