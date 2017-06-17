@@ -1,0 +1,72 @@
+/* ==========================================================================
+   #UI
+   ========================================================================== */
+
+@include mq($until: tablet) {
+  .o-layout__item {
+    text-align: center;
+  }
+}
+
+
+.c-mgeco {
+  position: relative;
+  padding-top: $spacing;
+}
+
+
+.c-nav {
+  margin: $spacing*2 0;
+}
+
+
+.c-sidebar__link {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+
+  &--active {
+    color: black;
+    font-weight: bold;
+
+    &:after {
+      content: '>';
+      display: inline-block;
+      padding-left: 0.5em;
+      color: $grey;
+      @include inuit-font-size($inuit-global-font-size*0.8);
+    }
+  }
+}
+
+
+.c-logo {
+  margin-bottom: $spacing;
+}
+
+
+.c-main-area {
+  min-height: 1000px;
+  padding-bottom: 10*$spacing;
+}
+
+
+.c-footer__outer {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.c-footer__inner {
+  padding-right: $spacing;
+  padding-left:  $spacing;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $inuit-wrapper-width;
+}
+
+.c-footer__content {
+  padding: $spacing/2 0;
+  background: white;
+}
+

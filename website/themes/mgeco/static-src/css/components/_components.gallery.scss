@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Gallery
+   ========================================================================== */
+
+
+// -----------------------------------------------------------------------------
+// Progress bar.
+// -----------------------------------------------------------------------------
+.c-galleryLoader {
+  border: 1px solid $green;
+  width: 100%;
+  height: 8px;
+}
+
+.c-galleryLoader__progress {
+  background: $green;
+  width: 0;
+  height: 100%;
+}
+
+// -----------------------------------------------------------------------------
+// Default styles applied meanwhile the gallery is loading.
+//
+// This is a "negative" state (where things are hidden) because
+// CSS transitions works better when a class is added rather than
+// removed; therefore, we're adding a .loaded class instead of
+// removing .loading one.
+// -----------------------------------------------------------------------------
+
+.c-gallery__thumbnail {
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.c-gallery__caption {
+  visibility: hidden;
+}
+
+.c-gallery__link {
+  display: inline-block;
+}
+
+// -----------------------------------------------------------------------------
+// Styles applied upon revealing an image.
+// -----------------------------------------------------------------------------
+
+.c-gallery__image.loaded {
+  .c-gallery__link {
+    background: none;
+    box-shadow: none;
+  }
+
+  .c-gallery__thumbnail {
+    opacity: 1;
+  }
+
+  .c-gallery__caption {
+    visibility: visible;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Regular styles.
+// -----------------------------------------------------------------------------
+
+.c-gallery__caption {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  background: white;
+  text-align: center;
+  background: white;
+  background: rgba(255, 255, 255, 0.6);
+  transition: $global-transition;
+  opacity: 0;
+}
+
+.c-gallery__image:hover {
+  .c-gallery__caption {
+    opacity: 1;
+  }
+}
+
+.c-gallery__caption > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: black;
+  word-break: break-word;
+}
