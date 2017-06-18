@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd dist/images/gallery
+rm -rf thumbnails
+mkdir thumbnails
+convert "*.jpg[288x>]" -monitor -depth 8 -quality 75% -set filename:original %t './thumbnails/%[filename:original].jpg'
+cd thumbnails
+mogrify -shave 1x1 -bordercolor white -border 1 -format jpg *.jpg
