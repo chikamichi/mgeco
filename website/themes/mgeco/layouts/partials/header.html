@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>MG éco-construction</title>
-    <meta name="description" content="MG éco-construction">
-    <meta name="author" content="MG éco-construction">
-    <meta name="viewport" content="width=device-width">
-    <link href="/css/main.css" rel="stylesheet" title="Default stylesheet">
-    {{ "<!--if lt IE 9script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js') -->" | safeHTML }}
-  </head>
-  <body class="c-mgeco">
+{{ partial "html_top" . }}
     <div class="o-wrapper">
-      <div class="o-layout o-layout--flush">
-        <div class="o-layout__item c-sidebar u-1/1 u-1/4@tablet">
-          <div class="c-logo"><img src="/images/logo_mg.jpg"></div>
+      <div class="o-layout  o-layout--flush">
+        <div class="o-layout__item  c-sidebar  u-1/1  u-1/4@tablet">
+          <a href="/presentation/" class="c-logo"><img src="/images/logo_mg.jpg"></a>
           {{ partial "nav.html" . }}
         </div>
-        <div class="o-layout__item c-main-area u-1/1 u-3/4@tablet">
+        <div class="o-layout__item  c-main-area  u-1/1  u-3/4@tablet">

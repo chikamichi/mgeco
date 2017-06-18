@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Accueil on MG éco-construction</title>
-    <link>http://www.mg-ecoconstruction.com/</link>
-    <description>Recent content in Accueil on MG éco-construction</description>
+    <title>Pages on MG éco-construction</title>
+    <link>http://www.mg-ecoconstruction.com/page/</link>
+    <description>Recent content in Pages on MG éco-construction</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     
-	<atom:link href="http://www.mg-ecoconstruction.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.mg-ecoconstruction.com/page/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

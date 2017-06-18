@@ -12,4 +12,4 @@ Vous verrez un aperçu des possibilités diverses que nous vous proposons :
 
 Comme le montrent ces images, ces modes constructifs permettent **toutes sortes d'architectures et de finitions**.
 
-* Les photos 1 à 48 sont de Nils Harderveld, et 49 à 60 de Stéphanie Bodart.*
+*Les photos 1 à 48 sont de Nils Harderveld, et 49 à 60 de Stéphanie Bodart.*

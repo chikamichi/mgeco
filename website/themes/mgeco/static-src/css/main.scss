@@ -79,6 +79,7 @@
 @import "../../../../node_modules/inuitcss/settings/_settings.core.scss";
 @import "settings/settings.global";
 @import "settings/settings.colors";
+@import "settings/settings.breakpoints";
 
 
 
@@ -142,6 +143,7 @@
 //
 // Build and include your project’s UI Compoments here.
 @import "components/components.ui";
+@import "components/components.homepage";
 @import "components/components.gallery";
 
 
@@ -162,5 +164,3 @@ $inuit-offsets: true;
 
 
 // VENDORS
-@import "../../../../node_modules/photoswipe/dist/photoswipe";
-@import "../../../../node_modules/photoswipe/dist/default-skin/default-skin";

@@ -1,0 +1,18 @@
+// https://github.com/sass-mq/sass-mq
+
+// Methodology of choice is progressive enhancement, rather than graceful
+// degradation, so style for mobiles first, then use mq($from:) to address
+// larger media.
+
+$mq-breakpoints: (
+    mobile: 320px,
+    mobileLandscape: 480px,
+    tablet: 740px,
+    desktop: 980px,
+    wide: 1300px
+);
+
+// Enable while developing.
+$mq-show-breakpoints: (mobile, mobileLandscape, tablet, desktop, wide);
+
+@import '../../../../../node_modules/sass-mq/mq';

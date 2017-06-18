@@ -12,7 +12,32 @@
   </url>
   
   <url>
+    <loc>http://www.mg-ecoconstruction.com/votre-projet/</loc>
+  </url>
+  
+  <url>
     <loc>http://www.mg-ecoconstruction.com/galerie/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.mg-ecoconstruction.com/concept/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.mg-ecoconstruction.com/ethique/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.mg-ecoconstruction.com/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.mg-ecoconstruction.com/liens/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.mg-ecoconstruction.com/presentation/</loc>
   </url>
   
   <url>
@@ -21,7 +46,7 @@
   </url>
   
   <url>
-    <loc>http://www.mg-ecoconstruction.com/a-propos/</loc>
+    <loc>http://www.mg-ecoconstruction.com/page/a-propos/</loc>
   </url>
   
 </urlset>
