@@ -8,11 +8,11 @@ const isDevelopment = process.env.NODE_ENV !== 'production';
 const copyPhotoswipeAssets = new CopyWebpackPlugin([
   {
     from: 'node_modules/photoswipe/dist/photoswipe.css',
-    to: '../../website/static/css/photoswipe/'
+    to: '../../website/themes/mgeco/static/css/photoswipe/'
   }, {
     context: './node_modules/photoswipe/dist/',
     from: 'default-skin/*',
-    to: '../../website/static/css/photoswipe/'
+    to: '../../website/themes/mgeco/static/css/photoswipe/'
   }
 ], {
   copyUnmodified: true
@@ -20,21 +20,18 @@ const copyPhotoswipeAssets = new CopyWebpackPlugin([
 
 module.exports = {
   entry: {
-    vendor: [
+    'gallery_vendors': [
       './src/js/vendors.js'
     ]
   },
   output: {
-    path: path.resolve('./dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
-    library: '[name]_[hash]',
+    library: '[name]_[hash]'
   },
   plugins: [
-    new webpack.ProvidePlugin({
-      _: 'lodash'
-    }),
     new webpack.DllPlugin({
-      path: './dist/[name]-manifest.json',
+      path: './dist/[name].manifest.json',
       name: '[name]_[hash]',
     }),
     copyPhotoswipeAssets

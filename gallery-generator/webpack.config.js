@@ -4,41 +4,46 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const LoadVendorDll = new webpack.DllReferencePlugin({
+const LoadGalleryVendorsDll = new webpack.DllReferencePlugin({
   context: __dirname,
-  manifest: require('./dist/vendor-manifest.json'),
+  manifest: require('./dist/gallery_vendors.manifest.json'),
 });
-const CopyLibrariesAssets = new CopyWebpackPlugin([
-  {
-    from: 'node_modules/photoswipe/dist/default-skin/**/*',
-    ignore: '*.css',
-    force: true,
-    flatten: true
-  }
-]);
-const CompileSass = new ExtractTextPlugin({
-  // filename: '[name].[contenthash].css',
-  filename: '[name].css'
-});
+
 const CompileGallery = new HtmlWebpackPlugin({
   title: 'MG éco-construction',
   filename: 'gallery.html',
-  template: 'src/html/gallery/gallery.gen.js'
+  template: 'src/html/gallery.gen.js',
+  inject: false
 });
+
+const CopyGalleryToWebsite = new CopyWebpackPlugin([
+  {
+    context: 'dist/',
+    from: 'gallery.html',
+    to: '../../website/themes/mgeco/layouts/galerie/list.html'
+  }, {
+    context: 'dist/',
+    from: '*.js',
+    to: '../../website/themes/mgeco/static/js/'
+  }
+], {
+  copyUnmodified: true
+})
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 const config = {
   entry: {
-    main: './src/js/index.js',
+    gallery: './src/js/gallery.js',
   },
   output: {
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
+    library: '[name]'
     // publicPath: ''
   },
   resolve: {
-    extensions: ['.js', '.scss']
+    extensions: ['.js']
   },
   module: {
     rules: [{
@@ -52,18 +57,6 @@ const config = {
       test: /\.js$/,
       exclude: /node_modules/,
       loader: 'babel-loader'
-    }, {
-      test: /\.scss$/,
-      use: CompileSass.extract({
-        use: [{
-          loader: 'css-loader',
-          options: {
-            url: false
-          }
-        }, {
-          loader: 'sass-loader'
-        }]
-      })
     }, {
       test: /\.pug$/,
       loader: 'pug-loader'
@@ -79,15 +72,14 @@ const config = {
     new webpack.ProvidePlugin({
       _: 'lodash'
     }),
-    LoadVendorDll,
+    LoadGalleryVendorsDll,
     // new webpack.DefinePlugin({
     //   'process.env': {
     //     'ENV': JSON.stringify(process.env.NODE_ENV),
     //   },
     // }),
-    CopyLibrariesAssets,
-    CompileSass,
-    CompileGallery
+    CompileGallery,
+    CopyGalleryToWebsite
   ].concat(isDevelopment ? [] : [
     new webpack.optimize.UglifyJsPlugin({
       beautify: false,
