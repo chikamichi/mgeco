@@ -1,4 +1,4 @@
-var vendor_487853aeb36ad130b32e =
+var vendor_f3e31ef1bcaa78ea20e1 =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -406,6 +406,7 @@ return EvEmitter;
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
+// All of the gallery-generator third-party dependencies:
 __webpack_require__(5);
 __webpack_require__(3);
 __webpack_require__(6);

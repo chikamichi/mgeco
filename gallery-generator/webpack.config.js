@@ -33,8 +33,8 @@ const config = {
     main: './src/js/index.js',
   },
   output: {
-    filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
+    filename: '[name].js',
     // publicPath: ''
   },
   resolve: {
