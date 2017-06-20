@@ -20,7 +20,7 @@ const CopyGalleryToWebsite = new CopyWebpackPlugin([
   {
     context: 'dist/',
     from: 'gallery.html',
-    to: '../../website/themes/mgeco/layouts/galerie/list.html'
+    to: '../../website/themes/mgeco/layouts/galerie/single.html'
   }, {
     context: 'dist/',
     from: '*.js',

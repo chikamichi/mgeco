@@ -1,6 +1,8 @@
 +++
 title = "Nos réalisations de maisons écologiques dans le Lot (46)"
 description = "Galerie"
+url = "galerie"
+type = "galerie"
 +++
 
 Vous verrez un aperçu des possibilités diverses que nous vous proposons :

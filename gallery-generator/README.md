@@ -1,7 +1,7 @@
 mg-ecoconstruction.com — Gallery generator
 ==========================
 
-mg-ecoconstruction.com's gallery is built on top of Photoswipe, with a small amount of custom code.
+mg-ecoconstruction.com's gallery is built on top of Photoswipe. This project automates the creation of the required markup, dynamically parsing the gallery's images to expose their dimensions, for instance. Output is then automatically moved at the appropriate location in the website/ project.
 
 ## Usage
 
@@ -11,13 +11,13 @@ This project provides **two main commands**:
 ./bin/generate-thumbnails
 ```
 
-generates thumbnails from larger size, original pictures stored in dist/images/gallery/.
+generates thumbnails from larger size, original pictures stored in ../website/static/images/gallery/.
 
 ```
 ./bin/generate-gallery
 ```
 
-generates a full-flegded, Hugo-compliant, production-ready gallery page that is automatically transfered to the appropriate location inside the website sub-project.
+generates a full-flegded, Hugo-compliant, production-ready gallery layout that is automatically transfered at ../website/themes/mgeco/layouts/galerie/single.html.
 
 It's also through this project that one controls the gallery's content: images orders & captions (see src/html/gallery/images_list.yml).
 
