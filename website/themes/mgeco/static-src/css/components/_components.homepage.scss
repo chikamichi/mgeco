@@ -3,63 +3,103 @@
   max-width: 90%;
   margin: 0 auto;
   text-align: center;
+  background: white;
 }
 
 .c-home__main-entrance { // aka. c-me
-  display: block;
-  background: url('/images/bienvenue1.jpg');
-  background-size: 100%;
-  width: 100%;
-  /*
-  We want a responsive background image, ie. its height must match its changing
-  width. In order to lock the image's aspect ratio along the height axis, with
-  respect to its current, fluid width, one may set a padding-top/bottom value,
-  in percentage, equal to the aspect ratio. The trick here lies in the fact that
-  padding percentages are always computed using the element container's *width*
-  as reference.
-  */
-  padding-top: 95.83333333333%; // 575px / 600px for bienvenue1.jpg
-  height: 0;
-  transition: background 0.1s ease-in-out;
-}
-
-.c-home__main-entrance:hover {
-  background: url('/images/bienvenue2.jpg');
-}
-
-.c-home__carousel { // aka. c-home-carousel
-  display: none;
   position: relative;
-  border: 1px solid black;
-  float: left;
-  height: 240px;
-  width: 70%;
+}
 
-  > p {
-    width: 50%;
-    height: 50%;
-    overflow: auto;
-    margin: auto;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
+.c-me--narrow {
+  .c-me__link {
+    display: block;
+    background: url('/images/bienvenue1.jpg');
+    /*
+    We want a responsive background image, ie. its height must match its changing
+    width. In order to lock the image's aspect ratio along the height axis, with
+    respect to its current, fluid width, one may set a padding-top/bottom value,
+    in percentage, equal to the aspect ratio. The trick here lies in the fact that
+    padding percentages are always computed using the element container's *width*
+    as reference.
+    */
+    padding-top: 95.8333333333%; // 575px / 600px for bienvenue1.jpg
+    background-size: contain;
+  }
+
+  .c-home__rge {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    margin-top: 1em;
+  }
+
+  .c-home__keywords {
+    color: white;
   }
 }
 
-@include mq($from: mobileLandscape) {
-  .c-home__carousel {
+.c-me--large {
+  display: none;
+}
+
+@include mq($from: 650px) {
+  .c-home {
+    width: 600px;
+    max-width: 600px;
+  }
+
+  .c-me--narrow {
+    display: none;
+  }
+
+  .c-me--large {
+    display: inline;
+  }
+
+  .c-me__link {
     display: block;
+    height: 575px;
+  }
+
+  .c-me__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 575px;
+    width: 600px;
+    background: url('/images/bienvenue1.jpg');
+    background-size: 100%;
+    transition: background 0.1s ease-in-out;
+  }
+
+  .c-me__link:hover .c-me__image {
+    background: url('/images/bienvenue2.jpg');
+  }
+
+  .c-home__extras {
+    padding-bottom: $spacing;
+  }
+
+  .c-home__carousel { // aka. c-home-carousel
+    position: relative;
+    border: 1px solid black;
+    float: left;
+    height: 240px;
+    width: 70%;
+
+    > p {
+      width: 50%;
+      height: 50%;
+      overflow: auto;
+      margin: auto;
+      position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
+    }
   }
 
   .c-home__rge {
     float: right;
     width: 30%;
-  }
-}
-
-@include mq($from: tablet) {
-  .c-home {
-    width: 600px;
-    max-width: 600px;
   }
 
   .c-home-rge_logo {

@@ -2,17 +2,29 @@
 
 <div class="c-home">
 
-  <a class="c-home__main-entrance  c-me" href="/presentation" class="c-me__image" title="{{ .Site.Data.wordings.slogans.activite }} - {{ .Site.Data.wordings.slogans.activites }}" role="img" aria-label="{{ .Site.Data.wordings.slogans.activite }} - {{ .Site.Data.wordings.slogans.activites }}">
-  </a>
-
-  <div class="c-home__extras">
-    <div class="c-home__carousel  c-home-carousel">
-      <p>TODO</p>
-    </div>
-
-    <a class="c-home__rge  c-home-rge" href="{{ .Site.Data.liens.rge.site_officiel }}">
+  <div class="c-home__main-entrance  c-me  c-me--narrow">
+    <a href="/presentation" class="c-me__link"></a>
+    <a href="{{ .Site.Data.liens.rge.site_officiel }}" class="c-home__rge  c-home-rge">
       <img class="c-home-rge__logo" src='/images/rge.jpg'>
     </a>
+    <p class="c-home__keywords">{{ .Site.Data.wordings.slogans.activite }} {{ .Site.Data.wordings.slogans.activites }}<p>
+  </div>
+
+  <div class="c-home__main-entrance  c-me  c-me--large">
+    <a href="/presentation" class="c-me__link">
+      {{ .Site.Data.wordings.slogans.activite }} {{ .Site.Data.wordings.slogans.activites }}
+      <span class="c-me__image" title="{{ .Site.Data.wordings.slogans.activite }} - {{ .Site.Data.wordings.slogans.activites }}" role="img" aria-label="{{ .Site.Data.wordings.slogans.activite }} - {{ .Site.Data.wordings.slogans.activites }}"></span>
+    </a>
+
+    <div class="c-home__extras  u-clearfix">
+      <div class="c-home__carousel  c-home-carousel">
+        <p>TODO</p>
+      </div>
+
+      <a href="{{ .Site.Data.liens.rge.site_officiel }}" class="c-home__rge  c-home-rge">
+        <img class="c-home-rge__logo" src='/images/rge.jpg'>
+      </a>
+    </div>
   </div>
 
 </div>
