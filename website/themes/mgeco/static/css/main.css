@@ -1490,6 +1490,19 @@ table {
 .c-nav {
   margin: 48px 0; }
 
+.c-logo {
+  position: relative;
+  display: block;
+  height: 299px;
+  color: white; }
+
+.c-logo__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 299px;
+  width: 250px; }
+
 .c-sidebar__link {
   text-transform: uppercase;
   font-size: 0.85rem; }
@@ -1579,7 +1592,8 @@ table {
     display: inline; }
   .c-me__link {
     display: block;
-    height: 575px; }
+    height: 575px;
+    color: white; }
   .c-me__image {
     position: absolute;
     top: 0;
