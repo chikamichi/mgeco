@@ -13,7 +13,7 @@
 .c-me--narrow {
   .c-me__link {
     display: block;
-    background: url('/images/bienvenue1.jpg');
+    background: url($base64-bienvenue1-jpg);
     /*
     We want a responsive background image, ie. its height must match its changing
     width. In order to lock the image's aspect ratio along the height axis, with
@@ -67,13 +67,13 @@
     left: 0;
     height: 575px;
     width: 600px;
-    background: url('/images/bienvenue1.jpg');
+    background: url($base64-bienvenue1-jpg);
     background-size: 100%;
     transition: background 0.1s ease-in-out;
   }
 
   .c-me__link:hover .c-me__image {
-    background: url('/images/bienvenue2.jpg');
+    background: url($base64-bienvenue2-jpg);
   }
 
   .c-home__extras {
