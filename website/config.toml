@@ -2,4 +2,4 @@ baseURL = "http://www.mg-ecoconstruction.com/"
 ignoreFiles = [ "static-src" ]
 languageCode = "fr-FR"
 theme = "mgeco"
-title = "MG éco-construction"
+title = "MG Éco-construction"

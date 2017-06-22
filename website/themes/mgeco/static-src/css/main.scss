@@ -110,6 +110,12 @@
 
 // ELEMENTS
 @import "../../../../node_modules/inuitcss/elements/elements.page";
+$inuit-font-size-h1:  30px !default;
+$inuit-font-size-h2:  24px !default;
+$inuit-font-size-h3:  20px !default;
+$inuit-font-size-h4:  18px !default;
+$inuit-font-size-h5:  16px !default;
+$inuit-font-size-h6:  16px !default;
 @import "../../../../node_modules/inuitcss/elements/elements.headings";
 @import "../../../../node_modules/inuitcss/elements/elements.images";
 @import "elements/elements.links";
