@@ -2,6 +2,7 @@
   width: 90%;
   max-width: 90%;
   margin: 0 auto;
+  padding: $spacing 0;
   text-align: center;
   background: white;
 }
@@ -9,6 +10,10 @@
 .c-home__main-entrance { // aka. c-me
   position: relative;
   color: white;
+}
+
+.c-me--large {
+  display: none;
 }
 
 .c-me--narrow {
@@ -35,8 +40,23 @@
   }
 }
 
-.c-me--large {
-  display: none;
+.c-home-info__link:hover {
+  text-decoration: none;
+
+  .c-home__email {
+    text-decoration: underline;
+  }
+}
+
+.c-home-info__line {
+  color: black;
+  margin: 0;
+  font-weight: bold;
+  font-size: 0.85em;
+}
+
+.c-home__email {
+  color: $green;
 }
 
 @include mq($from: 650px) {
