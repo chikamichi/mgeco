@@ -3495,4 +3495,10 @@ table {
 .u-hidden {
   display: none !important; }
 
+.u-text-centered {
+  text-align: center !important; }
+
+.u-text-condensed p {
+  margin: 0; }
+
 /*# sourceMappingURL=main.css.map */
