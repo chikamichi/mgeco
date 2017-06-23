@@ -1,0 +1,49 @@
+@import "utilities/utilities.typography.mixins";
+
+
+.c-contact-infos__link {
+  color: $grey--dark;
+}
+
+
+.c-contact-infos__link:hover {
+  text-decoration: none;
+
+  .c-contact-infos__email {
+    text-decoration: underline;
+  }
+}
+
+
+.c-contact-infos__line,
+.c-contact-infos__numbers,
+.c-contact-infos__email {
+  margin: 0;
+}
+
+
+.c-contact-infos__numbers > .o-list-inline__item {
+  padding-left: 0.5em;
+
+
+  &::after {
+    content: '–';
+    padding-left: 0.5em;
+  }
+
+
+  &:last-child::after {
+    display: none;
+  }
+}
+
+
+.c-contact-infos__line {
+  font-weight: bold;
+  font-size: 0.85em;
+}
+
+
+.c-contact-infos__email {
+  color: $green;
+}

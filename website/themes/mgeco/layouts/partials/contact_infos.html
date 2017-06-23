@@ -1,0 +1,13 @@
+<div class="c-contact-infos">
+  <a href="mailto:{{ .Site.Params.Email }}" class="c-contact-infos__link">
+    <p class="c-contact-infos__line">{{ .Site.Params.CorporateName }} - Atelier {{ .Site.Params.Address1 }} {{ .Site.Params.Address2 }}</p>
+    <div class="c-contact-infos__line">
+      <ul class="c-contact-infos__numbers  o-list-inline  o-list-inline--flush">
+        <li class="c-contact-infos__number  o-list-inline__item">{{ .Site.Params.PhoneMobile }}</li>
+        <li class="c-contact-infos__number  o-list-inline__item">{{ .Site.Params.PhoneLandline }}</li>
+        <li class="c-contact-infos__email  o-list-inline__item">{{ .Site.Params.Email }}</li>
+      </ul>
+    </div>
+    <p class="c-contact-infos__line  c-contact-infos__rcs">{{ .Site.Params.Rcs }}</p>
+  </a>
+</div>

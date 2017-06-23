@@ -1,0 +1,12 @@
+/* Zero-spaced list.
+    ========================================================================== */
+
+// @see https://github.com/inuitcss/inuitcss/commit/824b34c57a508cf4cd94d03cde4af23121632a8c
+
+.o-list-inline--flush {
+  font-size: 0;
+
+  > .o-list-inline__item {
+    font-size: 1rem;
+  }
+}

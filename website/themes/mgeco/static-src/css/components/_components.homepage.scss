@@ -40,25 +40,6 @@
   }
 }
 
-.c-home-info__link:hover {
-  text-decoration: none;
-
-  .c-home__email {
-    text-decoration: underline;
-  }
-}
-
-.c-home-info__line {
-  color: black;
-  margin: 0;
-  font-weight: bold;
-  font-size: 0.85em;
-}
-
-.c-home__email {
-  color: $green;
-}
-
 @include mq($from: 650px) {
   .c-home {
     width: 600px;

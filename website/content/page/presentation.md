@@ -14,4 +14,4 @@ Dans une démarche écologique globale conjuguant techniques innovantes, matéri
 
 MG ÉCO, c'est la connaissance et l'expertise sans cesse actualisées des techniques de l'écoconstruction et de la performance thermique des bâtiments.
 
-**[Contactez-nous](mailto:contact@mg-ecoconstruction.com)** afin d'obtenir un devis estimatif et d'engager la réflexion, quel que soit le stade de développement de votre projet.
+**[Contactez-nous](/contact)** afin d'obtenir un devis estimatif et d'engager la réflexion, quel que soit le stade de développement de votre projet.

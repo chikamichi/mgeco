@@ -140,6 +140,7 @@ $inuit-font-size-h6:  16px !default;
 @import "../../../../node_modules/inuitcss/objects/objects.crop";
 @import "../../../../node_modules/inuitcss/objects/objects.tables";
 @import "../../../../node_modules/inuitcss/objects/objects.pack";
+@import "objects/objects.list-inline";
 
 
 
@@ -149,6 +150,8 @@ $inuit-font-size-h6:  16px !default;
 //
 // Build and include your project’s UI Compoments here.
 @import "components/components.ui";
+@import "components/components.contact-info";
+@import "components/components.contact-us";
 @import "components/components.homepage";
 @import "components/components.gallery";
 

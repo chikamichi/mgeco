@@ -3,3 +3,13 @@ ignoreFiles = [ "static-src" ]
 languageCode = "fr-FR"
 theme = "mgeco"
 title = "MG Éco-construction"
+
+[params]
+  corporateName = "SAS MG ECO"
+  casualName = "MG Éco"
+  address1 = "route de Cénevières"
+  address2 = "46260 LIMOGNE EN QUERCY"
+  phoneLandline = "05 65 21 73 08"
+  phoneMobile = "06 74 66 08 92"
+  email = "contact@mg-ecoconstruction.com"
+  rcs = "RCS CAHORS 538 164 120"

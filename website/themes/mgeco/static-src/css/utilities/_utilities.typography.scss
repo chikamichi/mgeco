@@ -1,9 +1,11 @@
+@import "utilities/utilities.typography.mixins";
+
+
 .u-text-centered {
-  text-align: center !important;
+  @include u-text-centered;
 }
 
+
 .u-text-condensed {
-  p {
-    margin: 0;
-  }
+  @include u-text-condensed;
 }

@@ -1,21 +1,14 @@
+@import "utilities/utilities.typography.mixins";
+
+
 /* ==========================================================================
    #UI
    ========================================================================== */
 
-// body {
-//   min-height: 100vh;
-// }
 
 .o-layout__item {
   text-align: center;
 }
-
-// .c-sidebar {
-//   background: blue;
-// }
-// .c-main-area {
-  // background: red;
-// }
 
 
 .c-mgeco {
@@ -35,6 +28,7 @@
   height: 299px;
   color: white;
 }
+
 
 .c-logo__image {
   position: absolute;
@@ -76,32 +70,28 @@
   height: 200px;
 }
 
+
 .c-footer__wrapper,
 .c-footer__outer {
   height: 100%;
 }
 
+
 .c-footer__outer {
   background: url('/images/footer_background.png');
 }
 
-.c-footer__content {
+
+.c-footer__inner {
+  @include u-text-centered;
   padding-top: 80px;
-  color: $grey--dark;
+
+
+  .c-contact-infos__rcs {
+    display: none;
+  }
 }
 
-// .c-footer__inner {
-//   padding-right: $spacing;
-//   padding-left:  $spacing;
-//   margin-right: auto;
-//   margin-left: auto;
-//   max-width: $inuit-wrapper-width;
-// }
-//
-// .c-footer__content {
-//   padding: $spacing/2 0;
-//   background: url('/images/footer_background.png');
-// }
 
 @include mq($from: tablet) {
   .o-layout__item {

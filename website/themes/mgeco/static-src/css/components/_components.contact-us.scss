@@ -1,0 +1,17 @@
+.c-contact-us {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+
+.c-contact-us__line {
+  > span {
+    display: block;
+  }
+}
+
+
+.c-contact-us__owner,
+.c-contact-us__channels {
+  font-weight: bold;
+}
