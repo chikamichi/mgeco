@@ -1521,22 +1521,22 @@ table {
 .c-logo {
   margin-bottom: 24px; }
 
-.c-footer__outer {
+.c-footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 140px; }
+  height: 200px; }
 
-.c-footer__inner {
-  padding-right: 24px;
-  padding-left: 24px;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1200px; }
+.c-footer__wrapper,
+.c-footer__outer {
+  height: 100%; }
+
+.c-footer__outer {
+  background: url("/images/footer_background.png"); }
 
 .c-footer__content {
-  padding: 12px 0;
-  background: white; }
+  padding-top: 80px;
+  color: #606060; }
 
 @media (min-width: 46.25em) {
   .o-layout__item {
