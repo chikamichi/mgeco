@@ -56,7 +56,7 @@ Cette revendication est le gage d&amp;rsquo;une relation de proximité avec nos 
       
       <guid>http://www.mg-ecoconstruction.com/contact/</guid>
       <description>Contactez-nous afin d&amp;rsquo;obtenir un devis estimatif et d&amp;rsquo;engager la réflexion, quel que soit le stade de développement de votre projet.
-SAS MG ECO  Mathieu Thiberville Atelier de fabrication :  32 rue des alisiers (route de Cénevières)  46260 LIMOGNE EN QUERCY contact@mg-ecoconstruction.com  06 74 66 08 92 05 65 21 73 08      </description>
+SAS MG ECO  Mathieu Thiberville Atelier de fabrication :  32 rue des alisiers (route de Cénevières)  46260 LIMOGNE EN QUERCY contact@mg-ecoconstruction.com  06 74 66 08 92 05 65 21 73 08    { &#34;@context&#34;: &#34;http://schema.org&#34;, &#34;@type&#34;: &#34;ContactPage&#34;, &#34;url&#34;: &#34;http://mg-ecoconstruction/contact&#34;, &#34;mainEntity&#34;: { &#34;@type&#34;: &#34;HomeAndConstructionBusiness&#34;, &#34;name&#34;: &#34;</description>
     </item>
     
     <item>

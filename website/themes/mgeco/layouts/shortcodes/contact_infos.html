@@ -21,3 +21,49 @@
     </ul>
   </div>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "ContactPage",
+  "url": "http://mg-ecoconstruction/contact",
+  "mainEntity": {
+    "@type": "HomeAndConstructionBusiness",
+    "name": "{{ .Site.Params.CasualName }}",
+    "image": "http://mg-ecoconstruction.com/images/logo_mg.jpg",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "44.3977773",
+      "longitude": "1.7649764"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ .Site.Params.Address0 }}",
+      "postalCode": "{{ .Site.Params.PostalCode }}",
+      "addressLocality": "{{ .Site.Params.Locality }}",
+      "addressCountry": "FR",
+      "telephone": [
+        "{{ .Site.Params.PhoneLandline }}",
+        "{{ .Site.Params.PhoneMobile }}"
+      ],
+      "email": "{{ .Site.Params.Email }}",
+      "availableLanguage": [
+        "English",
+        "French"
+      ]
+    },
+    "telephone": "{{ .Site.Params.PhoneLandline }}",
+    "hasMap": "{{ .Site.Params.MapURL }}",
+    "logo": "http://mg-ecoconstruction.com/images/logo_mg.jpg",
+    "brand": {
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Mathieu Thiberville"
+    },
+    "legalName": "{{ .Site.Params.CorporateName }}",
+    "description": "{{ .Site.Data.wordings.slogans.activite }} - {{ .Site.Data.wordings.slogans.activites }}",
+    "mainEntityOfPage": "{{ .Site.BaseURL }}"
+  }
+}
+</script>
