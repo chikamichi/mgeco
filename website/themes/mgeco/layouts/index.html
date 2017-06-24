@@ -4,16 +4,16 @@
 
   <div class="c-home__main-entrance  c-me  c-me--narrow">
     <a href="/presentation" class="c-me__link"></a>
-    <a href="{{ .Site.Data.liens.rge.site_officiel }}" class="c-home__rge  c-home-rge">
+    <a href="{{ .Site.Params.Liens.RGE }}" class="c-home__rge  c-home-rge">
       <img class="c-home-rge__logo" src='/images/rge.jpg'>
     </a>
-    <p class="c-home__keywords">{{ .Site.Data.wordings.slogans.activite }} {{ .Site.Data.wordings.slogans.activites }}<p>
+    <p class="c-home__keywords">{{ .Site.Params.activite }}, {{ .Site.Params.activites }}<p>
   </div>
 
   <div class="c-home__main-entrance  c-me  c-me--large">
     <a href="/presentation" class="c-me__link">
-      {{ .Site.Data.wordings.slogans.activite }} {{ .Site.Data.wordings.slogans.activites }}
-      <span class="c-me__image" title="{{ .Site.Data.wordings.slogans.activite }} - {{ .Site.Data.wordings.slogans.activites }}" role="img" aria-label="{{ .Site.Data.wordings.slogans.activite }} - {{ .Site.Data.wordings.slogans.activites }}"></span>
+      {{ .Site.Params.activite }}, {{ .Site.Params.activites }}
+      <span class="c-me__image" title="{{ .Site.Params.activite }}, {{ .Site.Params.activites }}" role="img" aria-label="{{ .Site.Params.activite }}, {{ .Site.Params.activites }}"></span>
     </a>
 
     <div class="c-home__extras  u-clearfix">
@@ -21,7 +21,7 @@
         <p>TODO</p>
       </a>
 
-      <a href="{{ .Site.Data.liens.rge.site_officiel }}" class="c-home__rge  c-home-rge">
+      <a href="{{ .Site.Params.Liens.RGE }}" class="c-home__rge  c-home-rge">
         <img class="c-home-rge__logo" src='/images/rge.jpg'>
       </a>
     </div>
