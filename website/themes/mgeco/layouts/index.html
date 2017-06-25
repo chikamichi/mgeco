@@ -1,30 +1,21 @@
 {{ partial "html_top" . }}
 
-<div class="c-home">
+<div class="c-homepage  o-wrapper">
 
-  <div class="c-home__main-entrance  c-me  c-me--narrow">
-    <a href="/presentation" class="c-me__link"></a>
-    <a href="{{ .Site.Params.Liens.RGE }}" class="c-home__rge  c-home-rge">
-      <img class="c-home-rge__logo" src='/images/rge.jpg'>
-    </a>
-    <p class="c-home__keywords">{{ .Site.Params.activite }}, {{ .Site.Params.activites }}<p>
-  </div>
-
-  <div class="c-home__main-entrance  c-me  c-me--large">
-    <a href="/presentation" class="c-me__link">
+  <a href="/presentation" class="c-homepage__main-entrance  c-hp-me">
+    <h1 class="c-hp-me__logo" title="{{ .Site.Params.activite }}, {{ .Site.Params.activites }}" role="img" aria-label="{{ .Site.Params.activite }}, {{ .Site.Params.activites }}">
       {{ .Site.Params.activite }}, {{ .Site.Params.activites }}
-      <span class="c-me__image" title="{{ .Site.Params.activite }}, {{ .Site.Params.activites }}" role="img" aria-label="{{ .Site.Params.activite }}, {{ .Site.Params.activites }}"></span>
+    </h1>
+  </a>
+
+  <div class="c-homepage__extras  u-clearfix">
+    <a href="/galerie/" class="c-homepage__carousel">
+      <p>TODO</p>
     </a>
 
-    <div class="c-home__extras  u-clearfix">
-      <a href="/galerie/" class="c-home__carousel  c-home-carousel">
-        <p>TODO</p>
-      </a>
-
-      <a href="{{ .Site.Params.Liens.RGE }}" class="c-home__rge  c-home-rge">
-        <img class="c-home-rge__logo" src='/images/rge.jpg'>
-      </a>
-    </div>
+    <a href="{{ .Site.Params.Liens.RGE }}" class="c-homepage__rge  c-homepage-rge">
+      <img class="c-hp-rge__logo" src='/images/rge.jpg'>
+    </a>
   </div>
 
   {{ partial "contact_infos" . }}

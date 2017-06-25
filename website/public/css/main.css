@@ -1469,7 +1469,7 @@ table {
     font-size: 1rem; }
 
 /* ==========================================================================
-   #UI
+   # UI
    ========================================================================== */
 .o-layout__item {
   text-align: center; }
@@ -1581,96 +1581,75 @@ table {
 .c-contact-us__channels {
   font-weight: bold; }
 
-.c-home {
-  width: 90%;
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 24px 0;
-  text-align: center;
-  background: white; }
+/* ==========================================================================
+   # Homepage
+   ========================================================================== */
+.c-homepage {
+  padding: 24px;
+  background: white;
+  text-align: center; }
 
-.c-home__main-entrance {
-  position: relative;
-  color: white; }
-
-.c-me--large {
-  display: none; }
-
-.c-me--narrow .c-me__link {
-  display: block;
-  background: url("/images/bienvenue1.jpg");
+.c-hp-me__logo {
   /*
-  We want a responsive background image, ie. its height must match its changing
+  Responsive Image Replacement:
+  We want a responsive background image, ie. its height must match its evolving
   width. In order to lock the image's aspect ratio along the height axis, with
   respect to its current, fluid width, one may set a padding-top/bottom value,
-  in percentage, equal to the aspect ratio. The trick here lies in the fact that
-  padding percentages are always computed using the element container's *width*
-  as reference.
+  in percentage, equal to the image's fixed aspect ratio. The trick here lies in
+  the fact that vertical padding values, when expressed in percentages, are
+  always computed using the element container's *width* as the reference.
   */
   padding-top: 95.8333333333%;
-  background-size: contain; }
-.c-me--narrow .c-home__rge {
-  display: block;
+  width: 100%;
+  height: 0;
+  text-indent: -9999px;
+  background-image: url("/images/bienvenue1.jpg");
+  background-size: 100%;
+  transition: background 0.1s ease-in-out; }
+
+.c-homepage__carousel {
+  display: none; }
+
+.c-homepage__extras {
   margin: 0 auto;
   max-width: 50%;
-  margin-top: 1em; }
+  margin-bottom: 24px; }
 
 @media (min-width: 40.625em) {
-  .c-home {
-    width: 600px;
+  .c-homepage__main-entrance {
+    display: block;
+    margin: 0 auto;
     max-width: 600px; }
 
-  .c-me--narrow {
-    display: none; }
+  .c-hp-me__logo:hover {
+    background-image: url("/images/bienvenue2.jpg"); }
 
-  .c-me--large {
+  .c-homepage__extras {
+    max-width: 600px; }
+
+  .c-homepage__carousel {
     display: inline; }
 
-  .c-me__link {
-    display: block;
-    height: 575px;
-    color: white; }
-
-  .c-me__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 575px;
-    width: 600px;
-    background: url("/images/bienvenue1.jpg");
-    background-size: 100%;
-    transition: background 0.1s ease-in-out; }
-
-  .c-me__link:hover .c-me__image {
-    background: url("/images/bienvenue2.jpg"); }
-
-  .c-home__extras {
-    padding-bottom: 24px; }
-
-  .c-home__carousel {
+  .c-homepage__carousel {
     position: relative;
-    border: 1px solid black;
     float: left;
+    width: 70%;
     height: 240px;
-    width: 70%; }
-    .c-home__carousel > p {
-      width: 50%;
-      height: 50%;
-      overflow: auto;
-      margin: auto;
+    border: 1px solid black; }
+    .c-homepage__carousel > p {
       position: absolute;
       top: 0;
       left: 0;
       bottom: 0;
-      right: 0; }
+      right: 0;
+      width: 50%;
+      height: 50%;
+      margin: auto;
+      overflow: auto; }
 
-  .c-home__rge {
+  .c-homepage__rge {
     float: right;
-    width: 30%; }
-
-  .c-home-rge_logo {
-    height: 240px;
-    width: 163px; } }
+    width: 30%; } }
 /* ==========================================================================
    Gallery
    ========================================================================== */
