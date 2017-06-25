@@ -38,8 +38,10 @@ Rx.Observable.fromEvent(imgLoad, 'progress')
     return _.filter(instance.images, {isLoaded: true}).length / instance.images.length;
   })
   .subscribe(function(progress) {
-    $galleryProgress.style.width = Math.round(progress * 100) + '%';
-    if (progress == 1)
+    const valuenow = Math.round(progress * 100);
+    $galleryProgress.style.width = valuenow + '%';
+    $galleryProgress.setAttribute('aria-valuenow', valuenow)
+    if (progress >= 1)
       $galleryLoader.style.display = 'none';
   });
 

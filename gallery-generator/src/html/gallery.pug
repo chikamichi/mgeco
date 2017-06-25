@@ -36,14 +36,14 @@ h1.u-h2
         .pswp__caption__center
 
 .c-galleryLoader
-  .c-galleryLoader__progress(role='progressbar')
+  .c-galleryLoader__progress(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='0')
 .c-gallery(itemscope='', itemtype='http://schema.org/ImageGallery')
   each image in images
-    .c-gallery__image(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+    .c-gallery__image(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject', role='img', aria-labelledby=`${image.path}`)
       a.c-gallery__link(href=`/images/gallery/${image.path}`, title=`${image.description}`, itemprop='contentUrl', data-size=`${image.dimensions}`)
         img.c-gallery__thumbnail(src=`/images/gallery/thumbnails/${image.path}`, alt=`${image.description}`, itemprop='thumbnail')
         .c-gallery__caption(itemprop='caption description')
-          span #{image.description}
+          span(id=`${image.path}`) #{image.description}
 | {{ partial "footer" . }}
 script(src='/js/gallery_vendors.js')
 script(src='/js/gallery.js')

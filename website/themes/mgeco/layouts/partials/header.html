@@ -1,11 +1,11 @@
 {{ partial "html_top" . }}
     <div class="o-wrapper  c-mgeco">
       <div class="o-layout">
-        <div class="o-layout__item  c-sidebar  u-1/1  u-1/4@tablet">
+        <div class="o-layout__item  c-sidebar  u-1/1  u-1/4@tablet" role="banner">
           <a href="/presentation/" class="c-logo">
             {{ .Site.Params.activite }}, {{ .Site.Params.activites }}
             <img src="/images/logo_mg.jpg" class="c-logo__image">
           </a>
           {{ partial "nav.html" . }}
         </div>
-        <div class="o-layout__item  c-main-area  u-1/1  u-3/4@tablet">
+        <div class="o-layout__item  c-main-area  u-1/1  u-3/4@tablet" role="main" aria-labelledby="main-area-title">
