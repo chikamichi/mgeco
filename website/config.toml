@@ -21,5 +21,5 @@ title = "MG Éco-construction"
 
   [params.liens]
     RGE = "http://www.developpement-durable.gouv.fr/La-mention-RGE-Reconnu-Garant-de-l.html"
-    mapURL = "https://www.google.com/maps/place/32+Rue+des+Alisiers,+46260+Limogne-en-Quercy,+France/@44.3977773,1.7649764,15z/data=!4m5!3m4!1s0x12acff40b55922a1:0x96ac1ec021e3b1b5!8m2!3d44.403363!4d1.7685394?hl=fr-FR"
-    mapURLembedded = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11402.371029317148!2d1.7634311336899378!3d44.400480880314205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12acff40b55922a1%3A0x96ac1ec021e3b1b5!2s32+Rue+des+Alisiers%2C+46260+Limogne-en-Quercy%2C+France!5e0!3m2!1sfr!2sfr!4v1498260071808"
+    mapURL = "https://www.google.com/maps/place/MG+%C3%A9coconstruction/@44.4005686,1.7685543,17z/data=!4m5!3m4!1s0x12ac564fe0a6d721:0x39547eaab69564d7!8m2!3d44.4032985!4d1.7686893?hl=fr-FR"
+    mapURLembedded = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2850.585871461939!2d1.7688118001955773!3d44.40062221044975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ac564fe0a6d721%3A0x39547eaab69564d7!2sMG+%C3%A9coconstruction!5e0!3m2!1sfr!2sfr!4v1500838659018"
