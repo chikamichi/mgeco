@@ -1,0 +1,20 @@
+{{ partial "header" . }}
+  <h2>{{ .Title }}</h2>
+  <p>{{ .Content }}</p>
+  <ul class="c-reflinks  o-layout">
+    <!-- Ranges through content/liens/*.md -->
+    {{ range where .Data.Pages "Section" "liens" }}
+      <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
+        <h3 class="c-reflink__title  u-h4">
+          <a href="{{ .Params.exturl }}" class="c-reflink__exturl">
+            <img src="/images/liens/{{ .Params.image }}" class="c-reflink__logo"></img>
+            {{ .Title }}
+          </a>
+        </h3>
+        <main class="c-reflink__content">
+          {{ .Content }}
+        </main>
+      </li>
+    {{ end }}
+  </ul>
+{{ partial "footer" . }}

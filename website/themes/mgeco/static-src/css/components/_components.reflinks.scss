@@ -1,0 +1,24 @@
+.c-reflinks {
+  list-style-type: none;
+}
+
+
+.c-reflink {
+  margin-bottom: $spacing;
+}
+
+
+.c-reflink__exturl {
+  display: inline-block;
+  color: black;
+
+  &:hover {
+    text-decoration: none;
+    color: grey;
+  }
+}
+
+
+.c-reflink__logo {
+  margin-right: $spacing/2;
+}

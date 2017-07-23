@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pour poursuivre vos recherches… on MG Éco-construction</title>
+    <link>http://www.mg-ecoconstruction.com/link/</link>
+    <description>Recent content in Pour poursuivre vos recherches… on MG Éco-construction</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    
+	<atom:link href="http://www.mg-ecoconstruction.com/link/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ENERCOOP</title>
+      <link>http://www.mg-ecoconstruction.com/link/enercoop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.mg-ecoconstruction.com/link/enercoop/</guid>
+      <description>Notre fournisseur d&amp;rsquo;électricité.
+Branchez-vous à une offre de fourniture d&amp;rsquo;électricité 100% renouvelable et 100% coopérative!</description>
+    </item>
+    
+  </channel>
+</rss>

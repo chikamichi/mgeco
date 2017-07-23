@@ -1708,6 +1708,22 @@ table {
   color: black;
   word-break: break-word; }
 
+.c-reflinks {
+  list-style-type: none; }
+
+.c-reflink {
+  margin-bottom: 24px; }
+
+.c-reflink__exturl {
+  display: inline-block;
+  color: black; }
+  .c-reflink__exturl:hover {
+    text-decoration: none;
+    color: grey; }
+
+.c-reflink__logo {
+  margin-right: 12px; }
+
 /* ==========================================================================
    #CLEARFIX
    ========================================================================== */

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pour poursuivre vos recherches… on MG Éco-construction</title>
+    <link>http://www.mg-ecoconstruction.com/liens/</link>
+    <description>Recent content in Pour poursuivre vos recherches… on MG Éco-construction</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    
+	<atom:link href="http://www.mg-ecoconstruction.com/liens/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ADEME</title>
+      <link>http://www.mg-ecoconstruction.com/liens/ademe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.mg-ecoconstruction.com/liens/ademe/</guid>
+      <description>Pour suivre législations, aides au financement des travaux, subventions et prescriptions institutionnelles.</description>
+    </item>
+    
+    <item>
+      <title>ENERCOOP</title>
+      <link>http://www.mg-ecoconstruction.com/liens/enercoop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.mg-ecoconstruction.com/liens/enercoop/</guid>
+      <description>Notre fournisseur d&amp;rsquo;électricité.
+Branchez-vous à une offre de fourniture d&amp;rsquo;électricité 100% renouvelable et 100% coopérative !</description>
+    </item>
+    
+    <item>
+      <title>Eautarcie</title>
+      <link>http://www.mg-ecoconstruction.com/liens/eautarcie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.mg-ecoconstruction.com/liens/eautarcie/</guid>
+      <description>Site d&amp;rsquo;information très documenté, basé sur les travaux de Josef Orszagh sur la gestion durable et écologique de l&amp;rsquo;eau.
+Récupération des eaux pluviales, potabilisation de l&amp;rsquo;eau, toilettes sèches, etc.</description>
+    </item>
+    
+    <item>
+      <title>L&#39;association Eau Vivante</title>
+      <link>http://www.mg-ecoconstruction.com/liens/eau_vivante/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.mg-ecoconstruction.com/liens/eau_vivante/</guid>
+      <description>Se mobilise pour proposer un mode de gestion écologique de l’eau qui considère le problème dans sa globalité : Valorisation de l’eau de pluie, Toilettes sèches, Pratique du Compostage, Phyto-épuration.</description>
+    </item>
+    
+    <item>
+      <title>L&#39;association Empreinte</title>
+      <link>http://www.mg-ecoconstruction.com/liens/empreinte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.mg-ecoconstruction.com/liens/empreinte/</guid>
+      <description>Donne des informations sur la conception bioclimatique et les matériaux écologiques, et propose une bonne bibliographie.</description>
+    </item>
+    
+    <item>
+      <title>Le label RGE</title>
+      <link>http://www.mg-ecoconstruction.com/liens/rge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.mg-ecoconstruction.com/liens/rge/</guid>
+      <description>Votre artisan doit être labelisé pour pouvoir obtenir des aides institutionnelles (prêts à taux 0 et crédits d&amp;rsquo;impôts).
+Cliquez sur le logo RGE pour accéder au portail &amp;ldquo;renovation-info-service.gouv&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Quercy Énergie</title>
+      <link>http://www.mg-ecoconstruction.com/liens/quercy_energie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.mg-ecoconstruction.com/liens/quercy_energie/</guid>
+      <description>Agence locale de l&amp;rsquo;énergie de Cahors, prodiguant conseils et informations sur les modes de chauffage, l&amp;rsquo;isolation, les rénovation énergétiques, les aides, etc. À rencontrer en préalable aux projets.</description>
+    </item>
+    
+    <item>
+      <title>Terre Vivante</title>
+      <link>http://www.mg-ecoconstruction.com/liens/terre_vivante/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.mg-ecoconstruction.com/liens/terre_vivante/</guid>
+      <description>Site généraliste sur l&amp;rsquo;éco-construction, qui présente les matériaux, les isolants, etc. Le point est fait régulièrement sur les réglementations thermiques et les aides.</description>
+    </item>
+    
+  </channel>
+</rss>
