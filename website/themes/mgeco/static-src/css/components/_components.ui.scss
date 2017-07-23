@@ -18,23 +18,18 @@
 
 
 .c-nav {
-  margin: $spacing*2 0;
+  padding: 0 $spacing/2;
 }
 
 
 .c-logo {
   position: relative;
   display: block;
-  height: 299px;
   color: white;
 }
 
 
 .c-logo__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 299px;
   width: 250px;
 }
 
@@ -103,6 +98,12 @@
     // Resetting inuitcss' o-wrapper's horizontal right padding, so as to stay
     // perfectly centered within the browser window.
     padding-right: 0;
+  }
+
+
+  .c-logo__image {
+    width: 100%;
+    max-width: 100%;
   }
 
 

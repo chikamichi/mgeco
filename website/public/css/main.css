@@ -1479,19 +1479,14 @@ table {
   padding-top: 24px; }
 
 .c-nav {
-  margin: 48px 0; }
+  padding: 0 12px; }
 
 .c-logo {
   position: relative;
   display: block;
-  height: 299px;
   color: white; }
 
 .c-logo__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 299px;
   width: 250px; }
 
 .c-sidebar__link {
@@ -1537,6 +1532,10 @@ table {
 
   .c-mgeco {
     padding-right: 0; }
+
+  .c-logo__image {
+    width: 100%;
+    max-width: 100%; }
 
   .c-main-area {
     min-height: 1000px;
