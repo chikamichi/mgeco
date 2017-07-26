@@ -1726,7 +1726,8 @@ table {
     color: grey; }
 
 .c-reflink__logo {
-  margin-right: 12px; }
+  margin-right: 12px;
+  max-height: 80px; }
 
 /* ==========================================================================
    #CLEARFIX

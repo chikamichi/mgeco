@@ -1,10 +1,12 @@
 +++
 title = "ENERCOOP"
 description = "Fournisseur français d'électricité d'origine renouvelable"
-image = "logo_enercoop.jpg"
-exturl = "http://enercoop.fr/"
+image = "logo_enercoop.png"
+exturl = "https://www.enercoop.fr/nos-offres/particuliers"
+type = "fournisseur"
+hidetitle = true
 +++
 
 Notre fournisseur d'électricité.
 
-Branchez-vous à une offre de fourniture d'électricité 100% renouvelable et 100% coopérative !
+Branchez-vous sur une  énergie renouvelable, coopérative et locale !

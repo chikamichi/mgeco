@@ -1,14 +1,68 @@
 {{ partial "header" . }}
   <h2>{{ .Title }}</h2>
   <p>{{ .Content }}</p>
+
+  <!-- Looping through content/liens/*.md, grouping by type -->
+
+  <h3>Documentation et informations</h3>
+
+  <h4>Les aides à la rénovation</h4>
+
   <ul class="c-reflinks  o-layout">
-    <!-- Ranges through content/liens/*.md -->
-    {{ range where .Data.Pages "Section" "liens" }}
+    {{ range where (where .Data.Pages "Section" "liens" ) ".Params.type" "=" "aides" }}
       <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
         <h3 class="c-reflink__title  u-h4">
           <a href="{{ .Params.exturl }}" class="c-reflink__exturl">
-            <img src="/images/liens/{{ .Params.image }}" class="c-reflink__logo"></img>
-            {{ .Title }}
+            {{ if isset .Params "image" }}
+              <img src="/images/liens/{{ .Params.image }}" class="c-reflink__logo"></img>
+            {{ end }}
+            {{ if not (isset .Params "hidetitle") }}
+              {{ .Title }}
+            {{ end }}
+          </a>
+        </h3>
+        <main class="c-reflink__content">
+          {{ .Content }}
+        </main>
+      </li>
+    {{ end }}
+  </ul>
+
+  <h4>L'eau, les assainissements écologiques</h4>
+
+  <ul class="c-reflinks  o-layout">
+    {{ range where (where .Data.Pages "Section" "liens" ) ".Params.type" "=" "ecologie" }}
+      <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
+        <h3 class="c-reflink__title  u-h4">
+          <a href="{{ .Params.exturl }}" class="c-reflink__exturl">
+            {{ if isset .Params "image" }}
+              <img src="/images/liens/{{ .Params.image }}" class="c-reflink__logo"></img>
+            {{ end }}
+            {{ if not (isset .Params "hidetitle") }}
+              {{ .Title }}
+            {{ end }}
+          </a>
+        </h3>
+        <main class="c-reflink__content">
+          {{ .Content }}
+        </main>
+      </li>
+    {{ end }}
+  </ul>
+
+  <h3>Fournisseurs</h3>
+
+  <ul class="c-reflinks  o-layout">
+    {{ range where (where .Data.Pages "Section" "liens" ) ".Params.type" "=" "fournisseur" }}
+      <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
+        <h3 class="c-reflink__title  u-h4">
+          <a href="{{ .Params.exturl }}" class="c-reflink__exturl">
+            {{ if isset .Params "image" }}
+              <img src="/images/liens/{{ .Params.image }}" class="c-reflink__logo"></img>
+            {{ end }}
+            {{ if not (isset .Params "hidetitle") }}
+              {{ .Title }}
+            {{ end }}
           </a>
         </h3>
         <main class="c-reflink__content">
