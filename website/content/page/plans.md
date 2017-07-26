@@ -1,5 +1,6 @@
 +++
-title = "Concevoir votre projet"
+title = "Concevoir"
+subtitle = "votre projet"
 description = "Plans & études thermiques"
 url = "votre-projet"
 +++

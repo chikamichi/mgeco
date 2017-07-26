@@ -1,5 +1,6 @@
 +++
-title = "Qui sommes-nous ?"
+title = "Qui sommes"
+subtitle = "nous ?"
 description = "Présentation"
 url = "presentation"
 +++

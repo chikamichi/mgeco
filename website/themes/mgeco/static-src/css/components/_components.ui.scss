@@ -58,6 +58,20 @@
 }
 
 
+.c-main-area__title,
+.c-main-area__pretitle,
+.c-main-area__subtitle {
+  display: block;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+
+.c-main-area__subtitle {
+  color: $green;
+}
+
+
 .c-footer__outer {
   margin-bottom: $spacing;
 }

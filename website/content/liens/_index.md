@@ -1,4 +1,5 @@
 +++
-title = "Pour poursuivre vos recherches…"
+title = "Poursuivre vos"
+subtitle = "recherches"
 description = "Liens"
 +++

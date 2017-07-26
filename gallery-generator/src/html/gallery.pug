@@ -1,6 +1,9 @@
 | {{ partial "header" . }}
-h1.u-h2
-  | {{- .Title -}}
+h1#main-area-title.c-main-area__title.u-h1
+  span.c-main-area__pretitle
+    | {{- .Title -}}
+  span.c-main-area__subtitle
+    | {{- .Params.subtitle -}}
 .c-main-content
   p
     | {{ .Content }}

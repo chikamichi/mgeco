@@ -1,5 +1,6 @@
 +++
-title = "Notre éthique"
+title = "Notre"
+subtitle = "éthique"
 description = "Éthique"
 url = "ethique"
 +++

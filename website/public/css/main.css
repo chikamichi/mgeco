@@ -1507,6 +1507,16 @@ table {
 .c-logo {
   margin-bottom: 24px; }
 
+.c-main-area__title,
+.c-main-area__pretitle,
+.c-main-area__subtitle {
+  display: block;
+  text-transform: uppercase;
+  line-height: 1; }
+
+.c-main-area__subtitle {
+  color: #669900; }
+
 .c-footer__outer {
   margin-bottom: 24px; }
 

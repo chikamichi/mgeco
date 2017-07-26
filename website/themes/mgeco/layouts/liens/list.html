@@ -1,5 +1,12 @@
 {{ partial "header" . }}
-  <h2>{{ .Title }}</h2>
+  <h1 class="c-main-area__title  u-h1" id="main-area-title">
+    {{ if isset .Params "subtitle" }}
+      <span class="c-main-area__pretitle">{{- .Title -}}</span>
+      <span class="c-main-area__subtitle">{{- .Params.subtitle -}}</span>
+    {{ else }}
+      {{- .Title -}}
+    {{ end }}
+  </h1>
   <p>{{ .Content }}</p>
 
   <!-- Looping through content/liens/*.md, grouping by type -->

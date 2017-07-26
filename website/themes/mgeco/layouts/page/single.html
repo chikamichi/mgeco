@@ -1,6 +1,11 @@
 {{ partial "header" . }}
-  <h1 class="u-h1" id="main-area-title">
-    {{- .Title -}}
+  <h1 class="c-main-area__title  u-h1" id="main-area-title">
+    {{ if isset .Params "subtitle" }}
+      <span class="c-main-area__pretitle">{{- .Title -}}</span>
+      <span class="c-main-area__subtitle">{{- .Params.subtitle -}}</span>
+    {{ else }}
+      {{- .Title -}}
+    {{ end }}
   </h1>
   <main class="c-main-content">
     {{ .Content }}

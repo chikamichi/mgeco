@@ -1,5 +1,6 @@
 +++
-title = "Nos réalisations en image"
+title = "Nos réalisations"
+subtitle = "en image"
 description = "Galerie"
 url = "galerie"
 type = "galerie"
