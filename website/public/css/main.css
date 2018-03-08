@@ -700,7 +700,7 @@ img[height] {
    #LINKS
    ========================================================================== */
 a {
-  color: #669900; }
+  color: #90993F; }
 
 a:hover {
   text-decoration: underline; }
@@ -1557,18 +1557,11 @@ table {
 
 .c-sidebar__link {
   text-transform: uppercase;
-  font-size: 0.85rem; }
+  color: black;
+  font-weight: bold; }
   .c-sidebar__link--active {
-    color: black;
+    color: #90993F;
     font-weight: bold; }
-    .c-sidebar__link--active:after {
-      content: '>';
-      display: inline-block;
-      padding-left: 0.5em;
-      color: #D2D2D2;
-      font-size: 12.8px;
-      font-size: 0.8rem;
-      line-height: 1.875; }
 
 .c-logo {
   margin-bottom: 24px; }
@@ -1581,7 +1574,7 @@ table {
   line-height: 1; }
 
 .c-main-area__subtitle {
-  color: #669900; }
+  color: #90993F; }
 
 .c-footer__outer {
   margin-bottom: 24px; }
@@ -1650,7 +1643,7 @@ table {
   font-size: 0.85em; }
 
 .c-contact-infos__email {
-  color: #669900; }
+  color: #90993F; }
 
 .c-contact-us {
   text-align: center;
@@ -1736,12 +1729,12 @@ table {
    Gallery
    ========================================================================== */
 .c-galleryLoader {
-  border: 1px solid #669900;
+  border: 1px solid #90993F;
   width: 100%;
   height: 8px; }
 
 .c-galleryLoader__progress {
-  background: #669900;
+  background: #90993F;
   width: 0;
   height: 100%; }
 

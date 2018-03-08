@@ -51,19 +51,12 @@
 
 .c-sidebar__link {
   text-transform: uppercase;
-  font-size: 0.85rem;
+  color: black;
+  font-weight: bold;
 
   &--active {
-    color: black;
+    color: $green;
     font-weight: bold;
-
-    &:after {
-      content: '>';
-      display: inline-block;
-      padding-left: 0.5em;
-      color: $grey;
-      @include inuit-font-size($inuit-global-font-size*0.8);
-    }
   }
 }
 
