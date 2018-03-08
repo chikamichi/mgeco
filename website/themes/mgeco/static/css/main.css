@@ -1601,6 +1601,7 @@ table {
 
   .c-main-area {
     min-height: 1000px;
+    padding-left: 4em;
     padding-right: 24px;
     padding-bottom: 200px; }
 
