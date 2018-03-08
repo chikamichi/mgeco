@@ -146,24 +146,21 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
 html {
-  font-family: sans-serif;
-  /* 1 */
   line-height: 1.15;
-  /* 2 */
+  /* 1 */
   -ms-text-size-adjust: 100%;
-  /* 3 */
+  /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 3 */ }
+  /* 2 */ }
 
 /* Sections
    ========================================================================== */
@@ -245,15 +242,7 @@ a {
   /* 2 */ }
 
 /**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
-a:active,
-a:hover {
-  outline-width: 0; }
-
-/**
- * 1. Remove the bottom border in Firefox 39-.
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
@@ -424,12 +413,10 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText; }
 
 /**
- * Change the border, margin, and padding in all browsers (opinionated).
+ * Correct the padding in Firefox.
  */
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.75em 0.625em; }
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -605,7 +592,6 @@ a {
  * Always declare margins in the same direction:
  * csswizardry.com/2012/06/single-direction-margin-declarations
  */
-/* stylelint-disable selector-list-comma-newline-after */
 address,
 h1, h2, h3, h4, h5, h6,
 blockquote, p, pre,
@@ -614,17 +600,14 @@ figure,
 hr,
 table,
 fieldset {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 24px; }
 
 /**
  * Consistent indentation for lists.
  */
 dd, ol, ul {
-  margin-left: 24px;
-  margin-left: 1.5rem; }
+  margin-left: 24px; }
 
-/* stylelint-enable selector-list-comma-newline-after */
 /* ==========================================================================
    #PAGE
    ========================================================================== */
@@ -660,22 +643,22 @@ html {
 h1 {
   font-size: 30px;
   font-size: 1.875rem;
-  line-height: 1.6; }
+  line-height: 1.2; }
 
 h2 {
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1; }
+  line-height: 1.25; }
 
 h3 {
   font-size: 20px;
   font-size: 1.25rem;
-  line-height: 1.2; }
+  line-height: 1.5; }
 
 h4 {
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 1.33333; }
+  line-height: 1.3333333333; }
 
 h5 {
   font-size: 16px;
@@ -706,12 +689,11 @@ img {
   /* [3] */ }
 
 /**
- * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
- *    not make the image fluid.
+ * If a `width` and/or `height` attribute has been explicitly defined, let’s
+ * not make the image fluid.
  */
 img[width],
 img[height] {
-  /* [1] */
   max-width: none; }
 
 /* ==========================================================================
@@ -734,13 +716,11 @@ table {
   /* [1] */ }
 
 /* ==========================================================================
-   #WRAPPERS
+   #WRAPPER
    ========================================================================== */
 /**
  * Page-level constraining and wrapping elements.
  */
-/* stylelint-disable */
-/* stylelint-enable */
 .o-wrapper {
   padding-right: 24px;
   padding-left: 24px;
@@ -751,24 +731,6 @@ table {
     content: "" !important;
     display: block !important;
     clear: both !important; }
-
-/* Size variants.
-   ========================================================================== */
-.o-wrapper--tiny {
-  padding-right: 6px;
-  padding-left: 6px; }
-
-.o-wrapper--small {
-  padding-right: 12px;
-  padding-left: 12px; }
-
-.o-wrapper--large {
-  padding-right: 48px;
-  padding-left: 48px; }
-
-.o-wrapper--huge {
-  padding-right: 96px;
-  padding-left: 96px; }
 
 /* ==========================================================================
    #LAYOUT
@@ -820,7 +782,7 @@ table {
  *
  * There are plenty more options available to us: explore them below.
  */
-/* Default/mandatory classes.
+/* Default/mandatory classes
    ========================================================================== */
 /**
  * 1. Allows us to use the layout object on any type of element.
@@ -867,8 +829,13 @@ table {
   /* [6] */
   font-size: 1rem; }
 
-/* Gutter size modifiers.
+/* Gutter size modifiers
    ========================================================================== */
+.o-layout--flush {
+  margin-left: 0; }
+  .o-layout--flush > .o-layout__item {
+    padding-left: 0; }
+
 .o-layout--tiny {
   margin-left: -6px; }
   .o-layout--tiny > .o-layout__item {
@@ -889,12 +856,7 @@ table {
   .o-layout--huge > .o-layout__item {
     padding-left: 96px; }
 
-.o-layout--flush {
-  margin-left: 0; }
-  .o-layout--flush > .o-layout__item {
-    padding-left: 0; }
-
-/* Vertical alignment modifiers.
+/* Vertical alignment modifiers
    ========================================================================== */
 /**
  * Align all grid items to the middles of each other.
@@ -908,7 +870,24 @@ table {
 .o-layout--bottom > .o-layout__item {
   vertical-align: bottom; }
 
-/* Fill order modifiers.
+/**
+ * Stretch all grid items of each row to have an equal-height.
+ * Please be aware that this modifier class doesn’t take any effect in IE9 and
+ * below and other older browsers due to the lack of `display: flex` support.
+ */
+.o-layout--stretch {
+  display: flex;
+  flex-wrap: wrap; }
+  .o-layout--stretch > .o-layout__item {
+    display: flex; }
+  .o-layout--stretch.o-layout--center {
+    justify-content: center; }
+  .o-layout--stretch.o-layout--right {
+    justify-content: flex-end; }
+  .o-layout--stretch.o-layout--left {
+    justify-content: flex-start; }
+
+/* Fill order modifiers
    ========================================================================== */
 /**
  * Fill up the layout system from the centre.
@@ -927,13 +906,29 @@ table {
     text-align: left; }
 
 /**
+ * Fill up the layout system from the left-hand side. This will likely only be
+ * needed when using in conjunction with `.o-layout--reverse`.
+ */
+.o-layout--left {
+  text-align: left; }
+  .o-layout--left > .o-layout__item {
+    text-align: left; }
+
+/**
  * Reverse the rendered order of the grid system.
  */
 .o-layout--reverse {
   direction: rtl; }
   .o-layout--reverse > .o-layout__item {
-    direction: ltr;
-    text-align: left; }
+    direction: ltr; }
+
+/* Auto-widths modifier
+   ========================================================================== */
+/**
+ * Cause layout items to take up a non-explicit amount of width.
+ */
+.o-layout--auto > .o-layout__item {
+  width: auto; }
 
 /* ==========================================================================
    #MEDIA
@@ -968,6 +963,10 @@ table {
  * Modify the amount of space between our image and our text. We also have
  * reversible options for all available sizes.
  */
+.o-media--flush > .o-media__img {
+  margin-right: 0;
+  margin-left: 0; }
+
 .o-media--tiny > .o-media__img {
   margin-right: 6px; }
 .o-media--tiny.o-media--reverse > .o-media__img {
@@ -999,12 +998,6 @@ table {
   margin-right: 0;
   margin-left: 24px; }
 
-/* Gutterless media objects
-   ========================================================================== */
-.o-media--flush > .o-media__img {
-  margin-right: 0;
-  margin-left: 0; }
-
 /* ==========================================================================
    #FLAG
    ========================================================================== */
@@ -1018,12 +1011,15 @@ table {
  * 1. Allows us to control vertical alignments.
  * 2. Force the object to be the full width of its parent. Combined with [1],
  *    this makes the object behave in a quasi-`display: block;` manner.
+ * 3. Reset inherited `border-spacing` declarations.
  */
 .o-flag {
   display: table;
   /* [1] */
   width: 100%;
-  /* [2] */ }
+  /* [2] */
+  border-spacing: 0;
+  /* [3] */ }
 
 /**
  * Items within a flag object. There should only ever be one of each.
@@ -1048,6 +1044,20 @@ table {
   padding-right: 24px;
   /**
    * 1. Fixes problem with images disappearing.
+   *
+   *    The direct child selector '>' needs to remain in order for nested flag
+   *    objects to not inherit their parent’s formatting. In case the image tag
+   *    is wrapped into another tag, e.g. an anchor for linking reasons, it will
+   *    disappear. In that case try wrapping the whole o-flag__img object into
+   *    an anchor tag.
+   *
+   *    E.g.:
+   *
+   *      <a href="/">
+   *        <div class="o-flag__img">
+   *          <img src="./link/to/image.jpg" alt="image alt text">
+   *        </div>
+   *      </a>
    */ }
   .o-flag__img > img {
     max-width: none;
@@ -1065,8 +1075,12 @@ table {
   .o-flag__body > :last-child {
     margin-bottom: 0; }
 
-/* Size variants.
+/* Size variants
    ========================================================================== */
+.o-flag--flush > .o-flag__img {
+  padding-right: 0;
+  padding-left: 0; }
+
 .o-flag--tiny > .o-flag__img {
   padding-right: 6px; }
 .o-flag--tiny.o-flag--reverse > .o-flag__img {
@@ -1091,11 +1105,7 @@ table {
   padding-right: 0;
   padding-left: 96px; }
 
-.o-flag--flush > .o-flag__img {
-  padding-right: 0;
-  padding-left: 0; }
-
-/* Reversed flag.
+/* Reversed flag
    ========================================================================== */
 /**
  * 1. Swap the rendered direction of the object…
@@ -1115,7 +1125,7 @@ table {
     padding-left: 24px;
     /* [3] */ }
 
-/* Alignment variants.
+/* Alignment variants
    ========================================================================== */
 /**
  * Vertically align the image- and body-content differently. Defaults to middle.
@@ -1132,11 +1142,17 @@ table {
    #LIST-BARE
    ========================================================================== */
 /**
- * Strip list-like appearance from lists by removing their bullets, and any
+ * Strip list-like appearance from lists by removing their bullets and any
  * indentation.
+ *
+ * Note: Declaring the item class might not be necessary everywhere,
+ * but is for example in <dl> lists for the <dd> children.
  */
 .o-list-bare {
   list-style: none;
+  margin-left: 0; }
+
+.o-list-bare__item {
   margin-left: 0; }
 
 /* ==========================================================================
@@ -1151,24 +1167,6 @@ table {
 
 .o-list-inline__item {
   display: inline-block; }
-
-/* Delimited list.
-   ========================================================================== */
-/**
- * By default, applying this class will comma separate your list items. You can
- * change the delimiter by predefining the following variable:
- */
-/**
- * 1. Fallback for old IEs not supporting `rem` values.
- */
-.o-list-inline--delimited {
-  font-size: 0; }
-  .o-list-inline--delimited > .o-list-inline__item {
-    font-size: 16px;
-    /* [1] */
-    font-size: 1rem; }
-  .o-list-inline--delimited > .o-list-inline__item + .o-list-inline__item:before {
-    content: ", "; }
 
 /* ==========================================================================
    #BOX
@@ -1220,7 +1218,7 @@ table {
 
 .o-block__img {
   margin-bottom: 24px;
-  /* Size variants.
+  /* Size variants
      ====================================================================== */ }
   .o-block--flush > .o-block__img {
     margin-bottom: 0; }
@@ -1236,7 +1234,7 @@ table {
 .o-block__body {
   display: block; }
 
-/* Alignment variants.
+/* Alignment variants
    ========================================================================== */
 .o-block--right {
   text-align: right; }
@@ -1253,12 +1251,11 @@ table {
  *
  * http://alistapart.com/article/creating-intrinsic-ratios-for-video
  *
- * 1. Default cropping is a 1:1 ratio (i.e. a perfect square).
+ * 1. Default is a 1:1 ratio (i.e. a perfect square).
  */
 .o-ratio {
   position: relative;
-  display: block;
-  overflow: hidden; }
+  display: block; }
   .o-ratio:before {
     content: "";
     display: block;
@@ -1277,13 +1274,12 @@ table {
   height: 100%;
   width: 100%; }
 
-/* stylelint-disable */
 /* Ratio variants.
    ========================================================================== */
 /**
  * Generate a series of ratio classes to be used like so:
  *
- *   <div class="o-ratio  o-ratio--16:9">
+ *   <div class="o-ratio  o-ratio--golden-ratio">
  *
  */
 .o-ratio--2\:1:before {
@@ -1295,7 +1291,19 @@ table {
 .o-ratio--16\:9:before {
   padding-bottom: 56.25%; }
 
-/* stylelint-enable */
+/* Contain modifier.
+   ========================================================================== */
+/**
+ * Only works with image content.
+ * Contains the image to the boundaries, without cropping or stretching it.
+ */
+.o-ratio--img-contain > .o-ratio__content:before {
+  height: auto;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto; }
+
 /* ==========================================================================
    #CROP
    ========================================================================== */
@@ -1331,26 +1339,55 @@ table {
 /**
  * We can position the media in different locations within the cropping area.
  */
-.o-crop__content--right {
-  right: 0;
-  left: auto; }
+.o-crop__content--left-top {
+  left: 0; }
 
-.o-crop__content--bottom {
+.o-crop__content--left-center {
+  top: 50%;
+  transform: translateY(-50%); }
+
+.o-crop__content--left-bottom {
   top: auto;
   bottom: 0; }
 
-.o-crop__content--center {
+.o-crop__content--right-top {
+  right: 0;
+  left: auto; }
+
+.o-crop__content--right-center {
+  top: 50%;
+  right: 0;
+  left: auto;
+  transform: translateY(-50%); }
+
+.o-crop__content--right-bottom {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto; }
+
+.o-crop__content--center-top {
+  left: 50%;
+  transform: translateX(-50%); }
+
+.o-crop__content--center,
+.o-crop__content--center-center {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
 
-/* stylelint-disable */
-/* Crop-ratio variants.
+.o-crop__content--center-bottom {
+  top: auto;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); }
+
+/* Crop-ratio variants
    ========================================================================== */
 /**
  * Generate a series of crop classes to be used like so:
  *
- *   <div class="o-crop  o-crop--16:9">
+ *   <div class="o-crop  o-crop--golden-ratio">
  *
  */
 .o-crop--2\:1 {
@@ -1362,9 +1399,17 @@ table {
 .o-crop--16\:9 {
   padding-bottom: 56.25%; }
 
-/* stylelint-enable */
+/* Fill modifier
+   ========================================================================== */
+/**
+ * Content stretches to fill it's container while maintaining aspect-ratio.
+ */
+.o-crop--fill > .o-crop__content {
+  min-height: 100%;
+  min-width: 100%; }
+
 /* ==========================================================================
-   #TABLES
+   #TABLE
    ========================================================================== */
 /**
  * A simple object for manipulating the structure of HTML `table`s.
@@ -1372,7 +1417,7 @@ table {
 .o-table {
   width: 100%; }
 
-/* Equal-width table cells.
+/* Equal-width table cells
    ========================================================================== */
 /**
  * `table-layout: fixed` forces all cells within a table to occupy the same
@@ -1384,7 +1429,7 @@ table {
 .o-table--fixed {
   table-layout: fixed; }
 
-/* Size variants.
+/* Size variants
    ========================================================================== */
 .o-table--tiny th,
 .o-table--tiny td {
@@ -1424,29 +1469,35 @@ table {
 
 /**
  * 1. Cause children to adopt table-like structure.
+ * 2. Default item alignment is with the tops of each other.
  */
 .o-pack__item {
   display: table-cell;
   /* [1] */
-  /* Vertical alignment variants.
+  vertical-align: top;
+  /* [2] */
+  /* Vertical alignment variants
      ====================================================================== */ }
   .o-pack--middle > .o-pack__item {
     vertical-align: middle; }
   .o-pack--bottom > .o-pack__item {
     vertical-align: bottom; }
 
-/* Unequal-width items.
+/* Unequal-width items
    ========================================================================== */
 .o-pack--auto {
   table-layout: auto; }
 
-/* Size variants.
+/* Size variants
    ========================================================================== */
 .o-pack--tiny {
   border-spacing: 6px; }
 
 .o-pack--small {
   border-spacing: 12px; }
+
+.o-pack--default {
+  border-spacing: 24px; }
 
 .o-pack--large {
   border-spacing: 48px; }
@@ -1456,9 +1507,9 @@ table {
 
 /* Reversed order packs
    ========================================================================== */
-.o-pack--rev {
+.o-pack--reverse {
   direction: rtl; }
-  .o-pack--rev > .o-pack__item {
+  .o-pack--reverse > .o-pack__item {
     direction: ltr; }
 
 /* Zero-spaced list.
@@ -1487,7 +1538,22 @@ table {
   color: white; }
 
 .c-logo__image {
-  width: 250px; }
+  /*
+  Responsive Image Replacement:
+  We want a responsive background image, ie. its height must match its evolving
+  width. In order to lock the image's aspect ratio along the height axis, with
+  respect to its current, fluid width, one may set a padding-top/bottom value,
+  in percentage, equal to the image's fixed aspect ratio. The trick here lies in
+  the fact that vertical padding values, when expressed in percentages, are
+  always computed using the element container's *width* as the reference.
+  */
+  padding-top: 129.7101149%;
+  width: 100%;
+  height: 0;
+  text-indent: -9999px;
+  background-image: url("/images/logo_mg.jpg");
+  background-size: 100%;
+  transition: background 0.1s ease-in-out; }
 
 .c-sidebar__link {
   text-transform: uppercase;
@@ -1536,6 +1602,9 @@ table {
   .c-logo__image {
     width: 100%;
     max-width: 100%; }
+
+  .c-logo__image:hover {
+    background-image: url("/images/logo_mg2.jpg"); }
 
   .c-main-area {
     min-height: 1000px;
@@ -1704,7 +1773,7 @@ table {
   text-align: center;
   background: white;
   background: rgba(255, 255, 255, 0.6);
-  transition: 0.33333s;
+  transition: 0.3333333333s;
   opacity: 0; }
 
 .c-gallery__image:hover .c-gallery__caption {
@@ -1793,8 +1862,8 @@ table {
   width: 100% !important; }
 
 /**
-* 1. Reset any leftover or conflicting `left`/`right` values.
-*/
+ * 1. Reset any leftover or conflicting `left`/`right` values.
+ */
 .u-push-1\/1 {
   position: relative !important;
   right: auto !important;
@@ -1811,8 +1880,8 @@ table {
   width: 50% !important; }
 
 /**
-* 1. Reset any leftover or conflicting `left`/`right` values.
-*/
+ * 1. Reset any leftover or conflicting `left`/`right` values.
+ */
 .u-push-1\/2 {
   position: relative !important;
   right: auto !important;
@@ -1829,8 +1898,8 @@ table {
   width: 100% !important; }
 
 /**
-* 1. Reset any leftover or conflicting `left`/`right` values.
-*/
+ * 1. Reset any leftover or conflicting `left`/`right` values.
+ */
 .u-push-2\/2 {
   position: relative !important;
   right: auto !important;
@@ -1844,38 +1913,38 @@ table {
   /* [1] */ }
 
 .u-1\/3 {
-  width: 33.33333% !important; }
+  width: 33.3333333333% !important; }
 
 /**
-* 1. Reset any leftover or conflicting `left`/`right` values.
-*/
+ * 1. Reset any leftover or conflicting `left`/`right` values.
+ */
 .u-push-1\/3 {
   position: relative !important;
   right: auto !important;
   /* [1] */
-  left: 33.33333% !important; }
+  left: 33.3333333333% !important; }
 
 .u-pull-1\/3 {
   position: relative !important;
-  right: 33.33333% !important;
+  right: 33.3333333333% !important;
   left: auto !important;
   /* [1] */ }
 
 .u-2\/3 {
-  width: 66.66667% !important; }
+  width: 66.6666666667% !important; }
 
 /**
-* 1. Reset any leftover or conflicting `left`/`right` values.
-*/
+ * 1. Reset any leftover or conflicting `left`/`right` values.
+ */
 .u-push-2\/3 {
   position: relative !important;
   right: auto !important;
   /* [1] */
-  left: 66.66667% !important; }
+  left: 66.6666666667% !important; }
 
 .u-pull-2\/3 {
   position: relative !important;
-  right: 66.66667% !important;
+  right: 66.6666666667% !important;
   left: auto !important;
   /* [1] */ }
 
@@ -1883,8 +1952,8 @@ table {
   width: 100% !important; }
 
 /**
-* 1. Reset any leftover or conflicting `left`/`right` values.
-*/
+ * 1. Reset any leftover or conflicting `left`/`right` values.
+ */
 .u-push-3\/3 {
   position: relative !important;
   right: auto !important;
@@ -1901,8 +1970,8 @@ table {
   width: 25% !important; }
 
 /**
-* 1. Reset any leftover or conflicting `left`/`right` values.
-*/
+ * 1. Reset any leftover or conflicting `left`/`right` values.
+ */
 .u-push-1\/4 {
   position: relative !important;
   right: auto !important;
@@ -1919,8 +1988,8 @@ table {
   width: 50% !important; }
 
 /**
-* 1. Reset any leftover or conflicting `left`/`right` values.
-*/
+ * 1. Reset any leftover or conflicting `left`/`right` values.
+ */
 .u-push-2\/4 {
   position: relative !important;
   right: auto !important;
@@ -1937,8 +2006,8 @@ table {
   width: 75% !important; }
 
 /**
-* 1. Reset any leftover or conflicting `left`/`right` values.
-*/
+ * 1. Reset any leftover or conflicting `left`/`right` values.
+ */
 .u-push-3\/4 {
   position: relative !important;
   right: auto !important;
@@ -1955,8 +2024,8 @@ table {
   width: 100% !important; }
 
 /**
-* 1. Reset any leftover or conflicting `left`/`right` values.
-*/
+ * 1. Reset any leftover or conflicting `left`/`right` values.
+ */
 .u-push-4\/4 {
   position: relative !important;
   right: auto !important;
@@ -1973,8 +2042,8 @@ table {
   width: 20% !important; }
 
 /**
-* 1. Reset any leftover or conflicting `left`/`right` values.
-*/
+ * 1. Reset any leftover or conflicting `left`/`right` values.
+ */
 .u-push-1\/5 {
   position: relative !important;
   right: auto !important;
@@ -1991,8 +2060,8 @@ table {
   width: 40% !important; }
 
 /**
-* 1. Reset any leftover or conflicting `left`/`right` values.
-*/
+ * 1. Reset any leftover or conflicting `left`/`right` values.
+ */
 .u-push-2\/5 {
   position: relative !important;
   right: auto !important;
@@ -2009,8 +2078,8 @@ table {
   width: 60% !important; }
 
 /**
-* 1. Reset any leftover or conflicting `left`/`right` values.
-*/
+ * 1. Reset any leftover or conflicting `left`/`right` values.
+ */
 .u-push-3\/5 {
   position: relative !important;
   right: auto !important;
@@ -2027,8 +2096,8 @@ table {
   width: 80% !important; }
 
 /**
-* 1. Reset any leftover or conflicting `left`/`right` values.
-*/
+ * 1. Reset any leftover or conflicting `left`/`right` values.
+ */
 .u-push-4\/5 {
   position: relative !important;
   right: auto !important;
@@ -2045,8 +2114,8 @@ table {
   width: 100% !important; }
 
 /**
-* 1. Reset any leftover or conflicting `left`/`right` values.
-*/
+ * 1. Reset any leftover or conflicting `left`/`right` values.
+ */
 .u-push-5\/5 {
   position: relative !important;
   right: auto !important;
@@ -2070,8 +2139,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/1\@mobile {
     position: relative !important;
     right: auto !important;
@@ -2088,8 +2157,8 @@ table {
     width: 50% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/2\@mobile {
     position: relative !important;
     right: auto !important;
@@ -2106,8 +2175,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/2\@mobile {
     position: relative !important;
     right: auto !important;
@@ -2121,38 +2190,38 @@ table {
     /* [1] */ }
 
   .u-1\/3\@mobile {
-    width: 33.33333% !important; }
+    width: 33.3333333333% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/3\@mobile {
     position: relative !important;
     right: auto !important;
     /* [1] */
-    left: 33.33333% !important; }
+    left: 33.3333333333% !important; }
 
   .u-pull-1\/3\@mobile {
     position: relative !important;
-    right: 33.33333% !important;
+    right: 33.3333333333% !important;
     left: auto !important;
     /* [1] */ }
 
   .u-2\/3\@mobile {
-    width: 66.66667% !important; }
+    width: 66.6666666667% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/3\@mobile {
     position: relative !important;
     right: auto !important;
     /* [1] */
-    left: 66.66667% !important; }
+    left: 66.6666666667% !important; }
 
   .u-pull-2\/3\@mobile {
     position: relative !important;
-    right: 66.66667% !important;
+    right: 66.6666666667% !important;
     left: auto !important;
     /* [1] */ }
 
@@ -2160,8 +2229,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-3\/3\@mobile {
     position: relative !important;
     right: auto !important;
@@ -2178,8 +2247,8 @@ table {
     width: 25% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/4\@mobile {
     position: relative !important;
     right: auto !important;
@@ -2196,8 +2265,8 @@ table {
     width: 50% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/4\@mobile {
     position: relative !important;
     right: auto !important;
@@ -2214,8 +2283,8 @@ table {
     width: 75% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-3\/4\@mobile {
     position: relative !important;
     right: auto !important;
@@ -2232,8 +2301,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-4\/4\@mobile {
     position: relative !important;
     right: auto !important;
@@ -2250,8 +2319,8 @@ table {
     width: 20% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/5\@mobile {
     position: relative !important;
     right: auto !important;
@@ -2268,8 +2337,8 @@ table {
     width: 40% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/5\@mobile {
     position: relative !important;
     right: auto !important;
@@ -2286,8 +2355,8 @@ table {
     width: 60% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-3\/5\@mobile {
     position: relative !important;
     right: auto !important;
@@ -2304,8 +2373,8 @@ table {
     width: 80% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-4\/5\@mobile {
     position: relative !important;
     right: auto !important;
@@ -2322,8 +2391,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-5\/5\@mobile {
     position: relative !important;
     right: auto !important;
@@ -2334,14 +2403,20 @@ table {
     position: relative !important;
     right: 100% !important;
     left: auto !important;
-    /* [1] */ } }
+    /* [1] */ }
+
+  .u-push-none\@mobile {
+    left: auto !important; }
+
+  .u-pull-none\@mobile {
+    right: auto !important; } }
 @media (min-width: 30em) {
   .u-1\/1\@mobileLandscape {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/1\@mobileLandscape {
     position: relative !important;
     right: auto !important;
@@ -2358,8 +2433,8 @@ table {
     width: 50% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/2\@mobileLandscape {
     position: relative !important;
     right: auto !important;
@@ -2376,8 +2451,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/2\@mobileLandscape {
     position: relative !important;
     right: auto !important;
@@ -2391,38 +2466,38 @@ table {
     /* [1] */ }
 
   .u-1\/3\@mobileLandscape {
-    width: 33.33333% !important; }
+    width: 33.3333333333% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/3\@mobileLandscape {
     position: relative !important;
     right: auto !important;
     /* [1] */
-    left: 33.33333% !important; }
+    left: 33.3333333333% !important; }
 
   .u-pull-1\/3\@mobileLandscape {
     position: relative !important;
-    right: 33.33333% !important;
+    right: 33.3333333333% !important;
     left: auto !important;
     /* [1] */ }
 
   .u-2\/3\@mobileLandscape {
-    width: 66.66667% !important; }
+    width: 66.6666666667% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/3\@mobileLandscape {
     position: relative !important;
     right: auto !important;
     /* [1] */
-    left: 66.66667% !important; }
+    left: 66.6666666667% !important; }
 
   .u-pull-2\/3\@mobileLandscape {
     position: relative !important;
-    right: 66.66667% !important;
+    right: 66.6666666667% !important;
     left: auto !important;
     /* [1] */ }
 
@@ -2430,8 +2505,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-3\/3\@mobileLandscape {
     position: relative !important;
     right: auto !important;
@@ -2448,8 +2523,8 @@ table {
     width: 25% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/4\@mobileLandscape {
     position: relative !important;
     right: auto !important;
@@ -2466,8 +2541,8 @@ table {
     width: 50% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/4\@mobileLandscape {
     position: relative !important;
     right: auto !important;
@@ -2484,8 +2559,8 @@ table {
     width: 75% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-3\/4\@mobileLandscape {
     position: relative !important;
     right: auto !important;
@@ -2502,8 +2577,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-4\/4\@mobileLandscape {
     position: relative !important;
     right: auto !important;
@@ -2520,8 +2595,8 @@ table {
     width: 20% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/5\@mobileLandscape {
     position: relative !important;
     right: auto !important;
@@ -2538,8 +2613,8 @@ table {
     width: 40% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/5\@mobileLandscape {
     position: relative !important;
     right: auto !important;
@@ -2556,8 +2631,8 @@ table {
     width: 60% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-3\/5\@mobileLandscape {
     position: relative !important;
     right: auto !important;
@@ -2574,8 +2649,8 @@ table {
     width: 80% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-4\/5\@mobileLandscape {
     position: relative !important;
     right: auto !important;
@@ -2592,8 +2667,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-5\/5\@mobileLandscape {
     position: relative !important;
     right: auto !important;
@@ -2604,14 +2679,20 @@ table {
     position: relative !important;
     right: 100% !important;
     left: auto !important;
-    /* [1] */ } }
+    /* [1] */ }
+
+  .u-push-none\@mobileLandscape {
+    left: auto !important; }
+
+  .u-pull-none\@mobileLandscape {
+    right: auto !important; } }
 @media (min-width: 46.25em) {
   .u-1\/1\@tablet {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/1\@tablet {
     position: relative !important;
     right: auto !important;
@@ -2628,8 +2709,8 @@ table {
     width: 50% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/2\@tablet {
     position: relative !important;
     right: auto !important;
@@ -2646,8 +2727,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/2\@tablet {
     position: relative !important;
     right: auto !important;
@@ -2661,38 +2742,38 @@ table {
     /* [1] */ }
 
   .u-1\/3\@tablet {
-    width: 33.33333% !important; }
+    width: 33.3333333333% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/3\@tablet {
     position: relative !important;
     right: auto !important;
     /* [1] */
-    left: 33.33333% !important; }
+    left: 33.3333333333% !important; }
 
   .u-pull-1\/3\@tablet {
     position: relative !important;
-    right: 33.33333% !important;
+    right: 33.3333333333% !important;
     left: auto !important;
     /* [1] */ }
 
   .u-2\/3\@tablet {
-    width: 66.66667% !important; }
+    width: 66.6666666667% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/3\@tablet {
     position: relative !important;
     right: auto !important;
     /* [1] */
-    left: 66.66667% !important; }
+    left: 66.6666666667% !important; }
 
   .u-pull-2\/3\@tablet {
     position: relative !important;
-    right: 66.66667% !important;
+    right: 66.6666666667% !important;
     left: auto !important;
     /* [1] */ }
 
@@ -2700,8 +2781,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-3\/3\@tablet {
     position: relative !important;
     right: auto !important;
@@ -2718,8 +2799,8 @@ table {
     width: 25% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/4\@tablet {
     position: relative !important;
     right: auto !important;
@@ -2736,8 +2817,8 @@ table {
     width: 50% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/4\@tablet {
     position: relative !important;
     right: auto !important;
@@ -2754,8 +2835,8 @@ table {
     width: 75% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-3\/4\@tablet {
     position: relative !important;
     right: auto !important;
@@ -2772,8 +2853,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-4\/4\@tablet {
     position: relative !important;
     right: auto !important;
@@ -2790,8 +2871,8 @@ table {
     width: 20% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/5\@tablet {
     position: relative !important;
     right: auto !important;
@@ -2808,8 +2889,8 @@ table {
     width: 40% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/5\@tablet {
     position: relative !important;
     right: auto !important;
@@ -2826,8 +2907,8 @@ table {
     width: 60% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-3\/5\@tablet {
     position: relative !important;
     right: auto !important;
@@ -2844,8 +2925,8 @@ table {
     width: 80% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-4\/5\@tablet {
     position: relative !important;
     right: auto !important;
@@ -2862,8 +2943,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-5\/5\@tablet {
     position: relative !important;
     right: auto !important;
@@ -2874,14 +2955,20 @@ table {
     position: relative !important;
     right: 100% !important;
     left: auto !important;
-    /* [1] */ } }
+    /* [1] */ }
+
+  .u-push-none\@tablet {
+    left: auto !important; }
+
+  .u-pull-none\@tablet {
+    right: auto !important; } }
 @media (min-width: 61.25em) {
   .u-1\/1\@desktop {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/1\@desktop {
     position: relative !important;
     right: auto !important;
@@ -2898,8 +2985,8 @@ table {
     width: 50% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/2\@desktop {
     position: relative !important;
     right: auto !important;
@@ -2916,8 +3003,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/2\@desktop {
     position: relative !important;
     right: auto !important;
@@ -2931,38 +3018,38 @@ table {
     /* [1] */ }
 
   .u-1\/3\@desktop {
-    width: 33.33333% !important; }
+    width: 33.3333333333% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/3\@desktop {
     position: relative !important;
     right: auto !important;
     /* [1] */
-    left: 33.33333% !important; }
+    left: 33.3333333333% !important; }
 
   .u-pull-1\/3\@desktop {
     position: relative !important;
-    right: 33.33333% !important;
+    right: 33.3333333333% !important;
     left: auto !important;
     /* [1] */ }
 
   .u-2\/3\@desktop {
-    width: 66.66667% !important; }
+    width: 66.6666666667% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/3\@desktop {
     position: relative !important;
     right: auto !important;
     /* [1] */
-    left: 66.66667% !important; }
+    left: 66.6666666667% !important; }
 
   .u-pull-2\/3\@desktop {
     position: relative !important;
-    right: 66.66667% !important;
+    right: 66.6666666667% !important;
     left: auto !important;
     /* [1] */ }
 
@@ -2970,8 +3057,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-3\/3\@desktop {
     position: relative !important;
     right: auto !important;
@@ -2988,8 +3075,8 @@ table {
     width: 25% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/4\@desktop {
     position: relative !important;
     right: auto !important;
@@ -3006,8 +3093,8 @@ table {
     width: 50% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/4\@desktop {
     position: relative !important;
     right: auto !important;
@@ -3024,8 +3111,8 @@ table {
     width: 75% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-3\/4\@desktop {
     position: relative !important;
     right: auto !important;
@@ -3042,8 +3129,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-4\/4\@desktop {
     position: relative !important;
     right: auto !important;
@@ -3060,8 +3147,8 @@ table {
     width: 20% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/5\@desktop {
     position: relative !important;
     right: auto !important;
@@ -3078,8 +3165,8 @@ table {
     width: 40% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/5\@desktop {
     position: relative !important;
     right: auto !important;
@@ -3096,8 +3183,8 @@ table {
     width: 60% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-3\/5\@desktop {
     position: relative !important;
     right: auto !important;
@@ -3114,8 +3201,8 @@ table {
     width: 80% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-4\/5\@desktop {
     position: relative !important;
     right: auto !important;
@@ -3132,8 +3219,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-5\/5\@desktop {
     position: relative !important;
     right: auto !important;
@@ -3144,14 +3231,20 @@ table {
     position: relative !important;
     right: 100% !important;
     left: auto !important;
-    /* [1] */ } }
+    /* [1] */ }
+
+  .u-push-none\@desktop {
+    left: auto !important; }
+
+  .u-pull-none\@desktop {
+    right: auto !important; } }
 @media (min-width: 81.25em) {
   .u-1\/1\@wide {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/1\@wide {
     position: relative !important;
     right: auto !important;
@@ -3168,8 +3261,8 @@ table {
     width: 50% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/2\@wide {
     position: relative !important;
     right: auto !important;
@@ -3186,8 +3279,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/2\@wide {
     position: relative !important;
     right: auto !important;
@@ -3201,38 +3294,38 @@ table {
     /* [1] */ }
 
   .u-1\/3\@wide {
-    width: 33.33333% !important; }
+    width: 33.3333333333% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/3\@wide {
     position: relative !important;
     right: auto !important;
     /* [1] */
-    left: 33.33333% !important; }
+    left: 33.3333333333% !important; }
 
   .u-pull-1\/3\@wide {
     position: relative !important;
-    right: 33.33333% !important;
+    right: 33.3333333333% !important;
     left: auto !important;
     /* [1] */ }
 
   .u-2\/3\@wide {
-    width: 66.66667% !important; }
+    width: 66.6666666667% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/3\@wide {
     position: relative !important;
     right: auto !important;
     /* [1] */
-    left: 66.66667% !important; }
+    left: 66.6666666667% !important; }
 
   .u-pull-2\/3\@wide {
     position: relative !important;
-    right: 66.66667% !important;
+    right: 66.6666666667% !important;
     left: auto !important;
     /* [1] */ }
 
@@ -3240,8 +3333,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-3\/3\@wide {
     position: relative !important;
     right: auto !important;
@@ -3258,8 +3351,8 @@ table {
     width: 25% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/4\@wide {
     position: relative !important;
     right: auto !important;
@@ -3276,8 +3369,8 @@ table {
     width: 50% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/4\@wide {
     position: relative !important;
     right: auto !important;
@@ -3294,8 +3387,8 @@ table {
     width: 75% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-3\/4\@wide {
     position: relative !important;
     right: auto !important;
@@ -3312,8 +3405,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-4\/4\@wide {
     position: relative !important;
     right: auto !important;
@@ -3330,8 +3423,8 @@ table {
     width: 20% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-1\/5\@wide {
     position: relative !important;
     right: auto !important;
@@ -3348,8 +3441,8 @@ table {
     width: 40% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-2\/5\@wide {
     position: relative !important;
     right: auto !important;
@@ -3366,8 +3459,8 @@ table {
     width: 60% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-3\/5\@wide {
     position: relative !important;
     right: auto !important;
@@ -3384,8 +3477,8 @@ table {
     width: 80% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-4\/5\@wide {
     position: relative !important;
     right: auto !important;
@@ -3402,8 +3495,8 @@ table {
     width: 100% !important; }
 
   /**
-  * 1. Reset any leftover or conflicting `left`/`right` values.
-  */
+   * 1. Reset any leftover or conflicting `left`/`right` values.
+   */
   .u-push-5\/5\@wide {
     position: relative !important;
     right: auto !important;
@@ -3414,7 +3507,13 @@ table {
     position: relative !important;
     right: 100% !important;
     left: auto !important;
-    /* [1] */ } }
+    /* [1] */ }
+
+  .u-push-none\@wide {
+    left: auto !important; }
+
+  .u-pull-none\@wide {
+    right: auto !important; } }
 /* ==========================================================================
    #HEADINGS
    ========================================================================== */
@@ -3429,22 +3528,22 @@ table {
 .u-h1 {
   font-size: 30px !important;
   font-size: 1.875rem !important;
-  line-height: 1.6 !important; }
+  line-height: 1.2 !important; }
 
 .u-h2 {
   font-size: 24px !important;
   font-size: 1.5rem !important;
-  line-height: 1 !important; }
+  line-height: 1.25 !important; }
 
 .u-h3 {
   font-size: 20px !important;
   font-size: 1.25rem !important;
-  line-height: 1.2 !important; }
+  line-height: 1.5 !important; }
 
 .u-h4 {
   font-size: 18px !important;
   font-size: 1.125rem !important;
-  line-height: 1.33333 !important; }
+  line-height: 1.3333333333 !important; }
 
 .u-h5 {
   font-size: 16px !important;
@@ -3457,7 +3556,7 @@ table {
   line-height: 1.5 !important; }
 
 /* ==========================================================================
-   #SPACING
+   #SPACINGS
    ========================================================================== */
 /**
  * Utility classes to put specific spacing values onto elements. The below loop
@@ -3468,8 +3567,9 @@ table {
  *   .u-margin-right-small {}
  *   .u-padding {}
  *   .u-padding-right-none {}
+ *   .u-padding-horizontal {}
+ *   .u-padding-vertical-small {}
  */
-/* stylelint-disable string-quotes */
 .u-padding {
   padding: 24px !important; }
 
@@ -3559,6 +3659,54 @@ table {
 
 .u-padding-left-none {
   padding-left: 0 !important; }
+
+.u-padding-horizontal {
+  padding-left: 24px !important;
+  padding-right: 24px !important; }
+
+.u-padding-horizontal-tiny {
+  padding-left: 6px !important;
+  padding-right: 6px !important; }
+
+.u-padding-horizontal-small {
+  padding-left: 12px !important;
+  padding-right: 12px !important; }
+
+.u-padding-horizontal-large {
+  padding-left: 48px !important;
+  padding-right: 48px !important; }
+
+.u-padding-horizontal-huge {
+  padding-left: 96px !important;
+  padding-right: 96px !important; }
+
+.u-padding-horizontal-none {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.u-padding-vertical {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important; }
+
+.u-padding-vertical-tiny {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important; }
+
+.u-padding-vertical-small {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important; }
+
+.u-padding-vertical-large {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important; }
+
+.u-padding-vertical-huge {
+  padding-top: 96px !important;
+  padding-bottom: 96px !important; }
+
+.u-padding-vertical-none {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
 
 .u-margin {
   margin: 24px !important; }
@@ -3650,7 +3798,54 @@ table {
 .u-margin-left-none {
   margin-left: 0 !important; }
 
-/* stylelint-enable string-quotes */
+.u-margin-horizontal {
+  margin-left: 24px !important;
+  margin-right: 24px !important; }
+
+.u-margin-horizontal-tiny {
+  margin-left: 6px !important;
+  margin-right: 6px !important; }
+
+.u-margin-horizontal-small {
+  margin-left: 12px !important;
+  margin-right: 12px !important; }
+
+.u-margin-horizontal-large {
+  margin-left: 48px !important;
+  margin-right: 48px !important; }
+
+.u-margin-horizontal-huge {
+  margin-left: 96px !important;
+  margin-right: 96px !important; }
+
+.u-margin-horizontal-none {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+.u-margin-vertical {
+  margin-top: 24px !important;
+  margin-bottom: 24px !important; }
+
+.u-margin-vertical-tiny {
+  margin-top: 6px !important;
+  margin-bottom: 6px !important; }
+
+.u-margin-vertical-small {
+  margin-top: 12px !important;
+  margin-bottom: 12px !important; }
+
+.u-margin-vertical-large {
+  margin-top: 48px !important;
+  margin-bottom: 48px !important; }
+
+.u-margin-vertical-huge {
+  margin-top: 96px !important;
+  margin-bottom: 96px !important; }
+
+.u-margin-vertical-none {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
+
 /* ==========================================================================
    #PRINT
    ========================================================================== */
@@ -3665,9 +3860,7 @@ table {
    */
   *,
   *:before,
-  *:after,
-  *:first-letter,
-  *:first-line {
+  *:after {
     background: transparent !important;
     color: #000 !important;
     /* [1] */
@@ -3685,7 +3878,7 @@ table {
     content: " (" attr(title) ")"; }
 
   /**
-   * Don't show links that are fragment identifiers, or use the `javascript:`
+   * Don’t show links that are fragment identifiers, or use the `javascript:`
    * pseudo protocol.
    */
   a[href^="#"]:after,
@@ -3729,11 +3922,13 @@ table {
 .u-hidden-visually {
   border: 0 !important;
   clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
   height: 1px !important;
   margin: -1px !important;
   overflow: hidden !important;
   padding: 0 !important;
   position: absolute !important;
+  white-space: nowrap !important;
   width: 1px !important; }
 
 /**

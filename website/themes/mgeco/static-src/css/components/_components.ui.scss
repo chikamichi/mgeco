@@ -30,7 +30,22 @@
 
 
 .c-logo__image {
-  width: 250px;
+  /*
+  Responsive Image Replacement:
+  We want a responsive background image, ie. its height must match its evolving
+  width. In order to lock the image's aspect ratio along the height axis, with
+  respect to its current, fluid width, one may set a padding-top/bottom value,
+  in percentage, equal to the image's fixed aspect ratio. The trick here lies in
+  the fact that vertical padding values, when expressed in percentages, are
+  always computed using the element container's *width* as the reference.
+  */
+  padding-top: 129.7101149%; // 358px / 276px for logo_mg.jpg
+  width: 100%;
+  height: 0;
+  text-indent: -9999px;
+  background-image: url('/images/logo_mg.jpg');
+  background-size: 100%;
+  transition: background 0.1s ease-in-out;
 }
 
 
@@ -106,6 +121,9 @@
     max-width: 100%;
   }
 
+  .c-logo__image:hover {
+    background-image: url('/images/logo_mg2.jpg');
+  }
 
   .c-main-area {
     min-height: 1000px;
