@@ -86,7 +86,6 @@
 
 
 // TOOLS
-@import "../../../../node_modules/inuitcss/tools/tools.rem";
 @import "../../../../node_modules/inuitcss/tools/tools.font-size";
 @import "../../../../node_modules/inuitcss/tools/tools.clearfix";
 @import "../../../../node_modules/inuitcss/tools/tools.hidden";
@@ -138,7 +137,7 @@ $inuit-font-size-h6:  16px !default;
 @import "../../../../node_modules/inuitcss/objects/objects.block";
 @import "../../../../node_modules/inuitcss/objects/objects.ratio";
 @import "../../../../node_modules/inuitcss/objects/objects.crop";
-@import "../../../../node_modules/inuitcss/objects/objects.tables";
+@import "../../../../node_modules/inuitcss/objects/objects.table";
 @import "../../../../node_modules/inuitcss/objects/objects.pack";
 @import "objects/objects.list-inline";
 
@@ -165,7 +164,7 @@ $inuit-font-size-h6:  16px !default;
 $inuit-offsets: true;
 @import "../../../../node_modules/inuitcss/utilities/utilities.widths";
 @import "../../../../node_modules/inuitcss/utilities/utilities.headings";
-@import "../../../../node_modules/inuitcss/utilities/utilities.spacing";
+@import "../../../../node_modules/inuitcss/utilities/utilities.spacings";
 @import "../../../../node_modules/inuitcss/utilities/utilities.print";
 @import "../../../../node_modules/inuitcss/utilities/utilities.hide";
 @import "utilities/utilities.typography";
