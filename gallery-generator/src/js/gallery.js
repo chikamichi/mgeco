@@ -29,7 +29,7 @@ function revealImage(image) {
 const imgLoad = imagesLoaded($gallery);
 const gallery = new Masonry($gallery, {
   itemSelector: 'a',
-  columnWidth: 284
+  columnWidth: 276
 });
 
 // Track images being loaded and provide UI feedback about progress.
