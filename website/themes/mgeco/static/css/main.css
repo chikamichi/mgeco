@@ -1558,7 +1558,8 @@ table {
 .c-sidebar__link {
   text-transform: uppercase;
   color: black;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1.2em; }
   .c-sidebar__link--active {
     color: #90993F;
     font-weight: bold; }
