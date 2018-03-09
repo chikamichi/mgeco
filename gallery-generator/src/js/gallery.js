@@ -59,6 +59,12 @@ imgLoad.on('done', function(instance) {
 
       // parse slide data (url, title, size ...) from DOM elements
       // (children of gallerySelector)
+      // TODO: split the gallery into several sub-galleries. That is:
+      // - create as many Masonry (or float-based or flex-based…) layouts as
+      //   necessary, based on what was generated out from the YML nested list
+      //   (requires editing $galery logic above in this script);
+      // - edit thumbElements below to grab images aka. "items" within those layouts;
+      // - build the PhotoSwipe gallery as usual, no changes required.
       var parseThumbnailElements = function(el) {
           var thumbElements = el.childNodes,
               numNodes = thumbElements.length,
@@ -239,7 +245,7 @@ imgLoad.on('done', function(instance) {
           }
 
           // Pass data to PhotoSwipe and initialize it
-          gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+          gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
           gallery.init();
       };
 
