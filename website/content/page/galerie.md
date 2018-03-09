@@ -6,10 +6,6 @@ url = "galerie"
 type = "galerie"
 +++
 
-Voici quelques photographies de nos réalisations de maisons écologiques dans le Lot.
-
-Comme le montrent ces images, **la construction bois permet toutes sortes d'architectures et de finitions**.
-
 Vous aurez ici un aperçu des matériaux que nous mettons en œuvre :
 
 - **Différents types de toitures** : bardeaux de bois (shakes de red cedar), platelage bois (mélèze), tuiles plates, tuiles canals, tuiles losangées, toiture en zinc, bac-acier, toiture-terrasse (couverte en bâche EPDM Firestone) pouvant être végétalisées...
