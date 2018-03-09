@@ -1573,6 +1573,9 @@ table {
   text-transform: uppercase;
   line-height: 1; }
 
+.o-layout__item.c-main-area {
+  text-align: justify; }
+
 .c-main-area__subtitle {
   color: #90993F; }
 
