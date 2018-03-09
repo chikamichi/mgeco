@@ -1,38 +1,44 @@
-mg-ecoconstruction.com — Gallery generator
-==========================
+Générateur de gallerie
+======================
 
-mg-ecoconstruction.com's gallery is built on top of Photoswipe. This project automates the creation of the required markup, dynamically parsing the gallery's images to expose their dimensions, for instance. Output is then automatically moved at the appropriate location in the website/ project.
+La gallerie du site de MG Éco est basée sur [PhotoSwipe](http://photoswipe.com/). Ce projet automatise la création de la page /galerie du site :
 
-## Usage
+- génération de thumbnails à partir des originaux
+- génération de la page avec un *markup* adapté pour PhotoSwipe et le thème du site
+- intégration des légendes personnalisées des photos (src/html/gallery/images_list.yml)
 
-This project provides **two main commands**:
+Le code HTML généré est automatiquement placé à la position idoine dans le projet */website*.
+
+## Utilisation
+
+Ce projet fournit deux principales commandes :
 
 ``` sh
 ./bin/generate-thumbnails
 ```
 
-generates thumbnails from larger size, original pictures stored in ../website/static/images/gallery/.
+génère les thumbnails à partir des images grand-format stockées dans ../website/static/images/gallery/.
 
 ```
 ./bin/generate-gallery
 ```
 
-generates a full-flegded, Hugo-compliant, production-ready gallery layout that is automatically transfered at ../website/themes/mgeco/layouts/galerie/single.html.
+génère une page-galerie statique pour Hugo (cf. projet */website*). Cette page est transférée vers ../website/themes/mgeco/layouts/galerie/single.html.
 
-It's also through this project that one controls the gallery's content: images orders & captions (see src/html/gallery/images_list.yml).
+## Développement
 
-## Development
+Installer les dépendances JS du projet : `npm install`.
 
-Install project's dependencies first: `npm install`.
+### Générations
 
-### Compiling
+*Ces commandes sont pour parties intégrées dans les scripts mentionnés ci-avant.*
 
-* Compile vendors' JS bundle (Webpack DLL): `npm run build:vendor`
-* Compile project's bundle: `npm run build [-- --watch]`
-* Compile project's bundle minified/compressed: `NODE_ENV=production npm run build[:vendor]`
+* Générer la DLL des librairies tierces ie. *vendors* (Webpack DLL): `npm run build:vendor`.
+* Générer le projet en mode développement : `npm run build [-- --watch]`.
+* Générer le projet en mode production : `NODE_ENV=production npm run build[:vendor]`.
 
-### Adding a third-party library
+### Ajouter une librairie tierce
 
-1. Add the library to package.json (or `npm i -[S|D] library_name`)
-2. Require the library from src/js/vendors.js
-3. Rebuild the vendors DLL with `npm run build:vendor`
+1. Ajouter la librairie dans package.json (ou `npm i -[S|D] library_name`).
+2. Importer la librairie dans src/js/vendors.js.
+3. Recompiler la DLL des librairies *vendors* : `npm run build:vendor`.
