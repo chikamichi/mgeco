@@ -1,0 +1,10 @@
+@mixin u-text-centered {
+  text-align: center !important;
+}
+
+
+@mixin u-text-condensed {
+  p {
+    margin: 0;
+  }
+}

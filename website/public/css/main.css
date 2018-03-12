@@ -17,7 +17,7 @@
  *
  * SETTINGS
  * Config...............Project-level configuration and feature switches.
- * Core.................inuitcss’ core and setup settings.
+ * Core.................inuitcssÔÇÖ core and setup settings.
  * Global...............Project-wide variables and settings.
  *
  * TOOLS
@@ -26,17 +26,17 @@
  * Font-size............A mixin which guarantees baseline-friendly line-heights.
  * Clearfix.............Micro clearfix mixin.
  * Hidden...............Mixin for hiding elements.
- * Sass MQ..............inuitcss’ default media query manager.
+ * Sass MQ..............inuitcssÔÇÖ default media query manager.
  *
  * GENERIC
  * Box-sizing...........Better default `box-sizing`.
- * Normalize.css........A level playing field using @necolas’ Normalize.css.
+ * Normalize.css........A level playing field using @necolasÔÇÖ Normalize.css.
  * Reset................A tiny reset to complement Normalize.css.
  * Shared...............Sensibly and tersely share some global commonalities
  *                      (particularly useful when managing vertical rhythm).
  *
  * ELEMENTS
- * Page.................Set up our document’s default `font-size` and
+ * Page.................Set up our documentÔÇÖs default `font-size` and
  *                      `line-height`.
  * Headings.............Very minimal (i.e. only font-size information) for
  *                      headings 1 through 6.
@@ -617,7 +617,7 @@ dd, ol, ul {
  * 1. Set the default `font-size` and `line-height` for the entire project,
  *    sourced from our default variables. The `font-size` is calculated to exist
  *    in ems, the `line-height` is calculated to exist unitlessly.
- * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ * 2. Force scrollbars to always be visible to prevent awkward ÔÇÿjumpsÔÇÖ when
  *    navigating between pages that do/do not have enough content to produce
  *    scrollbars naturally.
  * 3. Ensure the page always fills at least the entire height of the viewport.
@@ -689,7 +689,7 @@ img {
   /* [3] */ }
 
 /**
- * If a `width` and/or `height` attribute has been explicitly defined, let’s
+ * If a `width` and/or `height` attribute has been explicitly defined, letÔÇÖs
  * not make the image fluid.
  */
 img[width],
@@ -714,6 +714,16 @@ a:hover {
 table {
   width: 100%;
   /* [1] */ }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.2; }
+
+h3, .u-h3 {
+  margin: 1.4em 0 0.75em 0; }
+
+p {
+  margin-bottom: 1em; }
 
 /* ==========================================================================
    #WRAPPER
@@ -872,7 +882,7 @@ table {
 
 /**
  * Stretch all grid items of each row to have an equal-height.
- * Please be aware that this modifier class doesn’t take any effect in IE9 and
+ * Please be aware that this modifier class doesnÔÇÖt take any effect in IE9 and
  * below and other older browsers due to the lack of `display: flex` support.
  */
 .o-layout--stretch {
@@ -1046,7 +1056,7 @@ table {
    * 1. Fixes problem with images disappearing.
    *
    *    The direct child selector '>' needs to remain in order for nested flag
-   *    objects to not inherit their parent’s formatting. In case the image tag
+   *    objects to not inherit their parentÔÇÖs formatting. In case the image tag
    *    is wrapped into another tag, e.g. an anchor for linking reasons, it will
    *    disappear. In that case try wrapping the whole o-flag__img object into
    *    an anchor tag.
@@ -1108,8 +1118,8 @@ table {
 /* Reversed flag
    ========================================================================== */
 /**
- * 1. Swap the rendered direction of the object…
- * 2. …and reset it.
+ * 1. Swap the rendered direction of the objectÔÇª
+ * 2. ÔÇªand reset it.
  * 3. Reassign margins to the correct sides.
  */
 .o-flag--reverse {
@@ -1324,8 +1334,8 @@ table {
 /**
  * Apply this class to the content (usually `img`) that needs cropping.
  *
- * 1. Image’s default positioning is top-left in the cropping box.
- * 2. Make sure the media doesn’t stop itself too soon.
+ * 1. ImageÔÇÖs default positioning is top-left in the cropping box.
+ * 2. Make sure the media doesnÔÇÖt stop itself too soon.
  */
 .o-crop__content {
   position: absolute;
@@ -1638,7 +1648,7 @@ table {
 .c-contact-infos__numbers > .o-list-inline__item {
   padding-left: 0.5em; }
   .c-contact-infos__numbers > .o-list-inline__item::after {
-    content: '–';
+    content: 'ÔÇô';
     padding-left: 0.5em; }
   .c-contact-infos__numbers > .o-list-inline__item:last-child::after {
     display: none; }
@@ -1828,7 +1838,7 @@ table {
    ========================================================================== */
 /**
  * inuitcss generates a series of utility classes that give a fluid width to
- * whichever element they’re applied, e.g.:
+ * whichever element theyÔÇÖre applied, e.g.:
  *
  *   <img src="" alt="" class="u-1/2" />
  *
@@ -2133,7 +2143,7 @@ table {
   /* [1] */ }
 
 /**
- * If we’re using Sass-MQ, automatically generate grid system(s) for each of our
+ * If weÔÇÖre using Sass-MQ, automatically generate grid system(s) for each of our
  * defined breakpoints, and give them a Responsive Suffix, e.g.:
  *
  * <div class="u-3/12@mobile">
@@ -3882,7 +3892,7 @@ table {
     content: " (" attr(title) ")"; }
 
   /**
-   * Don’t show links that are fragment identifiers, or use the `javascript:`
+   * DonÔÇÖt show links that are fragment identifiers, or use the `javascript:`
    * pseudo protocol.
    */
   a[href^="#"]:after,

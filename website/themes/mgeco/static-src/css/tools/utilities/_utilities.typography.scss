@@ -1,0 +1,11 @@
+@import "utilities/utilities.typography.mixins";
+
+
+.u-text-centered {
+  @include u-text-centered;
+}
+
+
+.u-text-condensed {
+  @include u-text-condensed;
+}
