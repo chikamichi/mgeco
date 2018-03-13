@@ -14,6 +14,5 @@ Vous trouverez ici un aperçu des matériaux que nous mettons en œuvre :
 - **Ainsi que différents modes constructifs** : murs d'ossature bois réalisés dans notre atelier à Limogne et assemblés sur site, charpente traditionnelle, charpente pour toiture ronde, charpente lamellé-collé, structure poteaux-poutres et chevrons porteurs...
 
 <br />
-<br />
 
 Les photos 1 à 48 sont de **Nils Harderveld**, et 49 à 60 de **Stéphanie Bodart**.
