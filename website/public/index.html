@@ -29,32 +29,55 @@
     </h1>
   </a>
 
-  <div class="c-homepage__extras  u-clearfix">
-    <a href="/galerie/" class="c-homepage__carousel" role="tab" aria-label="Voir la galerie">
-      <p>TODO</p>
-    </a>
+  <div class="c-homepage__extras">
+  <a href="/galerie/" class="c-homepage-carousel" role="tab" aria-label="Voir la galerie">
+    <img src="/images/carousel/33.jpg" class="c-hp-carousel__image">
+    <img src="/images/carousel/8.jpg" class="c-hp-carousel__image">
+    <img src="/images/carousel/15.jpg" class="c-hp-carousel__image">
+    <img src="/images/carousel/40.jpg" class="c-hp-carousel__image">
+    <img src="/images/carousel/1.jpg" class="c-hp-carousel__image">
+  </a>
+</div>
 
-    <a href="http://www.developpement-durable.gouv.fr/La-mention-RGE-Reconnu-Garant-de-l.html" class="c-homepage__rge  c-homepage-rge" role="tab" aria-label="Infos sur le label RGE">
-      <img class="c-hp-rge__logo" src='/images/rge.jpg'>
+
+  <div class="c-homepage__footer  u-clearfix">
+  <div class="c-contact-infos">
+    <a href="/contact" class="c-contact-infos__link" role="tab" aria-label="Nous contacter">
+      <p class="c-contact-infos__line">SAS MG ECO - Atelier route de Cénevières 46260 LIMOGNE EN QUERCY</p>
+      <div class="c-contact-infos__line">
+        <ul class="c-contact-infos__numbers  o-list-inline  o-list-inline--flush">
+          <li class="c-contact-infos__number  o-list-inline__item">06 74 66 08 92</li>
+          <li class="c-contact-infos__number  o-list-inline__item">05 65 21 73 08</li>
+        </ul>
+        <ul class="c-contact-infos__email  o-list-inline  o-list-inline--flush">
+          <li class="c-contact-infos__email  o-list-inline__item">contact@mg-ecoconstruction.com</li>
+        </ul>
+      </div>
+      <p class="c-contact-infos__line  c-contact-infos__rcs">RCS CAHORS 538 164 120</p>
     </a>
   </div>
-
-  <div class="c-contact-infos">
-  <a href="/contact" class="c-contact-infos__link" role="tab" aria-label="Nous contacter">
-    <p class="c-contact-infos__line">SAS MG ECO - Atelier route de Cénevières 46260 LIMOGNE EN QUERCY</p>
-    <div class="c-contact-infos__line">
-      <ul class="c-contact-infos__numbers  o-list-inline  o-list-inline--flush">
-        <li class="c-contact-infos__number  o-list-inline__item">06 74 66 08 92</li>
-        <li class="c-contact-infos__number  o-list-inline__item">05 65 21 73 08</li>
-        <li class="c-contact-infos__email  o-list-inline__item">contact@mg-ecoconstruction.com</li>
-      </ul>
-    </div>
-    <p class="c-contact-infos__line  c-contact-infos__rcs">RCS CAHORS 538 164 120</p>
+  <a href="http://www.developpement-durable.gouv.fr/La-mention-RGE-Reconnu-Garant-de-l.html" class="c-homepage__rge" role="tab" aria-label="Infos sur le label RGE">
+    <img src="/images/rge.jpg">
   </a>
 </div>
 
 </div>
 
+  
+  <script rel="preload" src="js/siema.min.js"></script>
+  <script type="text/javascript">
+    var homepageCarousel = new Siema({
+      selector: '.c-homepage-carousel',
+      loop: true,
+      duration: 600,
+      easing: 'ease',
+      perPage: 2
+    });
+    setInterval(function() {
+      homepageCarousel.next(2)
+    }, 3000)
+  </script>
+  
   </body>
 </html>
 

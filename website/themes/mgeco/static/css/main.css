@@ -1602,6 +1602,7 @@ p {
   text-align: center; }
 
 .c-hp-me__logo {
+  margin-bottom: 5px;
   /*
   Responsive Image Replacement:
   We want a responsive background image, ie. its height must match its evolving
@@ -1619,13 +1620,14 @@ p {
   background-size: 100%;
   transition: background 0.1s ease-in-out; }
 
-.c-homepage__carousel {
+.c-homepage-carousel {
   display: none; }
 
-.c-homepage__extras {
+.c-homepage__extras,
+.c-homepage__footer {
   margin: 0 auto;
   max-width: 50%;
-  margin-bottom: 24px; }
+  margin-bottom: 12px; }
 
 @media (min-width: 40.625em) {
   .c-homepage__main-entrance {
@@ -1646,29 +1648,17 @@ p {
   .c-homepage__extras {
     max-width: 600px; }
 
-  .c-homepage__carousel {
-    display: inline; }
+  .c-homepage-carousel {
+    display: block; }
 
-  .c-homepage__carousel {
-    position: relative;
-    float: left;
-    width: 70%;
-    height: 240px;
-    border: 1px solid black; }
-    .c-homepage__carousel > p {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      width: 50%;
-      height: 50%;
-      margin: auto;
-      overflow: auto; }
+  .c-homepage__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
   .c-homepage__rge {
-    float: right;
-    width: 30%; } }
+    margin-left: 24px;
+    max-width: 100px; } }
 /* ==========================================================================
    Gallery
    ========================================================================== */

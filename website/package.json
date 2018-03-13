@@ -5,11 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "inuitcss": "^6.0.0-beta.4",
-    "sass-mq": "^3.3.2"
+    "npm": "^5.7.1",
+    "sass-mq": "^3.3.2",
+    "siema": "^1.5.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "update_vendors": "cp node_modules/siema/dist/siema.min.js static/js"
   },
   "repository": {
     "type": "git",
