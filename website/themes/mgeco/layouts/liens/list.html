@@ -20,16 +20,16 @@
       <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
         <h3 class="c-reflink__title  u-h4">
           <a href="{{ .Params.exturl }}" class="c-reflink__exturl">
-            {{ if isset .Params "image" }}
-              <img src="/images/liens/{{ .Params.image }}" class="c-reflink__logo"></img>
-            {{ end }}
-            {{ if not (isset .Params "hidetitle") }}
-              {{ .Title }}
-            {{ end }}
+            <img src="/images/liens/{{ .Params.image }}" class="c-reflink__logo"></img><span class="c-reflink__linkname">
+              {{ if not (isset .Params "hidetitle") }}
+                {{ .Title }}
+              {{ end }}
+            </span>
           </a>
         </h3>
         <main class="c-reflink__content">
           {{ .Content }}
+          <a href="{{ .Params.exturl }}" class="c-reflink__linkhint">Se rendre sur le site</a>
         </main>
       </li>
     {{ end }}
@@ -46,12 +46,13 @@
               <img src="/images/liens/{{ .Params.image }}" class="c-reflink__logo"></img>
             {{ end }}
             {{ if not (isset .Params "hidetitle") }}
-              {{ .Title }}
+              <span class="c-reflink__linkname">{{ .Title }}</span>
             {{ end }}
           </a>
         </h3>
         <main class="c-reflink__content">
           {{ .Content }}
+          <a href="{{ .Params.exturl }}" class="c-reflink__linkhint">Se rendre sur le site</a>
         </main>
       </li>
     {{ end }}
@@ -68,12 +69,13 @@
               <img src="/images/liens/{{ .Params.image }}" class="c-reflink__logo"></img>
             {{ end }}
             {{ if not (isset .Params "hidetitle") }}
-              {{ .Title }}
+              <span class="c-reflink__linkname">{{ .Title }}</span>
             {{ end }}
           </a>
         </h3>
         <main class="c-reflink__content">
           {{ .Content }}
+          <a href="{{ .Params.exturl }}" class="c-reflink__linkhint">Se rendre sur le site</a>
         </main>
       </li>
     {{ end }}

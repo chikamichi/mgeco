@@ -1738,12 +1738,20 @@ p {
   display: inline-block;
   color: black; }
   .c-reflink__exturl:hover {
-    text-decoration: none;
-    color: grey; }
+    text-decoration: underline; }
 
 .c-reflink__logo {
-  margin-right: 12px;
   max-height: 80px; }
+
+.c-reflink__linkname {
+  padding-left: 12px; }
+
+.c-reflink__linkhint {
+  font-size: 0.8em;
+  color: #90993F; }
+
+.c-reflink__content > p {
+  margin-bottom: 0.25em; }
 
 /* ==========================================================================
    #CLEARFIX

@@ -13,13 +13,27 @@
   color: black;
 
   &:hover {
-    text-decoration: none;
-    color: grey;
+    text-decoration: underline;
   }
 }
 
 
 .c-reflink__logo {
-  margin-right: $spacing/2;
   max-height: 80px;
+}
+
+
+.c-reflink__linkname {
+  padding-left: $spacing/2;
+}
+
+
+.c-reflink__linkhint {
+  font-size: 0.8em;
+  color: $green;
+}
+
+
+.c-reflink__content > p {
+  margin-bottom: 0.25em;
 }
