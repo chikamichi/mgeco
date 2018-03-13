@@ -52,7 +52,10 @@
 
   // Preload hover layer the old-school, reliable way.
   body:after {
-    position: absolute; overflow: hidden; left: -50000px;
+    position: absolute;
+    overflow: hidden;
+    left: -50000px;
+    top: 0;
     content: url(/images/bienvenue2.jpg);
   }
 
