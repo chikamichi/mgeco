@@ -1,7 +1,7 @@
 Site web de MG Éco-construction
 ===============================
 
-Ce projet contient le code source nécessaire pour générer la version statique (hébergeable) de http://mg-ecoconstruction.com/ (SAS MG ECO).
+Ce projet contient le code source nécessaire pour générer la version statique (hébergeable) de http://mg-ecoconstruction.com/ (MG ECO).
 
 ## Synopsys
 
