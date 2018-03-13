@@ -1521,6 +1521,9 @@ p {
 .c-logo {
   margin-bottom: 24px; }
 
+.c-main-area {
+  padding-bottom: 48px; }
+
 .c-main-area__title,
 .c-main-area__pretitle,
 .c-main-area__subtitle {

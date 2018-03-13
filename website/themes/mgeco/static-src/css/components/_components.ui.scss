@@ -67,6 +67,10 @@
 }
 
 
+.c-main-area {
+  padding-bottom: $spacing*2;
+}
+
 .c-main-area__title,
 .c-main-area__pretitle,
 .c-main-area__subtitle {
@@ -105,6 +109,7 @@
   .c-logo__image:hover {
     background-image: url('/images/logo_mg2.jpg');
   }
+
 
   .c-main-area {
     padding-left: $spacing*2;
