@@ -1,17 +1,2 @@
-  {{ if eq .Params.title "Accueil" }}
-  <script rel="preload" src="js/siema.min.js"></script>
-  <script type="text/javascript">
-    var homepageCarousel = new Siema({
-      selector: '.c-homepage-carousel',
-      loop: true,
-      duration: 600,
-      easing: 'ease',
-      perPage: 2
-    });
-    setInterval(function() {
-      homepageCarousel.next(2)
-    }, 3000)
-  </script>
-  {{ end }}
   </body>
 </html>

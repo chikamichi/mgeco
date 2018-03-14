@@ -1,40 +1,56 @@
 const webpack = require('webpack');
 const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 const LoadGalleryVendorsDll = new webpack.DllReferencePlugin({
   context: __dirname,
   manifest: require('./dist/gallery_vendors.manifest.json'),
 });
 
+const LoadHomepageCarouselVendorsDll = new webpack.DllReferencePlugin({
+  context: __dirname,
+  manifest: require('./dist/homepage_carousel_vendors.manifest.json'),
+});
+
 const CompileGallery = new HtmlWebpackPlugin({
   title: 'MG éco-construction',
   filename: 'gallery.html',
-  template: 'src/html/gallery.gen.js',
+  template: 'src/gallery/generator.js',
   inject: false
 });
 
-const CopyGalleryToWebsite = new CopyWebpackPlugin([
-  {
-    context: 'dist/',
-    from: 'gallery.html',
-    to: '../../website/themes/mgeco/layouts/galerie/single.html'
-  }, {
-    context: 'dist/',
-    from: '*.js',
-    to: '../../website/themes/mgeco/static/js/'
+const CompileHomepageCarousel = new HtmlWebpackPlugin({
+  filename: 'homepage_carousel.html',
+  template: 'src/homepage_carousel/generator.js',
+  inject: false
+});
+
+const CopyAssetsToWebsite = new FileManagerPlugin({
+  onEnd: {
+    copy: [
+      {
+        source: './dist/gallery.html',
+        destination: '../website/themes/mgeco/layouts/galerie/single.html'
+      }, {
+        source: './dist/homepage_carousel.html',
+        destination: '../website/themes/mgeco/layouts/partials/homepage_carousel.html'
+      },
+      {
+        source: './dist/*.js',
+        destination: '../website/themes/mgeco/static/js/'
+      }
+    ]
   }
-], {
-  copyUnmodified: true
 })
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 const config = {
   entry: {
-    gallery: './src/js/gallery.js',
+    'gallery': './src/gallery/index.js',
+    'homepage_carousel': './src/homepage_carousel/index.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -73,13 +89,15 @@ const config = {
       _: 'lodash'
     }),
     LoadGalleryVendorsDll,
+    LoadHomepageCarouselVendorsDll,
     // new webpack.DefinePlugin({
     //   'process.env': {
     //     'ENV': JSON.stringify(process.env.NODE_ENV),
     //   },
     // }),
     CompileGallery,
-    CopyGalleryToWebsite
+    CompileHomepageCarousel,
+    CopyAssetsToWebsite
   ].concat(isDevelopment ? [] : [
     new webpack.optimize.UglifyJsPlugin({
       beautify: false,

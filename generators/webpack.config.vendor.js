@@ -21,7 +21,10 @@ const copyPhotoswipeAssets = new CopyWebpackPlugin([
 module.exports = {
   entry: {
     'gallery_vendors': [
-      './src/js/vendors.js'
+      './src/gallery/vendors.js'
+    ],
+    'homepage_carousel_vendors': [
+      './src/homepage_carousel/vendors.js'
     ]
   },
   output: {

@@ -1,4 +1,3 @@
-// All of the gallery-generator third-party dependencies:
 require('lodash');
 require('imagesloaded');
 require('masonry-layout');
