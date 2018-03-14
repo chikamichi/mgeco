@@ -1,10 +1,13 @@
 const fs = require('fs')
 const rimraf = require('rimraf')
 const execSync = require('child_process').execSync
+const toml = require('toml')
 
 // Not exporting a generator function, this script is executed through babel-node.
+const baseDir = process.cwd()
+const galleryDir = `${baseDir}/../website/static/images/gallery`
 
-process.chdir('../website/static/images/gallery')
+process.chdir(galleryDir)
 
 console.log('\nStarting generating images...')
 
@@ -21,8 +24,9 @@ console.log('\n> Generating homepage\'s carousel images')
 process.chdir('../../')
 rimraf.sync('carousel')
 fs.mkdirSync('carousel')
-// TODO: get filenames from website's toml config
-execSync('cp gallery/{33,8,15,40,1}.jpg carousel')
+const config = fs.readFileSync('../website/config.images.toml').toString()
+const images = toml.parse(config).carousel.images
+images.forEach((image) => execSync(`cp gallery/${image} carousel`))
 process.chdir('./carousel')
 execSync(`convert "*.jpg[300x>]" -monitor -depth 8 -quality 75% -set filename:original %t './%[filename:original].jpg'`)
 execSync('mogrify -shave 3x3 -bordercolor white -border 3 -format jpg *.jpg')

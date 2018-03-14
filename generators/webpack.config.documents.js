@@ -56,7 +56,6 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
     library: '[name]'
-    // publicPath: ''
   },
   resolve: {
     extensions: ['.js']
@@ -65,10 +64,6 @@ const config = {
     rules: [{
       test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
       loader: 'file-loader'
-      // loader: 'url-loader',
-      // options: {
-      //   limit: 10000
-      // }
     }, {
       test: /\.js$/,
       exclude: /node_modules/,
@@ -90,11 +85,6 @@ const config = {
     }),
     LoadGalleryVendorsDll,
     LoadHomepageCarouselVendorsDll,
-    // new webpack.DefinePlugin({
-    //   'process.env': {
-    //     'ENV': JSON.stringify(process.env.NODE_ENV),
-    //   },
-    // }),
     CompileGallery,
     CompileHomepageCarousel,
     CopyAssetsToWebsite
