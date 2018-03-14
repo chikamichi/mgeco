@@ -1,25 +1,33 @@
-const execSync = require('child_process').execSync;
-let images = require('json-loader!yaml-loader!./images_list.yml');
-// TODO: don't use the full layout actually, just generate the gallery?
-// Lisa will run the script (npm run build) and copy/paste the generated html into the proper galerie.html page
-// Or, do use the layout, but then it'd be better using it on all other pages as well, which means generating them… :(
-// Or, just tell Lisa to update the layout if she ever changes other pages.
-// => https://www.jonathan-petitcolas.com/2016/01/23/webpack-html-plugin-in-a-nutshell.html
-const layout = require('./template.pug');
+const fs = require('fs')
+const execSync = require('child_process').execSync
+const layout = require('./template.pug')
+const cl = require('../_utils/config_loader')
 
-function cmd(path) { return "identify -format '%wx%h' " + path }
+module.exports = () => {
+  const cmd = (path) => `identify -format '%wx%h' ${path}`
 
-const generator = module.exports = function(templateParams) {
-  let failures = [];
-  for (let [index, image] of images.entries()) {
-    const path = '../website/static/images/gallery/' + image.path;
-    try {
-      image.dimensions = execSync(cmd(path)).toString();
-    } catch(e) {
-      failures.push(image);
+  const appendExt = (_, name) => `${name}.jpg`
+  const processImage = (image) => _.mapKeys(image, appendExt)
+  const processImages = (images) => _.map(images, processImage)
+  const images = cl('images', 'gallery.0.image', processImages)
+
+  const normalizeImage = (image) => {
+    const name = Object.keys(image)[0]
+    const description = Object.values(image)[0]
+    const path = `../website/static/images/gallery/${name}`
+    if (fs.existsSync(path)) {
+      try {
+        return {
+          path: name,
+          description: description,
+          dimensions: execSync(cmd(path)).toString()
+        }
+      } catch(e) {
+        console.error(e)
+      }
     }
   }
-  _.pullAll(images, failures);
 
-  return layout({images: images});
-};
+  const collection = _.chain(images).map(normalizeImage).compact().value()
+  return layout({images: collection})
+}

@@ -1,7 +1,9 @@
+const _ = require('lodash')
 const fs = require('fs')
 const rimraf = require('rimraf')
 const execSync = require('child_process').execSync
 const toml = require('toml')
+const cl = require('../_utils/config_loader')
 
 // Not exporting a generator function, this script is executed through babel-node.
 const baseDir = process.cwd()
@@ -21,13 +23,14 @@ execSync('mogrify -shave 3x3 -bordercolor white -border 3 -format jpg *.jpg')
 
 // Generate homepage's carousel images.
 console.log('\n> Generating homepage\'s carousel images')
-process.chdir('../../')
+const appendExt = (name) => `${name}.jpg`
+process.chdir(baseDir)
+const images = cl('images', 'carousel', (images) => _.map(images, appendExt))
+process.chdir(`${galleryDir}/..`)
 rimraf.sync('carousel')
 fs.mkdirSync('carousel')
-const config = fs.readFileSync('../website/config.images.toml').toString()
-const images = toml.parse(config).carousel.images
 images.forEach((image) => execSync(`cp gallery/${image} carousel`))
-process.chdir('./carousel')
+process.chdir(`carousel`)
 execSync(`convert "*.jpg[300x>]" -monitor -depth 8 -quality 75% -set filename:original %t './%[filename:original].jpg'`)
 execSync('mogrify -shave 3x3 -bordercolor white -border 3 -format jpg *.jpg')
 

@@ -17,6 +17,8 @@ const LoadHomepageCarouselVendorsDll = new webpack.DllReferencePlugin({
 const CompileGallery = new HtmlWebpackPlugin({
   title: 'MG éco-construction',
   filename: 'gallery.html',
+  // .js files go through babel-loader, as specified below within the config;
+  // generator.js is expected to output an HTML template then.
   template: 'src/gallery/generator.js',
   inject: false
 });
@@ -82,6 +84,7 @@ const config = {
   plugins: [
     new webpack.ProvidePlugin({
       _: 'lodash'
+      // TODO: try to add src/_utils/config_loader.js
     }),
     LoadGalleryVendorsDll,
     LoadHomepageCarouselVendorsDll,
