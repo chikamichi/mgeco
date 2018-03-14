@@ -1,6 +1,0 @@
-#!/bin/sh
-
-# Uncomment if the vendors bundle must be recompiled.
-#NODE_ENV=production npm run build:vendor
-
-NODE_ENV=production npm run build

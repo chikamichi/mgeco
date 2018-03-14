@@ -16,34 +16,46 @@ Le code HTML généré est automatiquement placé à la position idoine dans le 
 
 ## Utilisation
 
-Ce projet fournit deux principales commandes :
+Ce projet fournit plusieurs commandes :
 
 ``` sh
-./bin/generate-thumbnails
+npm run build:images
 ```
 
-génère les thumbnails à partir des images originelles grand-format stockées dans ../website/static/images/[gallery|carousel|…]/.
+génère des thumbnails à partir des images originelles grand-format stockées dans ../website/static/images/[gallery|carousel|…]/.
 
-```
-./bin/generate
+``` sh
+npm run build:vendors
 ```
 
-lance les différents générateurs (cf. */src*).
+génère des DLL Webpack pour la mise en cache conditionnelle des librairies tierces requises par les documents générés par la commande `build`.
+
+``` sh
+npm run build:documents
+```
+
+lance les différents générateurs (cf. */src*) et construit les documents appropriés, en incorporant les DLL Webpack idoines.
+
+``` sh
+npm run build
+```
+
+lance l'ensemble des commandes `build:X` pour réaliser une génération complète.
 
 ## Développement
 
 Installer les dépendances JS du projet : `npm install`.
 
-### Utilisation des générateurs
+### Exemples d'utilisation des générateurs
 
 *Ces commandes sont pour parties intégrées dans les scripts mentionnés ci-avant.*
 
 * Générer la DLL des librairies tierces ie. les *vendors*, sous la forme de DLL Webpack : `npm run build:vendors`.
-* Lancer les générateurs en mode développement : `npm run build [-- --watch]`.
-* Lancer les générateurs en mode production : `NODE_ENV=production npm run build[:vendors]`.
+* Lancer les générateurs en mode développement : `npm run build:documents [-- --watch]`.
+* Réaliser une génération complète en mode production : `NODE_ENV=production npm run build`.
 
 ### Ajouter une librairie tierce à un générateur
 
 1. Ajouter la librairie dans package.json (ou `npm i -[S|D] library_name`).
-2. Importer la librairie dans src/[generator]/vendors.js.
+2. Importer la librairie dans src/[generator_name]/vendors.js.
 3. Recompiler les DLL des librairies *vendors* pour tous les générateurs : `npm run build:vendors`.
