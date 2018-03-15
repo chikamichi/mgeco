@@ -10,3 +10,9 @@
           {{ partial "nav.html" . }}
         </div>
         <div class="o-layout__item  c-main-area  u-1/1  u-3/4@tablet" role="main" aria-labelledby="main-area-title">
+          {{ if isset .Params "header" }}
+            <a href="/galerie" class="c-main-content__picture">
+              <img src="/images/gallery/{{ .Params.header }}.jpg">
+              <span>+ de photos</span>
+            </a>
+          {{ end }}
