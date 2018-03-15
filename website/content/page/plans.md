@@ -10,7 +10,7 @@ Si vous souhaitez **concevoir votre projet avec des professionnels**, MG ECO peu
 
 Chaque prestation est personnalisée et se fait sur devis.
 
-### Conception de plans
+## Conception de plans
 
 Cette prestation se déroule en plusieurs étapes :
 
@@ -22,16 +22,16 @@ Cette recherche se fait dans le respect des principes bioclimatiques (implantati
 
 Au cœur de la prestation, nous nous attachons à concilier vos attentes avec vos contraintes budgétaires, par la réalisation de devis estimatifs pour la construction.
 
-### Plans d’exécution
+## Plans d’exécution
 
 Les plans d’exécution sont ensuite réalisés avec le logiciel CADWORK, ce qui assure une grande précision à la taille des pièces et une **conception parfaitement maîtrisée**.
 
 Dans la formule « maison en kit », ces plans vous sont livrés avec une notice de montage et une assistance sur chantier puis par téléphone.
 
-### Étude thermique RT 2012
+## Étude thermique RT 2012
 
 Depuis le 1er janvier 2013, la Réglementation Thermique RT2012 vise le BBC (Bâtiment Basse Consommation) pour toutes les nouvelles constructions, et impose la réalisation d'une étude thermique dont le compte rendu doit être joint à la dépose du permis de construire. Nous réalisons ce type d'étude thermique avec le logiciel PERRENOUD U21WIN, seule ou en accompagnement de la conception de plans et de la dépose de permis de construire.
 
-### Obtention du permis de construire
+## Obtention du permis de construire
 
 Nous réalisons les dossiers de permis de construire pour **tous bâtiments inférieurs à 150 m²**, prêt à déposer en mairie, en format A3 couleur, avec **suivi administratif** jusqu'à obtention du PC (permis de construire).
