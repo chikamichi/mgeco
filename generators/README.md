@@ -24,11 +24,15 @@ npm run build:images
 
 génère des thumbnails à partir des images originelles grand-format stockées dans ../website/static/images/[gallery|carousel|…]/.
 
+---
+
 ``` sh
 npm run build:vendors
 ```
 
 génère des DLL Webpack pour la mise en cache conditionnelle des librairies tierces requises par les documents générés par la commande `build`.
+
+---
 
 ``` sh
 npm run build:documents
@@ -36,11 +40,15 @@ npm run build:documents
 
 lance les différents générateurs (cf. */src*) et construit les documents appropriés, en incorporant les DLL Webpack idoines.
 
+---
+
 ``` sh
 npm run build
 ```
 
 lance l'ensemble des commandes `build:X` pour réaliser une génération complète.
+
+> **Attention**, ces commandes *doivent* être lancées depuis le dossier generators/, et non depuis un éventuel sous-dossier ou depuis le dossier parent contenant generators/ et website/.
 
 ## Développement
 

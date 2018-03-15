@@ -1,9 +1,7 @@
-const fs = require('fs')
 const objectPath = require('object-path')
-const toml = require('toml')
+const YAML = require('yamljs')
 
 const configLoader = module.exports = (configName, path = null, cb = (config) => config) => {
-  const data = fs.readFileSync(`../website/config.${configName}.toml`).toString()
-  const config = toml.parse(data)
+  const config = YAML.load('../website/config.images.yml')
   return cb(objectPath.get(config, path))
 }

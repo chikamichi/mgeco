@@ -1,0 +1,336 @@
+---
+# Toutes les images sont implicitement des .jpg
+carousel:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+
+gallery:
+  -
+    folder: BERGANTY
+    title: Une maison roulotte à Cahors
+    images:
+      - 1 = Maison roulotte à Cahors
+      - 2 = Bardage mélèze couvre-joints
+      - 3 = TODO (Maison roulotte à Cahors)
+      - 4 = TODO (Maison roulotte à Cahors)
+      - 5 = TODO (Maison roulotte à Cahors)
+      - 6 = TODO (Maison roulotte à Cahors)
+      - 7 = TODO (Maison roulotte à Cahors)
+  -
+    folder: CAHORS
+    title: Une maison à Cahors
+    images:
+      - "1 = Terrasse extérieure : plancher chêne"
+      - 2 = Toiture zinc à joints de bout
+      - 3 = TODO (Une maison à Cahors)
+      - 4 = TODO (Une maison à Cahors)
+      - 5 = TODO (Une maison à Cahors)
+      - 6 = TODO (Une maison à Cahors)
+      - 7 = TODO (Une maison à Cahors)
+  -
+    folder: CALVIGNAC
+    title: Une maison à Calvignac
+    images:
+      - 1 = TODO (Une maison à Calvignac)
+      - 2 = TODO (Une maison à Calvignac)
+      - 3 = TODO (Une maison à Calvignac)
+      - 4 = TODO (Une maison à Calvignac)
+      - 5 = TODO (Une maison à Calvignac)
+      - 6 = TODO (Une maison à Calvignac)
+      - 7 = TODO (Une maison à Calvignac)
+  -
+    folder: CONCOTS
+    title: Une maison à Concots
+    images:
+      - 1 = TODO (Une maison à Concots)
+      - 2 = TODO (Une maison à Concots)
+      - 3 = TODO (Une maison à Concots)
+      - 4 = TODO (Une maison à Concots)
+      - 5 = TODO (Une maison à Concots)
+      - 6 = TODO (Une maison à Concots)
+      - 7 = TODO (Une maison à Concots)
+      - 8 = TODO (Une maison à Concots)
+      - 9 = TODO (Une maison à Concots)
+      - 10 = TODO (Une maison à Concots)
+      - 12 = TODO (Une maison à Concots)
+      - 13 = TODO (Une maison à Concots)
+      - 14 = TODO (Une maison à Concots)
+      - 15 = TODO (Une maison à Concots)
+      - 16 = TODO (Une maison à Concots)
+  -
+    folder: SAINT-CIRQ-SOUILLAGUET
+    title: Une maison à St-Cirq-Souillaguet
+    images:
+      - 1 = TODO (Une maison à St-Cirq-Souillaguet)
+      - 2 = TODO (Une maison à St-Cirq-Souillaguet)
+      - 3 = TODO (Une maison à St-Cirq-Souillaguet)
+      - 4 = TODO (Une maison à St-Cirq-Souillaguet)
+      - 5 = TODO (Une maison à St-Cirq-Souillaguet)
+      - 6 = TODO (Une maison à St-Cirq-Souillaguet)
+      - 7 = TODO (Une maison à St-Cirq-Souillaguet)
+      - 8 = TODO (Une maison à St-Cirq-Souillaguet)
+      - 9 = TODO (Une maison à St-Cirq-Souillaguet)
+      - 10 = TODO (Une maison à St-Cirq-Souillaguet)
+      - 11 = TODO (Une maison à St-Cirq-Souillaguet)
+  -
+    folder: SALVIAC
+    title: Une maison à Salviac
+    images:
+      - 1 = TODO (Une maison à Salviac)
+      - 2 = TODO (Une maison à Salviac)
+      - 3 = TODO (Une maison à Salviac)
+      - 4 = TODO (Une maison à Salviac)
+      - 5 = TODO (Une maison à Salviac)
+      - 6 = TODO (Une maison à Salviac)
+      - 7 = TODO (Une maison à Salviac)
+      - 8 = TODO (Une maison à Salviac)
+      - 9 = TODO (Une maison à Salviac)
+      - 10 = TODO (Une maison à Salviac)
+      - 11 = TODO (Une maison à Salviac)
+      - 12 = TODO (Une maison à Salviac)
+  -
+    folder: DIVERS
+    title: + de photos
+    images:
+      - 63 = TODO
+      - 64 = TODO
+      - 65 = TODO
+      - 66 = TODO
+      - 67 = TODO
+      - 68 = TODO
+      - 69 = TODO
+      - 70 = TODO
+      - 71 = TODO
+      - 72 = TODO
+      - 73 = TODO
+      - 74 = TODO
+      - 75 = TODO
+      - 76 = TODO
+      - 77 = TODO
+      - 78 = TODO
+      - 79 = TODO
+      - 80 = TODO
+      - 81 = TODO
+      - 82 = TODO
+      - 83 = TODO
+      - 84 = TODO
+      - 85 = TODO
+      - 86 = TODO
+      - 87 = TODO
+      - 88 = TODO
+      - 89 = TODO
+      - 90 = TODO
+      - 91 = TODO
+      - 92 = TODO
+      - 93 = TODO
+      - 94 = TODO
+      - 95 = TODO
+      - 96 = TODO
+      - 97 = TODO
+      - 98 = TODO
+      - 99 = TODO
+      - 100 = TODO
+      - 101 = TODO
+      - 102 = TODO
+      - 103 = TODO
+
+  # [[gallery.image]]
+  #   8 = "Une image"
+  # [[gallery.image]]
+  #   9 = "Une image"
+  # [[gallery.image]]
+  #   10 = "Une image"
+  # [[gallery.image]]
+  #   11 = "Une image"
+  # [[gallery.image]]
+  #   12 = "Une image"
+  # [[gallery.image]]
+  #   13 = "Une image"
+  # [[gallery.image]]
+  #   14 = "Une image"
+  # [[gallery.image]]
+  #   15 = "Une image"
+  # [[gallery.image]]
+  #   16 = "Une image"
+  # [[gallery.image]]
+  #   17 = "Une image"
+  # [[gallery.image]]
+  #   18 = "Une image"
+  # [[gallery.image]]
+  #   19 = "Une image"
+  # [[gallery.image]]
+  #   20 = "Une image"
+  # [[gallery.image]]
+  #   21 = "Une image"
+  # [[gallery.image]]
+  #   22 = "Une image"
+  # [[gallery.image]]
+  #   23 = "Une image"
+  # [[gallery.image]]
+  #   24 = "Une image"
+  # [[gallery.image]]
+  #   25 = "Une image"
+  # [[gallery.image]]
+  #   26 = "Une image"
+  # [[gallery.image]]
+  #   27 = "Une image"
+  # [[gallery.image]]
+  #   28 = "Une image"
+  # [[gallery.image]]
+  #   29 = "Une image"
+  # [[gallery.image]]
+  #   30 = "Une image"
+  # [[gallery.image]]
+  #   31 = "Une image"
+  # [[gallery.image]]
+  #   32 = "Une image"
+  # [[gallery.image]]
+  #   33 = "Une image"
+  # [[gallery.image]]
+  #   34 = "Une image"
+  # [[gallery.image]]
+  #   35 = "Une image"
+  # [[gallery.image]]
+  #   36 = "Une image"
+  # [[gallery.image]]
+  #   37 = "Une image"
+  # [[gallery.image]]
+  #   38 = "Une image"
+  # [[gallery.image]]
+  #   39 = "Une image"
+  # [[gallery.image]]
+  #   40 = "Une image"
+  # [[gallery.image]]
+  #   41 = "Une image"
+  # [[gallery.image]]
+  #   42 = "Une image"
+  # [[gallery.image]]
+  #   43 = "Une image"
+  # [[gallery.image]]
+  #   44 = "Une image"
+  # [[gallery.image]]
+  #   45 = "Une image"
+  # [[gallery.image]]
+  #   46 = "Une image"
+  # [[gallery.image]]
+  #   47 = "Une image"
+  # [[gallery.image]]
+  #   48 = "Une image"
+  # [[gallery.image]]
+  #   49 = "Une image"
+  # [[gallery.image]]
+  #   50 = "Une image"
+  # [[gallery.image]]
+  #   51 = "Une image"
+  # [[gallery.image]]
+  #   52 = "Une image"
+  # [[gallery.image]]
+  #   53 = "Une image"
+  # [[gallery.image]]
+  #   54 = "Une image"
+  # [[gallery.image]]
+  #   55 = "Une image"
+  # [[gallery.image]]
+  #   56 = "Une image"
+  # [[gallery.image]]
+  #   57 = "Une image"
+  # [[gallery.image]]
+  #   58 = "Une image"
+  # [[gallery.image]]
+  #   59 = "Une image"
+  # [[gallery.image]]
+  #   60 = "Une image"
+  # [[gallery.image]]
+  #   61 = "Une image"
+  # [[gallery.image]]
+  #   62 = "Une image"
+  # [[gallery.image]]
+  #   63 = "Une image"
+  # [[gallery.image]]
+  #   64 = "Une image"
+  # [[gallery.image]]
+  #   65 = "Une image"
+  # [[gallery.image]]
+  #   66 = "Une image"
+  # [[gallery.image]]
+  #   67 = "Une image"
+  # [[gallery.image]]
+  #   68 = "Une image"
+  # [[gallery.image]]
+  #   69 = "Une image"
+  # [[gallery.image]]
+  #   70 = "Une image"
+  # [[gallery.image]]
+  #   71 = "Une image"
+  # [[gallery.image]]
+  #   72 = "Une image"
+  # [[gallery.image]]
+  #   73 = "Une image"
+  # [[gallery.image]]
+  #   74 = "Une image"
+  # [[gallery.image]]
+  #   75 = "Une image"
+  # [[gallery.image]]
+  #   76 = "Une image"
+  # [[gallery.image]]
+  #   77 = "Une image"
+  # [[gallery.image]]
+  #   78 = "Une image"
+  # [[gallery.image]]
+  #   79 = "Une image"
+  # [[gallery.image]]
+  #   80 = "Une image"
+  # [[gallery.image]]
+  #   81 = "Une image"
+  # [[gallery.image]]
+  #   82 = "Une image"
+  # [[gallery.image]]
+  #   83 = "Une image"
+  # [[gallery.image]]
+  #   84 = "Une image"
+  # [[gallery.image]]
+  #   85 = "Une image"
+  # [[gallery.image]]
+  #   86 = "Une image"
+  # [[gallery.image]]
+  #   87 = "Une image"
+  # [[gallery.image]]
+  #   88 = "Une image"
+  # [[gallery.image]]
+  #   89 = "Une image"
+  # [[gallery.image]]
+  #   90 = "Une image"
+  # [[gallery.image]]
+  #   91 = "Une image"
+  # [[gallery.image]]
+  #   92 = "Une image"
+  # [[gallery.image]]
+  #   93 = "Une image"
+  # [[gallery.image]]
+  #   94 = "Une image"
+  # [[gallery.image]]
+  #   95 = "Une image"
+  # [[gallery.image]]
+  #   96 = "Une image"
+  # [[gallery.image]]
+  #   97 = "Une image"
+  # [[gallery.image]]
+  #   98 = "Une image"
+  # [[gallery.image]]
+  #   99 = "Une image"

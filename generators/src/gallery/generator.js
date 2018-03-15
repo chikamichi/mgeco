@@ -5,29 +5,33 @@ const cl = require('../_utils/config_loader')
 
 module.exports = () => {
   const cmd = (path) => `identify -format '%wx%h' ${path}`
-
-  const appendExt = (_, name) => `${name}.jpg`
-  const processImage = (image) => _.mapKeys(image, appendExt)
-  const processImages = (images) => _.map(images, processImage)
-  const images = cl('images', 'gallery.0.image', processImages)
-
-  const normalizeImage = (image) => {
-    const name = Object.keys(image)[0]
-    const description = Object.values(image)[0]
-    const path = `../website/static/images/gallery/${name}`
-    if (fs.existsSync(path)) {
+  const data = cl('images', 'gallery')
+  const normalizeImage = (image, category) => {
+    const [name, description] = image.split(/ = /)
+    const filename = `${name}.jpg`
+    const pathOriginal = `../website/static/images/gallery/${category}/${filename}`
+    const pathThumbnail = `../website/static/images/gallery/${category}/thumbnails/${filename}`
+    if (fs.existsSync(pathOriginal) && fs.existsSync(pathThumbnail)) {
       try {
         return {
-          path: name,
+          category: category,
+          name: name,
+          filename: filename,
+          path: `${category}/${filename}`,
+          pathThumbnail: `${category}/thumbnails/${filename}`,
           description: description,
-          dimensions: execSync(cmd(path)).toString()
+          dimensions: execSync(cmd(pathOriginal)).toString()
         }
       } catch(e) {
         console.error(e)
       }
     }
   }
-
-  const collection = _.chain(images).map(normalizeImage).compact().value()
-  return layout({images: collection})
+  const processCategory = (category) => {
+    // _.invokeMap binds this to undefined somehow.
+    category.images = _.map(category.images, (image) => normalizeImage(image, category.folder))
+    return category
+  }
+  const galleryCategories = _.map(data, processCategory)
+  return layout({galleryCategories: galleryCategories})
 }

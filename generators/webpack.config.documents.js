@@ -84,7 +84,6 @@ const config = {
   plugins: [
     new webpack.ProvidePlugin({
       _: 'lodash'
-      // TODO: try to add src/_utils/config_loader.js
     }),
     LoadGalleryVendorsDll,
     LoadHomepageCarouselVendorsDll,
