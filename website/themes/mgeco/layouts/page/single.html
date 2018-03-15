@@ -8,6 +8,12 @@
     {{ end }}
   </h1>
   <main class="c-main-content">
+    {{ if isset .Params "header" }}
+      <a href="/galerie" class="c-main-content__picture">
+        <img src="/images/gallery/{{ .Params.header }}.jpg">
+        <span>+ de photos</span>
+      </a>
+    {{ end }}
     {{ .Content }}
   </main>
 {{ partial "footer" . }}

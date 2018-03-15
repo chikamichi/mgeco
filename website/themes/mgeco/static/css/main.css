@@ -1538,6 +1538,26 @@ p {
   color: #90993F; }
 
 @media (min-width: 46.25em) {
+  /* Generated with Bounce.js. Edit at https://goo.gl/dtlGoK */
+  @keyframes animation {
+    0% {
+      transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    2.6% {
+      transform: matrix3d(0.277, 0, 0, 0, 0, 0.277, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    5.21% {
+      transform: matrix3d(0.485, 0, 0, 0, 0, 0.485, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    10.31% {
+      transform: matrix3d(0.748, 0, 0, 0, 0, 0.748, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    15.52% {
+      transform: matrix3d(0.888, 0, 0, 0, 0, 0.888, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    20.62% {
+      transform: matrix3d(0.954, 0, 0, 0, 0, 0.954, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    30.93% {
+      transform: matrix3d(0.997, 0, 0, 0, 0, 0.997, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    41.24% {
+      transform: matrix3d(1.002, 0, 0, 0, 0, 1.002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+    100% {
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
   .o-layout__item {
     text-align: left; }
 
@@ -1553,7 +1573,39 @@ p {
 
   .c-main-area {
     padding-left: 48px;
-    padding-right: 24px; } }
+    padding-right: 24px; }
+
+  .c-main-content__picture {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: 24px;
+    border: 1px solid #90993F;
+    overflow: hidden; }
+    .c-main-content__picture > span {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 2em;
+      font-weight: bold;
+      line-height: 100px;
+      text-transform: full-width;
+      color: #90993F; }
+    .c-main-content__picture > img {
+      transform: translateY(-50%); }
+    .c-main-content__picture:hover > img {
+      opacity: 0.2;
+      transition: opacity 0.5s; }
+    .c-main-content__picture:hover > span {
+      display: inline-block;
+      animation: animation 1000ms linear both; } }
 .c-contact-infos__link {
   color: #606060; }
 
