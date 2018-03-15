@@ -22,19 +22,12 @@ carousel:
 
 gallery:
   -
-    folder: BERGANTY
-    title: Une maison roulotte à Cahors
-    images:
-      - 1 = Maison roulotte à Cahors
-      - 2 = Bardage mélèze couvre-joints
-      - 3 = TODO (Maison roulotte à Cahors)
-      - 4 = TODO (Maison roulotte à Cahors)
-      - 5 = TODO (Maison roulotte à Cahors)
-      - 6 = TODO (Maison roulotte à Cahors)
-      - 7 = TODO (Maison roulotte à Cahors)
-  -
     folder: CAHORS
-    title: Une maison à Cahors
+    title: Une maison roulotte à Cahors
+    description: |-
+      L'architecture *spécifique* de cette maison a requis blablabla…
+
+      On notera *ceci* & surtout **cela**…
     images:
       - "1 = Terrasse extérieure : plancher chêne"
       - 2 = Toiture zinc à joints de bout
@@ -43,6 +36,17 @@ gallery:
       - 5 = TODO (Une maison à Cahors)
       - 6 = TODO (Une maison à Cahors)
       - 7 = TODO (Une maison à Cahors)
+  -
+    folder: BERGANTY
+    title: Une maison à Berganty
+    images:
+      - 1 = Maison roulotte à Cahors
+      - 2 = Bardage mélèze couvre-joints
+      - 3 = TODO (Maison roulotte à Cahors)
+      - 4 = TODO (Maison roulotte à Cahors)
+      - 5 = TODO (Maison roulotte à Cahors)
+      - 6 = TODO (Maison roulotte à Cahors)
+      - 7 = TODO (Maison roulotte à Cahors)
   -
     folder: CALVIGNAC
     title: Une maison à Calvignac

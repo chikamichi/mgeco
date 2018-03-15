@@ -1,5 +1,6 @@
 const fs = require('fs')
 const execSync = require('child_process').execSync
+const showdown  = require('showdown')
 const layout = require('./template.pug')
 const cl = require('../_utils/config_loader')
 
@@ -27,11 +28,15 @@ module.exports = () => {
       }
     }
   }
-  const processCategory = (category) => {
+  const normalizeCategory = (category) => {
     // _.invokeMap binds this to undefined somehow.
     category.images = _.map(category.images, (image) => normalizeImage(image, category.folder))
+    if (category.description)
+      category.descriptionRaw = category.description
+      const converter = new showdown.Converter()
+      category.description = converter.makeHtml(category.description)
     return category
   }
-  const galleryCategories = _.map(data, processCategory)
+  const galleryCategories = _.map(data, normalizeCategory)
   return layout({galleryCategories: galleryCategories})
 }

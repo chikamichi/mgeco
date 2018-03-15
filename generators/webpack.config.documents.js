@@ -72,7 +72,10 @@ const config = {
       loader: 'babel-loader'
     }, {
       test: /\.pug$/,
-      loader: 'pug-loader'
+      loader: 'pug-loader',
+      options: {
+        pretty: true
+      }
     }, {
       test: /\.html$/,
       loader: 'html-loader',
