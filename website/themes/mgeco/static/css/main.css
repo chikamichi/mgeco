@@ -1478,6 +1478,44 @@ p {
   .o-list-inline--flush > .o-list-inline__item {
     font-size: 1rem; }
 
+/* Generated with https://icomoon.io/ */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?3ay7k5");
+  src: url("../fonts/icomoon.eot?3ay7k5#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?3ay7k5") format("truetype"), url("../fonts/icomoon.woff?3ay7k5") format("woff"), url("../fonts/icomoon.svg?3ay7k5#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.fa {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.fa-close:before {
+  content: "\f00d"; }
+
+.fa-remove:before {
+  content: "\f00d"; }
+
+.fa-times:before {
+  content: "\f00d"; }
+
+.fa-bars:before {
+  content: "\f0c9"; }
+
+.fa-navicon:before {
+  content: "\f0c9"; }
+
+.fa-reorder:before {
+  content: "\f0c9"; }
+
 /* ==========================================================================
    # UI
    ========================================================================== */
@@ -1520,14 +1558,17 @@ p {
   background-size: 100%;
   transition: background 0.1s ease-in-out; }
 
-.c-sidebar__link {
+.c-nav__link {
   text-transform: uppercase;
   color: black;
   font-weight: bold;
   font-size: 1.2em; }
-  .c-sidebar__link--active {
+  .c-nav__link--active {
     color: #90993F;
     font-weight: bold; }
+
+.c-nav--desktop {
+  display: none; }
 
 .c-main-area {
   padding-bottom: 48px; }
@@ -1601,8 +1642,10 @@ p {
   .c-logo {
     max-width: 100%; }
 
-  .c-nav > ul {
-    padding: 0 6px; }
+  .c-nav--desktop {
+    display: block; }
+    .c-nav--desktop > ul {
+      padding: 0 6px; }
 
   .c-logo__image {
     width: 100%;
@@ -1618,6 +1661,136 @@ p {
   .c-main-content__picture {
     border: 1px solid #90993F;
     margin: 0 12px 24px 12px; } }
+/*
+Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
+@see https://codepen.io/markcaron/pen/pPZVWO
+*/
+.c-nav--mobile {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  align-items: baseline;
+  z-index: 1000;
+  border-radius: 40px;
+  background: white; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.c-nav__toggle {
+  display: inline-block;
+  padding: 0.5em 10px;
+  line-height: 1em;
+  font-size: 1em;
+  background: white;
+  color: #C7CF7F;
+  border: 1px solid #C7CF7F;
+  transition: all 0.1s ease-in-out;
+  outline: none; }
+  .c-nav__toggle:hover, .c-nav__toggle:focus {
+    color: #73793E;
+    border-color: #73793E;
+    text-decoration: none; }
+
+.c-mobile-menu {
+  position: absolute;
+  left: -200px;
+  top: 0;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: visible;
+  transition: left 0.3s ease, box-shadow 0.3s ease;
+  z-index: 999;
+  /*
+  On small devices, handle toggling the menu:
+  - support :target for non-JavaScript
+  - support aria-expanded="true/false" for JavaScript
+  */
+  /*
+   We could us `.c-mobile-menu:target:after`, but
+   it wouldn't be clickable.
+  */ }
+  .c-mobile-menu .c-nav__items {
+    list-style: none;
+    margin: 0;
+    padding: 2.5em 0 0;
+    /* Hide shadow w/ -8px while 'closed' */
+    -webkit-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
+    box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
+    min-height: 100%;
+    width: 200px;
+    background: #C7CF7F;
+    background-image: url("/images/oak-leaf-pattern.png"); }
+  .c-mobile-menu .c-nav__item {
+    background: #90993F; }
+    .c-mobile-menu .c-nav__item:first-child a {
+      border-top: 1px solid #73793E; }
+  .c-mobile-menu .c-nav__link {
+    font-size: 0.9em;
+    text-align: left; }
+  .c-mobile-menu a {
+    display: block;
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #73793E; }
+    .c-mobile-menu a:hover, .c-mobile-menu a:focus {
+      background: #73793E;
+      text-decoration: none; }
+  .c-mobile-menu .c-mobile-menu__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 1em;
+    line-height: 2.5em;
+    border: none;
+    color: black; }
+    .c-mobile-menu .c-mobile-menu__close:hover {
+      text-decoration: none;
+      color: white; }
+  .c-mobile-menu:target, .c-mobile-menu[aria-expanded="true"] {
+    left: 0;
+    outline: none;
+    -moz-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25); }
+  .c-mobile-menu:target .c-mobile-menu__close, .c-mobile-menu[aria-expanded="true"] .c-mobile-menu__close {
+    z-index: 1001; }
+  .c-mobile-menu:target ul, .c-mobile-menu[aria-expanded="true"] ul {
+    position: relative;
+    z-index: 1000; }
+  .c-mobile-menu:target + .backdrop, .c-mobile-menu[aria-expanded="true"] + .backdrop {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #000;
+    background: rgba(0, 0, 0, 0.25);
+    cursor: default; }
+
+@supports (position: fixed) {
+  .c-mobile-menu,
+  .c-mobile-menu:target + .backdrop,
+  .c-mobile-menu[aria-expanded="true"] + .backdrop {
+    position: fixed; } }
+@media (min-width: 46.25em) {
+  .c-nav--mobile {
+    display: none; } }
 .c-contact-infos__link {
   color: #606060; }
 

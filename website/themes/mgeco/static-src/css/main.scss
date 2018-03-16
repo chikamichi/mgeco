@@ -126,8 +126,6 @@ $inuit-font-size-h6:  16px !default;
 
 
 // OBJECTS
-//
-// Uncomment and add to this section as necessary.
 @import "../../../../node_modules/inuitcss/objects/objects.wrapper";
 @import "../../../../node_modules/inuitcss/objects/objects.layout";
 @import "../../../../node_modules/inuitcss/objects/objects.media";
@@ -141,15 +139,15 @@ $inuit-font-size-h6:  16px !default;
 @import "../../../../node_modules/inuitcss/objects/objects.table";
 @import "../../../../node_modules/inuitcss/objects/objects.pack";
 @import "objects/objects.list-inline";
+@import "objects/objects.icons";
 
 
 
 
 
 // COMPONENTS
-//
-// Build and include your project’s UI Compoments here.
 @import "components/components.ui";
+@import "components/components.mobile_menu";
 @import "components/components.contact-info";
 @import "components/components.contact-us";
 @import "components/components.homepage";
