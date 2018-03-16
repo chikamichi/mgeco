@@ -4,21 +4,6 @@
 
 
 // -----------------------------------------------------------------------------
-// Progress bar.
-// -----------------------------------------------------------------------------
-.c-galleryLoader {
-  border: 1px solid $green;
-  width: 100%;
-  height: 8px;
-}
-
-.c-galleryLoader__progress {
-  background: $green;
-  width: 0;
-  height: 100%;
-}
-
-// -----------------------------------------------------------------------------
 // Default styles applied meanwhile the gallery is loading.
 //
 // This is a "negative" state (where things are hidden) because
@@ -27,12 +12,15 @@
 // removing .loading one.
 // -----------------------------------------------------------------------------
 
+.c-gallery__link {
+  position: relative;
+}
+
 // .c-gallery__image,
 .c-gallery__image--loading {
   .c-gallery__thumbnail {
     transition: opacity 1s ease-in-out;
     opacity: 0;
-    // display: none;
   }
 
   .c-gallery__caption {
@@ -41,6 +29,10 @@
 
   .c-gallery__link {
     display: inline-block;
+  }
+
+  .c-gallery__loader {
+    opacity: 1;
   }
 }
 
@@ -73,8 +65,12 @@
   color: $grey--dark;
 }
 
+.c-gallery__loader,
 .c-gallery__caption {
   position: absolute;
+}
+
+.c-gallery__caption {
   top: 20px;
   right: 20px;
   bottom: 20px;
@@ -85,6 +81,24 @@
   background: rgba(255, 255, 255, 0.6);
   transition: $global-transition;
   opacity: 0;
+}
+
+@keyframes pulsate-border-color {
+  0%   { border-color: white; }
+  50%  { border-color: $grey; }
+  100% { border-color: white; }
+}
+
+.c-gallery__loader {
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 3px;
+  border-width: 1px;
+  border-style: dashed;
+  animation: pulsate-border-color 2s infinite;
 }
 
 .c-gallery__image:hover {

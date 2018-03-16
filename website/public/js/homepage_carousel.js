@@ -64,32 +64,25 @@ var homepage_carousel =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 10:
-/***/ (function(module, exports) {
-
-module.exports = homepage_carousel_vendors_f37a132da04408f09efb;
-
-/***/ }),
-
-/***/ 7:
+/***/ 6:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(10))(468);
+module.exports = (__webpack_require__(9))(468);
 
 /***/ }),
 
-/***/ 9:
+/***/ 8:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _siema = __webpack_require__(7);
+var _siema = __webpack_require__(6);
 
 var _siema2 = _interopRequireDefault(_siema);
 
@@ -106,6 +99,13 @@ var homepageCarousel = new _siema2.default({
 setInterval(function () {
   homepageCarousel.next(2);
 }, 3000);
+
+/***/ }),
+
+/***/ 9:
+/***/ (function(module, exports) {
+
+module.exports = homepage_carousel_vendors_f37a132da04408f09efb;
 
 /***/ })
 

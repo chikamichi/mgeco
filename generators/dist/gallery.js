@@ -64,7 +64,7 @@ var gallery =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -83,47 +83,41 @@ module.exports = (__webpack_require__(0))(165);
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(166);
+module.exports = (__webpack_require__(0))(167);
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(167);
+module.exports = (__webpack_require__(0))(170);
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(170);
+module.exports = (__webpack_require__(0))(171);
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(171);
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
 module.exports = (__webpack_require__(0))(174);
 
 /***/ }),
-/* 7 */,
-/* 8 */
+/* 6 */,
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(_) {
+
 
 var _Rx$Observable;
 
-var _Rx = __webpack_require__(6);
+var _Rx = __webpack_require__(5);
 
 var _Rx2 = _interopRequireDefault(_Rx);
 
-var _masonryLayout = __webpack_require__(3);
+var _masonryLayout = __webpack_require__(2);
 
 var _masonryLayout2 = _interopRequireDefault(_masonryLayout);
 
@@ -131,11 +125,11 @@ var _imagesloaded = __webpack_require__(1);
 
 var _imagesloaded2 = _interopRequireDefault(_imagesloaded);
 
-var _photoswipe = __webpack_require__(5);
+var _photoswipe = __webpack_require__(4);
 
 var _photoswipe2 = _interopRequireDefault(_photoswipe);
 
-var _photoswipeUiDefault = __webpack_require__(4);
+var _photoswipeUiDefault = __webpack_require__(3);
 
 var _photoswipeUiDefault2 = _interopRequireDefault(_photoswipeUiDefault);
 
@@ -186,8 +180,6 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
         return el.classList && el.classList.contains(galleryCategoryClass);
     };
     var galleryCategory = closest(galleryCategoryImages, relatedCategoryCheck);
-    var $galleryLoader = galleryCategory.querySelector('.c-galleryLoader');
-    var $galleryProgress = galleryCategory.querySelector('.c-galleryLoader__progress');
 
     // Start loading and tracking gallery's images, and laying them out.
     // Images are hidden at first, and will be revealed when all images are fully
@@ -195,16 +187,6 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
     // spawning itself (otherwise one may click on an image and just be redirected
     // to the image itself instead of seeing the gallery).
     var imgLoad = (0, _imagesloaded2.default)(galleryCategoryImages);
-
-    // Track images being loaded and provide UI feedback about progress.
-    _Rx2.default.Observable.fromEvent(imgLoad, 'progress').map(function (instance) {
-        return _.filter(instance.images, { isLoaded: true }).length / instance.images.length;
-    }).subscribe(function (progress) {
-        var valuenow = Math.round(progress * 100);
-        $galleryProgress.style.width = valuenow + '%';
-        $galleryProgress.setAttribute('aria-valuenow', valuenow);
-        if (progress >= 1) $galleryLoader.style.display = 'none';
-    });
 
     // Upon the gallery category's full images set being loaded, start revealing
     // them all in a nice, smooth effect.
@@ -219,6 +201,8 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
         });
     });
 
+    // TODO: Create the observable below without take(1), subscribe the code above
+    // then return .take(1)
     // ImagesLoaded exposes weirdos jQuery.Deferred objects.
     // As we're mostly interested in the "done" event anyway, let's wrap in an
     // Rx.Observable to notify about the loading completion.
@@ -228,12 +212,6 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
 var initPhotoSwipeFromDOM = function initPhotoSwipeFromDOM(gallerySelector) {
     // parse slide data (url, title, size ...) from DOM elements
     // (children of gallerySelector)
-    // TODO: split the gallery into several sub-galleries. That is:
-    // - create as many Masonry (or float-based or flex-based…) layouts as
-    //   necessary, based on what was generated out from the YML nested list
-    //   (requires editing $galery logic above in this script);
-    // - edit thumbElements below to grab images aka. "items" within those layouts;
-    // - build the PhotoSwipe gallery as usual, no changes required.
     var parseThumbnailElements = function parseThumbnailElements(el) {
         var thumbElements = el.childNodes,
             numNodes = thumbElements.length,
@@ -280,11 +258,6 @@ var initPhotoSwipeFromDOM = function initPhotoSwipeFromDOM(gallerySelector) {
 
         return items;
     };
-
-    // find nearest parent element
-    // var closest = function closest(el, fn) {
-    //     return el && ( fn(el) ? el : closest(el.parentNode, fn) );
-    // };
 
     // triggers when user clicks on thumbnail
     var onThumbnailsClick = function onThumbnailsClick(e) {
@@ -441,7 +414,6 @@ function (err) {
 }, function () {
     initPhotoSwipeFromDOM('.' + galleryClass);
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ })
 /******/ ]);

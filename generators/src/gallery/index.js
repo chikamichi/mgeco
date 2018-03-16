@@ -45,8 +45,6 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
 
   const relatedCategoryCheck = (el) => el.classList && el.classList.contains(galleryCategoryClass)
   const galleryCategory = closest(galleryCategoryImages, relatedCategoryCheck)
-  const $galleryLoader = galleryCategory.querySelector('.c-galleryLoader')
-  const $galleryProgress = galleryCategory.querySelector('.c-galleryLoader__progress')
 
   // Start loading and tracking gallery's images, and laying them out.
   // Images are hidden at first, and will be revealed when all images are fully
@@ -54,19 +52,6 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
   // spawning itself (otherwise one may click on an image and just be redirected
   // to the image itself instead of seeing the gallery).
   const imgLoad = imagesLoaded(galleryCategoryImages)
-
-  // Track images being loaded and provide UI feedback about progress.
-  Rx.Observable.fromEvent(imgLoad, 'progress')
-    .map(function(instance) {
-      return _.filter(instance.images, {isLoaded: true}).length / instance.images.length;
-    })
-    .subscribe(function(progress) {
-      const valuenow = Math.round(progress * 100);
-      $galleryProgress.style.width = valuenow + '%';
-      $galleryProgress.setAttribute('aria-valuenow', valuenow)
-      if (progress >= 1)
-        $galleryLoader.style.display = 'none';
-    });
 
   // Upon the gallery category's full images set being loaded, start revealing
   // them all in a nice, smooth effect.
@@ -79,6 +64,8 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
     )
   })
 
+  // TODO: Create the observable below without take(1), subscribe the code above
+  // then return .take(1)
   // ImagesLoaded exposes weirdos jQuery.Deferred objects.
   // As we're mostly interested in the "done" event anyway, let's wrap in an
   // Rx.Observable to notify about the loading completion.
@@ -88,12 +75,6 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
 const initPhotoSwipeFromDOM = function(gallerySelector) {
   // parse slide data (url, title, size ...) from DOM elements
   // (children of gallerySelector)
-  // TODO: split the gallery into several sub-galleries. That is:
-  // - create as many Masonry (or float-based or flex-based…) layouts as
-  //   necessary, based on what was generated out from the YML nested list
-  //   (requires editing $galery logic above in this script);
-  // - edit thumbElements below to grab images aka. "items" within those layouts;
-  // - build the PhotoSwipe gallery as usual, no changes required.
   var parseThumbnailElements = function(el) {
       var thumbElements = el.childNodes,
           numNodes = thumbElements.length,
@@ -142,11 +123,6 @@ const initPhotoSwipeFromDOM = function(gallerySelector) {
       return items;
   };
 
-  // find nearest parent element
-  // var closest = function closest(el, fn) {
-  //     return el && ( fn(el) ? el : closest(el.parentNode, fn) );
-  // };
-
   // triggers when user clicks on thumbnail
   var onThumbnailsClick = function(e) {
       e = e || window.event;
@@ -182,8 +158,6 @@ const initPhotoSwipeFromDOM = function(gallerySelector) {
           }
           nodeIndex++;
       }
-
-
 
       if(index >= 0) {
           // open PhotoSwipe if valid index found

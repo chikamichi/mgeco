@@ -46,13 +46,13 @@ h1#main-area-title.c-main-area__title.u-h1
       - if (category.description)
         .c-gallery-category__description
           != category.description
-      .c-gallery-category__loader.c-galleryLoader
-        .c-galleryLoader__progress(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='0')
       .c-gallery-category__images
         each image in category.images
           .c-gallery__image.c-gallery__image--loading(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject', role='img', aria-labelledby=`${image.path}`)
             a.c-gallery__link(href=`/images/gallery/${image.path}`, title=`${image.description}`, itemprop='contentUrl', data-size=`${image.dimensions}`)
               img.c-gallery__thumbnail(src=`/images/gallery/${image.pathThumbnail}`, alt=`${image.description}`, itemprop='thumbnail')
+              .c-gallery__loader
+                div
               .c-gallery__caption(itemprop='caption description')
                 span(id=`${image.path}`) #{image.description}
 | {{ partial "footer" . }}

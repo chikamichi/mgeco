@@ -158,17 +158,18 @@
     }
 
     & > img {
+      transition: all .2s ease-in-out;
       transform: translateY(-50%);
     }
 
     &:hover > img {
-      opacity: 0.2;
-      transition: opacity 0.5s;
+      transform: translateY(-50%) scale(1.025);
+      opacity: 0.8;
     }
-
-    &:hover > span {
-      display: inline-block;
-      animation: animation 1000ms linear both;
-    }
+    //
+    // &:hover > span {
+    //   display: inline-block;
+    //   animation: animation 1000ms linear both;
+    // }
   }
 }
