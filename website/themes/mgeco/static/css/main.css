@@ -1585,20 +1585,6 @@ p {
     margin-bottom: 24px;
     border: 1px solid #90993F;
     overflow: hidden; }
-    .c-main-content__picture > span {
-      display: none;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      text-align: center;
-      vertical-align: middle;
-      font-size: 2em;
-      font-weight: bold;
-      line-height: 100px;
-      text-transform: full-width;
-      color: #90993F; }
     .c-main-content__picture > img {
       transition: all .2s ease-in-out;
       transform: translateY(-50%); }

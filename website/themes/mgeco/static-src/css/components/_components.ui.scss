@@ -141,22 +141,6 @@
     border: 1px solid #90993F;
     overflow: hidden;
 
-    & > span {
-      display: none;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      text-align: center;
-      vertical-align: middle;
-      font-size: 2em;
-      font-weight: bold;
-      line-height: 100px;
-      text-transform: full-width;
-      color: $green;
-    }
-
     & > img {
       transition: all .2s ease-in-out;
       transform: translateY(-50%);
@@ -166,10 +150,5 @@
       transform: translateY(-50%) scale(1.025);
       opacity: 0.8;
     }
-    //
-    // &:hover > span {
-    //   display: inline-block;
-    //   animation: animation 1000ms linear both;
-    // }
   }
 }
