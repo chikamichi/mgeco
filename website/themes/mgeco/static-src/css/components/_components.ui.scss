@@ -17,13 +17,10 @@
 }
 
 
-.c-nav {
-  padding: 0 $spacing/4;
-}
-
-
 .c-logo {
   position: relative;
+  max-width: 276px;
+  margin: 0 auto $spacing auto;
   display: block;
   color: white;
 }
@@ -59,11 +56,6 @@
     color: $green;
     font-weight: bold;
   }
-}
-
-
-.c-logo {
-  margin-bottom: $spacing;
 }
 
 
@@ -132,6 +124,16 @@
     // Resetting inuitcss' o-wrapper's horizontal right padding, so as to stay
     // perfectly centered within the browser window.
     padding-right: 0;
+  }
+
+
+  .c-logo {
+    max-width: 100%;
+  }
+
+
+  .c-nav > ul {
+    padding: 0 $spacing/4;
   }
 
 

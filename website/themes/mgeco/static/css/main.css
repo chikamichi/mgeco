@@ -1484,11 +1484,10 @@ p {
   position: relative;
   padding-top: 24px; }
 
-.c-nav {
-  padding: 0 6px; }
-
 .c-logo {
   position: relative;
+  max-width: 276px;
+  margin: 0 auto 24px auto;
   display: block;
   color: white; }
 
@@ -1518,9 +1517,6 @@ p {
   .c-sidebar__link--active {
     color: #90993F;
     font-weight: bold; }
-
-.c-logo {
-  margin-bottom: 24px; }
 
 .c-main-area {
   padding-bottom: 48px; }
@@ -1579,6 +1575,12 @@ p {
 
   .c-mgeco {
     padding-right: 0; }
+
+  .c-logo {
+    max-width: 100%; }
+
+  .c-nav > ul {
+    padding: 0 6px; }
 
   .c-logo__image {
     width: 100%;
