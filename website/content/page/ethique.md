@@ -3,7 +3,7 @@ title = "Notre"
 subtitle = "éthique"
 description = "Éthique"
 url = "ethique"
-header = 66
+header = "DIVERS/66"
 +++
 
 ## Valoriser le travail artisanal

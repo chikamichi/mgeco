@@ -3,7 +3,7 @@ title = "Notre conception de la"
 subtitle = "construction"
 description = "La construction bois"
 url = "concept"
-header = "67"
+header = "DIVERS/67"
 +++
 
 Nous nous attachons à cultiver la souplesse et le goût de l'innovation technique pour nous adapter à chaque projet dans sa singularité.
