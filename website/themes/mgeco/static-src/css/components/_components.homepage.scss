@@ -35,12 +35,16 @@
   display: none;
 }
 
-
-.c-homepage__extras,
 .c-homepage__footer {
-  margin: 0 auto;
-  max-width: 50%;
-  margin-bottom: $spacing/2;
+  margin-top: $spacing;
+  padding-top: $spacing;
+  border-top: 1px solid $grey;
+}
+
+
+.c-contact-infos,
+.c-homepage__rge {
+  margin-bottom: $spacing;
 }
 
 
@@ -67,13 +71,21 @@
   }
 
 
-  .c-homepage__extras {
-    max-width: 600px;
+  .c-homepage-carousel {
+    display: block;
   }
 
 
-  .c-homepage-carousel {
-    display: block;
+  .c-homepage__extras,
+  .c-homepage__footer {
+    margin: 0 auto;
+    max-width: 50%;
+    margin-bottom: $spacing/2;
+  }
+
+
+  .c-homepage__extras {
+    max-width: 600px;
   }
 
 
@@ -81,11 +93,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    border: none;
   }
 
 
   .c-homepage__rge {
-    margin-left: $spacing;
+    margin: 0 0 0 $spacing;
     max-width: 100px;
   }
 }

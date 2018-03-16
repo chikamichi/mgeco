@@ -1668,11 +1668,14 @@ p {
 .c-homepage-carousel {
   display: none; }
 
-.c-homepage__extras,
 .c-homepage__footer {
-  margin: 0 auto;
-  max-width: 50%;
-  margin-bottom: 12px; }
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #D2D2D2; }
+
+.c-contact-infos,
+.c-homepage__rge {
+  margin-bottom: 24px; }
 
 @media (min-width: 40.625em) {
   .c-homepage__main-entrance {
@@ -1690,19 +1693,27 @@ p {
   .c-hp-me__logo:hover {
     background-image: url("/images/bienvenue2.jpg"); }
 
-  .c-homepage__extras {
-    max-width: 600px; }
-
   .c-homepage-carousel {
     display: block; }
+
+  .c-homepage__extras,
+  .c-homepage__footer {
+    margin: 0 auto;
+    max-width: 50%;
+    margin-bottom: 12px; }
+
+  .c-homepage__extras {
+    max-width: 600px; }
 
   .c-homepage__footer {
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    padding: 0;
+    border: none; }
 
   .c-homepage__rge {
-    margin-left: 24px;
+    margin: 0 0 0 24px;
     max-width: 100px; } }
 /* ==========================================================================
    Gallery
