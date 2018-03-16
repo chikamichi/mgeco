@@ -3,6 +3,11 @@ body {
   line-height: 1.2;
 }
 
+h1, h2, h3, h4, h5, h6,
+.u-h1, .u-h2, .u-h3, .u-h4, .u-h5, .u-h6 {
+  text-align: left;
+}
+
 h2, .u-h2 {
   font-size: 1.4em;
   margin: 1.4em 0 0.55em 0;
