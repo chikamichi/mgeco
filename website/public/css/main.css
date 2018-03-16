@@ -1538,6 +1538,21 @@ p {
 .c-main-area__subtitle {
   color: #90993F; }
 
+.c-main-content__picture {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  margin-bottom: 24px;
+  overflow: hidden; }
+  .c-main-content__picture > img {
+    transition: all .2s ease-in-out;
+    transform: translateY(-50%); }
+  .c-main-content__picture:hover > img {
+    transform: translateY(-50%) scale(1.025);
+    opacity: 0.8; }
+
 @media (min-width: 46.25em) {
   /* Generated with Bounce.js. Edit at https://goo.gl/dtlGoK */
   @keyframes animation {
@@ -1577,20 +1592,7 @@ p {
     padding-right: 24px; }
 
   .c-main-content__picture {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100px;
-    line-height: 100px;
-    margin-bottom: 24px;
-    border: 1px solid #90993F;
-    overflow: hidden; }
-    .c-main-content__picture > img {
-      transition: all .2s ease-in-out;
-      transform: translateY(-50%); }
-    .c-main-content__picture:hover > img {
-      transform: translateY(-50%) scale(1.025);
-      opacity: 0.8; } }
+    border: 1px solid #90993F; } }
 .c-contact-infos__link {
   color: #606060; }
 
