@@ -23,13 +23,17 @@
 
 .c-mgeco {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding-top: $spacing;
 }
 
 
 .c-logo {
   position: relative;
+  width: 276px;
   max-width: 276px;
+  min-width: 276px;
   margin: 0 auto $spacing auto;
   display: block;
   color: white;
@@ -75,13 +79,9 @@
 
 
 .c-main-area {
-  padding-bottom: $spacing*2;
-}
-
-.c-main-area__title,
-.c-main-content {
   padding: 0 $spacing/2;
 }
+
 
 .c-main-area__title,
 .c-main-area__pretitle,
@@ -154,6 +154,19 @@
     // Resetting inuitcss' o-wrapper's horizontal right padding, so as to stay
     // perfectly centered within the browser window.
     padding-right: 0;
+    flex-direction: row;
+  }
+
+
+  .c-sidebar {
+    width: 276px; // == logo's width
+    max-width: 276px;
+    min-width: 276px; // flex-basis: auto (default) will pick that one up.
+  }
+
+
+  .c-main-area {
+    padding: 0 0 0 2em;
   }
 
 
@@ -181,14 +194,7 @@
   }
 
 
-  .c-main-area {
-    padding-left: $spacing*2;
-    padding-right: $spacing;
-  }
-
-
   .c-main-content__picture {
     border: 1px solid $green;
-    margin: 0 12px 24px 12px;
   }
 }

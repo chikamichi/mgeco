@@ -1531,11 +1531,15 @@ p {
 
 .c-mgeco {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding-top: 24px; }
 
 .c-logo {
   position: relative;
+  width: 276px;
   max-width: 276px;
+  min-width: 276px;
   margin: 0 auto 24px auto;
   display: block;
   color: white; }
@@ -1571,10 +1575,6 @@ p {
   display: none; }
 
 .c-main-area {
-  padding-bottom: 48px; }
-
-.c-main-area__title,
-.c-main-content {
   padding: 0 12px; }
 
 .c-main-area__title,
@@ -1637,7 +1637,16 @@ p {
     max-width: 1200px; }
 
   .c-mgeco {
-    padding-right: 0; }
+    padding-right: 0;
+    flex-direction: row; }
+
+  .c-sidebar {
+    width: 276px;
+    max-width: 276px;
+    min-width: 276px; }
+
+  .c-main-area {
+    padding: 0 0 0 2em; }
 
   .c-logo {
     max-width: 100%; }
@@ -1654,13 +1663,8 @@ p {
   .c-logo__image:hover {
     background-image: url("/images/logo_mg2.jpg"); }
 
-  .c-main-area {
-    padding-left: 48px;
-    padding-right: 24px; }
-
   .c-main-content__picture {
-    border: 1px solid #90993F;
-    margin: 0 12px 24px 12px; } }
+    border: 1px solid #90993F; } }
 /*
 Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
 @see https://codepen.io/markcaron/pen/pPZVWO
