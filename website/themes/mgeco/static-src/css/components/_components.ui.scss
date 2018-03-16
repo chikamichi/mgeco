@@ -11,6 +11,16 @@
 }
 
 
+// Inuitcss' defaults doesn't always play nice with progressive enhancement.
+.o-wrapper {
+  padding-right: initial;
+  padding-left: initial;
+  margin-right: initial;
+  margin-left: initial;
+  max-width: initial;
+}
+
+
 .c-mgeco {
   position: relative;
   padding-top: $spacing;
@@ -61,6 +71,11 @@
 
 .c-main-area {
   padding-bottom: $spacing*2;
+}
+
+.c-main-area__title,
+.c-main-content {
+  padding: 0 $spacing/2;
 }
 
 .c-main-area__title,
@@ -120,6 +135,16 @@
   }
 
 
+  // Restoring inuitcss' defaults. No mixin available to make it future-proof.
+  .o-wrapper {
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+  }
+
+
   .c-mgeco {
     // Resetting inuitcss' o-wrapper's horizontal right padding, so as to stay
     // perfectly centered within the browser window.
@@ -154,6 +179,7 @@
 
 
   .c-main-content__picture {
-    border: 1px solid #90993F;
+    border: 1px solid $green;
+    margin: 0 12px 24px 12px;
   }
 }

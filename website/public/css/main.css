@@ -1484,6 +1484,13 @@ p {
 .o-layout__item {
   text-align: center; }
 
+.o-wrapper {
+  padding-right: initial;
+  padding-left: initial;
+  margin-right: initial;
+  margin-left: initial;
+  max-width: initial; }
+
 .c-mgeco {
   position: relative;
   padding-top: 24px; }
@@ -1524,6 +1531,10 @@ p {
 
 .c-main-area {
   padding-bottom: 48px; }
+
+.c-main-area__title,
+.c-main-content {
+  padding: 0 12px; }
 
 .c-main-area__title,
 .c-main-area__pretitle,
@@ -1577,6 +1588,13 @@ p {
   .o-layout__item {
     text-align: left; }
 
+  .o-wrapper {
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px; }
+
   .c-mgeco {
     padding-right: 0; }
 
@@ -1598,7 +1616,8 @@ p {
     padding-right: 24px; }
 
   .c-main-content__picture {
-    border: 1px solid #90993F; } }
+    border: 1px solid #90993F;
+    margin: 0 12px 24px 12px; } }
 .c-contact-infos__link {
   color: #606060; }
 
