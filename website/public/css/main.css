@@ -1606,26 +1606,6 @@ p {
     opacity: 0.8; }
 
 @media (min-width: 46.25em) {
-  /* Generated with Bounce.js. Edit at https://goo.gl/dtlGoK */
-  @keyframes animation {
-    0% {
-      transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    2.6% {
-      transform: matrix3d(0.277, 0, 0, 0, 0, 0.277, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    5.21% {
-      transform: matrix3d(0.485, 0, 0, 0, 0, 0.485, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    10.31% {
-      transform: matrix3d(0.748, 0, 0, 0, 0, 0.748, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    15.52% {
-      transform: matrix3d(0.888, 0, 0, 0, 0, 0.888, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    20.62% {
-      transform: matrix3d(0.954, 0, 0, 0, 0, 0.954, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    30.93% {
-      transform: matrix3d(0.997, 0, 0, 0, 0, 0.997, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    41.24% {
-      transform: matrix3d(1.002, 0, 0, 0, 0, 1.002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    100% {
-      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
   .o-layout__item {
     text-align: left; }
 
@@ -1838,79 +1818,75 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
    # Homepage
    ========================================================================== */
 .c-homepage {
-  padding: 24px;
-  background: white;
-  text-align: center; }
-
-.c-hp-me__logo {
-  margin-bottom: 5px;
   /*
-  Responsive Image Replacement:
-  We want a responsive background image, ie. its height must match its evolving
-  width. In order to lock the image's aspect ratio along the height axis, with
-  respect to its current, fluid width, one may set a padding-top/bottom value,
-  in percentage, equal to the image's fixed aspect ratio. The trick here lies in
-  the fact that vertical padding values, when expressed in percentages, are
-  always computed using the element container's *width* as the reference.
-  */
-  padding-top: 95.8333333333%;
-  width: 100%;
-  height: 0;
-  text-indent: -9999px;
-  background-image: url("/images/bienvenue1.jpg");
-  background-size: 100%;
-  transition: background 0.1s ease-in-out; }
-
-.c-homepage-carousel {
-  display: none; }
-
-.c-homepage__footer {
-  margin-top: 24px;
-  padding-top: 24px;
-  border-top: 1px solid #D2D2D2; }
-
-.c-contact-infos,
-.c-homepage__rge {
-  margin-bottom: 24px; }
-
-@media (min-width: 40.625em) {
-  .c-homepage__main-entrance {
+    1. Responsive Image Replacement:
+    We want a responsive background image, ie. its height must match its evolving
+    width. In order to lock the image's aspect ratio along the height axis, with
+    respect to its current, fluid width, one may set a padding-top/bottom value,
+    in percentage, equal to the image's fixed aspect ratio. The trick here lies in
+    the fact that vertical padding values, when expressed in percentages, are
+    always computed using the element container's *width* as the reference.
+    2. Helps fighting hover's flickering/blinking effect in recent Firefox builds.
+  */ }
+  .c-homepage.o-wrapper {
+    max-width: 648px;
+    padding: 24px; }
+    .c-homepage.o-wrapper > * {
+      width: 100%;
+      overflow: hidden; }
+  .c-homepage .c-hp-main-entrance {
     display: block;
     margin: 0 auto;
-    max-width: 600px; }
+    max-width: 250px;
+    border-bottom: 1px solid #E9E9E9;
+    padding-bottom: 24px; }
+  .c-homepage .c-hp-main-entrance__logo {
+    margin: 0;
+    padding-top: 95.8333333333%;
+    width: 100%;
+    height: 0;
+    text-indent: -9999px;
+    background-image: url("/images/bienvenue1.jpg");
+    background-size: 100%;
+    transition: background-image 0.1s;
+    will-change: transform; }
+    .c-homepage .c-hp-main-entrance__logo:hover {
+      background-image: url("/images/bienvenue2.jpg"); }
+  .c-homepage .c-hp-carousel {
+    display: none; }
+  .c-homepage .c-homepage__footer {
+    padding-top: 24px;
+    text-align: center; }
+  .c-homepage .c-contact-infos,
+  .c-homepage .c-homepage__rge {
+    margin-bottom: 24px; }
+  .c-homepage .c-homepage__rge {
+    display: block;
+    margin-top: 12px; }
+    .c-homepage .c-homepage__rge > img {
+      max-width: 25%; }
 
-  body:after {
-    position: absolute;
-    overflow: hidden;
-    left: -50000px;
-    top: 0;
-    content: url(/images/bienvenue2.jpg); }
-
-  .c-hp-me__logo:hover {
-    background-image: url("/images/bienvenue2.jpg"); }
-
-  .c-homepage-carousel {
-    display: block; }
-
-  .c-homepage__extras,
-  .c-homepage__footer {
-    margin: 0 auto;
-    max-width: 50%;
-    margin-bottom: 12px; }
-
-  .c-homepage__extras {
-    max-width: 600px; }
-
-  .c-homepage__footer {
+@media (min-width: 40.625em) {
+  .c-homepage .c-hp-main-entrance {
+    max-width: 100%;
+    padding-bottom: 0;
+    border-bottom: none; }
+  .c-homepage .c-hp-carousel {
+    display: block;
+    margin-bottom: 24px; }
+  .c-homepage .c-homepage__footer {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
     border: none; }
-
-  .c-homepage__rge {
-    margin: 0 0 0 24px;
-    max-width: 100px; } }
+  .c-homepage .c-contact-infos,
+  .c-homepage .c-homepage__rge {
+    margin-bottom: 0; }
+  .c-homepage .c-homepage__rge {
+    margin: 0 0 0 24px; }
+    .c-homepage .c-homepage__rge > img {
+      max-width: 50%; } }
 /* ==========================================================================
    Gallery
    ========================================================================== */

@@ -1,7 +1,7 @@
 import Siema from 'siema';
 
 var homepageCarousel = new Siema({
-  selector: '.c-homepage-carousel',
+  selector: '.c-hp-carousel',
   loop: true,
   duration: 600,
   easing: 'ease',

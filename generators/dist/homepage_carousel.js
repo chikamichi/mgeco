@@ -89,7 +89,7 @@ var _siema2 = _interopRequireDefault(_siema);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var homepageCarousel = new _siema2.default({
-  selector: '.c-homepage-carousel',
+  selector: '.c-hp-carousel',
   loop: true,
   duration: 600,
   easing: 'ease',

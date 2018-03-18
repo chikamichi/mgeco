@@ -121,26 +121,12 @@
 
 
 @include mq($from: tablet) {
-  /* Generated with Bounce.js. Edit at https://goo.gl/dtlGoK */
-  @keyframes animation {
-    0% { transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    2.6% { transform: matrix3d(0.277, 0, 0, 0, 0, 0.277, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    5.21% { transform: matrix3d(0.485, 0, 0, 0, 0, 0.485, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    10.31% { transform: matrix3d(0.748, 0, 0, 0, 0, 0.748, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    15.52% { transform: matrix3d(0.888, 0, 0, 0, 0, 0.888, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    20.62% { transform: matrix3d(0.954, 0, 0, 0, 0, 0.954, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    30.93% { transform: matrix3d(0.997, 0, 0, 0, 0, 0.997, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    41.24% { transform: matrix3d(1.002, 0, 0, 0, 0, 1.002, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-    100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
-  }
-
-
   .o-layout__item {
     text-align: left;
   }
 
 
-  // Restoring inuitcss' defaults. No mixin available to make it future-proof.
+  // Restoring inuitcss' defaults. No mixin available to make it future-proof :(
   .o-wrapper {
     padding-right: 24px;
     padding-left: 24px;

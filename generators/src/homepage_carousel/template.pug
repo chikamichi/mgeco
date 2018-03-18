@@ -1,6 +1,5 @@
-.c-homepage__extras
-  a.c-homepage-carousel(href="/galerie/", role="tab", aria-label="Voir la galerie")
-    each image in images
-      img.c-hp-carousel__image(src=`/images/carousel/thumbnails/${image}`)
+a.c-homepage__carousel.c-hp-carousel(href="/galerie/", role="tab", aria-label="Voir la galerie")
+  each image in images
+    img.c-hp-carousel__image(src=`/images/carousel/thumbnails/${image}`)
 script(src='/js/homepage_carousel_vendors.js')
 script(src='/js/homepage_carousel.js')
