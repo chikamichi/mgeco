@@ -11,6 +11,10 @@
     <span class="fa fa-bars" aria-hidden="true"></span>
   </a>
 
+  <h1 class="c-nav__brand">
+    {{ .Site.Params.casualName }}
+  </h1>
+
   <nav id="mobile-menu" role="navigation" class="c-mobile-menu" aria-expanded="false" aria-label="Main menu">
     <a href="#mobile-menu-toggle"
        role="button"
@@ -24,12 +28,10 @@
       <span class="fa fa-close" aria-hidden="true"></span>
     </a>
     <ul class="c-nav__items">
-      <!-- <li><a href="#">Products</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li> -->
       {{ partial "menu_items" . }}
     </ul>
   </nav>
+
   <a href="#mobile-menu-toggle"
      class="backdrop"
      tabindex="-1"

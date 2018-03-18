@@ -1533,34 +1533,20 @@ p {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 24px; }
+  padding-top: 12px; }
+
+.c-sidebar {
+  padding: 0 12px;
+  margin-bottom: 12px; }
+
+.c-nav__brand {
+  flex-grow: 1;
+  font-size: 1.5em;
+  color: #90993F;
+  margin: 0; }
 
 .c-logo {
-  position: relative;
-  width: 276px;
-  max-width: 276px;
-  min-width: 276px;
-  margin: 0 auto 24px auto;
-  display: block;
-  color: white; }
-
-.c-logo__image {
-  /*
-  Responsive Image Replacement:
-  We want a responsive background image, ie. its height must match its evolving
-  width. In order to lock the image's aspect ratio along the height axis, with
-  respect to its current, fluid width, one may set a padding-top/bottom value,
-  in percentage, equal to the image's fixed aspect ratio. The trick here lies in
-  the fact that vertical padding values, when expressed in percentages, are
-  always computed using the element container's *width* as the reference.
-  */
-  padding-top: 129.7101149%;
-  width: 100%;
-  height: 0;
-  text-indent: -9999px;
-  background-image: url("/images/logo_mg.jpg");
-  background-size: 100%;
-  transition: background 0.1s ease-in-out; }
+  display: none; }
 
 .c-nav__link {
   text-transform: uppercase;
@@ -1596,7 +1582,7 @@ p {
   width: 100%;
   height: 100px;
   line-height: 100px;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   overflow: hidden; }
   .c-main-content__picture > img {
     transition: all .2s ease-in-out;
@@ -1625,6 +1611,33 @@ p {
     max-width: 276px;
     min-width: 276px; }
 
+  .c-logo {
+    position: relative;
+    width: 276px;
+    max-width: 276px;
+    min-width: 276px;
+    margin: 0 auto 24px auto;
+    display: block;
+    color: white; }
+
+  .c-logo__image {
+    /*
+    Responsive Image Replacement:
+    We want a responsive background image, ie. its height must match its evolving
+    width. In order to lock the image's aspect ratio along the height axis, with
+    respect to its current, fluid width, one may set a padding-top/bottom value,
+    in percentage, equal to the image's fixed aspect ratio. The trick here lies in
+    the fact that vertical padding values, when expressed in percentages, are
+    always computed using the element container's *width* as the reference.
+    */
+    padding-top: 129.7101149%;
+    width: 100%;
+    height: 0;
+    text-indent: -9999px;
+    background-image: url("/images/logo_mg.jpg");
+    background-size: 100%;
+    transition: background 0.1s ease-in-out; }
+
   .c-main-area {
     padding: 0 0 0 2em; }
 
@@ -1650,14 +1663,8 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
 @see https://codepen.io/markcaron/pen/pPZVWO
 */
 .c-nav--mobile {
-  position: fixed;
-  top: 12px;
-  left: 12px;
   display: flex;
-  align-items: baseline;
-  z-index: 1000;
-  border-radius: 40px;
-  background: white; }
+  align-items: baseline; }
 
 .sr-only {
   position: absolute;
@@ -1671,6 +1678,7 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
 
 .c-nav__toggle {
   display: inline-block;
+  margin-right: 12px;
   padding: 0.5em 10px;
   line-height: 1em;
   font-size: 1em;
@@ -1721,6 +1729,8 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
   .c-mobile-menu .c-nav__link {
     font-size: 0.9em;
     text-align: left; }
+    .c-mobile-menu .c-nav__link--active {
+      background: #73793E; }
   .c-mobile-menu a {
     display: block;
     padding: .75em 15px;
@@ -1965,20 +1975,32 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
   color: black;
   word-break: break-word; }
 
-.c-reflinks {
-  list-style-type: none; }
+.c-reflinks-type__title {
+  border-bottom: 1px solid #D2D2D2; }
+
+.c-reflinks-type__items {
+  list-style-type: none;
+  margin: 0; }
 
 .c-reflink {
   margin-bottom: 24px; }
 
+.c-reflink__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.c-reflink__logo {
+  max-height: 80px;
+  margin-right: 12px; }
+
 .c-reflink__exturl {
   display: inline-block;
+  flex-grow: 1;
+  margin: 0;
   color: black; }
   .c-reflink__exturl:hover {
     text-decoration: underline; }
-
-.c-reflink__logo {
-  max-height: 80px; }
 
 .c-reflink__linkname {
   padding-left: 12px; }
@@ -1990,6 +2012,13 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
 .c-reflink__content > p {
   margin-bottom: 0.25em; }
 
+@media (min-width: 46.25em) {
+  .c-reflinks-type__items {
+    display: grid;
+    grid-template-columns: 33.3333% 1fr 1fr; }
+
+  .c-reflinks-type__item:nth-child(3n-1) {
+    padding: 0 12px; } }
 /* ==========================================================================
    #CLEARFIX
    ========================================================================== */

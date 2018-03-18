@@ -1,16 +1,20 @@
 {{ partial "html_top" . }}
     <div class="o-wrapper  c-mgeco">
-        <div class="c-sidebar" role="banner">
+      <section class="c-sidebar" role="banner">
+        <header>
           <a href="/contact/" class="c-logo">
             <div class="c-logo__image">
               {{ .Site.Params.activity }}, {{ .Site.Params.activities }}
             </div>
           </a>
-          {{ partial "nav.html" . }}
-        </div>
-        <div class="c-main-area" role="main" aria-labelledby="main-area-title">
-          {{ if isset .Params "header" }}
+        </header>
+        {{ partial "nav.html" . }}
+      </section>
+      <section class="c-main-area" role="main" aria-labelledby="main-area-title">
+        {{ if isset .Params "header" }}
+          <header>
             <a href="/galerie" class="c-main-content__picture">
               <img src="/images/gallery/{{ .Params.header }}.jpg">
             </a>
-          {{ end }}
+          </header>
+        {{ end }}

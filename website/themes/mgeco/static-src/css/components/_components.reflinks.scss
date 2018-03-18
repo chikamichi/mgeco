@@ -1,5 +1,11 @@
-.c-reflinks {
+.c-reflinks-type__title {
+  border-bottom: 1px solid $grey;
+}
+
+
+.c-reflinks-type__items {
   list-style-type: none;
+  margin: 0;
 }
 
 
@@ -8,18 +14,28 @@
 }
 
 
-.c-reflink__exturl {
-  display: inline-block;
-  color: black;
-
-  &:hover {
-    text-decoration: underline;
-  }
+.c-reflink__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 
 .c-reflink__logo {
   max-height: 80px;
+  margin-right: $spacing/2;
+}
+
+
+.c-reflink__exturl {
+  display: inline-block;
+  flex-grow: 1;
+  margin: 0;
+  color: black;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 
@@ -36,4 +52,16 @@
 
 .c-reflink__content > p {
   margin-bottom: 0.25em;
+}
+
+
+@include mq($from: tablet) {
+  .c-reflinks-type__items {
+    display: grid;
+    grid-template-columns: 33.3333% 1fr 1fr;
+  }
+
+  .c-reflinks-type__item:nth-child(3n-1) {
+    padding: 0 $spacing/2;
+  }
 }

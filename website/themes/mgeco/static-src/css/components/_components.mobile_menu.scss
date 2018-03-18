@@ -5,15 +5,8 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
 
 
 .c-nav--mobile {
-  position: fixed;
-  top: 12px;
-  left: 12px;
   display: flex;
   align-items: baseline;
-  // overflow: hidden;
-  z-index: 1000;
-  border-radius: 40px;
-  background: white;
 }
 
 
@@ -32,6 +25,7 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
 
 .c-nav__toggle {
   display: inline-block;
+  margin-right: $spacing/2;
   padding: 0.5em 10px;
   line-height: 1em;
   font-size: 1em;
@@ -85,6 +79,10 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
   .c-nav__link {
     font-size: 0.9em;
     text-align: left;
+
+    &--active {
+      background: $green--dark;
+    }
   }
 
   a {

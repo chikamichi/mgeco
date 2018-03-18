@@ -20,13 +20,15 @@
   <body>
 
     <div class="o-wrapper  c-mgeco">
-        <div class="c-sidebar" role="banner">
+      <section class="c-sidebar" role="banner">
+        <header>
           <a href="/contact/" class="c-logo">
             <div class="c-logo__image">
               Constructions écologiques, ossature bois, maison paille, charpente, couverture, isolation, rénovation, conception de plans, étude thermique
             </div>
           </a>
-          <div class="c-nav  c-nav--mobile">
+        </header>
+        <div class="c-nav  c-nav--mobile">
   <a href="#mobile-menu"
      role="button"
      id="mobile-menu-toggle"
@@ -38,6 +40,10 @@
     <span class="sr-only">Ouvrir le menu</span>
     <span class="fa fa-bars" aria-hidden="true"></span>
   </a>
+
+  <h1 class="c-nav__brand">
+    MG Éco
+  </h1>
 
   <nav id="mobile-menu" role="navigation" class="c-mobile-menu" aria-expanded="false" aria-label="Main menu">
     <a href="#mobile-menu-toggle"
@@ -52,7 +58,6 @@
       <span class="fa fa-close" aria-hidden="true"></span>
     </a>
     <ul class="c-nav__items">
-      
       
 <li class="c-nav__item">
   <a class='c-nav__link  ' href='/presentation/'>Présentation</a>
@@ -85,6 +90,7 @@
 
     </ul>
   </nav>
+
   <a href="#mobile-menu-toggle"
      class="backdrop"
      tabindex="-1"
@@ -127,13 +133,15 @@
 </nav>
 
 
-        </div>
-        <div class="c-main-area" role="main" aria-labelledby="main-area-title">
-          
+      </section>
+      <section class="c-main-area" role="main" aria-labelledby="main-area-title">
+        
+          <header>
             <a href="/galerie" class="c-main-content__picture">
               <img src="/images/gallery/DIVERS/78.jpg">
             </a>
-          
+          </header>
+        
 
   <h1 class="c-main-area__title  u-h1" id="main-area-title">
     
@@ -141,253 +149,274 @@
       <span class="c-main-area__subtitle">recherches</span>
     
   </h1>
-  <main class="c-main-content">
+  <main class="c-main-content  c-reflinks">
     
-
     
+      <div class="c-reflinks__type">
+        <h2 class="c-reflinks-type__title">Les aides à la rénovation</h2>
+        
+        <ul class="c-reflinks-type__items">
+          
+            <li class="c-reflinks-type__item  c-reflink">
+              <a href="http://www.ademe.fr/particuliers-eco-citoyens" class="c-reflink__title  u-h3">
+                
+                  <img src="/images/liens/logo_ademe.jpg" class="c-reflink__logo">
+                
+                
+                  <h3 class="c-reflink__exturl">
+                    ADEME
+                  </h3>
+                
+              </a>
+              <div class="c-reflink__content">
+                <p>
+                  <p>Pour suivre législations, aides au financement des travaux, subventions et prescriptions institutionnelles.</p>
 
-    <h2>Documentation et informations</h2>
+                  <a href="http://www.ademe.fr/particuliers-eco-citoyens" class="c-reflink__linkhint">Se rendre sur le site</a>
+                </p>
+              </div>
+            </li>
+          
+            <li class="c-reflinks-type__item  c-reflink">
+              <a href="http://www.anah.fr" class="c-reflink__title  u-h3">
+                
+                  <img src="/images/liens/logo_anah.png" class="c-reflink__logo">
+                
+                
+              </a>
+              <div class="c-reflink__content">
+                <p>
+                  <p>Une réponse territoriale aux enjeux de l&rsquo;habitat privé : infos sur les aides à la rénovation, que vous soyez propriétaires habitants ou bailleurs.</p>
 
-    <h3>Les aides à la rénovation</h3>
+                  <a href="http://www.anah.fr" class="c-reflink__linkhint">Se rendre sur le site</a>
+                </p>
+              </div>
+            </li>
+          
+            <li class="c-reflinks-type__item  c-reflink">
+              <a href="http://www.renovation-info-service.gouv.fr/" class="c-reflink__title  u-h3">
+                
+                  <img src="/images/liens/logo_rge.jpg" class="c-reflink__logo">
+                
+                
+                  <h3 class="c-reflink__exturl">
+                    Le label RGE
+                  </h3>
+                
+              </a>
+              <div class="c-reflink__content">
+                <p>
+                  <p>Votre artisan doit être labellisé pour pouvoir obtenir des aides institutionnelles (prêts à taux 0 et crédits d&rsquo;impôts).</p>
 
-    <ul class="c-reflinks  o-layout">
-      
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="http://www.ademe.fr/particuliers-eco-citoyens" class="c-reflink__exturl">
-              <img src="/images/liens/logo_ademe.jpg" class="c-reflink__logo"></img><span class="c-reflink__linkname">
+                  <a href="http://www.renovation-info-service.gouv.fr/" class="c-reflink__linkhint">Se rendre sur le site</a>
+                </p>
+              </div>
+            </li>
+          
+            <li class="c-reflinks-type__item  c-reflink">
+              <a href="http://www.quercy-energies.fr/" class="c-reflink__title  u-h3">
                 
-                  ADEME
+                  <img src="/images/liens/logo_quercyenergie.jpg" class="c-reflink__logo">
                 
-              </span>
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            <p>Pour suivre législations, aides au financement des travaux, subventions et prescriptions institutionnelles.</p>
-
-            <a href="http://www.ademe.fr/particuliers-eco-citoyens" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="http://www.anah.fr" class="c-reflink__exturl">
-              <img src="/images/liens/logo_anah.png" class="c-reflink__logo"></img><span class="c-reflink__linkname">
                 
-              </span>
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            <p>Une réponse territoriale aux enjeux de l&rsquo;habitat privé : infos sur les aides à la rénovation, que vous soyez propriétaires habitants ou bailleurs.</p>
-
-            <a href="http://www.anah.fr" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="http://www.renovation-info-service.gouv.fr/" class="c-reflink__exturl">
-              <img src="/images/liens/logo_rge.jpg" class="c-reflink__logo"></img><span class="c-reflink__linkname">
+                  <h3 class="c-reflink__exturl">
+                    Quercy Énergie
+                  </h3>
                 
-                  Le label RGE
-                
-              </span>
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            <p>Votre artisan doit être labellisé pour pouvoir obtenir des aides institutionnelles (prêts à taux 0 et crédits d&rsquo;impôts).</p>
-
-            <a href="http://www.renovation-info-service.gouv.fr/" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="http://www.quercy-energies.fr/" class="c-reflink__exturl">
-              <img src="/images/liens/logo_quercyenergie.jpg" class="c-reflink__logo"></img><span class="c-reflink__linkname">
-                
-                  Quercy Énergie
-                
-              </span>
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            <p>Agence locale de l&rsquo;énergie de Cahors, prodiguant conseils et informations sur les modes de chauffage, l&rsquo;isolation, les rénovation énergétiques, les aides, etc.</p>
+              </a>
+              <div class="c-reflink__content">
+                <p>
+                  <p>Agence locale de l&rsquo;énergie de Cahors, prodiguant conseils et informations sur les modes de chauffage, l&rsquo;isolation, les rénovation énergétiques, les aides, etc.</p>
 
 <p>À rencontrer en préalable aux projets.</p>
 
-            <a href="http://www.quercy-energies.fr/" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      
-    </ul>
+                  <a href="http://www.quercy-energies.fr/" class="c-reflink__linkhint">Se rendre sur le site</a>
+                </p>
+              </div>
+            </li>
+          
+        </ul>
+      </div>
+    
+      <div class="c-reflinks__type">
+        <h2 class="c-reflinks-type__title">L&#39;eau, les assainissements écologiques</h2>
+        
+        <ul class="c-reflinks-type__items">
+          
+            <li class="c-reflinks-type__item  c-reflink">
+              <a href="http://www.rt-batiment.fr/batiments-neufs/reglementation-thermique-2012/presentation.html" class="c-reflink__title  u-h3">
+                
+                  <img src="/images/liens/logo_rt2012.png" class="c-reflink__logo">
+                
+                
+                  <h3 class="c-reflink__exturl">
+                    Comprendre la RT2012
+                  </h3>
+                
+              </a>
+              <div class="c-reflink__content">
+                <p>
+                  <p>Présentation officielle de la réglementation thermique actuelle.</p>
 
-    <h3>L'eau, les assainissements écologiques</h3>
+                  <a href="http://www.rt-batiment.fr/batiments-neufs/reglementation-thermique-2012/presentation.html" class="c-reflink__linkhint">Se rendre sur le site</a>
+                </p>
+              </div>
+            </li>
+          
+            <li class="c-reflinks-type__item  c-reflink">
+              <a href="http://www.eautarcie.com/index-fr.html" class="c-reflink__title  u-h3">
+                
+                  <img src="/images/liens/logo_eautarcie.gif" class="c-reflink__logo">
+                
+                
+                  <h3 class="c-reflink__exturl">
+                    Eautarcie
+                  </h3>
+                
+              </a>
+              <div class="c-reflink__content">
+                <p>
+                  <p>Site d&rsquo;information très documenté, basé sur les travaux de Josef Orszagh, sur la gestion durable et écologique de l&rsquo;eau. Récupération des eaux pluviales, potabilisation de l&rsquo;eau, toilettes sèches etc.</p>
 
-    <ul class="c-reflinks  o-layout">
-      
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="http://www.rt-batiment.fr/batiments-neufs/reglementation-thermique-2012/presentation.html" class="c-reflink__exturl">
-              
-                <img src="/images/liens/logo_rt2012.png" class="c-reflink__logo"></img>
-              
-              
-                <span class="c-reflink__linkname">Comprendre la RT2012</span>
-              
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            <p>Présentation officielle de la réglementation thermique actuelle.</p>
+                  <a href="http://www.eautarcie.com/index-fr.html" class="c-reflink__linkhint">Se rendre sur le site</a>
+                </p>
+              </div>
+            </li>
+          
+            <li class="c-reflinks-type__item  c-reflink">
+              <a href="http://empreinte.asso.fr/" class="c-reflink__title  u-h3">
+                
+                  <img src="/images/liens/logo_empreinte.jpg" class="c-reflink__logo">
+                
+                
+                  <h3 class="c-reflink__exturl">
+                    L&#39;association Empreinte
+                  </h3>
+                
+              </a>
+              <div class="c-reflink__content">
+                <p>
+                  <p>Donne des informations sur la conception bioclimatique et les matériaux écologiques, et propose une bonne bibliographie.</p>
 
-            <a href="http://www.rt-batiment.fr/batiments-neufs/reglementation-thermique-2012/presentation.html" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="http://www.eautarcie.com/index-fr.html" class="c-reflink__exturl">
-              
-                <img src="/images/liens/logo_eautarcie.gif" class="c-reflink__logo"></img>
-              
-              
-                <span class="c-reflink__linkname">Eautarcie</span>
-              
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            <p>Site d&rsquo;information très documenté, basé sur les travaux de Josef Orszagh, sur la gestion durable et écologique de l&rsquo;eau. Récupération des eaux pluviales, potabilisation de l&rsquo;eau, toilettes sèches etc.</p>
+                  <a href="http://empreinte.asso.fr/" class="c-reflink__linkhint">Se rendre sur le site</a>
+                </p>
+              </div>
+            </li>
+          
+            <li class="c-reflinks-type__item  c-reflink">
+              <a href="http://www.grainedeau.eu/" class="c-reflink__title  u-h3">
+                
+                
+                  <h3 class="c-reflink__exturl">
+                    L&#39;association Graine d&#39;eau
+                  </h3>
+                
+              </a>
+              <div class="c-reflink__content">
+                <p>
+                  <p>Se mobilise pour proposer un mode de gestion écologique de l’eau qui considère le problème dans sa globalité : valorisation de l’eau de pluie, toilettes sèches, pratique du compostage, phyto-épuration. Stage, conférences, documentation… Dans le Sud-Ouest.</p>
 
-            <a href="http://www.eautarcie.com/index-fr.html" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="http://empreinte.asso.fr/" class="c-reflink__exturl">
-              
-                <img src="/images/liens/logo_empreinte.jpg" class="c-reflink__logo"></img>
-              
-              
-                <span class="c-reflink__linkname">L&#39;association Empreinte</span>
-              
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            <p>Donne des informations sur la conception bioclimatique et les matériaux écologiques, et propose une bonne bibliographie.</p>
+                  <a href="http://www.grainedeau.eu/" class="c-reflink__linkhint">Se rendre sur le site</a>
+                </p>
+              </div>
+            </li>
+          
+            <li class="c-reflinks-type__item  c-reflink">
+              <a href="http://www.terrevivante.org/" class="c-reflink__title  u-h3">
+                
+                  <img src="/images/liens/logo_terrevivante.jpg" class="c-reflink__logo">
+                
+                
+              </a>
+              <div class="c-reflink__content">
+                <p>
+                  <p>Site généraliste sur l&rsquo;éco-construction, qui présente les matériaux, les isolants, etc. Le point est fait régulièrement sur les réglementations thermiques et les aides.</p>
 
-            <a href="http://empreinte.asso.fr/" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="http://www.grainedeau.eu/" class="c-reflink__exturl">
-              
-              
-                <span class="c-reflink__linkname">L&#39;association Graine d&#39;eau</span>
-              
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            <p>Se mobilise pour proposer un mode de gestion écologique de l’eau qui considère le problème dans sa globalité : valorisation de l’eau de pluie, toilettes sèches, pratique du compostage, phyto-épuration. Stage, conférences, documentation… Dans le Sud-Ouest.</p>
+                  <a href="http://www.terrevivante.org/" class="c-reflink__linkhint">Se rendre sur le site</a>
+                </p>
+              </div>
+            </li>
+          
+        </ul>
+      </div>
+    
+      <div class="c-reflinks__type">
+        <h2 class="c-reflinks-type__title">Fournisseurs</h2>
+        
+        <ul class="c-reflinks-type__items">
+          
+            <li class="c-reflinks-type__item  c-reflink">
+              <a href="http://www.biofib.com/" class="c-reflink__title  u-h3">
+                
+                  <img src="/images/liens/logo_biofib.jpg" class="c-reflink__logo">
+                
+                
+              </a>
+              <div class="c-reflink__content">
+                <p>
+                  <p>Gamme d&rsquo;isolants performants à base de chanvre, dont la filière complète (du champ à l&rsquo;usine) est française et en circuit court.</p>
 
-            <a href="http://www.grainedeau.eu/" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="http://www.terrevivante.org/" class="c-reflink__exturl">
-              
-                <img src="/images/liens/logo_terrevivante.jpg" class="c-reflink__logo"></img>
-              
-              
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            <p>Site généraliste sur l&rsquo;éco-construction, qui présente les matériaux, les isolants, etc. Le point est fait régulièrement sur les réglementations thermiques et les aides.</p>
+                  <a href="http://www.biofib.com/" class="c-reflink__linkhint">Se rendre sur le site</a>
+                </p>
+              </div>
+            </li>
+          
+            <li class="c-reflinks-type__item  c-reflink">
+              <a href="http://courregeprod.com/" class="c-reflink__title  u-h3">
+                
+                  <img src="/images/liens/logo_courrege.jpg" class="c-reflink__logo">
+                
+                
+              </a>
+              <div class="c-reflink__content">
+                <p>
+                  <p>Basée dans le sud du Lot, la société Courrège Productions SARL affiche son métier de base : la menuiserie. Bois, alu, bois/alu, volets, portes…</p>
 
-            <a href="http://www.terrevivante.org/" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      
-    </ul>
-
-    <h2>Fournisseurs</h2>
-
-    <ul class="c-reflinks  o-layout">
-      
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="http://www.biofib.com/" class="c-reflink__exturl">
-              
-                <img src="/images/liens/logo_biofib.jpg" class="c-reflink__logo"></img>
-              
-              
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            <p>Gamme d&rsquo;isolants performants à base de chanvre, dont la filière complète (du champ à l&rsquo;usine) est française et en circuit court.</p>
-
-            <a href="http://www.biofib.com/" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="http://courregeprod.com/" class="c-reflink__exturl">
-              
-                <img src="/images/liens/logo_courrege.jpg" class="c-reflink__logo"></img>
-              
-              
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            <p>Basée dans le sud du Lot, la société Courrège Productions SARL affiche son métier de base : la menuiserie. Bois, alu, bois/alu, volets, portes…</p>
-
-            <a href="http://courregeprod.com/" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="https://www.enercoop.fr/nos-offres/particuliers" class="c-reflink__exturl">
-              
-                <img src="/images/liens/logo_enercoop.png" class="c-reflink__logo"></img>
-              
-              
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            <p>Notre fournisseur d&rsquo;électricité.</p>
+                  <a href="http://courregeprod.com/" class="c-reflink__linkhint">Se rendre sur le site</a>
+                </p>
+              </div>
+            </li>
+          
+            <li class="c-reflinks-type__item  c-reflink">
+              <a href="https://www.enercoop.fr/nos-offres/particuliers" class="c-reflink__title  u-h3">
+                
+                  <img src="/images/liens/logo_enercoop.png" class="c-reflink__logo">
+                
+                
+              </a>
+              <div class="c-reflink__content">
+                <p>
+                  <p>Notre fournisseur d&rsquo;électricité.</p>
 
 <p>Branchez-vous sur une  énergie renouvelable, coopérative et locale !</p>
 
-            <a href="https://www.enercoop.fr/nos-offres/particuliers" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="http://www.ouateco.com/" class="c-reflink__exturl">
-              
-                <img src="/images/liens/logo_ouateco.jpg" class="c-reflink__logo"></img>
-              
-              
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            <p>La seule ouate de cellulose produite avec des matières propres, exclusivement françaises, achetées auprès d’associations partenaires telles Emmaüs, Envie, Landes Partage… puis transformées dans une usine biosourcée, pour un projet global, écologique et local.</p>
+                  <a href="https://www.enercoop.fr/nos-offres/particuliers" class="c-reflink__linkhint">Se rendre sur le site</a>
+                </p>
+              </div>
+            </li>
+          
+            <li class="c-reflinks-type__item  c-reflink">
+              <a href="http://www.ouateco.com/" class="c-reflink__title  u-h3">
+                
+                  <img src="/images/liens/logo_ouateco.jpg" class="c-reflink__logo">
+                
+                
+              </a>
+              <div class="c-reflink__content">
+                <p>
+                  <p>La seule ouate de cellulose produite avec des matières propres, exclusivement françaises, achetées auprès d’associations partenaires telles Emmaüs, Envie, Landes Partage… puis transformées dans une usine biosourcée, pour un projet global, écologique et local.</p>
 
-            <a href="http://www.ouateco.com/" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      
-    </ul>
-  </main>
+                  <a href="http://www.ouateco.com/" class="c-reflink__linkhint">Se rendre sur le site</a>
+                </p>
+              </div>
+            </li>
+          
+        </ul>
       </div>
-    </div>
+    
+  </main>
+      </section> 
+    </div> 
   </body>
 </html>
 

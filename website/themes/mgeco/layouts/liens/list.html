@@ -7,79 +7,37 @@
       {{- .Title -}}
     {{ end }}
   </h1>
-  <main class="c-main-content">
+  <main class="c-main-content  c-reflinks">
     {{ .Content }}
-
-    <!-- Looping through content/liens/*.md, grouping by type -->
-
-    <h2>Documentation et informations</h2>
-
-    <h3>Les aides à la rénovation</h3>
-
-    <ul class="c-reflinks  o-layout">
-      {{ range where (where .Data.Pages "Section" "liens" ) ".Params.type" "=" "aides" }}
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="{{ .Params.exturl }}" class="c-reflink__exturl">
-              <img src="/images/liens/{{ .Params.image }}" class="c-reflink__logo"></img><span class="c-reflink__linkname">
-                {{ if not (isset .Params "hidetitle") }}
-                  {{ .Title }}
+    {{ range $linksType := .Site.Params.linksTypes }}
+      <div class="c-reflinks__type">
+        <h2 class="c-reflinks-type__title">{{ $linksType.title }}</h2>
+        {{ if isset $linksType "description" }}
+          <p class="c-reflinks-type__description">{{ $linksType.description }}</p>
+        {{ end }}
+        <ul class="c-reflinks-type__items">
+          {{ range where (where $.Data.Pages "Section" "liens" ) ".Params.type" "=" $linksType.type }}
+            <li class="c-reflinks-type__item  c-reflink">
+              <a href="{{ .Params.exturl }}" class="c-reflink__title  u-h3">
+                {{ if isset .Params "image" }}
+                  <img src="/images/liens/{{ .Params.image }}" class="c-reflink__logo">
                 {{ end }}
-              </span>
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            {{ .Content }}
-            <a href="{{ .Params.exturl }}" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      {{ end }}
-    </ul>
-
-    <h3>L'eau, les assainissements écologiques</h3>
-
-    <ul class="c-reflinks  o-layout">
-      {{ range where (where .Data.Pages "Section" "liens" ) ".Params.type" "=" "ecologie" }}
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="{{ .Params.exturl }}" class="c-reflink__exturl">
-              {{ if isset .Params "image" }}
-                <img src="/images/liens/{{ .Params.image }}" class="c-reflink__logo"></img>
-              {{ end }}
-              {{ if not (isset .Params "hidetitle") }}
-                <span class="c-reflink__linkname">{{ .Title }}</span>
-              {{ end }}
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            {{ .Content }}
-            <a href="{{ .Params.exturl }}" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      {{ end }}
-    </ul>
-
-    <h2>Fournisseurs</h2>
-
-    <ul class="c-reflinks  o-layout">
-      {{ range where (where .Data.Pages "Section" "liens" ) ".Params.type" "=" "fournisseur" }}
-        <li class="c-reflinks__link  c-reflink  o-layout__item  u-1/1  u-1/2@tablet">
-          <h2 class="c-reflink__title  u-h3">
-            <a href="{{ .Params.exturl }}" class="c-reflink__exturl">
-              {{ if isset .Params "image" }}
-                <img src="/images/liens/{{ .Params.image }}" class="c-reflink__logo"></img>
-              {{ end }}
-              {{ if not (isset .Params "hidetitle") }}
-                <span class="c-reflink__linkname">{{ .Title }}</span>
-              {{ end }}
-            </a>
-          </h2>
-          <main class="c-reflink__content">
-            {{ .Content }}
-            <a href="{{ .Params.exturl }}" class="c-reflink__linkhint">Se rendre sur le site</a>
-          </main>
-        </li>
-      {{ end }}
-    </ul>
+                {{ if not (isset .Params "hidetitle") }}
+                  <h3 class="c-reflink__exturl">
+                    {{ .Title }}
+                  </h3>
+                {{ end }}
+              </a>
+              <div class="c-reflink__content">
+                <p>
+                  {{ .Content }}
+                  <a href="{{ .Params.exturl }}" class="c-reflink__linkhint">Se rendre sur le site</a>
+                </p>
+              </div>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
   </main>
 {{ partial "footer" . }}
