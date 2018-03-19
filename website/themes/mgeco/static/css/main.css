@@ -1874,17 +1874,27 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
     border-bottom: 1px solid #E9E9E9;
     padding-bottom: 24px; }
   .c-homepage .c-hp-main-entrance__logo {
+    position: relative;
     margin: 0;
     padding-top: 95.8333333333%;
     width: 100%;
     height: 0;
     text-indent: -9999px;
     background-image: url("/images/bienvenue1.jpg");
-    background-size: 100%;
-    transition: background-image 0.1s;
-    will-change: transform; }
-    .c-homepage .c-hp-main-entrance__logo:hover {
-      background-image: url("/images/bienvenue2.jpg"); }
+    background-size: 100%; }
+    .c-homepage .c-hp-main-entrance__logo:hover:after {
+      opacity: 1; }
+    .c-homepage .c-hp-main-entrance__logo:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      background-image: url("/images/bienvenue2.jpg");
+      will-change: opacity;
+      transition: opacity 0.2s; }
   .c-homepage .c-hp-carousel {
     display: none; }
   .c-homepage .c-homepage__footer {

@@ -35,6 +35,7 @@
     2. Helps fighting hover's flickering/blinking effect in recent Firefox builds.
   */
   .c-hp-main-entrance__logo {
+    position: relative;
     margin: 0;
     padding-top: 95.8333333333%; // 1 (575px / 600px for bienvenue1.jpg)
     width: 100%; // 1
@@ -42,11 +43,23 @@
     text-indent: -9999px; // 1
     background-image: url('/images/bienvenue1.jpg');
     background-size: 100%;
-    transition: background-image 0.1s;
-    will-change: transform; // 2
-
     &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
       background-image: url('/images/bienvenue2.jpg');
+      will-change: opacity; // 2
+      transition: opacity 0.2s;
     }
   }
 
