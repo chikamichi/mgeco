@@ -4,6 +4,9 @@ subtitle = "construction"
 description = "La construction bois"
 url = "concept"
 header = "DIVERS/67"
+aliases = [
+  "MGeco_concept.htm"
+]
 +++
 
 Nous nous attachons à cultiver la souplesse et le goût de l'innovation technique pour nous adapter à chaque projet dans sa singularité.

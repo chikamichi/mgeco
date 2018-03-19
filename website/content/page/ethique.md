@@ -4,6 +4,9 @@ subtitle = "éthique"
 description = "Éthique"
 url = "ethique"
 header = "DIVERS/66"
+aliases = [
+  "MGeco_ethique.htm"
+]
 +++
 
 ## Valoriser le travail artisanal
