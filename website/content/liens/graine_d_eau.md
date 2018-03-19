@@ -1,6 +1,7 @@
 +++
 title = "L'association Graine d'eau"
 description = "L'association Graine d'eau"
+image = "logo_graine_d_eau.jpg"
 exturl = "http://www.grainedeau.eu/"
 type = "ecologie"
 +++
