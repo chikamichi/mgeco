@@ -1560,7 +1560,8 @@ p {
 
 .c-sidebar {
   padding: 0 12px;
-  margin-bottom: 12px; }
+  margin-bottom: 12px;
+  box-sizing: initial; }
 
 .c-nav__brand {
   flex-grow: 1;
@@ -1575,10 +1576,12 @@ p {
 .c-nav__link {
   text-transform: uppercase;
   color: black;
-  font-weight: bold;
   font-size: 1.2em; }
   .c-nav__link--active {
     color: #90993F;
+    font-weight: bold; }
+  .c-nav__link:hover {
+    text-decoration: none;
     font-weight: bold; }
 
 .c-nav--desktop {
@@ -1641,7 +1644,7 @@ p {
     width: 275px;
     max-width: 275px;
     min-width: 275px;
-    margin: 0 auto 24px auto;
+    margin: 0 auto;
     display: block;
     color: white; }
 
@@ -1656,7 +1659,7 @@ p {
     2. Helps fighting hover's flickering/blinking effect in recent Firefox builds.
   */
   .c-logo__image,
-  .c-contact-area {
+  .c-contact-area__image {
     position: relative;
     margin: 0;
     width: 100%;
@@ -1666,10 +1669,10 @@ p {
     background-size: 100%;
     transition: background 0.1s ease-in-out; }
     .c-logo__image:hover:after,
-    .c-contact-area:hover:after {
+    .c-contact-area__image:hover:after {
       opacity: 1; }
     .c-logo__image:after,
-    .c-contact-area:after {
+    .c-contact-area__image:after {
       content: "";
       position: absolute;
       top: 0;
@@ -1688,9 +1691,9 @@ p {
 
   .c-contact-area__image {
     padding-top: 31.2727273%;
-    background-image: url("/images/addresse_mg1.jpg"); }
+    background-image: url("/images/adresse_mg1.jpg"); }
     .c-contact-area__image:after {
-      background-image: url("/images/addresse_mg2.jpg"); }
+      background-image: url("/images/adresse_mg2.jpg"); }
 
   .c-main-area {
     padding: 0 0 0 2em; }
@@ -1699,7 +1702,13 @@ p {
     max-width: 100%; }
 
   .c-nav--desktop {
-    display: block; }
+    display: block;
+    margin: 24px 0;
+    padding: 24px 0;
+    border-top: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9; }
+    .c-nav--desktop .c-nav__items {
+      margin: 0; }
 
   .c-main-content__picture {
     border: 1px solid #90993F; } }

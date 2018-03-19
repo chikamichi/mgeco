@@ -31,6 +31,7 @@
 .c-sidebar {
   padding: 0 $spacing/2;
   margin-bottom: $spacing/2;
+  box-sizing: initial;
 }
 
 
@@ -51,11 +52,15 @@
 .c-nav__link {
   text-transform: uppercase;
   color: black;
-  font-weight: bold;
   font-size: 1.2em;
 
   &--active {
     color: $green;
+    font-weight: bold;
+  }
+
+  &:hover {
+    text-decoration: none;
     font-weight: bold;
   }
 }
@@ -145,7 +150,7 @@
     width: $sidebar-content-width;
     max-width: $sidebar-content-width;
     min-width: $sidebar-content-width;
-    margin: 0 auto $spacing auto;
+    margin: 0 auto;
     display: block;
     color: white;
   }
@@ -162,7 +167,7 @@
     2. Helps fighting hover's flickering/blinking effect in recent Firefox builds.
   */
   .c-logo__image,
-  .c-contact-area {
+  .c-contact-area__image {
     position: relative;
     margin: 0;
     width: 100%;
@@ -201,11 +206,11 @@
   }
 
   .c-contact-area__image {
-    padding-top: 31.2727273%; // 86px / 275px for logo_mg.jpg
-    background-image: url('/images/addresse_mg1.jpg');
+    padding-top: 31.2727273%; // 86px / 275px for adresse_mg1.jpg
+    background-image: url('/images/adresse_mg1.jpg');
 
     &:after {
-      background-image: url('/images/addresse_mg2.jpg');
+      background-image: url('/images/adresse_mg2.jpg');
     }
   }
 
@@ -222,6 +227,14 @@
 
   .c-nav--desktop {
     display: block;
+    margin: $spacing 0;
+    padding: $spacing 0;
+    border-top: 1px solid $grey--light;
+    border-bottom: 1px solid $grey--light;
+
+    .c-nav__items {
+      margin: 0;
+    }
   }
 
 
