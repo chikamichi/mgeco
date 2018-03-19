@@ -1975,60 +1975,28 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
     margin: 0 0 0 24px; }
     .c-homepage .c-homepage__rge > img {
       max-width: 50%; } }
-/* ==========================================================================
-   Gallery
-   ========================================================================== */
-.c-gallery__link {
-  position: relative; }
-
-.c-gallery__image--loading .c-gallery__thumbnail {
-  transition: opacity 1s ease-in-out;
-  opacity: 0; }
-.c-gallery__image--loading .c-gallery__caption {
-  visibility: hidden; }
-.c-gallery__image--loading .c-gallery__link {
-  display: inline-block; }
-.c-gallery__image--loading .c-gallery__loader {
-  opacity: 1; }
-
-.c-gallery__image--loaded .c-gallery__thumbnail {
-  transition: opacity 1s ease-in-out;
-  opacity: 1; }
-.c-gallery__image--loaded .c-gallery__caption {
-  visibility: visible; }
-.c-gallery__image--loaded .c-gallery__link {
-  background: none;
-  box-shadow: none; }
-
+@keyframes pulsate-border-color {
+  0% {
+    border-color: #D2D2D2; }
+  50% {
+    border-color: white; }
+  100% {
+    border-color: #D2D2D2; } }
 .c-gallery-category__title {
   margin-top: 3em;
   color: #606060;
   text-transform: uppercase; }
 
-.c-gallery__loader,
-.c-gallery__caption {
+.c-gallery__image .c-gallery__link {
+  position: relative;
+  display: inline-block; }
+.c-gallery__image .c-gallery__loader,
+.c-gallery__image .c-gallery__caption {
   position: absolute; }
-
-.c-gallery__caption {
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  background: white;
-  text-align: center;
-  background: white;
-  background: rgba(255, 255, 255, 0.6);
-  transition: 0.3333333333s;
-  opacity: 0; }
-
-@keyframes pulsate-border-color {
-  0% {
-    border-color: white; }
-  50% {
-    border-color: #D2D2D2; }
-  100% {
-    border-color: white; } }
-.c-gallery__loader {
+.c-gallery__image .c-gallery__thumbnail {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; }
+.c-gallery__image .c-gallery__loader {
   opacity: 0;
   top: 0;
   right: 0;
@@ -2038,21 +2006,34 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
   border-width: 1px;
   border-style: dashed;
   animation: pulsate-border-color 2s infinite; }
-
+.c-gallery__image .c-gallery__caption {
+  opacity: 0;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  background: white;
+  text-align: center;
+  background: white;
+  background: rgba(255, 255, 255, 0.6);
+  transition: 0.3333333333s; }
+  .c-gallery__image .c-gallery__caption > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: black;
+    word-break: break-word; }
+.c-gallery__image.c-gallery__image--loading .c-gallery__loader {
+  opacity: 1; }
+.c-gallery__image.c-gallery__image--loaded .c-gallery__thumbnail {
+  opacity: 1; }
 .c-gallery__image:hover .c-gallery__caption {
   opacity: 1; }
-
-.c-gallery__caption > span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 2px;
-  color: black;
-  word-break: break-word; }
 
 .c-reflinks-type__title {
   border-bottom: 1px solid #D2D2D2; }

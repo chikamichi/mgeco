@@ -91,7 +91,7 @@ const config = {
     LoadGalleryVendorsDll,
     LoadHomepageCarouselVendorsDll,
     CompileGallery,
-    CompileHomepageCarousel,
+    // CompileHomepageCarousel,
     CopyAssetsToWebsite
   ].concat(isDevelopment ? [] : [
     new webpack.optimize.UglifyJsPlugin({

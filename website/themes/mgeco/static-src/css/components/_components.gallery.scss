@@ -1,64 +1,8 @@
-/* ==========================================================================
-   Gallery
-   ========================================================================== */
-
-
-// -----------------------------------------------------------------------------
-// Default styles applied meanwhile the gallery is loading.
-//
-// This is a "negative" state (where things are hidden) because
-// CSS transitions works better when a class is added rather than
-// removed; therefore, we're adding a .loaded class instead of
-// removing .loading one.
-// -----------------------------------------------------------------------------
-
-.c-gallery__link {
-  position: relative;
+@keyframes pulsate-border-color {
+  0%  { border-color: $grey; }
+  50%   { border-color: white; }
+  100% { border-color: $grey; }
 }
-
-// .c-gallery__image,
-.c-gallery__image--loading {
-  .c-gallery__thumbnail {
-    transition: opacity 1s ease-in-out;
-    opacity: 0;
-  }
-
-  .c-gallery__caption {
-    visibility: hidden;
-  }
-
-  .c-gallery__link {
-    display: inline-block;
-  }
-
-  .c-gallery__loader {
-    opacity: 1;
-  }
-}
-
-// -----------------------------------------------------------------------------
-// Styles applied upon revealing an image.
-// -----------------------------------------------------------------------------
-
-.c-gallery__image--loaded {
-  .c-gallery__thumbnail {
-    transition: opacity 1s ease-in-out;
-    opacity: 1;
-  }
-
-  .c-gallery__caption {
-    visibility: visible;
-  }
-
-  .c-gallery__link {
-    background: none;
-    box-shadow: none;
-  }
-}
-
-// -----------------------------------------------------------------------------
-// Regular styles.
-// -----------------------------------------------------------------------------
 
 .c-gallery-category__title {
   margin-top: 3em;
@@ -66,57 +10,92 @@
   text-transform: uppercase;
 }
 
-.c-gallery__loader,
-.c-gallery__caption {
-  position: absolute;
-}
+.c-gallery__image {
+  .c-gallery__link {
+    position: relative;
+    display: inline-block;
 
-.c-gallery__caption {
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  background: white;
-  text-align: center;
-  background: white;
-  background: rgba(255, 255, 255, 0.6);
-  transition: $global-transition;
-  opacity: 0;
-}
-
-@keyframes pulsate-border-color {
-  0%   { border-color: white; }
-  50%  { border-color: $grey; }
-  100% { border-color: white; }
-}
-
-.c-gallery__loader {
-  opacity: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: 3px;
-  border-width: 1px;
-  border-style: dashed;
-  animation: pulsate-border-color 2s infinite;
-}
-
-.c-gallery__image:hover {
-  .c-gallery__caption {
-    opacity: 1;
+    // & > * {
+    //   visibility: hidden;
+    // }
   }
-}
 
-.c-gallery__caption > span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 2px;
-  color: black;
-  word-break: break-word;
+  .c-gallery__loader,
+  .c-gallery__caption {
+    position: absolute;
+  }
+
+  .c-gallery__thumbnail {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .c-gallery__loader {
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 3px;
+    border-width: 1px;
+    border-style: dashed;
+    animation: pulsate-border-color 2s infinite;
+  }
+
+  .c-gallery__caption {
+    opacity: 0;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    text-align: center;
+    background: white;
+    background: rgba(255, 255, 255, 0.6);
+    transition: $global-transition;
+
+    & > span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 16px;
+      letter-spacing: 2px;
+      color: black;
+      word-break: break-word;
+    }
+  }
+
+  // Styles applied upon loading an image.
+  &.c-gallery__image--loading {
+    .c-gallery__loader {
+      // visibility: initial;
+      opacity: 1;
+    }
+  }
+
+  // Styles applied upon revealing an image.
+  &.c-gallery__image--loaded {
+    // .c-gallery__link {
+      // & > * {
+        // visibility: initial;
+      // }
+
+    .c-gallery__thumbnail {
+      opacity: 1;
+    }
+
+    // .c-gallery__link {
+    //   background: none;
+    //   box-shadow: none;
+    // }
+  }
+
+  &:hover {
+    .c-gallery__caption {
+      opacity: 1;
+    }
+  }
 }

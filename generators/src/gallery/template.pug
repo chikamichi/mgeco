@@ -17,27 +17,20 @@ h1#main-area-title.c-main-area__title.u-h1
     .pswp__ui.pswp__ui--hidden
       .pswp__top-bar
         .pswp__counter
-        |
-        button.pswp__button.pswp__button--close(title='Close (Esc)')
-        |
-        button.pswp__button.pswp__button--share(title='Share')
-        |
-        button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
-        |
-        button.pswp__button.pswp__button--zoom(title='Zoom in/out')
+        button.pswp__button.pswp__button--close(title='Fermer (Esc)')
+        button.pswp__button.pswp__button--share(title='Partager')
+        button.pswp__button.pswp__button--fs(title='Plein écran')
+        button.pswp__button.pswp__button--zoom(title='Zoom +/-')
         .pswp__preloader
           .pswp__preloader__icn
             .pswp__preloader__cut
               .pswp__preloader__donut
       .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
         .pswp__share-tooltip
-      |
-      button.pswp__button.pswp__button--arrow--left(title='Previous (arrow left)')
-      |
-      button.pswp__button.pswp__button--arrow--right(title='Next (arrow right)')
+      button.pswp__button.pswp__button--arrow--left(title='Précédent (flèche gauche)')
+      button.pswp__button.pswp__button--arrow--right(title='Suivant (flèche droite)')
       .pswp__caption
         .pswp__caption__center
-  
 .c-gallery(itemscope='', itemtype='http://schema.org/ImageGallery')
   each category in galleryCategories
     .c-gallery-category
@@ -48,7 +41,7 @@ h1#main-area-title.c-main-area__title.u-h1
           != category.description
       .c-gallery-category__images
         each image in category.images
-          .c-gallery__image.c-gallery__image--loading(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject', role='img', aria-labelledby=`${image.path}`)
+          .c-gallery__image(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject', role='img', aria-labelledby=`${image.path}`)
             a.c-gallery__link(href=`/images/gallery/${image.path}`, title=`${image.description}`, itemprop='contentUrl', data-size=`${image.dimensions}`)
               img.c-gallery__thumbnail(src=`/images/gallery/${image.pathThumbnail}`, alt=`${image.description}`, itemprop='thumbnail')
               .c-gallery__loader
