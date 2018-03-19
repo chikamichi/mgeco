@@ -3,6 +3,7 @@ ignoreFiles = ["static-src"]
 languageCode = "fr-FR"
 theme = "mgeco"
 title = "MG Éco-construction"
+enableRobotsTXT = true
 
 [params]
   corporateName = "SAS MG ECO"
