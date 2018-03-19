@@ -1568,7 +1568,8 @@ p {
   color: #90993F;
   margin: 0; }
 
-.c-logo {
+.c-logo,
+.c-contact-area {
   display: none; }
 
 .c-nav__link {
@@ -1634,7 +1635,8 @@ p {
     max-width: 275px;
     min-width: 275px; }
 
-  .c-logo {
+  .c-logo,
+  .c-contact-area {
     position: relative;
     width: 275px;
     max-width: 275px;
@@ -1653,20 +1655,21 @@ p {
     always computed using the element container's *width* as the reference.
     2. Helps fighting hover's flickering/blinking effect in recent Firefox builds.
   */
-  .c-logo__image {
+  .c-logo__image,
+  .c-contact-area {
     position: relative;
     margin: 0;
-    padding-top: 100%;
     width: 100%;
     max-width: 100%;
     height: 0;
     text-indent: -9999px;
-    background-image: url("/images/logo_mg.jpg");
     background-size: 100%;
     transition: background 0.1s ease-in-out; }
-    .c-logo__image:hover:after {
+    .c-logo__image:hover:after,
+    .c-contact-area:hover:after {
       opacity: 1; }
-    .c-logo__image:after {
+    .c-logo__image:after,
+    .c-contact-area:after {
       content: "";
       position: absolute;
       top: 0;
@@ -1674,9 +1677,20 @@ p {
       bottom: 0;
       right: 0;
       opacity: 0;
-      background-image: url("/images/logo_mg2.jpg");
       will-change: opacity;
       transition: opacity 0.1s; }
+
+  .c-logo__image {
+    padding-top: 100%;
+    background-image: url("/images/logo_mg.jpg"); }
+    .c-logo__image:after {
+      background-image: url("/images/logo_mg2.jpg"); }
+
+  .c-contact-area__image {
+    padding-top: 31.2727273%;
+    background-image: url("/images/addresse_mg1.jpg"); }
+    .c-contact-area__image:after {
+      background-image: url("/images/addresse_mg2.jpg"); }
 
   .c-main-area {
     padding: 0 0 0 2em; }
@@ -1686,8 +1700,6 @@ p {
 
   .c-nav--desktop {
     display: block; }
-    .c-nav--desktop > ul {
-      padding: 0 6px; }
 
   .c-main-content__picture {
     border: 1px solid #90993F; } }

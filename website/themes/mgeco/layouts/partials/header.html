@@ -2,13 +2,19 @@
     <div class="o-wrapper  c-mgeco">
       <section class="c-sidebar" role="banner">
         <header>
-          <a href="/contact/" class="c-logo">
+          <a href="/presentation/" class="c-logo">
             <div class="c-logo__image">
               {{ .Site.Params.activity }}, {{ .Site.Params.activities }}
             </div>
           </a>
         </header>
         {{ partial "nav.html" . }}
+        <footer>
+          <a href="/contact/" class="c-contact-area">
+            <div class="c-contact-area__image">
+            </div>
+          </a>
+        </footer>
       </section>
       <section class="c-main-area" role="main" aria-labelledby="main-area-title">
         {{ if isset .Params "header" }}
