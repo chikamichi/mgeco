@@ -43,16 +43,18 @@
 
 .c-nav__link {
   text-transform: uppercase;
-  color: black;
+  font-family: 'Oceania', sans-serif;
   font-size: 1.2em;
-
-  &--active {
-    color: $green;
-    font-weight: bold;
-  }
+  color: $grey--dark;
 
   &:hover {
     text-decoration: none;
+    color: black;
+  }
+
+  &--active,
+  &--active:hover {
+    color: $green;
   }
 }
 
@@ -164,14 +166,6 @@
     }
   }
 
-
-  .c-nav__link {
-    &:hover {
-      font-weight: bold;
-    }
-  }
-
-
   .c-contact-area__image {
     padding-top: 31.2727273%; // 86px / 275px for adresse_mg1.jpg
     background-image: url('/images/adresse_mg1.jpg');
@@ -187,11 +181,6 @@
   }
 
 
-  .c-logo {
-    max-width: 100%;
-  }
-
-
   .c-nav--desktop {
     display: block;
     margin: $spacing 0;
@@ -199,8 +188,21 @@
     border-top: 1px solid $grey--light;
     border-bottom: 1px solid $grey--light;
 
+
     .c-nav__items {
       margin: 0;
+    }
+
+
+    .c-nav__link,
+    .c-nav__item {
+      display: block;
+      margin: 0;
+    }
+
+
+    .c-nav__link {
+      padding: 0.15em;
     }
   }
 }
