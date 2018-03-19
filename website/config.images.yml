@@ -23,136 +23,188 @@ carousel:
 gallery:
   -
     folder: CAHORS
-    title: Une maison roulotte à Cahors
-    description: |-
-      L'architecture *spécifique* de cette maison a requis blablabla…
-
-      On notera *ceci* & surtout **cela**…
+    title: MAISON ROULOTTE A SAINT-CIRICE (46)
+    description: Chantier achevé en 2015, situé sur les hauteurs de Cahors. 
+    *Surface plancher* 130m².
+    Maison bioclimatique sur sous-sol maçonné, en double ossature bois Douglas, contreventée en Agepan DWD, isolée en petite bottes de paille. 
+    Toiture ronde Philibert Delorme en Zinc à joints de bouts. Menuiseries alu-bois Courrège. Volets battants bois. Pergola métal.
+    *Isolants biosourcés* paille murs, Biofib Trio plafond, Homatherm UDQ11 en sarking toiture et murs.
+    *Parements extérieurs* enduit chaux ton pierre pour le rez-de-chaussée, bardage bois brut à couvre-joint en mélèze de pays pour l'étage. Plancher de terrasse en chêne de pays chanfreiné. 
+    *Parements intérieurs* Enduit terre Argilus, volige peuplier, plancher chêne, tomettes.
+    *Equipements techniques* Assainissement individuel par phytoépuration. Poêle bouilleur à granulés + ECS solaire thermique.
+    *Etude technique* MG ECO. *Plans* Jérome et Nathalie Beyssac/ Lisa Grimaud. *Photographies* [Nils Hardeveld](http://www.nilshardeveld.com/).
+      
     images:
-      - "1 = Terrasse extérieure : plancher chêne"
-      - 2 = Toiture zinc à joints de bout
-      - 3 = TODO (Une maison à Cahors)
-      - 4 = TODO (Une maison à Cahors)
-      - 5 = TODO (Une maison à Cahors)
-      - 6 = TODO (Une maison à Cahors)
-      - 7 = TODO (Une maison à Cahors)
+      - 1 = Maison bioclimatique à Cahors
+      - 2 = Bardage à couvre joint en Mélèze de pays
+      - 3 = Maison roulotte
+      - 4 = Terrasse extérieure : plancher chêne de pays
+      - 5 = Toiture zinc à joints de bout
+      - 6 = Mariage tommettes et volige peuplier
+      - 7 = Cuisine avec vue
   -
     folder: BERGANTY
-    title: Une maison à Berganty
+    title: EXTENSION BOIS A BERGANTY (46)
+    description : Chantier achevé en 2014, en extension d'une grange quercynoise en pierre. 
+    *Surface plancher* 38m².
+    Extension sur dalle bois et plots bétons, en ossature bois Douglas contreventée en Agepan DWD. 
+    Toiture plate étanchéïté en EPDM Firestone, acroterre en aluminium. Menuiseries alu-bois Courrège RAL 7016. Marquise en bois et verre.
+    *Isolants biosourcés* fibre de bois Homatherm - murs, sol, plafond.
+    *Parements extérieurs* bardage vertical à claire voie en mélèze brut. Plancher de terrasse en chêne de pays chanfreiné. 
+    *Parements intérieurs* Enduit terre Argilus sur fermacell, plancher frêne et douglas, tomettes.
+    *Etude technique* MG ECO. *Photographies*[Nils Hardeveld](http://www.nilshardeveld.com/).
     images:
-      - 1 = Maison roulotte à Cahors
-      - 2 = Bardage mélèze couvre-joints
-      - 3 = TODO (Maison roulotte à Cahors)
-      - 4 = TODO (Maison roulotte à Cahors)
-      - 5 = TODO (Maison roulotte à Cahors)
-      - 6 = TODO (Maison roulotte à Cahors)
-      - 7 = TODO (Maison roulotte à Cahors)
+      - 1 = Extension bois sur grange en pierre
+      - 2 = Bardage mélèze brut à claire voie
+      - 3 = toiture plate et acroterres en alu RAL 7016
+      - 4 = Mariage d'architectures
+      - 5 = Bardage mélèze brut à claire voie
+      - 6 = Pierre, tomettes, chêne, enduits Argilus
+      - 7 = Enduit Argilus orangé abricot et plancher douglas
   -
     folder: CALVIGNAC
-    title: Une maison à Calvignac
+    title: RECONSTRUCTION A CALVIGNAC (46)
+    description : Chantier achevé en 2016, reconstruction suite à un incendie. 
+    *Surface plancher* 140m².
+    Maison sur dalle bois et plots bétons, en ossature bois Douglas contreventée en Agepan DWD. 
+    Toiture charpente en lamellé-collé et chevrons porteurs, couverture tuiles canals brun-rouge vieilli. Menuiseries alu-bois Courrège RAL 7016. Volets roulants semi-encastrés.
+    *Isolants biosourcés* Biofib Trio - murs, sol, plafond.
+    *Parements extérieurs* bardage vertical Red cedar à couvre-joints. Plancher de terrasse en chêne de pays chanfreiné. 
+    *Parements intérieurs* plâtre traditionnel sur fermacell, volige peuplier au plafond, plancher frêne olivier.
+    *Equipements techniques* Chaudière Okofen à granulés + ECS solaire thermique.
+    *Etude technique* MG ECO. *Plans* Olivier Dupont/ Lisa Grimaud. *Photographies* [Nils Hardeveld](http://www.nilshardeveld.com/).
     images:
-      - 1 = TODO (Une maison à Calvignac)
-      - 2 = TODO (Une maison à Calvignac)
-      - 3 = TODO (Une maison à Calvignac)
-      - 4 = TODO (Une maison à Calvignac)
-      - 5 = TODO (Une maison à Calvignac)
-      - 6 = TODO (Une maison à Calvignac)
-      - 7 = TODO (Une maison à Calvignac)
+      - 1 = Maison bioclimatique à Calvignac
+      - 2 = volige peuplier en plafond
+      - 3 = un intérieur chaleureux et lumineux
+      - 4 = menuiseries alu RAL 7016 et pliages alu
+      - 5 = Maison bioclimatique à Calvignac
+      - 6 = bardage à couvre-joints en red cedar
+      - 7 = sas d'entrée lumineux
   -
     folder: CONCOTS
-    title: Une maison à Concots
+    title: MAISON BIOCLIMATIQUE A CONCOTS(46)
+    description : Chantier achevé en 2013. 
+    *Surface plancher* 165m².
+    Maison sur dalle bois et vide sanitaire maçonné, en ossature bois Douglas contreventée en Agepan DWD. 
+    Toiture charpente charpente traditionnelle à 12 pans, couverture en bardeaux de Red cedar. Menuiseries alu-bois Courrège blanc.
+    *Isolants biosourcés* Fibre de bois Homatherm - murs, sol, plafond. Sarking en fibre de bois dense.
+    *Parements extérieurs* bardage vertical mélèze brut à couvre-joints. Plancher de terrasse en chêne de pays chanfreiné. 
+    *Parements intérieurs* enduits Argilus et stucks artisanaux sur fermacell, volige douglas rabotée, volige peuplier au plafond, plancher massif en chêne.
+    *Equipements techniques* poêle à bois bouilleur + ECS solaire thermique. Phytoépuration. Cuve de récupération des EP.
+    *Etude technique* MG ECO. *Plans* Andrea Elias. *Photographies* [Nils Hardeveld](http://www.nilshardeveld.com/).
     images:
-      - 1 = TODO (Une maison à Concots)
-      - 2 = TODO (Une maison à Concots)
-      - 3 = TODO (Une maison à Concots)
-      - 4 = TODO (Une maison à Concots)
-      - 5 = TODO (Une maison à Concots)
-      - 6 = TODO (Une maison à Concots)
-      - 7 = TODO (Une maison à Concots)
-      - 8 = TODO (Une maison à Concots)
-      - 9 = TODO (Une maison à Concots)
-      - 10 = TODO (Une maison à Concots)
-      - 12 = TODO (Une maison à Concots)
-      - 13 = TODO (Une maison à Concots)
-      - 14 = TODO (Une maison à Concots)
-      - 15 = TODO (Une maison à Concots)
-      - 16 = TODO (Une maison à Concots)
+      - 1 = Maison claire et chaleureuse
+      - 2 = poêle bouilleur assurant chauffage central et ECS
+      - 3 = Enduits Argilus et planchers bois massif
+      - 4 = menuiseries alu-bois Courrège prod
+      - 5 = stucks et enduits Argilus
+      - 6 = Volige douglas raboté au mur
+      - 7 = Volige douglas raboté au mur
+      - 8 = plancher de terrasse en chêne de pays
+      - 9 = gouttières en zinc
+      - 10 = maison bioclimatique à Concots
+      - 12 = maison bioclimatique à Concots
+      - 13 = sas d'entrée en bow-window
+      - 14 = mélèze et red cedar
+      - 15 = toiture en bardeaux
+      - 16 = détail du bardage et des sous-toitures
   -
     folder: SAINT-CIRQ-SOUILLAGUET
-    title: Une maison à St-Cirq-Souillaguet
+    title: MAISON BOIS A SAINT-CIRQ-SOUILLAGUET (46)
+    description : Chantier achevé en 2012. 
+    *Surface plancher* 120m².
+    Maison sur dalle bois et vide sanitaire maçonné, en ossature bois Douglas contreventée en Agepan DWD. 
+    Toiture charpente charpente traditionnelle et chevrons porteurs, couverture en bardeaux de Red cedar. Menuiseries alu, volets coulissants.
+    *Isolants biosourcés* Fibre de bois Homatherm - murs, sol, plafond. 
+    *Parements extérieurs* bardage vertical mélèze brut à couvre-joints. Plancher de terrasse en acacia contrecollé. 
+    *Parements intérieurs* volige peuplier au plafond.
+    *Equipements techniques* poêle à bois. Cuve de récupération des EP.
+    *Etude technique* MG ECO. *Plans* Katell. *Photographies* [Nils Hardeveld](http://www.nilshardeveld.com/).
     images:
-      - 1 = TODO (Une maison à St-Cirq-Souillaguet)
-      - 2 = TODO (Une maison à St-Cirq-Souillaguet)
-      - 3 = TODO (Une maison à St-Cirq-Souillaguet)
-      - 4 = TODO (Une maison à St-Cirq-Souillaguet)
-      - 5 = TODO (Une maison à St-Cirq-Souillaguet)
-      - 6 = TODO (Une maison à St-Cirq-Souillaguet)
-      - 7 = TODO (Une maison à St-Cirq-Souillaguet)
-      - 8 = TODO (Une maison à St-Cirq-Souillaguet)
-      - 9 = TODO (Une maison à St-Cirq-Souillaguet)
-      - 10 = TODO (Une maison à St-Cirq-Souillaguet)
-      - 11 = TODO (Une maison à St-Cirq-Souillaguet)
+      - 1 = maison "tout bois" à St-Cirq-Souillaguet
+      - 2 = maison "tout bois" à St-Cirq-Souillaguet
+      - 3 = volets coulissants métal et terrasse en acacia
+      - 4 = charpente traditionnelle en douglas et volige peuplier
+      - 5 = terrasse en acacia et menuiseries aluminium
+      - 6 = charpente traditionnelle en douglas et volige peuplier
+      - 7 = charpente traditionnelle en douglas et volige peuplier
+      - 8 = intérieur lumineux et contemporain
+      - 9 = intérieur lumineux et contemporain
+      - 10 = maison bois à Saint-cirq-souillaguet
+      - 11 = garde-corps contemporain en inox
   -
     folder: SALVIAC
-    title: Une maison à Salviac
+    title: SECHOIR A TABAC REVISITE A SALVIAC (46)
+    description : Chantier achevé en 2013. 
+    *Surface plancher* 105m².
+    Chantier selectionné par le CAUE qui a fait d'une [fiche réalisation](http://www.caue-mp.fr/espace-ressources/maison-rurale-contemporaine-dans-le-lot.html)
+    Maison bioclimatique sur dalle béton isolée, en ossature bois Douglas contreventée en Agepan DWD. 
+    Toiture charpente à chevrons porteurs, couverture en tavaillons de mélèze. Menuiseries alu-bois Courrège à seuils encastrés, volets coulissants ferroniers.
+    *Isolants biosourcés* Fibre de bois Homatherm - murs, plafond. Sarking en fibre de bois dense.
+    *Parements extérieurs* bardage vertical mélèze brut à couvre-joints. Plancher de terrasse en acacia de pays. 
+    *Parements intérieurs* volige brute mélèze au plafond. Fermacell aux murs. Tommettes de la tuilerie de Condat.
+    *Equipements techniques* poêle à bois. 
+    *Etude technique* MG ECO. *Plans* Stéphanie et Jean-Sebastien Bodart. *Photographies* [Stéphanie Bodart](https://www.stephaniebodart.com/).
     images:
-      - 1 = TODO (Une maison à Salviac)
-      - 2 = TODO (Une maison à Salviac)
-      - 3 = TODO (Une maison à Salviac)
-      - 4 = TODO (Une maison à Salviac)
-      - 5 = TODO (Une maison à Salviac)
-      - 6 = TODO (Une maison à Salviac)
-      - 7 = TODO (Une maison à Salviac)
-      - 8 = TODO (Une maison à Salviac)
-      - 9 = TODO (Une maison à Salviac)
-      - 10 = TODO (Une maison à Salviac)
-      - 11 = TODO (Une maison à Salviac)
-      - 12 = TODO (Une maison à Salviac)
+      - 1 = maison bioclimatique à Salviac
+      - 2 = architecture inspirée du séchoir à tabac
+      - 3 = couverture en tavaillons de mélèze
+      - 4 = terrasse en acacia de pays
+      - 5 = volets ferroniers et bois coulissants
+      - 6 = tommettes de la tuilerie de condat
+      - 7 = protection solaire et luminosité preservée
+      - 8 = mariages de bois de pays
+      - 9 = seuils encastrés
+      - 10 = volets fermés
+      - 11 = volets ouverts
+      - 12 = transparence des volets persiennes
+      - 80 = tommettes
   -
     folder: DIVERS
     title: + de photos
     images:
-      - 63 = TODO
-      - 64 = TODO
-      - 65 = TODO
-      - 66 = TODO
-      - 67 = TODO
-      - 68 = TODO
-      - 69 = TODO
-      - 70 = TODO
-      - 71 = TODO
-      - 72 = TODO
-      - 73 = TODO
-      - 74 = TODO
-      - 75 = TODO
-      - 76 = TODO
-      - 77 = TODO
-      - 78 = TODO
-      - 79 = TODO
-      - 80 = TODO
-      - 81 = TODO
-      - 82 = TODO
-      - 83 = TODO
-      - 84 = TODO
-      - 85 = TODO
-      - 86 = TODO
-      - 87 = TODO
-      - 88 = TODO
-      - 89 = TODO
-      - 90 = TODO
-      - 91 = TODO
-      - 92 = TODO
-      - 93 = TODO
-      - 94 = TODO
-      - 95 = TODO
-      - 96 = TODO
-      - 97 = TODO
-      - 98 = TODO
-      - 99 = TODO
-      - 100 = TODO
-      - 101 = TODO
-      - 102 = TODO
-      - 103 = TODO
+      - 62 = bow-window en chêne massif
+      - 63 = charpente traditionnelle en douglas
+      - 64 = charpente traditionnelle en douglas
+      - 65 = rénovation de couverture en tuiles canals
+      - 66 = montage de charpente sur site
+      - 67 = chevronnage sur site
+      - 68 = couverture en bardeaux de bois
+      - 69 = solivage apparent et volige peuplier
+      - 70 = chargement des murs d'ossature à l'atelier
+      - 71 = chargement des murs d'ossature à l'atelier
+      - 72 = volige mélèze brut
+      - 73 = étanchéïté à l'air en Intello plus
+      - 74 = test blower door
+      - 75 = fabrication des petites bottes de paille
+      - 76 = fabrication des petites bottes de paille
+      - 77 = charpente chevrons porteurs
+      - 78 = paille et poteaux-poutres
+      - 79 = paille et poteaux-poutres
+      - 81 = architecture naturelle
+      - 82 = cloison en chanvre et chaux banchés
+      - 83 = support d'enduit terre sur cloisons intérieures
+      - 84 = solivage en douglas massif
+      - 85 = couche de corps en argile et paille
+      - 86 = montage de murs en ossature bois sur site
+      - 87 = les murs...
+      - 88 = le chevronnage...
+      - 89 = maison achevée!
+      - 90 = bardage horizontal à clins
+      - 91 = auvent de garage en douglas
+      - 92 = solivage massif en douglas
+      - 93 = pose de la membrane epdm
+      - 94 = contreventement agepan interieur
+      - 95 = pose de l'isolant 
+      - 96 = litellage avant bardage
+      - 97 = litellage avant bardage
+      - 98 = volige peuplier
+      - 99 = balcon en bois massif
+      - 100 = toiture à croupe couverte en bardeaux
+      - 101 = taille de chrapente à l'atelier
+      - 102 = plancher de terrasse en acacia de pays
+      - 103 = vue aerienne du montage des murs sur site
 
   # [[gallery.image]]
   #   8 = "Une image"
