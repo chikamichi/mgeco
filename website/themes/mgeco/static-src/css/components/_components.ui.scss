@@ -132,40 +132,63 @@
 
 
   .c-sidebar {
-    width: 276px; // == logo's width
-    max-width: 276px;
-    min-width: 276px; // flex-basis: auto (default) will pick that one up.
+    width: $sidebar-content-width; // == logo's width
+    max-width: $sidebar-content-width;
+    min-width: $sidebar-content-width; // flex-basis: auto (default) will pick that one up.
   }
 
 
   .c-logo {
     position: relative;
-    width: 276px;
-    max-width: 276px;
-    min-width: 276px;
+    width: $sidebar-content-width;
+    max-width: $sidebar-content-width;
+    min-width: $sidebar-content-width;
     margin: 0 auto $spacing auto;
     display: block;
     color: white;
   }
 
 
-  .c-logo__image {
-    /*
-    Responsive Image Replacement:
+  /*
+    1. Responsive Image Replacement:
     We want a responsive background image, ie. its height must match its evolving
     width. In order to lock the image's aspect ratio along the height axis, with
     respect to its current, fluid width, one may set a padding-top/bottom value,
     in percentage, equal to the image's fixed aspect ratio. The trick here lies in
     the fact that vertical padding values, when expressed in percentages, are
     always computed using the element container's *width* as the reference.
-    */
-    padding-top: 129.7101149%; // 358px / 276px for logo_mg.jpg
+    2. Helps fighting hover's flickering/blinking effect in recent Firefox builds.
+  */
+  .c-logo__image {
+    position: relative;
+    margin: 0;
+    padding-top: 100%; // 275px / 275px for logo_mg.jpg
     width: 100%;
+    max-width: 100%;
     height: 0;
     text-indent: -9999px;
     background-image: url('/images/logo_mg.jpg');
     background-size: 100%;
     transition: background 0.1s ease-in-out;
+
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      background-image: url('/images/logo_mg2.jpg');
+      will-change: opacity; // 2
+      transition: opacity 0.1s;
+    }
   }
 
 
@@ -185,16 +208,6 @@
     & > ul {
       padding: 0 $spacing/4;
     }
-  }
-
-
-  .c-logo__image {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .c-logo__image:hover {
-    background-image: url('/images/logo_mg2.jpg');
   }
 
 

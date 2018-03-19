@@ -43,6 +43,7 @@
     text-indent: -9999px; // 1
     background-image: url('/images/bienvenue1.jpg');
     background-size: 100%;
+
     &:hover {
       &:after {
         opacity: 1;
