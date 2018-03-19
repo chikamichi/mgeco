@@ -1545,18 +1545,13 @@ p {
 .o-layout__item {
   text-align: center; }
 
-.o-wrapper {
-  padding-right: initial;
-  padding-left: initial;
-  margin-right: initial;
-  margin-left: initial;
-  max-width: initial; }
-
 .c-mgeco {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 12px; }
+  margin: 12px 0;
+  padding-right: 0;
+  padding-left: 0; }
 
 .c-sidebar {
   padding: 0 12px;
@@ -1581,8 +1576,7 @@ p {
     color: #90993F;
     font-weight: bold; }
   .c-nav__link:hover {
-    text-decoration: none;
-    font-weight: bold; }
+    text-decoration: none; }
 
 .c-nav--desktop {
   display: none; }
@@ -1597,41 +1591,19 @@ p {
   text-transform: uppercase;
   line-height: 1; }
 
-.o-layout__item.c-main-area {
+.c-main-area {
   text-align: justify; }
 
 .c-main-area__subtitle {
   color: #90993F; }
 
-.c-main-content__picture {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100px;
-  line-height: 100px;
-  margin-bottom: 12px;
-  overflow: hidden; }
-  .c-main-content__picture > img {
-    transition: all .2s ease-in-out;
-    transform: translateY(-50%); }
-  .c-main-content__picture:hover > img {
-    transform: translateY(-50%) scale(1.025);
-    opacity: 0.8; }
-
 @media (min-width: 46.25em) {
   .o-layout__item {
     text-align: left; }
 
-  .o-wrapper {
-    padding-right: 24px;
-    padding-left: 24px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1200px; }
-
   .c-mgeco {
-    padding-right: 0;
-    flex-direction: row; }
+    flex-direction: row;
+    margin: 24px auto; }
 
   .c-sidebar {
     width: 275px;
@@ -1689,6 +1661,9 @@ p {
     .c-logo__image:after {
       background-image: url("/images/logo_mg2.jpg"); }
 
+  .c-nav__link:hover {
+    font-weight: bold; }
+
   .c-contact-area__image {
     padding-top: 31.2727273%;
     background-image: url("/images/adresse_mg1.jpg"); }
@@ -1708,10 +1683,7 @@ p {
     border-top: 1px solid #E9E9E9;
     border-bottom: 1px solid #E9E9E9; }
     .c-nav--desktop .c-nav__items {
-      margin: 0; }
-
-  .c-main-content__picture {
-    border: 1px solid #90993F; } }
+      margin: 0; } }
 /*
 Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
 @see https://codepen.io/markcaron/pen/pPZVWO
