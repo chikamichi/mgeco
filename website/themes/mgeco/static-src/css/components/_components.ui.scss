@@ -41,6 +41,16 @@
 }
 
 
+.c-nav__item {
+  &--active,
+  &--active:hover {
+    .c-nav__link {
+      color: $green;
+    }
+  }
+}
+
+
 .c-nav__link {
   text-transform: uppercase;
   font-family: 'Oceania', sans-serif;
@@ -50,11 +60,6 @@
   &:hover {
     text-decoration: none;
     color: black;
-  }
-
-  &--active,
-  &--active:hover {
-    color: $green;
   }
 }
 
@@ -139,12 +144,12 @@
     transition: background 0.1s ease-in-out;
 
     &:hover {
-      &:after {
+      &::after {
         opacity: 1;
       }
     }
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       top: 0;
@@ -161,7 +166,7 @@
     padding-top: 100%; // 275px / 275px for logo_mg.jpg
     background-image: url('/images/logo_mg.jpg');
 
-    &:after {
+    &::after {
       background-image: url('/images/logo_mg2.jpg');
     }
   }
@@ -170,7 +175,7 @@
     padding-top: 31.2727273%; // 86px / 275px for adresse_mg1.jpg
     background-image: url('/images/adresse_mg1.jpg');
 
-    &:after {
+    &::after {
       background-image: url('/images/adresse_mg2.jpg');
     }
   }
@@ -194,15 +199,41 @@
     }
 
 
-    .c-nav__link,
-    .c-nav__item {
-      display: block;
+    .c-nav__item,
+    .c-nav__link {
       margin: 0;
     }
 
+    .c-nav__item {
+      list-style: none;
+
+      &::before {
+        content: "•";
+        color: white;
+        display: inline-block;
+        vertical-align: text-top;
+        text-indent: -$spacing/2;
+      }
+
+      &:hover {
+        &::before {
+          color: black;
+        }
+      }
+
+      &--active {
+        &::before {
+          color: $green;
+        }
+      }
+    }
 
     .c-nav__link {
-      padding: 0.15em;
+      display: inline-block;
+      padding: 0.15em 0;
+      text-transform: initial;
+      margin-left: $spacing/2;
+      text-indent: -$spacing/2;
     }
   }
 }

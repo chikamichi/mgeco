@@ -1594,6 +1594,9 @@ p {
 .c-contact-area {
   display: none; }
 
+.c-nav__item--active .c-nav__link, .c-nav__item--active:hover .c-nav__link {
+  color: #90993F; }
+
 .c-nav__link {
   text-transform: uppercase;
   font-family: 'Oceania', sans-serif;
@@ -1602,8 +1605,6 @@ p {
   .c-nav__link:hover {
     text-decoration: none;
     color: black; }
-  .c-nav__link--active, .c-nav__link--active:hover {
-    color: #90993F; }
 
 .c-nav--desktop {
   display: none; }
@@ -1667,11 +1668,11 @@ p {
     text-indent: -9999px;
     background-size: 100%;
     transition: background 0.1s ease-in-out; }
-    .c-logo__image:hover:after,
-    .c-contact-area__image:hover:after {
+    .c-logo__image:hover::after,
+    .c-contact-area__image:hover::after {
       opacity: 1; }
-    .c-logo__image:after,
-    .c-contact-area__image:after {
+    .c-logo__image::after,
+    .c-contact-area__image::after {
       content: "";
       position: absolute;
       top: 0;
@@ -1685,13 +1686,13 @@ p {
   .c-logo__image {
     padding-top: 100%;
     background-image: url("/images/logo_mg.jpg"); }
-    .c-logo__image:after {
+    .c-logo__image::after {
       background-image: url("/images/logo_mg2.jpg"); }
 
   .c-contact-area__image {
     padding-top: 31.2727273%;
     background-image: url("/images/adresse_mg1.jpg"); }
-    .c-contact-area__image:after {
+    .c-contact-area__image::after {
       background-image: url("/images/adresse_mg2.jpg"); }
 
   .c-main-area {
@@ -1705,12 +1706,27 @@ p {
     border-bottom: 1px solid #E9E9E9; }
     .c-nav--desktop .c-nav__items {
       margin: 0; }
-    .c-nav--desktop .c-nav__link,
-    .c-nav--desktop .c-nav__item {
-      display: block;
-      margin: 0; }
+    .c-nav--desktop .c-nav__item,
     .c-nav--desktop .c-nav__link {
-      padding: 0.15em; } }
+      margin: 0; }
+    .c-nav--desktop .c-nav__item {
+      list-style: none; }
+      .c-nav--desktop .c-nav__item::before {
+        content: "•";
+        color: white;
+        display: inline-block;
+        vertical-align: text-top;
+        text-indent: -12px; }
+      .c-nav--desktop .c-nav__item:hover::before {
+        color: black; }
+      .c-nav--desktop .c-nav__item--active::before {
+        color: #90993F; }
+    .c-nav--desktop .c-nav__link {
+      display: inline-block;
+      padding: 0.15em 0;
+      text-transform: initial;
+      margin-left: 12px;
+      text-indent: -12px; } }
 /*
 Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
 @see https://codepen.io/markcaron/pen/pPZVWO
