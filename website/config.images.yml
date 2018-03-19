@@ -42,6 +42,7 @@ gallery:
       - 5 = Toiture zinc à joints de bout
       - 6 = Mariage tommettes et volige peuplier
       - 7 = Cuisine avec vue
+      Retour vers le [Haut de page](#top "Top")
   -
     folder: BERGANTY
     title: EXTENSION BOIS A BERGANTY (46)
@@ -61,6 +62,7 @@ gallery:
       - 5 = Bardage mélèze brut à claire voie
       - 6 = Pierre, tomettes, chêne, enduits Argilus
       - 7 = Enduit Argilus orangé abricot et plancher douglas
+      Retour vers le [Haut de page](#top "Top")
   -
     folder: CALVIGNAC
     title: RECONSTRUCTION A CALVIGNAC (46)
@@ -81,6 +83,7 @@ gallery:
       - 5 = Maison bioclimatique à Calvignac
       - 6 = bardage à couvre-joints en red cedar
       - 7 = sas d'entrée lumineux
+      Retour vers le [Haut de page](#top "Top")
   -
     folder: CONCOTS
     title: MAISON BIOCLIMATIQUE A CONCOTS(46)
@@ -109,6 +112,7 @@ gallery:
       - 14 = mélèze et red cedar
       - 15 = toiture en bardeaux
       - 16 = détail du bardage et des sous-toitures
+      Retour vers le [Haut de page](#top "Top")
   -
     folder: SAINT-CIRQ-SOUILLAGUET
     title: MAISON BOIS A SAINT-CIRQ-SOUILLAGUET (46)
@@ -133,6 +137,7 @@ gallery:
       - 9 = intérieur lumineux et contemporain
       - 10 = maison bois à Saint-cirq-souillaguet
       - 11 = garde-corps contemporain en inox
+      Retour vers le [Haut de page](#top "Top")
   -
     folder: SALVIAC
     title: SECHOIR A TABAC REVISITE A SALVIAC (46)
@@ -160,6 +165,7 @@ gallery:
       - 11 = volets ouverts
       - 12 = transparence des volets persiennes
       - 80 = tommettes
+      Retour vers le [Haut de page](#top "Top")
   -
     folder: DIVERS
     title: + de photos
@@ -205,6 +211,7 @@ gallery:
       - 101 = taille de chrapente à l'atelier
       - 102 = plancher de terrasse en acacia de pays
       - 103 = vue aerienne du montage des murs sur site
+      Retour vers le [Haut de page](#top "Top")
 
   # [[gallery.image]]
   #   8 = "Une image"
