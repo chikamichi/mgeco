@@ -1,4 +1,4 @@
-var homepage_carousel_vendors_f37a132da04408f09efb =
+var homepage_carousel_vendors_04b3d1994a407da118f7 =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};

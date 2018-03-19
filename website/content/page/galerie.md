@@ -4,9 +4,6 @@ subtitle = "en image"
 description = "Galerie"
 url = "galerie"
 type = "galerie"
-aliases = [
-  "galerie/index.html"
-]
 +++
 
 Vous trouverez ici un aperçu des matériaux et techniques que nous mettons en œuvre :

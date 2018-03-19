@@ -1967,7 +1967,8 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
 
 .c-gallery-category__title {
   margin-top: 3em;
-  color: #606060; }
+  color: #606060;
+  text-transform: uppercase; }
 
 .c-gallery__loader,
 .c-gallery__caption {

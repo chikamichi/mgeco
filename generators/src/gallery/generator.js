@@ -24,8 +24,10 @@ module.exports = () => {
           dimensions: execSync(cmd(pathOriginal)).toString()
         }
       } catch(e) {
-        console.error(e)
+        throw Error(`Could not compute dimensions for "${pathOriginal}".`)
       }
+    } else {
+      throw Error(`Image "${pathOriginal}" or "${pathThumbnail}" does not exist.`)
     }
   }
   const normalizeCategory = (category) => {

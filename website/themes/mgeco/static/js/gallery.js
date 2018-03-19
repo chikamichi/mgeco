@@ -71,7 +71,7 @@ var gallery =
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = gallery_vendors_f37a132da04408f09efb;
+module.exports = gallery_vendors_04b3d1994a407da118f7;
 
 /***/ }),
 /* 1 */

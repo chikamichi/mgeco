@@ -105,7 +105,7 @@ setInterval(function () {
 /***/ 9:
 /***/ (function(module, exports) {
 
-module.exports = homepage_carousel_vendors_f37a132da04408f09efb;
+module.exports = homepage_carousel_vendors_04b3d1994a407da118f7;
 
 /***/ })
 
