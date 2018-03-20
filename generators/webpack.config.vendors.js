@@ -8,11 +8,11 @@ const isDevelopment = process.env.NODE_ENV !== 'production';
 const copyPhotoswipeAssets = new CopyWebpackPlugin([
   {
     from: 'node_modules/photoswipe/dist/photoswipe.css',
-    to: '../../website/themes/mgeco/static/css/photoswipe/'
+    to: '../../website/static/css/photoswipe/'
   }, {
     context: './node_modules/photoswipe/dist/',
     from: 'default-skin/*',
-    to: '../../website/themes/mgeco/static/css/photoswipe/'
+    to: '../../website/static/css/photoswipe/'
   }
 ], {
   copyUnmodified: true

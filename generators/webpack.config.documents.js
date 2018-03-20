@@ -34,14 +34,14 @@ const CopyAssetsToWebsite = new FileManagerPlugin({
     copy: [
       {
         source: './dist/gallery.html',
-        destination: '../website/themes/mgeco/layouts/galerie/single.html'
+        destination: '../website/layouts/galerie/single.html'
       }, {
         source: './dist/homepage_carousel.html',
-        destination: '../website/themes/mgeco/layouts/partials/homepage_carousel.html'
+        destination: '../website/layouts/partials/homepage_carousel.html'
       },
       {
         source: './dist/*.js',
-        destination: '../website/themes/mgeco/static/js/'
+        destination: '../website/static/js/'
       }
     ]
   }
