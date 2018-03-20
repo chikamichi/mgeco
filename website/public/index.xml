@@ -11,16 +11,6 @@
     
     
     <item>
-      <title></title>
-      <link>http://www.mg-ecoconstruction.com/liens/caue/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.mg-ecoconstruction.com/liens/caue/</guid>
-      <description>+++ title = &amp;ldquo;CAUE&amp;rdquo; description = &amp;ldquo;Conseil d&amp;rsquo;Archistecture, d&amp;rsquo;Urbanisme et d&amp;rsquo;Environnement&amp;rdquo; image = &amp;ldquo;logo_caue.jpg&amp;rdquo; exturl = &amp;ldquo;http://www.caue-mp.fr/46-lot-actualite-principale/itemid-28.html&amp;quot; type = &amp;ldquo;conseil&amp;rdquo; +++
-Le CAUE a pour objet la promotion de la qualité architecturale, urbaine et paysagère, notamment par l’information et la sensibilisation du public dans le domaine de l’architecture, de l’urbanisme et de l’environnement.</description>
-    </item>
-    
-    <item>
       <title>ADEME</title>
       <link>http://www.mg-ecoconstruction.com/liens/ademe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -45,6 +35,15 @@ Le CAUE a pour objet la promotion de la qualité architecturale, urbaine et pays
       
       <guid>http://www.mg-ecoconstruction.com/liens/biofib/</guid>
       <description>Gamme d&amp;rsquo;isolants performants à base de chanvre, dont la filière complète (du champ à l&amp;rsquo;usine) est française et en circuit court.</description>
+    </item>
+    
+    <item>
+      <title>CAUE</title>
+      <link>http://www.mg-ecoconstruction.com/liens/caue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.mg-ecoconstruction.com/liens/caue/</guid>
+      <description>Le CAUE a pour objet la promotion de la qualité architecturale, urbaine et paysagère, notamment par l’information et la sensibilisation du public dans le domaine de l’architecture, de l’urbanisme et de l’environnement.</description>
     </item>
     
     <item>
