@@ -6,7 +6,12 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
 
 .c-nav--mobile {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+
+
+  .c-nav__icon {
+    vertical-align: middle;
+  }
 }
 
 
@@ -54,6 +59,7 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
 				      box-shadow 0.3s ease;
 	z-index: 999;
 
+
   .c-nav__items {
     list-style: none;
     margin: 0;
@@ -68,13 +74,31 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
     background-image: url('/images/oak-leaf-pattern.png');
   }
 
+
   .c-nav__item {
     background: $green;
 
-    &:first-child a {
+    & > a {
+      display: block;
+      padding: .75em 15px;
+      line-height: 1em;
+      font-size: 1em;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid $green--dark;
+
+      &:hover,
+      &:focus {
+        background: $green--dark;
+        text-decoration: none;
+      }
+    }
+
+    &:first-child > a {
       border-top: 1px solid $green--dark;
     }
   }
+
 
   .c-nav__link {
     font-size: 0.9em;
@@ -85,21 +109,6 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
     }
   }
 
-  a {
-    display: block;
-    padding: .75em 15px;
-    line-height: 1em;
-    font-size: 1em;
-    color: white;
-    text-decoration: none;
-    border-bottom: 1px solid $green--dark;
-
-    &:hover,
-    &:focus {
-      background: $green--dark;
-      text-decoration: none;
-    }
-  }
 
   .c-mobile-menu__close {
     position: absolute;
@@ -131,16 +140,19 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
     box-shadow: 3px 0 12px rgba(0,0,0,.25);
   }
 
+
   &:target .c-mobile-menu__close,
   &[aria-expanded="true"] .c-mobile-menu__close {
     z-index: 1001;
   }
+
 
   &:target ul,
   &[aria-expanded="true"] ul {
     position: relative;
     z-index: 1000;
   }
+
 
   /*
    We could us `.c-mobile-menu:target:after`, but

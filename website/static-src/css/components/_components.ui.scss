@@ -29,6 +29,7 @@
 
 .c-nav__brand {
   flex-grow: 1;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5em;
   color: $green;
   margin: 0;
@@ -70,6 +71,7 @@
 
 .c-main-area {
   padding: 0 $spacing/2;
+  text-align: justify;
 }
 
 
@@ -81,8 +83,8 @@
   line-height: 1;
 }
 
-.c-main-area {
-  text-align: justify;
+.c-main-area__title {
+  margin-top: $spacing;
 }
 
 .c-main-area__subtitle {
@@ -180,11 +182,6 @@
   }
 
 
-  .c-main-area {
-    padding: 0 0 0 2em;
-  }
-
-
   .c-nav--desktop {
     display: block;
     margin: $spacing 0;
@@ -233,5 +230,15 @@
       margin-left: $spacing/2;
       text-indent: -$spacing/2;
     }
+  }
+
+
+  .c-main-area {
+    padding: 0 0 0 2em;
+  }
+
+
+  .c-main-area__title {
+    margin-top: 0;
   }
 }

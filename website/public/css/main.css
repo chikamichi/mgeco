@@ -1586,6 +1586,7 @@ p {
 
 .c-nav__brand {
   flex-grow: 1;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5em;
   color: #90993F;
   margin: 0; }
@@ -1609,7 +1610,8 @@ p {
   display: none; }
 
 .c-main-area {
-  padding: 0 12px; }
+  padding: 0 12px;
+  text-align: justify; }
 
 .c-main-area__title,
 .c-main-area__pretitle,
@@ -1618,8 +1620,8 @@ p {
   text-transform: uppercase;
   line-height: 1; }
 
-.c-main-area {
-  text-align: justify; }
+.c-main-area__title {
+  margin-top: 24px; }
 
 .c-main-area__subtitle {
   color: #90993F; }
@@ -1694,9 +1696,6 @@ p {
     .c-contact-area__image::after {
       background-image: url("/images/adresse_mg2.jpg"); }
 
-  .c-main-area {
-    padding: 0 0 0 2em; }
-
   .c-nav--desktop {
     display: block;
     margin: 24px 0;
@@ -1724,14 +1723,22 @@ p {
       display: inline-block;
       padding: 0.15em 0;
       margin-left: 12px;
-      text-indent: -12px; } }
+      text-indent: -12px; }
+
+  .c-main-area {
+    padding: 0 0 0 2em; }
+
+  .c-main-area__title {
+    margin-top: 0; } }
 /*
 Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
 @see https://codepen.io/markcaron/pen/pPZVWO
 */
 .c-nav--mobile {
   display: flex;
-  align-items: baseline; }
+  align-items: center; }
+  .c-nav--mobile .c-nav__icon {
+    vertical-align: middle; }
 
 .sr-only {
   position: absolute;
@@ -1791,24 +1798,24 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
     background-image: url("/images/oak-leaf-pattern.png"); }
   .c-mobile-menu .c-nav__item {
     background: #90993F; }
-    .c-mobile-menu .c-nav__item:first-child a {
+    .c-mobile-menu .c-nav__item > a {
+      display: block;
+      padding: .75em 15px;
+      line-height: 1em;
+      font-size: 1em;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #73793E; }
+      .c-mobile-menu .c-nav__item > a:hover, .c-mobile-menu .c-nav__item > a:focus {
+        background: #73793E;
+        text-decoration: none; }
+    .c-mobile-menu .c-nav__item:first-child > a {
       border-top: 1px solid #73793E; }
   .c-mobile-menu .c-nav__link {
     font-size: 0.9em;
     text-align: left; }
     .c-mobile-menu .c-nav__link--active {
       background: #73793E; }
-  .c-mobile-menu a {
-    display: block;
-    padding: .75em 15px;
-    line-height: 1em;
-    font-size: 1em;
-    color: white;
-    text-decoration: none;
-    border-bottom: 1px solid #73793E; }
-    .c-mobile-menu a:hover, .c-mobile-menu a:focus {
-      background: #73793E;
-      text-decoration: none; }
   .c-mobile-menu .c-mobile-menu__close {
     position: absolute;
     right: 0;
