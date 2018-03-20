@@ -1,8 +1,0 @@
-#!/bin/sh
-
-cd ../website/static/images/gallery
-rm -rf thumbnails
-mkdir thumbnails
-convert "*.jpg[276x>]" -monitor -depth 8 -quality 75% -set filename:original %t './thumbnails/%[filename:original].jpg'
-cd thumbnails
-mogrify -shave 3x3 -bordercolor white -border 3 -format jpg *.jpg

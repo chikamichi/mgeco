@@ -3,6 +3,10 @@ title = "Notre conception de la"
 subtitle = "construction"
 description = "La construction bois"
 url = "concept"
+header = "DIVERS/67"
+aliases = [
+  "MGeco_concept.htm"
+]
 +++
 
 Nous nous attachons à cultiver la souplesse et le goût de l'innovation technique pour nous adapter à chaque projet dans sa singularité.
@@ -53,4 +57,4 @@ Contrairement aux idées reçues, une maison ossature bois permet une **grande s
 
 L'ossature bois vous autorise une **modularité presque infinie** afin que votre maison évolue tout au long de votre vie, en fonction de vos besoins. Chez nous, **chaque maison est unique, avec des plans personnalisés** : nous pouvons réfléchir avec vous à concevoir la possibilité de futures extensions pour **échelonner les dépenses**.
 
-**Pour conclure, choisir un maître d’œuvre local, qui travaille avec des fournisseurs et des collaborateurs locaux, est une bonne manière de limiter les impacts négatifs sur l’environnement en limitant les transports, de favoriser l'économie locale, et de prendre l'assurance d'un suivi en confiance sur le long terme.**
+**Pour conclure, [choisir un maître d’œuvre local](/ethique), qui travaille avec des fournisseurs et des collaborateurs locaux, est une bonne manière de limiter les impacts négatifs sur l’environnement en limitant les transports, de favoriser l'économie locale, et de prendre l'assurance d'un suivi en confiance sur le long terme.**

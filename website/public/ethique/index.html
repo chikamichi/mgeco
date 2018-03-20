@@ -8,9 +8,8 @@
     <meta name="description" content="MG éco-construction">
     <meta name="author" content="MG éco-construction">
     <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
-    <link rel="preload" href="/images/bienvenue1.jpg" as="image">
-    <link rel="preload" href="/images/bienvenue2.jpg" as="image">
+    <link rel="preload" href="/images/logo_mg.jpg" as="image">
+    <link rel="preload" href="/images/logo_mg2.jpg" as="image">
     <link rel="preload" href="/css/main.css" as="style">
     <link rel="stylesheet" href="/css/main.css">
     <link href="/css/photoswipe/photoswipe.css" rel="stylesheet">
@@ -20,49 +19,127 @@
   <body>
 
     <div class="o-wrapper  c-mgeco">
-      <div class="o-layout">
-        <div class="o-layout__item  c-sidebar  u-1/1  u-1/4@tablet" role="banner">
-          <a href="/contact/" class="c-logo">
+      <section class="c-sidebar" role="banner">
+        <header>
+          <a href="/presentation/" class="c-logo">
             <div class="c-logo__image">
               Constructions écologiques, ossature bois, maison paille, charpente, couverture, isolation, rénovation, conception de plans, étude thermique
             </div>
           </a>
-          <nav class="c-nav" role="navigation">
-  <ul class="o-list-bare">
+        </header>
+        <div class="c-nav  c-nav--mobile">
+  <a href="#mobile-menu"
+     role="button"
+     id="mobile-menu-toggle"
+     class="c-nav__toggle"
+     aria-expanded="false"
+     aria-controls="mobile-menu"
+     aria-label="Open main menu">
+
+    <span class="sr-only">Ouvrir le menu</span>
+    <span class="fa fa-bars" aria-hidden="true"></span>
+  </a>
+
+  <h1 class="c-nav__brand">
+    MG Éco
+  </h1>
+
+  <nav id="mobile-menu" role="navigation" class="c-mobile-menu" aria-expanded="false" aria-label="Main menu">
+    <a href="#mobile-menu-toggle"
+       role="button"
+       id="mobile-menu-close"
+       class="c-mobile-menu__close"
+       aria-expanded="false"
+       aria-controls="mobile-menu"
+       aria-label="Close main menu">
+
+      <span class="sr-only">Fermer le menu</span>
+      <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul class="c-nav__items">
+      
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/presentation/">Présentation</a>
+</li>
+
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/concept/">La construction bois</a>
+</li>
+
+<li class="c-nav__item  c-nav__item--active">
+  <a class="c-nav__link" href="/ethique/">Éthique</a>
+</li>
+
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/galerie/">Photos</a>
+</li>
+
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/votre-projet/">Conception de projet</a>
+</li>
+
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/liens/">Liens</a>
+</li>
+
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/contact/">Contact</a>
+</li>
+
+
+    </ul>
+  </nav>
+
+  <a href="#mobile-menu-toggle"
+     class="backdrop"
+     tabindex="-1"
+     aria-hidden="true" hidden></a>
+</div>
+
+<nav class="c-nav  c-nav--desktop" role="navigation">
+  <ul class="c-nav__items">
     
-    <li>
-  <a class='c-sidebar__link  ' href='/presentation/'>Présentation</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/presentation/">Présentation</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  ' href='/concept/'>La construction bois</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/concept/">La construction bois</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  c-sidebar__link--active' href='/ethique/'>Éthique</a>
+<li class="c-nav__item  c-nav__item--active">
+  <a class="c-nav__link" href="/ethique/">Éthique</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  ' href='/galerie/'>Photos</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/galerie/">Photos</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  ' href='/votre-projet/'>Conception de projet</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/votre-projet/">Conception de projet</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  ' href='/liens/'>Liens</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/liens/">Liens</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  ' href='/contact/'>Contact</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/contact/">Contact</a>
 </li>
+
 
   </ul>
 </nav>
 
-        </div>
-        <div class="o-layout__item  c-main-area  u-1/1  u-3/4@tablet" role="main" aria-labelledby="main-area-title">
+
+        <footer>
+          <a href="/contact/" class="c-contact-area">
+            <div class="c-contact-area__image">
+            </div>
+          </a>
+        </footer>
+      </section>
+      <section class="c-main-area" role="main" aria-labelledby="main-area-title">
 
   <h1 class="c-main-area__title  u-h1" id="main-area-title">
     
@@ -73,7 +150,7 @@
   <main class="c-main-content">
     
 
-<h3 id="valoriser-le-travail-artisanal">Valoriser le travail artisanal</h3>
+<h2 id="valoriser-le-travail-artisanal">Valoriser le travail artisanal</h2>
 
 <p>MG ECO transforme au maximum les matériaux bruts et locaux plutôt que d&rsquo;utiliser des matériaux préfabriqués en usine. Nous concevons et façonnons dans notre atelier nos charpentes et nos ossatures.</p>
 
@@ -81,40 +158,30 @@
 
 <p>Cette revendication est le gage d&rsquo;une relation de proximité avec nos clients afin d&rsquo;être en mesure de leurs apporter un service personnalisé, un suivi au fil des ans, et d&rsquo;assurer une mise en œuvre méticuleuse, qui valorise au mieux le projet.</p>
 
-<h3 id="respecter-l-homme-et-l-environnement">Respecter l’homme et l’environnement</h3>
+<h2 id="respecter-l-homme-et-l-environnement">Respecter l’homme et l’environnement</h2>
 
 <p><strong>MG ECO c’est avant tout la convergence de points de vue humains et responsables sur les questions environnementales.</strong> L’environnement, nous le concevons globalement. Il n’est pas question de respect de l’environnement sans respect des humains, et de prospérité des humains au détriment de l’environnement. C’est pourquoi nous considérons qu’il n’est pas pertinent d’entreprendre un ouvrage sans faire coïncider les besoins de nos clients avec le cercle vertueux de la construction écologique.</p>
 
-<h3 id="valoriser-les-filières-locales-de-production">Valoriser les filières locales de production</h3>
+<h2 id="valoriser-les-filières-locales-de-production">Valoriser les filières locales de production</h2>
 
 <p>De la même manière, nous avons conscience que <strong>notre activité contribue à la structuration et la pérennisation des filières locales</strong> (filière du bois notamment) et nous agissons en conséquence en choisissant la proximité pour les matériaux que nous mettons en œuvre (produits, fournisseurs, corps de métiers complémentaires).</p>
 
 <p><strong>Choisir MG ECO, c&rsquo;est encourager l&rsquo;économie locale.</strong></p>
 
-<h3 id="bâtir-avec-des-matériaux-sains-et-locaux">Bâtir avec des matériaux sains et locaux</h3>
+<h2 id="bâtir-avec-des-matériaux-sains-et-locaux">Bâtir avec des matériaux sains et locaux</h2>
 
 <p>Si MG ECO travaille essentiellement le bois, de plus issu de filières locales gérées durablement, c’est par souci écologique. Le bois est en effet le seul matériaux de construction entièrement renouvelable, puit de carbone, et sain s’il n’est pas traité.</p>
 
 <p>C’est pour cette raison que <strong>tous nos bois proviennent de France, sont issus de forêts gérées durablement, et sans traitement</strong>. Nos isolants favoris, dans la même logique, sont issus des rémanents de forêts françaises (laines de bois), de rémanents de l&rsquo;agriculture locale (paille, chanvre), ou issus du recyclage (Ouate de cellulose).
 Ils sont ainsi sans impact négatif sur l&rsquo;environnement la santé.</p>
 
-<h3 id="promouvoir-la-performance-énergétique">Promouvoir la performance énergétique</h3>
+<h2 id="promouvoir-la-performance-énergétique">Promouvoir la performance énergétique</h2>
 
 <p>Nous sommes convaincus de la pertinence d&rsquo;une isolation renforcé ainsi que d&rsquo;une étanchéité à l&rsquo;air aussi soignée que possible, tant pour <strong>le confort de vie</strong> apporté que pour <strong>les économies d&rsquo;énergies</strong> qui en résultent. Nos modes constructifs assurent l&rsquo;une et l&rsquo;autre, et nous cherchons avec vous les solutions permettant de concilier ces objectifs avec votre budget. Nous réalisons l&rsquo;étude thermique en vue de mettre votre habitat en conformité avec la RT2012, et de tendre vers le standard maisons passives.</p>
 
   </main>
-        </div>
-      </div>
-    </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
+      </section> 
+    </div> 
   </body>
 </html>
 

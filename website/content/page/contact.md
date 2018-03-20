@@ -3,6 +3,10 @@ title = "Comment nous"
 subtitle = "contacter ?"
 description = "Contact"
 url = "contact"
+header = "DIVERS/70"
+aliases = [
+  "MGeco_contact.htm"
+]
 +++
 
 **MG ECO est installée à Limogne en Quercy**, dans le département du Lot (46), au cœur du Parc naturel Régional des Causses du Quercy (PNRCQ), en région Occitanie.

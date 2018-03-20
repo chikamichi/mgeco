@@ -1,0 +1,53 @@
+| {{ partial "header" . }}
+h1#main-area-title.c-main-area__title.u-h1
+  span.c-main-area__pretitle
+    | {{- .Title -}}
+  span.c-main-area__subtitle
+    | {{- .Params.subtitle -}}
+.c-main-content
+  p
+    | {{ .Content }}
+.pswp(tabindex='-1', role='dialog', aria-hidden='true')
+  .pswp__bg
+  .pswp__scroll-wrap
+    .pswp__container
+      .pswp__item
+      .pswp__item
+      .pswp__item
+    .pswp__ui.pswp__ui--hidden
+      .pswp__top-bar
+        .pswp__counter
+        button.pswp__button.pswp__button--close(title='Fermer (Esc)')
+        button.pswp__button.pswp__button--share(title='Partager')
+        button.pswp__button.pswp__button--fs(title='Plein écran')
+        button.pswp__button.pswp__button--zoom(title='Zoom +/-')
+        .pswp__preloader
+          .pswp__preloader__icn
+            .pswp__preloader__cut
+              .pswp__preloader__donut
+      .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+        .pswp__share-tooltip
+      button.pswp__button.pswp__button--arrow--left(title='Précédent (flèche gauche)')
+      button.pswp__button.pswp__button--arrow--right(title='Suivant (flèche droite)')
+      .pswp__caption
+        .pswp__caption__center
+.c-gallery(itemscope='', itemtype='http://schema.org/ImageGallery')
+  each category in galleryCategories
+    .c-gallery-category
+      h2.c-gallery-category__title
+        = category.title
+      - if (category.description)
+        .c-gallery-category__description
+          != category.description
+      .c-gallery-category__images
+        each image in category.images
+          .c-gallery__image(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject', role='img', aria-labelledby=`${image.path}`)
+            a.c-gallery__link(href=`/images/gallery/${image.path}`, title=`${image.description}`, itemprop='contentUrl', data-size=`${image.dimensions}`)
+              img.c-gallery__thumbnail(src=`/images/gallery/${image.pathThumbnail}`, alt=`${image.description}`, itemprop='thumbnail')
+              .c-gallery__loader
+                div
+              .c-gallery__caption(itemprop='caption description')
+                span(id=`${image.path}`) #{image.description}
+| {{ partial "footer" . }}
+script(src='/js/gallery_vendors.js')
+script(src='/js/gallery.js')

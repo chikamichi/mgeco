@@ -1,0 +1,60 @@
+{
+  "name": "mgeco-generators",
+  "version": "1.0.0",
+  "description": "MG Eco's partials and layouts generator",
+  "main": "index.js",
+  "dependencies": {
+    "domtastic": "^0.15.5",
+    "imagesloaded": "^4.1.1",
+    "lodash": "^4.17.5",
+    "masonry-layout": "^4.1.1",
+    "npm": "^5.7.1",
+    "photoswipe": "^4.1.1",
+    "rxjs": "^5.5.7",
+    "siema": "^1.5.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "filemanager-webpack-plugin": "^1.0.25",
+    "html-loader": "^0.4.5",
+    "html-webpack-plugin": "^2.28.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.8.2",
+    "object-path": "^0.11.4",
+    "pug": "^2.0.0-beta9",
+    "pug-loader": "^2.3.0",
+    "sass-loader": "^6.0.3",
+    "showdown": "^1.8.6",
+    "style-loader": "^0.16.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.4.1",
+    "webpack-shell-plugin": "^0.5.0",
+    "yaml-loader": "^0.4.0",
+    "yamljs": "^0.3.0"
+  },
+  "scripts": {
+    "build": "npm run build:images && npm run build:vendors && npm run build:documents",
+    "build:documents": "webpack --config webpack.config.documents.js",
+    "build:images": "webpack --config webpack.config.images.js",
+    "build:vendors": "webpack --config webpack.config.vendors.js",
+    "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chikamichi/mgeco.git"
+  },
+  "keywords": [],
+  "author": "Jean-Denis Vauguet <jd@vauguet.fr>",
+  "license": "SEE LICENSE IN COPYRIGHT.md",
+  "bugs": {
+    "url": "https://github.com/chikamichi/mgeco/issues"
+  },
+  "homepage": "https://github.com/chikamichi/mgeco#readme"
+}

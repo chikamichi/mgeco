@@ -13,57 +13,63 @@
 
 .c-mgeco {
   position: relative;
-  padding-top: $spacing;
+  display: flex;
+  flex-direction: column;
+  margin: $spacing/2 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.c-sidebar {
+  padding: 0 $spacing/2;
+  margin-bottom: $spacing/2;
+  box-sizing: initial;
 }
 
 
-.c-nav {
-  padding: 0 $spacing/4;
+.c-nav__brand {
+  flex-grow: 1;
+  font-size: 1.5em;
+  color: $green;
+  margin: 0;
 }
 
 
-.c-logo {
-  position: relative;
-  display: block;
-  color: white;
+.c-logo,
+.c-contact-area {
+  display: none;
 }
 
 
-.c-logo__image {
-  /*
-  Responsive Image Replacement:
-  We want a responsive background image, ie. its height must match its evolving
-  width. In order to lock the image's aspect ratio along the height axis, with
-  respect to its current, fluid width, one may set a padding-top/bottom value,
-  in percentage, equal to the image's fixed aspect ratio. The trick here lies in
-  the fact that vertical padding values, when expressed in percentages, are
-  always computed using the element container's *width* as the reference.
-  */
-  padding-top: 129.7101149%; // 358px / 276px for logo_mg.jpg
-  width: 100%;
-  height: 0;
-  text-indent: -9999px;
-  background-image: url('/images/logo_mg.jpg');
-  background-size: 100%;
-  transition: background 0.1s ease-in-out;
-}
-
-
-.c-sidebar__link {
-  text-transform: uppercase;
-  color: black;
-  font-weight: bold;
-  font-size: 1.2em;
-
-  &--active {
-    color: $green;
-    font-weight: bold;
+.c-nav__item {
+  &--active,
+  &--active:hover {
+    .c-nav__link {
+      color: $green;
+    }
   }
 }
 
 
-.c-logo {
-  margin-bottom: $spacing;
+.c-nav__link {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: $grey--dark;
+
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+
+.c-nav--desktop {
+  display: none;
+}
+
+
+.c-main-area {
+  padding: 0 $spacing/2;
 }
 
 
@@ -75,28 +81,12 @@
   line-height: 1;
 }
 
-.o-layout__item.c-main-area {
+.c-main-area {
   text-align: justify;
 }
 
 .c-main-area__subtitle {
   color: $green;
-}
-
-
-.c-footer__outer {
-  margin-bottom: $spacing;
-}
-
-
-.c-footer__inner {
-  @include u-text-centered;
-  padding-top: 80px;
-
-
-  .c-contact-infos__rcs {
-    display: none;
-  }
 }
 
 
@@ -107,45 +97,142 @@
 
 
   .c-mgeco {
-    // Resetting inuitcss' o-wrapper's horizontal right padding, so as to stay
-    // perfectly centered within the browser window.
-    padding-right: 0;
+    flex-direction: row;
+    margin: $spacing auto;
   }
 
 
-  .c-logo__image {
+  .c-sidebar {
+    width: $sidebar-content-width; // == logo's width
+    max-width: $sidebar-content-width;
+    min-width: $sidebar-content-width; // flex-basis: auto (default) will pick that one up.
+  }
+
+
+  .c-logo,
+  .c-contact-area {
+    position: relative;
+    width: $sidebar-content-width;
+    max-width: $sidebar-content-width;
+    min-width: $sidebar-content-width;
+    margin: 0 auto;
+    display: block;
+    color: white;
+  }
+
+
+  /*
+    1. Responsive Image Replacement:
+    We want a responsive background image, ie. its height must match its evolving
+    width. In order to lock the image's aspect ratio along the height axis, with
+    respect to its current, fluid width, one may set a padding-top/bottom value,
+    in percentage, equal to the image's fixed aspect ratio. The trick here lies in
+    the fact that vertical padding values, when expressed in percentages, are
+    always computed using the element container's *width* as the reference.
+    2. Helps fighting hover's flickering/blinking effect in recent Firefox builds.
+  */
+  .c-logo__image,
+  .c-contact-area__image {
+    position: relative;
+    margin: 0;
     width: 100%;
     max-width: 100%;
+    height: 0;
+    text-indent: -9999px;
+    background-size: 100%;
+    transition: background 0.1s ease-in-out;
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      will-change: opacity; // 2
+      transition: opacity 0.1s;
+    }
   }
 
-  .c-logo__image:hover {
-    background-image: url('/images/logo_mg2.jpg');
+  .c-logo__image {
+    padding-top: 100%; // 275px / 275px for logo_mg.jpg
+    background-image: url('/images/logo_mg.jpg');
+
+    &::after {
+      background-image: url('/images/logo_mg2.jpg');
+    }
   }
+
+  .c-contact-area__image {
+    padding-top: 31.2727273%; // 86px / 275px for adresse_mg1.jpg
+    background-image: url('/images/adresse_mg1.jpg');
+
+    &::after {
+      background-image: url('/images/adresse_mg2.jpg');
+    }
+  }
+
 
   .c-main-area {
-    min-height: 1000px;
-    padding-left: $spacing*2;
-    padding-right: $spacing;
-    padding-bottom: 200px; // to accomodate 140px footer
+    padding: 0 0 0 2em;
   }
 
 
-  .c-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 200px;
-  }
+  .c-nav--desktop {
+    display: block;
+    margin: $spacing 0;
+    padding: $spacing 0;
+    border-top: 1px solid $grey--light;
+    border-bottom: 1px solid $grey--light;
 
 
-  .c-footer__wrapper,
-  .c-footer__outer {
-    height: 100%;
-  }
+    .c-nav__items {
+      margin: 0;
+    }
 
 
-  .c-footer__outer {
-    margin-bottom: 0;
-    background: url('/images/footer_background.png');
+    .c-nav__item,
+    .c-nav__link {
+      margin: 0;
+    }
+
+    .c-nav__item {
+      list-style: none;
+
+      &::before {
+        content: "•";
+        color: white;
+        display: inline-block;
+        vertical-align: text-top;
+        text-indent: -$spacing/2;
+      }
+
+      &:hover {
+        &::before {
+          color: black;
+        }
+      }
+
+      &--active {
+        &::before {
+          color: $green;
+        }
+      }
+    }
+
+    .c-nav__link {
+      display: inline-block;
+      padding: 0.15em 0;
+      text-transform: initial;
+      margin-left: $spacing/2;
+      text-indent: -$spacing/2;
+    }
   }
 }

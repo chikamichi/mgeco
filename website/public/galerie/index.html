@@ -8,9 +8,8 @@
     <meta name="description" content="MG éco-construction">
     <meta name="author" content="MG éco-construction">
     <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
-    <link rel="preload" href="/images/bienvenue1.jpg" as="image">
-    <link rel="preload" href="/images/bienvenue2.jpg" as="image">
+    <link rel="preload" href="/images/logo_mg.jpg" as="image">
+    <link rel="preload" href="/images/logo_mg2.jpg" as="image">
     <link rel="preload" href="/css/main.css" as="style">
     <link rel="stylesheet" href="/css/main.css">
     <link href="/css/photoswipe/photoswipe.css" rel="stylesheet">
@@ -20,74 +19,812 @@
   <body>
 
     <div class="o-wrapper  c-mgeco">
-      <div class="o-layout">
-        <div class="o-layout__item  c-sidebar  u-1/1  u-1/4@tablet" role="banner">
-          <a href="/contact/" class="c-logo">
+      <section class="c-sidebar" role="banner">
+        <header>
+          <a href="/presentation/" class="c-logo">
             <div class="c-logo__image">
               Constructions écologiques, ossature bois, maison paille, charpente, couverture, isolation, rénovation, conception de plans, étude thermique
             </div>
           </a>
-          <nav class="c-nav" role="navigation">
-  <ul class="o-list-bare">
+        </header>
+        <div class="c-nav  c-nav--mobile">
+  <a href="#mobile-menu"
+     role="button"
+     id="mobile-menu-toggle"
+     class="c-nav__toggle"
+     aria-expanded="false"
+     aria-controls="mobile-menu"
+     aria-label="Open main menu">
+
+    <span class="sr-only">Ouvrir le menu</span>
+    <span class="fa fa-bars" aria-hidden="true"></span>
+  </a>
+
+  <h1 class="c-nav__brand">
+    MG Éco
+  </h1>
+
+  <nav id="mobile-menu" role="navigation" class="c-mobile-menu" aria-expanded="false" aria-label="Main menu">
+    <a href="#mobile-menu-toggle"
+       role="button"
+       id="mobile-menu-close"
+       class="c-mobile-menu__close"
+       aria-expanded="false"
+       aria-controls="mobile-menu"
+       aria-label="Close main menu">
+
+      <span class="sr-only">Fermer le menu</span>
+      <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul class="c-nav__items">
+      
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/presentation/">Présentation</a>
+</li>
+
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/concept/">La construction bois</a>
+</li>
+
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/ethique/">Éthique</a>
+</li>
+
+<li class="c-nav__item  c-nav__item--active">
+  <a class="c-nav__link" href="/galerie/">Photos</a>
+</li>
+
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/votre-projet/">Conception de projet</a>
+</li>
+
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/liens/">Liens</a>
+</li>
+
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/contact/">Contact</a>
+</li>
+
+
+    </ul>
+  </nav>
+
+  <a href="#mobile-menu-toggle"
+     class="backdrop"
+     tabindex="-1"
+     aria-hidden="true" hidden></a>
+</div>
+
+<nav class="c-nav  c-nav--desktop" role="navigation">
+  <ul class="c-nav__items">
     
-    <li>
-  <a class='c-sidebar__link  ' href='/presentation/'>Présentation</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/presentation/">Présentation</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  ' href='/concept/'>La construction bois</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/concept/">La construction bois</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  ' href='/ethique/'>Éthique</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/ethique/">Éthique</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  c-sidebar__link--active' href='/galerie/'>Photos</a>
+<li class="c-nav__item  c-nav__item--active">
+  <a class="c-nav__link" href="/galerie/">Photos</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  ' href='/votre-projet/'>Conception de projet</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/votre-projet/">Conception de projet</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  ' href='/liens/'>Liens</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/liens/">Liens</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  ' href='/contact/'>Contact</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/contact/">Contact</a>
 </li>
+
 
   </ul>
 </nav>
 
-        </div>
-        <div class="o-layout__item  c-main-area  u-1/1  u-3/4@tablet" role="main" aria-labelledby="main-area-title">
-<h1 class="c-main-area__title u-h1" id="main-area-title"><span class="c-main-area__pretitle">Nos réalisations</span><span class="c-main-area__subtitle">en image</span></h1><div class="c-main-content"><p><p>Vous trouverez ici un aperçu des matériaux que nous mettons en œuvre :</p>
+
+        <footer>
+          <a href="/contact/" class="c-contact-area">
+            <div class="c-contact-area__image">
+            </div>
+          </a>
+        </footer>
+      </section>
+      <section class="c-main-area" role="main" aria-labelledby="main-area-title">
+
+<h1 class="c-main-area__title u-h1" id="main-area-title"><span class="c-main-area__pretitle">Nos réalisations</span><span class="c-main-area__subtitle">en image</span></h1>
+<div class="c-main-content">
+  <p><p>Vous trouverez ici un aperçu des matériaux et techniques que nous mettons en œuvre :</p>
 
 <ul>
-<li><strong>Différents types de toitures</strong> : bardeaux de bois (shakes de red cedar), platelage bois (mélèze), tuiles plates, tuiles canals, tuiles losangées, toiture en zinc, bac-acier, toiture-terrasse (couverte en bâche EPDM Firestone) pouvant être végétalisées&hellip;</li>
-<li><strong>Différents types de finitions intérieures</strong> : enduits terre (ARGILUS), enduits chaux, volige peuplier, volige mélèze brute ou rabotée, plancher chêne, plancher frêne olivier, tommettes de la tuilerie de Condat&hellip;</li>
-<li><strong>Différents types de parements extérieurs</strong> : plancher de terrasse en acacia de pays ou chêne de pays, bardages mélèze (bardage à clins, bardage vertical à couvre-joints, bardage en lattis ajouré), bardage Red cedar, enduits à la chaux&hellip;</li>
-<li><strong>Ainsi que différents modes constructifs</strong> : murs d&rsquo;ossature bois réalisés dans notre atelier à Limogne et assemblés sur site, charpente traditionnelle, charpente pour toiture ronde, charpente lamellé-collé, structure poteaux-poutres et chevrons porteurs&hellip;</li>
+<li><strong>Différents types de toitures</strong> : bardeaux de bois, platelage bois (mélèze), tuiles plates, tuiles canals, tuiles losangées, toiture en zinc, bac-acier, toiture-terrasse (couverte en bâche EPDM Firestone) pouvant être végétalisées&hellip;</li>
+<li><strong>Différents types de finitions intérieures</strong> : enduits terre (ARGILUS), enduits chaux, volige peuplier, volige mélèze brute ou rabotée, volige chêne, plancher chêne, plancher frêne olivier, tommettes de la tuilerie de Condat&hellip;</li>
+<li><strong>Différents types de parements extérieurs</strong> : plancher de terrasse en acacia de pays ou chêne de pays, bardages mélèze (bardage à clins, bardage vertical à couvre-joints, bardage à claire-voie), bardage Red cedar, enduits à la chaux&hellip;</li>
+<li><strong>Ainsi que différents modes constructifs</strong> : murs d&rsquo;ossature bois réalisés dans notre atelier à Limogne et assemblés sur site, charpente traditionnelle, charpente lamellé-collé, structure poteaux-poutres et chevrons porteurs&hellip;</li>
 </ul>
-
-<p><br /></p>
-
-<p>Les photos 1 à 48 sont de <strong>Nils Harderveld</strong>, et 49 à 60 de <strong>Stéphanie Bodart</strong>.</p>
-</p></div><div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"><div class="pswp__bg"></div><div class="pswp__scroll-wrap"><div class="pswp__container"><div class="pswp__item"></div><div class="pswp__item"></div><div class="pswp__item"></div></div><div class="pswp__ui pswp__ui--hidden"><div class="pswp__top-bar"><div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button><button class="pswp__button pswp__button--share" title="Share"></button><button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button><button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button><button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class="pswp__caption"><div class="pswp__caption__center"></div></div></div></div></div><div class="c-galleryLoader"><div class="c-galleryLoader__progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"></div></div><div class="c-gallery" itemscope="" itemtype="http://schema.org/ImageGallery"><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="1.jpg"><a class="c-gallery__link" href="/images/gallery/1.jpg" title="Maison roulotte à Cahors" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/1.jpg" alt="Maison roulotte à Cahors" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="1.jpg">Maison roulotte à Cahors</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="2.jpg"><a class="c-gallery__link" href="/images/gallery/2.jpg" title="Bardage mélèze couvre-joints" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/2.jpg" alt="Bardage mélèze couvre-joints" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="2.jpg">Bardage mélèze couvre-joints</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="3.jpg"><a class="c-gallery__link" href="/images/gallery/3.jpg" title="Maison roulotte à Cahors" itemprop="contentUrl" data-size="609x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/3.jpg" alt="Maison roulotte à Cahors" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="3.jpg">Maison roulotte à Cahors</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="4.jpg"><a class="c-gallery__link" href="/images/gallery/4.jpg" title="Terrasse extérieure : plancher chêne" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/4.jpg" alt="Terrasse extérieure : plancher chêne" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="4.jpg">Terrasse extérieure : plancher chêne</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="5.jpg"><a class="c-gallery__link" href="/images/gallery/5.jpg" title="Toiture zinc à joints de bout" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/5.jpg" alt="Toiture zinc à joints de bout" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="5.jpg">Toiture zinc à joints de bout</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="6.jpg"><a class="c-gallery__link" href="/images/gallery/6.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/6.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="6.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="7.jpg"><a class="c-gallery__link" href="/images/gallery/7.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/7.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="7.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="8.jpg"><a class="c-gallery__link" href="/images/gallery/8.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/8.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="8.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="9.jpg"><a class="c-gallery__link" href="/images/gallery/9.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/9.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="9.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="10.jpg"><a class="c-gallery__link" href="/images/gallery/10.jpg" title="Une image" itemprop="contentUrl" data-size="1126x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/10.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="10.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="11.jpg"><a class="c-gallery__link" href="/images/gallery/11.jpg" title="Une image" itemprop="contentUrl" data-size="544x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/11.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="11.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="12.jpg"><a class="c-gallery__link" href="/images/gallery/12.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/12.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="12.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="13.jpg"><a class="c-gallery__link" href="/images/gallery/13.jpg" title="Une image" itemprop="contentUrl" data-size="538x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/13.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="13.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="14.jpg"><a class="c-gallery__link" href="/images/gallery/14.jpg" title="Une image" itemprop="contentUrl" data-size="1652x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/14.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="14.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="15.jpg"><a class="c-gallery__link" href="/images/gallery/15.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/15.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="15.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="16.jpg"><a class="c-gallery__link" href="/images/gallery/16.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/16.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="16.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="17.jpg"><a class="c-gallery__link" href="/images/gallery/17.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/17.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="17.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="18.jpg"><a class="c-gallery__link" href="/images/gallery/18.jpg" title="Une image" itemprop="contentUrl" data-size="529x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/18.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="18.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="19.jpg"><a class="c-gallery__link" href="/images/gallery/19.jpg" title="Une image" itemprop="contentUrl" data-size="1685x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/19.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="19.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="20.jpg"><a class="c-gallery__link" href="/images/gallery/20.jpg" title="Une image" itemprop="contentUrl" data-size="1126x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/20.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="20.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="21.jpg"><a class="c-gallery__link" href="/images/gallery/21.jpg" title="Une image" itemprop="contentUrl" data-size="1567x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/21.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="21.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="22.jpg"><a class="c-gallery__link" href="/images/gallery/22.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/22.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="22.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="23.jpg"><a class="c-gallery__link" href="/images/gallery/23.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/23.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="23.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="24.jpg"><a class="c-gallery__link" href="/images/gallery/24.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/24.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="24.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="25.jpg"><a class="c-gallery__link" href="/images/gallery/25.jpg" title="Une image" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/25.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="25.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="26.jpg"><a class="c-gallery__link" href="/images/gallery/26.jpg" title="Une image" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/26.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="26.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="27.jpg"><a class="c-gallery__link" href="/images/gallery/27.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/27.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="27.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="28.jpg"><a class="c-gallery__link" href="/images/gallery/28.jpg" title="Une image" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/28.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="28.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="29.jpg"><a class="c-gallery__link" href="/images/gallery/29.jpg" title="Une image" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/29.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="29.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="30.jpg"><a class="c-gallery__link" href="/images/gallery/30.jpg" title="Une image" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/30.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="30.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="31.jpg"><a class="c-gallery__link" href="/images/gallery/31.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/31.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="31.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="32.jpg"><a class="c-gallery__link" href="/images/gallery/32.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/32.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="32.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="33.jpg"><a class="c-gallery__link" href="/images/gallery/33.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/33.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="33.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="34.jpg"><a class="c-gallery__link" href="/images/gallery/34.jpg" title="Une image" itemprop="contentUrl" data-size="1124x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/34.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="34.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="35.jpg"><a class="c-gallery__link" href="/images/gallery/35.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/35.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="35.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="36.jpg"><a class="c-gallery__link" href="/images/gallery/36.jpg" title="Une image" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/36.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="36.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="37.jpg"><a class="c-gallery__link" href="/images/gallery/37.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/37.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="37.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="38.jpg"><a class="c-gallery__link" href="/images/gallery/38.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/38.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="38.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="39.jpg"><a class="c-gallery__link" href="/images/gallery/39.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/39.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="39.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="40.jpg"><a class="c-gallery__link" href="/images/gallery/40.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/40.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="40.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="41.jpg"><a class="c-gallery__link" href="/images/gallery/41.jpg" title="Une image" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/41.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="41.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="42.jpg"><a class="c-gallery__link" href="/images/gallery/42.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/42.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="42.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="43.jpg"><a class="c-gallery__link" href="/images/gallery/43.jpg" title="Une image" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/43.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="43.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="44.jpg"><a class="c-gallery__link" href="/images/gallery/44.jpg" title="Une image" itemprop="contentUrl" data-size="1369x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/44.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="44.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="45.jpg"><a class="c-gallery__link" href="/images/gallery/45.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/45.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="45.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="46.jpg"><a class="c-gallery__link" href="/images/gallery/46.jpg" title="Une image" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/46.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="46.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="47.jpg"><a class="c-gallery__link" href="/images/gallery/47.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/47.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="47.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="48.jpg"><a class="c-gallery__link" href="/images/gallery/48.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/48.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="48.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="49.jpg"><a class="c-gallery__link" href="/images/gallery/49.jpg" title="Une image" itemprop="contentUrl" data-size="654x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/49.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="49.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="50.jpg"><a class="c-gallery__link" href="/images/gallery/50.jpg" title="Une image" itemprop="contentUrl" data-size="1286x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/50.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="50.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="51.jpg"><a class="c-gallery__link" href="/images/gallery/51.jpg" title="Une image" itemprop="contentUrl" data-size="562x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/51.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="51.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="52.jpg"><a class="c-gallery__link" href="/images/gallery/52.jpg" title="Une image" itemprop="contentUrl" data-size="499x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/52.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="52.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="53.jpg"><a class="c-gallery__link" href="/images/gallery/53.jpg" title="Une image" itemprop="contentUrl" data-size="499x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/53.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="53.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="54.jpg"><a class="c-gallery__link" href="/images/gallery/54.jpg" title="Une image" itemprop="contentUrl" data-size="1049x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/54.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="54.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="55.jpg"><a class="c-gallery__link" href="/images/gallery/55.jpg" title="Une image" itemprop="contentUrl" data-size="871x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/55.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="55.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="56.jpg"><a class="c-gallery__link" href="/images/gallery/56.jpg" title="Une image" itemprop="contentUrl" data-size="499x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/56.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="56.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="57.jpg"><a class="c-gallery__link" href="/images/gallery/57.jpg" title="Une image" itemprop="contentUrl" data-size="499x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/57.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="57.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="58.jpg"><a class="c-gallery__link" href="/images/gallery/58.jpg" title="Une image" itemprop="contentUrl" data-size="499x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/58.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="58.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="59.jpg"><a class="c-gallery__link" href="/images/gallery/59.jpg" title="Une image" itemprop="contentUrl" data-size="499x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/59.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="59.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="60.jpg"><a class="c-gallery__link" href="/images/gallery/60.jpg" title="Une image" itemprop="contentUrl" data-size="499x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/60.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="60.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="62.jpg"><a class="c-gallery__link" href="/images/gallery/62.jpg" title="Une image" itemprop="contentUrl" data-size="990x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/62.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="62.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="63.jpg"><a class="c-gallery__link" href="/images/gallery/63.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/63.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="63.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="64.jpg"><a class="c-gallery__link" href="/images/gallery/64.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/64.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="64.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="65.jpg"><a class="c-gallery__link" href="/images/gallery/65.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/65.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="65.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="66.jpg"><a class="c-gallery__link" href="/images/gallery/66.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/66.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="66.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="67.jpg"><a class="c-gallery__link" href="/images/gallery/67.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/67.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="67.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="68.jpg"><a class="c-gallery__link" href="/images/gallery/68.jpg" title="Une image" itemprop="contentUrl" data-size="980x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/68.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="68.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="69.jpg"><a class="c-gallery__link" href="/images/gallery/69.jpg" title="Une image" itemprop="contentUrl" data-size="1098x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/69.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="69.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="70.jpg"><a class="c-gallery__link" href="/images/gallery/70.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/70.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="70.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="71.jpg"><a class="c-gallery__link" href="/images/gallery/71.jpg" title="Une image" itemprop="contentUrl" data-size="1037x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/71.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="71.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="72.jpg"><a class="c-gallery__link" href="/images/gallery/72.jpg" title="Une image" itemprop="contentUrl" data-size="1127x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/72.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="72.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="73.jpg"><a class="c-gallery__link" href="/images/gallery/73.jpg" title="Une image" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/73.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="73.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="74.jpg"><a class="c-gallery__link" href="/images/gallery/74.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/74.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="74.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="75.jpg"><a class="c-gallery__link" href="/images/gallery/75.jpg" title="Une image" itemprop="contentUrl" data-size="938x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/75.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="75.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="76.jpg"><a class="c-gallery__link" href="/images/gallery/76.jpg" title="Une image" itemprop="contentUrl" data-size="968x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/76.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="76.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="77.jpg"><a class="c-gallery__link" href="/images/gallery/77.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/77.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="77.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="78.jpg"><a class="c-gallery__link" href="/images/gallery/78.jpg" title="Une image" itemprop="contentUrl" data-size="1013x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/78.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="78.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="79.jpg"><a class="c-gallery__link" href="/images/gallery/79.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/79.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="79.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="80.jpg"><a class="c-gallery__link" href="/images/gallery/80.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/80.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="80.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="81.jpg"><a class="c-gallery__link" href="/images/gallery/81.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/81.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="81.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="82.jpg"><a class="c-gallery__link" href="/images/gallery/82.jpg" title="Une image" itemprop="contentUrl" data-size="945x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/82.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="82.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="83.jpg"><a class="c-gallery__link" href="/images/gallery/83.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/83.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="83.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="84.jpg"><a class="c-gallery__link" href="/images/gallery/84.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/84.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="84.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="85.jpg"><a class="c-gallery__link" href="/images/gallery/85.jpg" title="Une image" itemprop="contentUrl" data-size="925x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/85.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="85.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="86.jpg"><a class="c-gallery__link" href="/images/gallery/86.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/86.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="86.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="87.jpg"><a class="c-gallery__link" href="/images/gallery/87.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/87.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="87.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="88.jpg"><a class="c-gallery__link" href="/images/gallery/88.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/88.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="88.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="89.jpg"><a class="c-gallery__link" href="/images/gallery/89.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/89.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="89.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="90.jpg"><a class="c-gallery__link" href="/images/gallery/90.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/90.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="90.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="91.jpg"><a class="c-gallery__link" href="/images/gallery/91.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/91.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="91.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="92.jpg"><a class="c-gallery__link" href="/images/gallery/92.jpg" title="Une image" itemprop="contentUrl" data-size="1102x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/92.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="92.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="93.jpg"><a class="c-gallery__link" href="/images/gallery/93.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/93.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="93.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="94.jpg"><a class="c-gallery__link" href="/images/gallery/94.jpg" title="Une image" itemprop="contentUrl" data-size="1008x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/94.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="94.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="95.jpg"><a class="c-gallery__link" href="/images/gallery/95.jpg" title="Une image" itemprop="contentUrl" data-size="1072x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/95.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="95.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="96.jpg"><a class="c-gallery__link" href="/images/gallery/96.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/96.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="96.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="97.jpg"><a class="c-gallery__link" href="/images/gallery/97.jpg" title="Une image" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/97.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="97.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="98.jpg"><a class="c-gallery__link" href="/images/gallery/98.jpg" title="Une image" itemprop="contentUrl" data-size="1110x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/98.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="98.jpg">Une image</span></div></a></div><div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="99.jpg"><a class="c-gallery__link" href="/images/gallery/99.jpg" title="Une image" itemprop="contentUrl" data-size="577x750"><img class="c-gallery__thumbnail" src="/images/gallery/thumbnails/99.jpg" alt="Une image" itemprop="thumbnail"><div class="c-gallery__caption" itemprop="caption description"><span id="99.jpg">Une image</span></div></a></div></div>        </div>
+</p>
+</div>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="pswp__bg"></div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <div class="pswp__counter"></div>
+        <button class="pswp__button pswp__button--close" title="Fermer (Esc)"></button>
+        <button class="pswp__button pswp__button--share" title="Partager"></button>
+        <button class="pswp__button pswp__button--fs" title="Plein écran"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom +/-"></button>
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Précédent (flèche gauche)"></button>
+      <button class="pswp__button pswp__button--arrow--right" title="Suivant (flèche droite)"></button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
       </div>
     </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  </div>
+</div>
+<div class="c-gallery" itemscope="" itemtype="http://schema.org/ImageGallery">
+  <div class="c-gallery-category">
+    <h2 class="c-gallery-category__title">Maison roulotte à Saint-Cirice (46)
+    </h2>
+    <div class="c-gallery-category__description"><p>Maison bioclimatique en double ossature bois douglas sur sous-sol maçonné, contreventée en Agepan DWD et isolée en petite bottes de paille. La toiture ronde Philibert Delorme est en zinc à joints de bouts, les menuiseries Courrège en alu-bois et les volets battants en bois. Une pergola métal vient compléter l'ensemble.</p>
+<p><em>Chantier achevé en 2015, situé sur les hauteurs de Cahors.</em></p>
+<ul>
+<li>Surface plancher : 130m².</li>
+<li>Isolants biosourcés : murs en paille, plafond en Biofib Trio, sarking toiture et murs en Homatherm UDQ11.</li>
+<li>Parements extérieurs : enduit chaux ton pierre pour le rez-de-chaussée, bardage bois brut à couvre-joint en mélèze de pays pour l'étage. Plancher de terrasse en chêne de pays chanfreiné.</li>
+<li>Parements intérieurs : enduit terre Argilus, volige peuplier, plancher chêne, tomettes.</li>
+<li>Équipements techniques : Poêle bouilleur à granulés + ECS solaire thermique.</li>
+<li>Assainissement individuel par phytoépuration.</li>
+<li>Étude technique MG ECO. Plans Jérome et Nathalie Beyssac / Lisa Grimaud.</li>
+<li><em>Photographies <a href="http://www.nilshardeveld.com/">Nils Hardeveld</a>.</em></li>
+</ul>
+    </div>
+    <div class="c-gallery-category__images">
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CAHORS/1.jpg"><a class="c-gallery__link" href="/images/gallery/CAHORS/1.jpg" title="maison bioclimatique à Cahors" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CAHORS/thumbnails/1.jpg" alt="maison bioclimatique à Cahors" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CAHORS/1.jpg">maison bioclimatique à Cahors</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CAHORS/2.jpg"><a class="c-gallery__link" href="/images/gallery/CAHORS/2.jpg" title="bardage à couvre joint en mélèze de pays" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CAHORS/thumbnails/2.jpg" alt="bardage à couvre joint en mélèze de pays" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CAHORS/2.jpg">bardage à couvre joint en mélèze de pays</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CAHORS/3.jpg"><a class="c-gallery__link" href="/images/gallery/CAHORS/3.jpg" title="maison roulotte" itemprop="contentUrl" data-size="609x750"><img class="c-gallery__thumbnail" src="/images/gallery/CAHORS/thumbnails/3.jpg" alt="maison roulotte" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CAHORS/3.jpg">maison roulotte</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CAHORS/4.jpg"><a class="c-gallery__link" href="/images/gallery/CAHORS/4.jpg" title="terrasse extérieure plancher chêne de pays" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/CAHORS/thumbnails/4.jpg" alt="terrasse extérieure plancher chêne de pays" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CAHORS/4.jpg">terrasse extérieure plancher chêne de pays</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CAHORS/5.jpg"><a class="c-gallery__link" href="/images/gallery/CAHORS/5.jpg" title="toiture zinc à joints de bout" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CAHORS/thumbnails/5.jpg" alt="toiture zinc à joints de bout" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CAHORS/5.jpg">toiture zinc à joints de bout</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CAHORS/6.jpg"><a class="c-gallery__link" href="/images/gallery/CAHORS/6.jpg" title="mariage tommettes et volige peuplier" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CAHORS/thumbnails/6.jpg" alt="mariage tommettes et volige peuplier" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CAHORS/6.jpg">mariage tommettes et volige peuplier</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CAHORS/7.jpg"><a class="c-gallery__link" href="/images/gallery/CAHORS/7.jpg" title="cuisine avec vue" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CAHORS/thumbnails/7.jpg" alt="cuisine avec vue" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CAHORS/7.jpg">cuisine avec vue</span></div></a></div>
+    </div>
+  </div>
+  <div class="c-gallery-category">
+    <h2 class="c-gallery-category__title">Extension bois à Berganty (46)
+    </h2>
+    <div class="c-gallery-category__description"><p>Extension d'une grange quercynoise en pierre : dalle bois et plots bétons supportant une ossature bois douglas contreventée en Agepan DWD.</p>
+<p><em>Chantier achevé en 2014.</em></p>
+<ul>
+<li>Surface plancher : 38m².</li>
+<li>Toiture : charpente plate, étanchéïté en EPDM Firestone, acroterre en aluminium.</li>
+<li>Menuiseries alu-bois Courrège RAL 7016. Marquise en bois et verre.</li>
+<li>Isolants biosourcés : fibre de bois Homatherm - murs, sol, plafond.</li>
+<li>Parements extérieurs : bardage vertical à claire voie en mélèze brut. Plancher de terrasse en chêne de pays chanfreiné.</li>
+<li>Parements intérieurs : enduit terre Argilus sur fermacell, plancher frêne et douglas, tomettes.</li>
+<li>Étude technique MG ECO.</li>
+<li><em>Photographies <a href="http://www.nilshardeveld.com/">Nils Hardeveld</a>.</em></li>
+</ul>
+    </div>
+    <div class="c-gallery-category__images">
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="BERGANTY/1.jpg"><a class="c-gallery__link" href="/images/gallery/BERGANTY/1.jpg" title="extension bois sur grange en pierre" itemprop="contentUrl" data-size="1652x750"><img class="c-gallery__thumbnail" src="/images/gallery/BERGANTY/thumbnails/1.jpg" alt="extension bois sur grange en pierre" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="BERGANTY/1.jpg">extension bois sur grange en pierre</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="BERGANTY/2.jpg"><a class="c-gallery__link" href="/images/gallery/BERGANTY/2.jpg" title="bardage mélèze brut à claire voie" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/BERGANTY/thumbnails/2.jpg" alt="bardage mélèze brut à claire voie" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="BERGANTY/2.jpg">bardage mélèze brut à claire voie</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="BERGANTY/3.jpg"><a class="c-gallery__link" href="/images/gallery/BERGANTY/3.jpg" title="toiture plate et acroterres en alu RAL 7016" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/BERGANTY/thumbnails/3.jpg" alt="toiture plate et acroterres en alu RAL 7016" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="BERGANTY/3.jpg">toiture plate et acroterres en alu RAL 7016</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="BERGANTY/4.jpg"><a class="c-gallery__link" href="/images/gallery/BERGANTY/4.jpg" title="mariage d'architectures" itemprop="contentUrl" data-size="1126x750"><img class="c-gallery__thumbnail" src="/images/gallery/BERGANTY/thumbnails/4.jpg" alt="mariage d'architectures" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="BERGANTY/4.jpg">mariage d'architectures</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="BERGANTY/5.jpg"><a class="c-gallery__link" href="/images/gallery/BERGANTY/5.jpg" title="bardage mélèze brut à claire voie" itemprop="contentUrl" data-size="544x750"><img class="c-gallery__thumbnail" src="/images/gallery/BERGANTY/thumbnails/5.jpg" alt="bardage mélèze brut à claire voie" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="BERGANTY/5.jpg">bardage mélèze brut à claire voie</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="BERGANTY/6.jpg"><a class="c-gallery__link" href="/images/gallery/BERGANTY/6.jpg" title="pierre, tomettes, chêne, enduits Argilus" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/BERGANTY/thumbnails/6.jpg" alt="pierre, tomettes, chêne, enduits Argilus" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="BERGANTY/6.jpg">pierre, tomettes, chêne, enduits Argilus</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="BERGANTY/7.jpg"><a class="c-gallery__link" href="/images/gallery/BERGANTY/7.jpg" title="enduit Argilus orangé abricot et plancher douglas" itemprop="contentUrl" data-size="538x750"><img class="c-gallery__thumbnail" src="/images/gallery/BERGANTY/thumbnails/7.jpg" alt="enduit Argilus orangé abricot et plancher douglas" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="BERGANTY/7.jpg">enduit Argilus orangé abricot et plancher douglas</span></div></a></div>
+    </div>
+  </div>
+  <div class="c-gallery-category">
+    <h2 class="c-gallery-category__title">Éco-reconstruction à Calvignac (46)
+    </h2>
+    <div class="c-gallery-category__description"><p>Reconstruction suite à un incendie. Maison sur dalle bois et plots bétons, en ossature bois douglas contreventée en Agepan DWD.</p>
+<p><em>Chantier achevé en 2016.</em></p>
+<ul>
+<li>Surface plancher : 140m².</li>
+<li>Toiture : charpente en lamellé-collé et chevrons porteurs, couverture tuiles canals brun-rouge vieilli.</li>
+<li>Menuiseries alu-bois Courrège RAL 7016. Volets roulants semi-encastrés.</li>
+<li>Isolants biosourcés : Biofib Trio - murs, sol, plafond.</li>
+<li>Parements extérieurs : bardage vertical Red cedar à couvre-joints. Plancher de terrasse en chêne de pays chanfreiné.</li>
+<li>Parements intérieurs : plâtre traditionnel sur fermacell, volige peuplier au plafond, plancher frêne olivier.</li>
+<li>Équipements techniques : chaudière Okofen à granulés + ECS solaire thermique.</li>
+<li>Étude technique MG ECO. Plans Olivier Dupont / Lisa Grimaud.</li>
+<li><em>Photographies <a href="http://www.nilshardeveld.com/">Nils Hardeveld</a>.</em></li>
+</ul>
+    </div>
+    <div class="c-gallery-category__images">
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CALVIGNAC/1.jpg"><a class="c-gallery__link" href="/images/gallery/CALVIGNAC/1.jpg" title="maison bioclimatique à Calvignac" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CALVIGNAC/thumbnails/1.jpg" alt="maison bioclimatique à Calvignac" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CALVIGNAC/1.jpg">maison bioclimatique à Calvignac</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CALVIGNAC/2.jpg"><a class="c-gallery__link" href="/images/gallery/CALVIGNAC/2.jpg" title="volige peuplier en plafond" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CALVIGNAC/thumbnails/2.jpg" alt="volige peuplier en plafond" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CALVIGNAC/2.jpg">volige peuplier en plafond</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CALVIGNAC/3.jpg"><a class="c-gallery__link" href="/images/gallery/CALVIGNAC/3.jpg" title="un intérieur chaleureux et lumineux" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CALVIGNAC/thumbnails/3.jpg" alt="un intérieur chaleureux et lumineux" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CALVIGNAC/3.jpg">un intérieur chaleureux et lumineux</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CALVIGNAC/4.jpg"><a class="c-gallery__link" href="/images/gallery/CALVIGNAC/4.jpg" title="menuiseries alu RAL 7016 et pliages alu" itemprop="contentUrl" data-size="529x750"><img class="c-gallery__thumbnail" src="/images/gallery/CALVIGNAC/thumbnails/4.jpg" alt="menuiseries alu RAL 7016 et pliages alu" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CALVIGNAC/4.jpg">menuiseries alu RAL 7016 et pliages alu</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CALVIGNAC/5.jpg"><a class="c-gallery__link" href="/images/gallery/CALVIGNAC/5.jpg" title="maison bioclimatique à Calvignac" itemprop="contentUrl" data-size="1685x750"><img class="c-gallery__thumbnail" src="/images/gallery/CALVIGNAC/thumbnails/5.jpg" alt="maison bioclimatique à Calvignac" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CALVIGNAC/5.jpg">maison bioclimatique à Calvignac</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CALVIGNAC/6.jpg"><a class="c-gallery__link" href="/images/gallery/CALVIGNAC/6.jpg" title="bardage à couvre-joints en red cedar" itemprop="contentUrl" data-size="1126x750"><img class="c-gallery__thumbnail" src="/images/gallery/CALVIGNAC/thumbnails/6.jpg" alt="bardage à couvre-joints en red cedar" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CALVIGNAC/6.jpg">bardage à couvre-joints en red cedar</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CALVIGNAC/7.jpg"><a class="c-gallery__link" href="/images/gallery/CALVIGNAC/7.jpg" title="sas d'entrée lumineux" itemprop="contentUrl" data-size="1567x750"><img class="c-gallery__thumbnail" src="/images/gallery/CALVIGNAC/thumbnails/7.jpg" alt="sas d'entrée lumineux" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CALVIGNAC/7.jpg">sas d'entrée lumineux</span></div></a></div>
+    </div>
+  </div>
+  <div class="c-gallery-category">
+    <h2 class="c-gallery-category__title">Maison bioclimatique à Concots (46)
+    </h2>
+    <div class="c-gallery-category__description"><p>Maison sur dalle bois et vide sanitaire maçonné, en ossature bois douglas contreventée en Agepan DWD.</p>
+<p><em>Chantier achevé en 2013.</em></p>
+<ul>
+<li>Surface plancher : 165m².</li>
+<li>Toiture charpente charpente traditionnelle à 12 pans, couverture en bardeaux de Red cedar.</li>
+<li>Menuiseries alu-bois Courrège blanc.</li>
+<li>Isolants biosourcés : fibre de bois Homatherm - murs, sol, plafond. Sarking en fibre de bois dense.</li>
+<li>Parements extérieurs : bardage vertical mélèze brut à couvre-joints. Plancher de terrasse en chêne de pays chanfreiné.</li>
+<li>Parements intérieurs : enduits Argilus et stucks artisanaux sur fermacell, volige douglas rabotée, volige peuplier au plafond, plancher massif en chêne.</li>
+<li>Équipements techniques : poêle à bois bouilleur + ECS solaire thermique.</li>
+<li>Phytoépuration. Cuve de récupération des EP.</li>
+<li>Étude technique MG ECO. Plans Andrea Elias.</li>
+<li><em>Photographies <a href="http://www.nilshardeveld.com/">Nils Hardeveld</a>.</em></li>
+</ul>
+    </div>
+    <div class="c-gallery-category__images">
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CONCOTS/1.jpg"><a class="c-gallery__link" href="/images/gallery/CONCOTS/1.jpg" title="Maison claire et chaleureuse" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CONCOTS/thumbnails/1.jpg" alt="Maison claire et chaleureuse" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CONCOTS/1.jpg">Maison claire et chaleureuse</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CONCOTS/2.jpg"><a class="c-gallery__link" href="/images/gallery/CONCOTS/2.jpg" title="poêle bouilleur assurant chauffage central et ECS" itemprop="contentUrl" data-size="1124x750"><img class="c-gallery__thumbnail" src="/images/gallery/CONCOTS/thumbnails/2.jpg" alt="poêle bouilleur assurant chauffage central et ECS" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CONCOTS/2.jpg">poêle bouilleur assurant chauffage central et ECS</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CONCOTS/3.jpg"><a class="c-gallery__link" href="/images/gallery/CONCOTS/3.jpg" title="Enduits Argilus et planchers bois massif" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CONCOTS/thumbnails/3.jpg" alt="Enduits Argilus et planchers bois massif" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CONCOTS/3.jpg">Enduits Argilus et planchers bois massif</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CONCOTS/4.jpg"><a class="c-gallery__link" href="/images/gallery/CONCOTS/4.jpg" title="menuiseries alu-bois Courrège prod" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/CONCOTS/thumbnails/4.jpg" alt="menuiseries alu-bois Courrège prod" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CONCOTS/4.jpg">menuiseries alu-bois Courrège prod</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CONCOTS/5.jpg"><a class="c-gallery__link" href="/images/gallery/CONCOTS/5.jpg" title="stucks et enduits Argilus" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CONCOTS/thumbnails/5.jpg" alt="stucks et enduits Argilus" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CONCOTS/5.jpg">stucks et enduits Argilus</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CONCOTS/6.jpg"><a class="c-gallery__link" href="/images/gallery/CONCOTS/6.jpg" title="Volige douglas raboté au mur" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CONCOTS/thumbnails/6.jpg" alt="Volige douglas raboté au mur" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CONCOTS/6.jpg">Volige douglas raboté au mur</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CONCOTS/7.jpg"><a class="c-gallery__link" href="/images/gallery/CONCOTS/7.jpg" title="Volige douglas raboté au mur" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CONCOTS/thumbnails/7.jpg" alt="Volige douglas raboté au mur" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CONCOTS/7.jpg">Volige douglas raboté au mur</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CONCOTS/8.jpg"><a class="c-gallery__link" href="/images/gallery/CONCOTS/8.jpg" title="plancher de terrasse en chêne de pays" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CONCOTS/thumbnails/8.jpg" alt="plancher de terrasse en chêne de pays" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CONCOTS/8.jpg">plancher de terrasse en chêne de pays</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CONCOTS/9.jpg"><a class="c-gallery__link" href="/images/gallery/CONCOTS/9.jpg" title="gouttières en zinc" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/CONCOTS/thumbnails/9.jpg" alt="gouttières en zinc" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CONCOTS/9.jpg">gouttières en zinc</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CONCOTS/10.jpg"><a class="c-gallery__link" href="/images/gallery/CONCOTS/10.jpg" title="maison bioclimatique à Concots" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CONCOTS/thumbnails/10.jpg" alt="maison bioclimatique à Concots" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CONCOTS/10.jpg">maison bioclimatique à Concots</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CONCOTS/12.jpg"><a class="c-gallery__link" href="/images/gallery/CONCOTS/12.jpg" title="maison bioclimatique à Concots" itemprop="contentUrl" data-size="1369x750"><img class="c-gallery__thumbnail" src="/images/gallery/CONCOTS/thumbnails/12.jpg" alt="maison bioclimatique à Concots" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CONCOTS/12.jpg">maison bioclimatique à Concots</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CONCOTS/13.jpg"><a class="c-gallery__link" href="/images/gallery/CONCOTS/13.jpg" title="sas d'entrée en bow-window" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CONCOTS/thumbnails/13.jpg" alt="sas d'entrée en bow-window" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CONCOTS/13.jpg">sas d'entrée en bow-window</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CONCOTS/14.jpg"><a class="c-gallery__link" href="/images/gallery/CONCOTS/14.jpg" title="mélèze et red cedar" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/CONCOTS/thumbnails/14.jpg" alt="mélèze et red cedar" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CONCOTS/14.jpg">mélèze et red cedar</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CONCOTS/15.jpg"><a class="c-gallery__link" href="/images/gallery/CONCOTS/15.jpg" title="toiture en bardeaux" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CONCOTS/thumbnails/15.jpg" alt="toiture en bardeaux" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CONCOTS/15.jpg">toiture en bardeaux</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="CONCOTS/16.jpg"><a class="c-gallery__link" href="/images/gallery/CONCOTS/16.jpg" title="détail du bardage et des sous-toitures" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/CONCOTS/thumbnails/16.jpg" alt="détail du bardage et des sous-toitures" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="CONCOTS/16.jpg">détail du bardage et des sous-toitures</span></div></a></div>
+    </div>
+  </div>
+  <div class="c-gallery-category">
+    <h2 class="c-gallery-category__title">Maison bois à Saint-Cirq-Souillaguet (46)
+    </h2>
+    <div class="c-gallery-category__description"><p>Maison sur dalle bois et vide sanitaire maçonné, en ossature bois Douglas contreventée en Agepan DWD.</p>
+<p><em>Chantier achevé en 2012.</em></p>
+<ul>
+<li>Surface plancher : 120m².</li>
+<li>Toiture charpente charpente traditionnelle et chevrons porteurs, couverture en bardeaux de Red cedar.</li>
+<li>Menuiseries alu, volets coulissants.</li>
+<li>Isolants biosourcés : fibre de bois Homatherm - murs, sol, plafond.</li>
+<li>Parements extérieurs : bardage vertical mélèze brut à couvre-joints. Plancher de terrasse en acacia contrecollé.</li>
+<li>Parements intérieurs : volige peuplier au plafond.</li>
+<li>Équipements techniques : poêle à bois.</li>
+<li>Cuve de récupération des EP.</li>
+<li>Étude technique MG ECO. Plans Katell.</li>
+<li><em>Photographies <a href="http://www.nilshardeveld.com/">Nils Hardeveld</a>.</em></li>
+</ul>
+    </div>
+    <div class="c-gallery-category__images">
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SAINT-CIRQ-SOUILLAGUET/1.jpg"><a class="c-gallery__link" href="/images/gallery/SAINT-CIRQ-SOUILLAGUET/1.jpg" title="maison &quot;tout bois&quot; à St-Cirq-Souillaguet" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/SAINT-CIRQ-SOUILLAGUET/thumbnails/1.jpg" alt="maison &quot;tout bois&quot; à St-Cirq-Souillaguet" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SAINT-CIRQ-SOUILLAGUET/1.jpg">maison &quot;tout bois&quot; à St-Cirq-Souillaguet</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SAINT-CIRQ-SOUILLAGUET/2.jpg"><a class="c-gallery__link" href="/images/gallery/SAINT-CIRQ-SOUILLAGUET/2.jpg" title="maison &quot;tout bois&quot; à St-Cirq-Souillaguet" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/SAINT-CIRQ-SOUILLAGUET/thumbnails/2.jpg" alt="maison &quot;tout bois&quot; à St-Cirq-Souillaguet" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SAINT-CIRQ-SOUILLAGUET/2.jpg">maison &quot;tout bois&quot; à St-Cirq-Souillaguet</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SAINT-CIRQ-SOUILLAGUET/3.jpg"><a class="c-gallery__link" href="/images/gallery/SAINT-CIRQ-SOUILLAGUET/3.jpg" title="volets coulissants métal et terrasse en acacia" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/SAINT-CIRQ-SOUILLAGUET/thumbnails/3.jpg" alt="volets coulissants métal et terrasse en acacia" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SAINT-CIRQ-SOUILLAGUET/3.jpg">volets coulissants métal et terrasse en acacia</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SAINT-CIRQ-SOUILLAGUET/4.jpg"><a class="c-gallery__link" href="/images/gallery/SAINT-CIRQ-SOUILLAGUET/4.jpg" title="charpente traditionnelle en douglas et volige peuplier" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/SAINT-CIRQ-SOUILLAGUET/thumbnails/4.jpg" alt="charpente traditionnelle en douglas et volige peuplier" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SAINT-CIRQ-SOUILLAGUET/4.jpg">charpente traditionnelle en douglas et volige peuplier</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SAINT-CIRQ-SOUILLAGUET/5.jpg"><a class="c-gallery__link" href="/images/gallery/SAINT-CIRQ-SOUILLAGUET/5.jpg" title="terrasse en acacia et menuiseries aluminium" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/SAINT-CIRQ-SOUILLAGUET/thumbnails/5.jpg" alt="terrasse en acacia et menuiseries aluminium" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SAINT-CIRQ-SOUILLAGUET/5.jpg">terrasse en acacia et menuiseries aluminium</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SAINT-CIRQ-SOUILLAGUET/6.jpg"><a class="c-gallery__link" href="/images/gallery/SAINT-CIRQ-SOUILLAGUET/6.jpg" title="charpente traditionnelle en douglas et volige peuplier" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/SAINT-CIRQ-SOUILLAGUET/thumbnails/6.jpg" alt="charpente traditionnelle en douglas et volige peuplier" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SAINT-CIRQ-SOUILLAGUET/6.jpg">charpente traditionnelle en douglas et volige peuplier</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SAINT-CIRQ-SOUILLAGUET/7.jpg"><a class="c-gallery__link" href="/images/gallery/SAINT-CIRQ-SOUILLAGUET/7.jpg" title="charpente traditionnelle en douglas et volige peuplier" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/SAINT-CIRQ-SOUILLAGUET/thumbnails/7.jpg" alt="charpente traditionnelle en douglas et volige peuplier" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SAINT-CIRQ-SOUILLAGUET/7.jpg">charpente traditionnelle en douglas et volige peuplier</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SAINT-CIRQ-SOUILLAGUET/8.jpg"><a class="c-gallery__link" href="/images/gallery/SAINT-CIRQ-SOUILLAGUET/8.jpg" title="intérieur lumineux et contemporain" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/SAINT-CIRQ-SOUILLAGUET/thumbnails/8.jpg" alt="intérieur lumineux et contemporain" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SAINT-CIRQ-SOUILLAGUET/8.jpg">intérieur lumineux et contemporain</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SAINT-CIRQ-SOUILLAGUET/9.jpg"><a class="c-gallery__link" href="/images/gallery/SAINT-CIRQ-SOUILLAGUET/9.jpg" title="intérieur lumineux et contemporain" itemprop="contentUrl" data-size="500x750"><img class="c-gallery__thumbnail" src="/images/gallery/SAINT-CIRQ-SOUILLAGUET/thumbnails/9.jpg" alt="intérieur lumineux et contemporain" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SAINT-CIRQ-SOUILLAGUET/9.jpg">intérieur lumineux et contemporain</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SAINT-CIRQ-SOUILLAGUET/10.jpg"><a class="c-gallery__link" href="/images/gallery/SAINT-CIRQ-SOUILLAGUET/10.jpg" title="maison bois à Saint-Cirq-Souillaguet" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/SAINT-CIRQ-SOUILLAGUET/thumbnails/10.jpg" alt="maison bois à Saint-Cirq-Souillaguet" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SAINT-CIRQ-SOUILLAGUET/10.jpg">maison bois à Saint-Cirq-Souillaguet</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SAINT-CIRQ-SOUILLAGUET/11.jpg"><a class="c-gallery__link" href="/images/gallery/SAINT-CIRQ-SOUILLAGUET/11.jpg" title="garde-corps contemporain en inox" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/SAINT-CIRQ-SOUILLAGUET/thumbnails/11.jpg" alt="garde-corps contemporain en inox" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SAINT-CIRQ-SOUILLAGUET/11.jpg">garde-corps contemporain en inox</span></div></a></div>
+    </div>
+  </div>
+  <div class="c-gallery-category">
+    <h2 class="c-gallery-category__title">Séchoir à tabac revisité à Salviac (46)
+    </h2>
+    <div class="c-gallery-category__description"><p>Chantier selectionné par le CAUE qui a fait l'objet d'une <a href="http://www.caue-mp.fr/espace-ressources/maison-rurale-contemporaine-dans-le-lot.html">fiche réalisation</a>.</p>
+<p>Maison bioclimatique sur dalle béton isolée, en ossature bois Douglas contreventée en Agepan DWD.</p>
+<p><em>Chantier achevé en 2013.</em></p>
+<ul>
+<li>Surface plancher : 105m².</li>
+<li>Toiture charpente à chevrons porteurs, couverture en tavaillons de mélèze.</li>
+<li>Menuiseries alu-bois Courrège à seuils encastrés, volets coulissants ferroniers.</li>
+<li>Isolants biosourcés : fibre de bois Homatherm - murs, plafond. Sarking en fibre de bois dense.</li>
+<li>Parements extérieurs : bardage vertical mélèze brut à couvre-joints. Plancher de terrasse en acacia de pays.</li>
+<li>Parements intérieurs : volige brute mélèze au plafond. Fermacell aux murs. Tommettes de la tuilerie de Condat.</li>
+<li>Équipements techniques : poêle à bois.</li>
+<li>Étude technique MG ECO. Plans Stéphanie et Jean-Sebastien Bodart.</li>
+<li><em>Photographies <a href="https://www.stephaniebodart.com/">Stéphanie Bodart</a>.</em></li>
+</ul>
+    </div>
+    <div class="c-gallery-category__images">
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SALVIAC/1.jpg"><a class="c-gallery__link" href="/images/gallery/SALVIAC/1.jpg" title="maison bioclimatique à Salviac" itemprop="contentUrl" data-size="654x750"><img class="c-gallery__thumbnail" src="/images/gallery/SALVIAC/thumbnails/1.jpg" alt="maison bioclimatique à Salviac" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SALVIAC/1.jpg">maison bioclimatique à Salviac</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SALVIAC/2.jpg"><a class="c-gallery__link" href="/images/gallery/SALVIAC/2.jpg" title="architecture inspirée du séchoir à tabac" itemprop="contentUrl" data-size="1286x750"><img class="c-gallery__thumbnail" src="/images/gallery/SALVIAC/thumbnails/2.jpg" alt="architecture inspirée du séchoir à tabac" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SALVIAC/2.jpg">architecture inspirée du séchoir à tabac</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SALVIAC/3.jpg"><a class="c-gallery__link" href="/images/gallery/SALVIAC/3.jpg" title="couverture en tavaillons de mélèze" itemprop="contentUrl" data-size="562x750"><img class="c-gallery__thumbnail" src="/images/gallery/SALVIAC/thumbnails/3.jpg" alt="couverture en tavaillons de mélèze" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SALVIAC/3.jpg">couverture en tavaillons de mélèze</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SALVIAC/4.jpg"><a class="c-gallery__link" href="/images/gallery/SALVIAC/4.jpg" title="terrasse en acacia de pays" itemprop="contentUrl" data-size="499x750"><img class="c-gallery__thumbnail" src="/images/gallery/SALVIAC/thumbnails/4.jpg" alt="terrasse en acacia de pays" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SALVIAC/4.jpg">terrasse en acacia de pays</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SALVIAC/5.jpg"><a class="c-gallery__link" href="/images/gallery/SALVIAC/5.jpg" title="volets ferroniers et bois coulissants" itemprop="contentUrl" data-size="499x750"><img class="c-gallery__thumbnail" src="/images/gallery/SALVIAC/thumbnails/5.jpg" alt="volets ferroniers et bois coulissants" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SALVIAC/5.jpg">volets ferroniers et bois coulissants</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SALVIAC/6.jpg"><a class="c-gallery__link" href="/images/gallery/SALVIAC/6.jpg" title="tommettes de la tuilerie de Condat" itemprop="contentUrl" data-size="1049x750"><img class="c-gallery__thumbnail" src="/images/gallery/SALVIAC/thumbnails/6.jpg" alt="tommettes de la tuilerie de Condat" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SALVIAC/6.jpg">tommettes de la tuilerie de Condat</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SALVIAC/7.jpg"><a class="c-gallery__link" href="/images/gallery/SALVIAC/7.jpg" title="protection solaire et luminosité preservée" itemprop="contentUrl" data-size="871x750"><img class="c-gallery__thumbnail" src="/images/gallery/SALVIAC/thumbnails/7.jpg" alt="protection solaire et luminosité preservée" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SALVIAC/7.jpg">protection solaire et luminosité preservée</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SALVIAC/8.jpg"><a class="c-gallery__link" href="/images/gallery/SALVIAC/8.jpg" title="mariages de bois de pays" itemprop="contentUrl" data-size="499x750"><img class="c-gallery__thumbnail" src="/images/gallery/SALVIAC/thumbnails/8.jpg" alt="mariages de bois de pays" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SALVIAC/8.jpg">mariages de bois de pays</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SALVIAC/9.jpg"><a class="c-gallery__link" href="/images/gallery/SALVIAC/9.jpg" title="seuils encastrés" itemprop="contentUrl" data-size="499x750"><img class="c-gallery__thumbnail" src="/images/gallery/SALVIAC/thumbnails/9.jpg" alt="seuils encastrés" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SALVIAC/9.jpg">seuils encastrés</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SALVIAC/10.jpg"><a class="c-gallery__link" href="/images/gallery/SALVIAC/10.jpg" title="volets fermés" itemprop="contentUrl" data-size="499x750"><img class="c-gallery__thumbnail" src="/images/gallery/SALVIAC/thumbnails/10.jpg" alt="volets fermés" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SALVIAC/10.jpg">volets fermés</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SALVIAC/11.jpg"><a class="c-gallery__link" href="/images/gallery/SALVIAC/11.jpg" title="volets ouverts" itemprop="contentUrl" data-size="499x750"><img class="c-gallery__thumbnail" src="/images/gallery/SALVIAC/thumbnails/11.jpg" alt="volets ouverts" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SALVIAC/11.jpg">volets ouverts</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SALVIAC/12.jpg"><a class="c-gallery__link" href="/images/gallery/SALVIAC/12.jpg" title="transparence des volets persiennes" itemprop="contentUrl" data-size="499x750"><img class="c-gallery__thumbnail" src="/images/gallery/SALVIAC/thumbnails/12.jpg" alt="transparence des volets persiennes" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SALVIAC/12.jpg">transparence des volets persiennes</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="SALVIAC/80.jpg"><a class="c-gallery__link" href="/images/gallery/SALVIAC/80.jpg" title="tommettes" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/SALVIAC/thumbnails/80.jpg" alt="tommettes" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="SALVIAC/80.jpg">tommettes</span></div></a></div>
+    </div>
+  </div>
+  <div class="c-gallery-category">
+    <h2 class="c-gallery-category__title">+ de photos
+    </h2>
+    <div class="c-gallery-category__images">
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/62.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/62.jpg" title="bow-window en chêne massif" itemprop="contentUrl" data-size="990x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/62.jpg" alt="bow-window en chêne massif" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/62.jpg">bow-window en chêne massif</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/63.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/63.jpg" title="charpente traditionnelle en douglas" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/63.jpg" alt="charpente traditionnelle en douglas" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/63.jpg">charpente traditionnelle en douglas</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/64.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/64.jpg" title="charpente traditionnelle en douglas" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/64.jpg" alt="charpente traditionnelle en douglas" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/64.jpg">charpente traditionnelle en douglas</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/65.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/65.jpg" title="rénovation de couverture en tuiles canals" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/65.jpg" alt="rénovation de couverture en tuiles canals" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/65.jpg">rénovation de couverture en tuiles canals</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/66.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/66.jpg" title="montage de charpente sur site" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/66.jpg" alt="montage de charpente sur site" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/66.jpg">montage de charpente sur site</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/67.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/67.jpg" title="chevronnage sur site" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/67.jpg" alt="chevronnage sur site" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/67.jpg">chevronnage sur site</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/68.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/68.jpg" title="couverture en bardeaux de bois" itemprop="contentUrl" data-size="980x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/68.jpg" alt="couverture en bardeaux de bois" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/68.jpg">couverture en bardeaux de bois</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/69.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/69.jpg" title="solivage apparent et volige peuplier" itemprop="contentUrl" data-size="1098x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/69.jpg" alt="solivage apparent et volige peuplier" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/69.jpg">solivage apparent et volige peuplier</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/70.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/70.jpg" title="chargement des murs d'ossature à l'atelier" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/70.jpg" alt="chargement des murs d'ossature à l'atelier" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/70.jpg">chargement des murs d'ossature à l'atelier</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/71.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/71.jpg" title="chargement des murs d'ossature à l'atelier" itemprop="contentUrl" data-size="1037x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/71.jpg" alt="chargement des murs d'ossature à l'atelier" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/71.jpg">chargement des murs d'ossature à l'atelier</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/72.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/72.jpg" title="volige mélèze brut" itemprop="contentUrl" data-size="1127x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/72.jpg" alt="volige mélèze brut" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/72.jpg">volige mélèze brut</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/73.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/73.jpg" title="étanchéité à l'air en Intello plus" itemprop="contentUrl" data-size="1125x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/73.jpg" alt="étanchéité à l'air en Intello plus" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/73.jpg">étanchéité à l'air en Intello plus</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/74.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/74.jpg" title="test *blower door*" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/74.jpg" alt="test *blower door*" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/74.jpg">test *blower door*</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/75.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/75.jpg" title="fabrication des petites bottes de paille" itemprop="contentUrl" data-size="938x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/75.jpg" alt="fabrication des petites bottes de paille" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/75.jpg">fabrication des petites bottes de paille</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/76.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/76.jpg" title="fabrication des petites bottes de paille" itemprop="contentUrl" data-size="968x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/76.jpg" alt="fabrication des petites bottes de paille" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/76.jpg">fabrication des petites bottes de paille</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/77.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/77.jpg" title="charpente chevrons porteurs" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/77.jpg" alt="charpente chevrons porteurs" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/77.jpg">charpente chevrons porteurs</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/78.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/78.jpg" title="paille et poteaux-poutres" itemprop="contentUrl" data-size="1013x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/78.jpg" alt="paille et poteaux-poutres" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/78.jpg">paille et poteaux-poutres</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/79.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/79.jpg" title="paille et poteaux-poutres" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/79.jpg" alt="paille et poteaux-poutres" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/79.jpg">paille et poteaux-poutres</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/81.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/81.jpg" title="architecture naturelle" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/81.jpg" alt="architecture naturelle" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/81.jpg">architecture naturelle</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/82.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/82.jpg" title="cloison en chanvre et chaux banchés" itemprop="contentUrl" data-size="945x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/82.jpg" alt="cloison en chanvre et chaux banchés" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/82.jpg">cloison en chanvre et chaux banchés</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/83.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/83.jpg" title="support d'enduit terre sur cloisons intérieures" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/83.jpg" alt="support d'enduit terre sur cloisons intérieures" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/83.jpg">support d'enduit terre sur cloisons intérieures</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/84.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/84.jpg" title="solivage en douglas massif" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/84.jpg" alt="solivage en douglas massif" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/84.jpg">solivage en douglas massif</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/85.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/85.jpg" title="couche de corps en argile et paille" itemprop="contentUrl" data-size="925x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/85.jpg" alt="couche de corps en argile et paille" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/85.jpg">couche de corps en argile et paille</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/86.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/86.jpg" title="montage de murs en ossature bois sur site" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/86.jpg" alt="montage de murs en ossature bois sur site" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/86.jpg">montage de murs en ossature bois sur site</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/87.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/87.jpg" title="les murs..." itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/87.jpg" alt="les murs..." itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/87.jpg">les murs...</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/88.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/88.jpg" title="le chevronnage..." itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/88.jpg" alt="le chevronnage..." itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/88.jpg">le chevronnage...</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/89.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/89.jpg" title="maison achevée !" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/89.jpg" alt="maison achevée !" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/89.jpg">maison achevée !</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/90.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/90.jpg" title="bardage horizontal à clins" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/90.jpg" alt="bardage horizontal à clins" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/90.jpg">bardage horizontal à clins</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/91.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/91.jpg" title="auvent de garage en douglas" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/91.jpg" alt="auvent de garage en douglas" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/91.jpg">auvent de garage en douglas</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/92.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/92.jpg" title="solivage massif en douglas" itemprop="contentUrl" data-size="1102x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/92.jpg" alt="solivage massif en douglas" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/92.jpg">solivage massif en douglas</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/93.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/93.jpg" title="pose de la membrane epdm" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/93.jpg" alt="pose de la membrane epdm" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/93.jpg">pose de la membrane epdm</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/94.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/94.jpg" title="contreventement Agepan interieur" itemprop="contentUrl" data-size="1008x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/94.jpg" alt="contreventement Agepan interieur" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/94.jpg">contreventement Agepan interieur</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/95.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/95.jpg" title="pose de l'isolant" itemprop="contentUrl" data-size="1072x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/95.jpg" alt="pose de l'isolant" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/95.jpg">pose de l'isolant</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/96.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/96.jpg" title="litellage avant bardage" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/96.jpg" alt="litellage avant bardage" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/96.jpg">litellage avant bardage</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/97.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/97.jpg" title="litellage avant bardage" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/97.jpg" alt="litellage avant bardage" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/97.jpg">litellage avant bardage</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/98.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/98.jpg" title="volige peuplier" itemprop="contentUrl" data-size="1110x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/98.jpg" alt="volige peuplier" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/98.jpg">volige peuplier</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/99.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/99.jpg" title="balcon en bois massif" itemprop="contentUrl" data-size="577x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/99.jpg" alt="balcon en bois massif" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/99.jpg">balcon en bois massif</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/100.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/100.jpg" title="toiture à croupe couverte en bardeaux" itemprop="contentUrl" data-size="1052x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/100.jpg" alt="toiture à croupe couverte en bardeaux" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/100.jpg">toiture à croupe couverte en bardeaux</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/101.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/101.jpg" title="taille de charpente à l'atelier" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/101.jpg" alt="taille de charpente à l'atelier" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/101.jpg">taille de charpente à l'atelier</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/102.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/102.jpg" title="plancher de terrasse en acacia de pays" itemprop="contentUrl" data-size="1110x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/102.jpg" alt="plancher de terrasse en acacia de pays" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/102.jpg">plancher de terrasse en acacia de pays</span></div></a></div>
+      <div class="c-gallery__image" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject" role="img" aria-labelledby="DIVERS/103.jpg"><a class="c-gallery__link" href="/images/gallery/DIVERS/103.jpg" title="vue aérienne du montage des murs sur site" itemprop="contentUrl" data-size="1000x750"><img class="c-gallery__thumbnail" src="/images/gallery/DIVERS/thumbnails/103.jpg" alt="vue aérienne du montage des murs sur site" itemprop="thumbnail">
+          <div class="c-gallery__loader">
+            <div></div>
+          </div>
+          <div class="c-gallery__caption" itemprop="caption description"><span id="DIVERS/103.jpg">vue aérienne du montage des murs sur site</span></div></a></div>
+    </div>
+  </div>
+</div>      </section> 
+    </div> 
   </body>
 </html>
 
-<script src="/js/gallery_vendors.js"></script><script src="/js/gallery.js"></script>
+
+<script src="/js/gallery_vendors.js"></script>
+<script src="/js/gallery.js"></script>

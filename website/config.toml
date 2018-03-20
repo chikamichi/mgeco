@@ -1,8 +1,9 @@
 baseURL = "http://www.mg-ecoconstruction.com/"
-ignoreFiles = [ "static-src" ]
+ignoreFiles = ["static-src"]
 languageCode = "fr-FR"
 theme = "mgeco"
 title = "MG Éco-construction"
+enableRobotsTXT = true
 
 [params]
   corporateName = "SAS MG ECO"
@@ -23,7 +24,17 @@ title = "MG Éco-construction"
   activity = "Constructions écologiques"
   activities = "ossature bois, maison paille, charpente, couverture, isolation, rénovation, conception de plans, étude thermique"
 
-  [params.liens]
+  [[params.linksTypes]]
+    type = "aides"
+    title = "Les aides à la rénovation"
+  [[params.linksTypes]]
+    type = "ecologie"
+    title = "Se documenter sur la construction écologique..."
+  [[params.linksTypes]]
+    type = "fournisseur"
+    title = "Nos fournisseurs"
+
+  [params.extLinks]
     RGE = "http://www.developpement-durable.gouv.fr/La-mention-RGE-Reconnu-Garant-de-l.html"
     mapURL = "https://www.google.com/maps/place/MG+%C3%A9coconstruction/@44.4005686,1.7685543,17z/data=!4m5!3m4!1s0x12ac564fe0a6d721:0x39547eaab69564d7!8m2!3d44.4032985!4d1.7686893?hl=fr-FR"
-    mapURLembedded = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2850.585871461939!2d1.7688118001955773!3d44.40062221044975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ac564fe0a6d721%3A0x39547eaab69564d7!2sMG+%C3%A9coconstruction!5e0!3m2!1sfr!2sfr!4v1500838659018"
+    mapURLembedded = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d32236.82863898417!2d1.7588630567514885!3d44.42577679952371!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x39547eaab69564d7!2sMG+%C3%A9coconstruction!5e0!3m2!1sfr!2sfr!4v1521158395192"

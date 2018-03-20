@@ -1,22 +1,14 @@
-{{ partial "html_top" . }}
+{{ partial "html_top--homepage" . }}
 
 <div class="c-homepage  o-wrapper" role="tablist">
 
-  <a href="/presentation" class="c-homepage__main-entrance  c-hp-me" role="tab main" aria-label="Entrer" rel="prerender">
-    <h1 class="c-hp-me__logo" title="{{ .Site.Params.activity }}, {{ .Site.Params.activities }}" role="img" aria-label="{{ .Site.Params.activite }}, {{ .Site.Params.activites }}">
+  <a href="/presentation" class="c-homepage__main-entrance  c-hp-main-entrance" role="tab main" aria-label="Entrer" rel="prerender">
+    <h1 class="c-hp-main-entrance__logo" title="{{ .Site.Params.activity }}, {{ .Site.Params.activities }}" role="img" aria-label="{{ .Site.Params.activite }}, {{ .Site.Params.activites }}">
       {{ .Site.Params.activity }}, {{ .Site.Params.activities }}
     </h1>
   </a>
 
-  <div class="c-homepage__extras  u-clearfix">
-    <a href="/galerie/" class="c-homepage__carousel" role="tab" aria-label="Voir la galerie">
-      <p>TODO</p>
-    </a>
-
-    <a href="{{ .Site.Params.Liens.RGE }}" class="c-homepage__rge  c-homepage-rge" role="tab" aria-label="Infos sur le label RGE">
-      <img class="c-hp-rge__logo" src='/images/rge.jpg'>
-    </a>
-  </div>
+  {{ partial "homepage_carousel" . }}
 
   {{ partial "contact_infos" . }}
 </div>

@@ -8,9 +8,8 @@
     <meta name="description" content="MG éco-construction">
     <meta name="author" content="MG éco-construction">
     <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
-    <link rel="preload" href="/images/bienvenue1.jpg" as="image">
-    <link rel="preload" href="/images/bienvenue2.jpg" as="image">
+    <link rel="preload" href="/images/logo_mg.jpg" as="image">
+    <link rel="preload" href="/images/logo_mg2.jpg" as="image">
     <link rel="preload" href="/css/main.css" as="style">
     <link rel="stylesheet" href="/css/main.css">
     <link href="/css/photoswipe/photoswipe.css" rel="stylesheet">
@@ -20,49 +19,127 @@
   <body>
 
     <div class="o-wrapper  c-mgeco">
-      <div class="o-layout">
-        <div class="o-layout__item  c-sidebar  u-1/1  u-1/4@tablet" role="banner">
-          <a href="/contact/" class="c-logo">
+      <section class="c-sidebar" role="banner">
+        <header>
+          <a href="/presentation/" class="c-logo">
             <div class="c-logo__image">
               Constructions écologiques, ossature bois, maison paille, charpente, couverture, isolation, rénovation, conception de plans, étude thermique
             </div>
           </a>
-          <nav class="c-nav" role="navigation">
-  <ul class="o-list-bare">
+        </header>
+        <div class="c-nav  c-nav--mobile">
+  <a href="#mobile-menu"
+     role="button"
+     id="mobile-menu-toggle"
+     class="c-nav__toggle"
+     aria-expanded="false"
+     aria-controls="mobile-menu"
+     aria-label="Open main menu">
+
+    <span class="sr-only">Ouvrir le menu</span>
+    <span class="fa fa-bars" aria-hidden="true"></span>
+  </a>
+
+  <h1 class="c-nav__brand">
+    MG Éco
+  </h1>
+
+  <nav id="mobile-menu" role="navigation" class="c-mobile-menu" aria-expanded="false" aria-label="Main menu">
+    <a href="#mobile-menu-toggle"
+       role="button"
+       id="mobile-menu-close"
+       class="c-mobile-menu__close"
+       aria-expanded="false"
+       aria-controls="mobile-menu"
+       aria-label="Close main menu">
+
+      <span class="sr-only">Fermer le menu</span>
+      <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul class="c-nav__items">
+      
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/presentation/">Présentation</a>
+</li>
+
+<li class="c-nav__item  c-nav__item--active">
+  <a class="c-nav__link" href="/concept/">La construction bois</a>
+</li>
+
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/ethique/">Éthique</a>
+</li>
+
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/galerie/">Photos</a>
+</li>
+
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/votre-projet/">Conception de projet</a>
+</li>
+
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/liens/">Liens</a>
+</li>
+
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/contact/">Contact</a>
+</li>
+
+
+    </ul>
+  </nav>
+
+  <a href="#mobile-menu-toggle"
+     class="backdrop"
+     tabindex="-1"
+     aria-hidden="true" hidden></a>
+</div>
+
+<nav class="c-nav  c-nav--desktop" role="navigation">
+  <ul class="c-nav__items">
     
-    <li>
-  <a class='c-sidebar__link  ' href='/presentation/'>Présentation</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/presentation/">Présentation</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  c-sidebar__link--active' href='/concept/'>La construction bois</a>
+<li class="c-nav__item  c-nav__item--active">
+  <a class="c-nav__link" href="/concept/">La construction bois</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  ' href='/ethique/'>Éthique</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/ethique/">Éthique</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  ' href='/galerie/'>Photos</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/galerie/">Photos</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  ' href='/votre-projet/'>Conception de projet</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/votre-projet/">Conception de projet</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  ' href='/liens/'>Liens</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/liens/">Liens</a>
 </li>
 
-    <li>
-  <a class='c-sidebar__link  ' href='/contact/'>Contact</a>
+<li class="c-nav__item  ">
+  <a class="c-nav__link" href="/contact/">Contact</a>
 </li>
+
 
   </ul>
 </nav>
 
-        </div>
-        <div class="o-layout__item  c-main-area  u-1/1  u-3/4@tablet" role="main" aria-labelledby="main-area-title">
+
+        <footer>
+          <a href="/contact/" class="c-contact-area">
+            <div class="c-contact-area__image">
+            </div>
+          </a>
+        </footer>
+      </section>
+      <section class="c-main-area" role="main" aria-labelledby="main-area-title">
 
   <h1 class="c-main-area__title  u-h1" id="main-area-title">
     
@@ -123,21 +200,11 @@
 
 <p>L&rsquo;ossature bois vous autorise une <strong>modularité presque infinie</strong> afin que votre maison évolue tout au long de votre vie, en fonction de vos besoins. Chez nous, <strong>chaque maison est unique, avec des plans personnalisés</strong> : nous pouvons réfléchir avec vous à concevoir la possibilité de futures extensions pour <strong>échelonner les dépenses</strong>.</p>
 
-<p><strong>Pour conclure, choisir un maître d’œuvre local, qui travaille avec des fournisseurs et des collaborateurs locaux, est une bonne manière de limiter les impacts négatifs sur l’environnement en limitant les transports, de favoriser l&rsquo;économie locale, et de prendre l&rsquo;assurance d&rsquo;un suivi en confiance sur le long terme.</strong></p>
+<p><strong>Pour conclure, <a href="/ethique">choisir un maître d’œuvre local</a>, qui travaille avec des fournisseurs et des collaborateurs locaux, est une bonne manière de limiter les impacts négatifs sur l’environnement en limitant les transports, de favoriser l&rsquo;économie locale, et de prendre l&rsquo;assurance d&rsquo;un suivi en confiance sur le long terme.</strong></p>
 
   </main>
-        </div>
-      </div>
-    </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
+      </section> 
+    </div> 
   </body>
 </html>
 

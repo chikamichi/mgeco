@@ -3,6 +3,10 @@ title = "Qui sommes"
 subtitle = "nous ?"
 description = "Présentation"
 url = "presentation"
+header = "SAINT-CIRQ-SOUILLAGUET/1"
+aliases = [
+  "MGeco_presentation.htm"
+]
 +++
 
 MG ECO est une **entreprise artisanale** à taille humaine basée dans la région Occitanie, dans le Lot (46), à Limogne en Quercy, qualifiée RGE, qui réalise tous type d'ouvrages autour de l'ossature bois, en neuf comme en rénovation.
@@ -16,4 +20,4 @@ Nous réalisons également les **plans** sur mesure, les plans d’exécution, l
 Nous pouvons suivant vos moyens assurer la **maîtrise d’œuvre** de votre ouvrage, ou simplement le **gros œuvre** avec suivi du second œuvre pour les auto-constructeurs.
 Nous avons également mis en place un module « **maison en kit** » avec assistance suivi de chantier pour les auto-constructeurs.
 
-**Contactez-nous afin d'obtenir un devis estimatif et d'engager la réflexion, quel que soit le stade de développement de votre projet.**
+**[Contactez-nous](/contact) afin d'obtenir un devis estimatif et d'engager la réflexion, quel que soit le stade de développement de votre projet.**

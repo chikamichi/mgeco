@@ -1,0 +1,239 @@
+---
+# Toutes les images sont implicitement des .jpg
+carousel:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+
+gallery:
+  -
+    folder: CAHORS
+    title: Maison roulotte à Saint-Cirice (46)
+    description: |-
+      Maison bioclimatique en double ossature bois douglas sur sous-sol maçonné, contreventée en Agepan DWD et isolée en petite bottes de paille. La toiture ronde Philibert Delorme est en zinc à joints de bouts, les menuiseries Courrège en alu-bois et les volets battants en bois. Une pergola métal vient compléter l'ensemble.
+
+      *Chantier achevé en 2015, situé sur les hauteurs de Cahors.*
+
+      * Surface plancher : 130m².
+      * Isolants biosourcés : murs en paille, plafond en Biofib Trio, sarking toiture et murs en Homatherm UDQ11.
+      * Parements extérieurs : enduit chaux ton pierre pour le rez-de-chaussée, bardage bois brut à couvre-joint en mélèze de pays pour l'étage. Plancher de terrasse en chêne de pays chanfreiné.
+      * Parements intérieurs : enduit terre Argilus, volige peuplier, plancher chêne, tomettes.
+      * Équipements techniques : Poêle bouilleur à granulés + ECS solaire thermique.
+      * Assainissement individuel par phytoépuration.
+      * Étude technique MG ECO. Plans Jérome et Nathalie Beyssac / Lisa Grimaud.
+      * *Photographies [Nils Hardeveld](http://www.nilshardeveld.com/).*
+
+    images:
+      - 1 = maison bioclimatique à Cahors
+      - 2 = bardage à couvre joint en mélèze de pays
+      - 3 = maison roulotte
+      - 4 = terrasse extérieure plancher chêne de pays
+      - 5 = toiture zinc à joints de bout
+      - 6 = mariage tommettes et volige peuplier
+      - 7 = cuisine avec vue
+  -
+    folder: BERGANTY
+    title: Extension bois à Berganty (46)
+    description: |-
+      Extension d'une grange quercynoise en pierre : dalle bois et plots bétons supportant une ossature bois douglas contreventée en Agepan DWD.
+
+      *Chantier achevé en 2014.*
+
+      * Surface plancher : 38m².
+      * Toiture : charpente plate, étanchéïté en EPDM Firestone, acroterre en aluminium.
+      * Menuiseries alu-bois Courrège RAL 7016. Marquise en bois et verre.
+      * Isolants biosourcés : fibre de bois Homatherm - murs, sol, plafond.
+      * Parements extérieurs : bardage vertical à claire voie en mélèze brut. Plancher de terrasse en chêne de pays chanfreiné.
+      * Parements intérieurs : enduit terre Argilus sur fermacell, plancher frêne et douglas, tomettes.
+      * Étude technique MG ECO.
+      * *Photographies [Nils Hardeveld](http://www.nilshardeveld.com/).*
+    images:
+      - 1 = extension bois sur grange en pierre
+      - 2 = bardage mélèze brut à claire voie
+      - 3 = toiture plate et acroterres en alu RAL 7016
+      - 4 = mariage d'architectures
+      - 5 = bardage mélèze brut à claire voie
+      - 6 = pierre, tomettes, chêne, enduits Argilus
+      - 7 = enduit Argilus orangé abricot et plancher douglas
+  -
+    folder: CALVIGNAC
+    title: Éco-reconstruction à Calvignac (46)
+    description: |-
+      Reconstruction suite à un incendie. Maison sur dalle bois et plots bétons, en ossature bois douglas contreventée en Agepan DWD.
+
+      *Chantier achevé en 2016.*
+
+      * Surface plancher : 140m².
+      * Toiture : charpente en lamellé-collé et chevrons porteurs, couverture tuiles canals brun-rouge vieilli.
+      * Menuiseries alu-bois Courrège RAL 7016. Volets roulants semi-encastrés.
+      * Isolants biosourcés : Biofib Trio - murs, sol, plafond.
+      * Parements extérieurs : bardage vertical Red cedar à couvre-joints. Plancher de terrasse en chêne de pays chanfreiné.
+      * Parements intérieurs : plâtre traditionnel sur fermacell, volige peuplier au plafond, plancher frêne olivier.
+      * Équipements techniques : chaudière Okofen à granulés + ECS solaire thermique.
+      * Étude technique MG ECO. Plans Olivier Dupont / Lisa Grimaud.
+      * *Photographies [Nils Hardeveld](http://www.nilshardeveld.com/).*
+    images:
+      - 1 = maison bioclimatique à Calvignac
+      - 2 = volige peuplier en plafond
+      - 3 = un intérieur chaleureux et lumineux
+      - 4 = menuiseries alu RAL 7016 et pliages alu
+      - 5 = maison bioclimatique à Calvignac
+      - 6 = bardage à couvre-joints en red cedar
+      - 7 = sas d'entrée lumineux
+  -
+    folder: CONCOTS
+    title: Maison bioclimatique à Concots (46)
+    description: |-
+      Maison sur dalle bois et vide sanitaire maçonné, en ossature bois douglas contreventée en Agepan DWD.
+
+      *Chantier achevé en 2013.*
+
+      * Surface plancher : 165m².
+      * Toiture charpente charpente traditionnelle à 12 pans, couverture en bardeaux de Red cedar.
+      * Menuiseries alu-bois Courrège blanc.
+      * Isolants biosourcés : fibre de bois Homatherm - murs, sol, plafond. Sarking en fibre de bois dense.
+      * Parements extérieurs : bardage vertical mélèze brut à couvre-joints. Plancher de terrasse en chêne de pays chanfreiné.
+      * Parements intérieurs : enduits Argilus et stucks artisanaux sur fermacell, volige douglas rabotée, volige peuplier au plafond, plancher massif en chêne.
+      * Équipements techniques : poêle à bois bouilleur + ECS solaire thermique.
+      * Phytoépuration. Cuve de récupération des EP.
+      * Étude technique MG ECO. Plans Andrea Elias.
+      * *Photographies [Nils Hardeveld](http://www.nilshardeveld.com/).*
+    images:
+      - 1 = Maison claire et chaleureuse
+      - 2 = poêle bouilleur assurant chauffage central et ECS
+      - 3 = Enduits Argilus et planchers bois massif
+      - 4 = menuiseries alu-bois Courrège prod
+      - 5 = stucks et enduits Argilus
+      - 6 = Volige douglas raboté au mur
+      - 7 = Volige douglas raboté au mur
+      - 8 = plancher de terrasse en chêne de pays
+      - 9 = gouttières en zinc
+      - 10 = maison bioclimatique à Concots
+      - 12 = maison bioclimatique à Concots
+      - 13 = sas d'entrée en bow-window
+      - 14 = mélèze et red cedar
+      - 15 = toiture en bardeaux
+      - 16 = détail du bardage et des sous-toitures
+  -
+    folder: SAINT-CIRQ-SOUILLAGUET
+    title: Maison bois à Saint-Cirq-Souillaguet (46)
+    description: |-
+      Maison sur dalle bois et vide sanitaire maçonné, en ossature bois Douglas contreventée en Agepan DWD.
+
+      *Chantier achevé en 2012.*
+
+      * Surface plancher : 120m².
+      * Toiture charpente charpente traditionnelle et chevrons porteurs, couverture en bardeaux de Red cedar.
+      * Menuiseries alu, volets coulissants.
+      * Isolants biosourcés : fibre de bois Homatherm - murs, sol, plafond.
+      * Parements extérieurs : bardage vertical mélèze brut à couvre-joints. Plancher de terrasse en acacia contrecollé.
+      * Parements intérieurs : volige peuplier au plafond.
+      * Équipements techniques : poêle à bois.
+      * Cuve de récupération des EP.
+      * Étude technique MG ECO. Plans Katell.
+      * *Photographies [Nils Hardeveld](http://www.nilshardeveld.com/).*
+    images:
+      - 1 = maison "tout bois" à St-Cirq-Souillaguet
+      - 2 = maison "tout bois" à St-Cirq-Souillaguet
+      - 3 = volets coulissants métal et terrasse en acacia
+      - 4 = charpente traditionnelle en douglas et volige peuplier
+      - 5 = terrasse en acacia et menuiseries aluminium
+      - 6 = charpente traditionnelle en douglas et volige peuplier
+      - 7 = charpente traditionnelle en douglas et volige peuplier
+      - 8 = intérieur lumineux et contemporain
+      - 9 = intérieur lumineux et contemporain
+      - 10 = maison bois à Saint-Cirq-Souillaguet
+      - 11 = garde-corps contemporain en inox
+  -
+    folder: SALVIAC
+    title: Séchoir à tabac revisité à Salviac (46)
+    description: |-
+      Chantier selectionné par le CAUE qui a fait l'objet d'une [fiche réalisation](http://www.caue-mp.fr/espace-ressources/maison-rurale-contemporaine-dans-le-lot.html).
+
+      Maison bioclimatique sur dalle béton isolée, en ossature bois Douglas contreventée en Agepan DWD.
+
+      *Chantier achevé en 2013.*
+
+      * Surface plancher : 105m².
+      * Toiture charpente à chevrons porteurs, couverture en tavaillons de mélèze.
+      * Menuiseries alu-bois Courrège à seuils encastrés, volets coulissants ferroniers.
+      * Isolants biosourcés : fibre de bois Homatherm - murs, plafond. Sarking en fibre de bois dense.
+      * Parements extérieurs : bardage vertical mélèze brut à couvre-joints. Plancher de terrasse en acacia de pays.
+      * Parements intérieurs : volige brute mélèze au plafond. Fermacell aux murs. Tommettes de la tuilerie de Condat.
+      * Équipements techniques : poêle à bois.
+      * Étude technique MG ECO. Plans Stéphanie et Jean-Sebastien Bodart.
+      * *Photographies [Stéphanie Bodart](https://www.stephaniebodart.com/).*
+    images:
+      - 1 = maison bioclimatique à Salviac
+      - 2 = architecture inspirée du séchoir à tabac
+      - 3 = couverture en tavaillons de mélèze
+      - 4 = terrasse en acacia de pays
+      - 5 = volets ferroniers et bois coulissants
+      - 6 = tommettes de la tuilerie de Condat
+      - 7 = protection solaire et luminosité preservée
+      - 8 = mariages de bois de pays
+      - 9 = seuils encastrés
+      - 10 = volets fermés
+      - 11 = volets ouverts
+      - 12 = transparence des volets persiennes
+      - 80 = tommettes
+  -
+    folder: DIVERS
+    title: + de photos
+    images:
+      - 62 = bow-window en chêne massif
+      - 63 = charpente traditionnelle en douglas
+      - 64 = charpente traditionnelle en douglas
+      - 65 = rénovation de couverture en tuiles canals
+      - 66 = montage de charpente sur site
+      - 67 = chevronnage sur site
+      - 68 = couverture en bardeaux de bois
+      - 69 = solivage apparent et volige peuplier
+      - 70 = chargement des murs d'ossature à l'atelier
+      - 71 = chargement des murs d'ossature à l'atelier
+      - 72 = volige mélèze brut
+      - 73 = étanchéité à l'air en Intello plus
+      - 74 = test *blower door*
+      - 75 = fabrication des petites bottes de paille
+      - 76 = fabrication des petites bottes de paille
+      - 77 = charpente chevrons porteurs
+      - 78 = paille et poteaux-poutres
+      - 79 = paille et poteaux-poutres
+      - 81 = architecture naturelle
+      - 82 = cloison en chanvre et chaux banchés
+      - 83 = support d'enduit terre sur cloisons intérieures
+      - 84 = solivage en douglas massif
+      - 85 = couche de corps en argile et paille
+      - 86 = montage de murs en ossature bois sur site
+      - 87 = les murs...
+      - 88 = le chevronnage...
+      - 89 = maison achevée !
+      - 90 = bardage horizontal à clins
+      - 91 = auvent de garage en douglas
+      - 92 = solivage massif en douglas
+      - 93 = pose de la membrane epdm
+      - 94 = contreventement Agepan interieur
+      - 95 = pose de l'isolant
+      - 96 = litellage avant bardage
+      - 97 = litellage avant bardage
+      - 98 = volige peuplier
+      - 99 = balcon en bois massif
+      - 100 = toiture à croupe couverte en bardeaux
+      - 101 = taille de charpente à l'atelier
+      - 102 = plancher de terrasse en acacia de pays
+      - 103 = vue aérienne du montage des murs sur site

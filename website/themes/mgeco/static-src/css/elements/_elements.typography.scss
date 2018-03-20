@@ -3,8 +3,16 @@ body {
   line-height: 1.2;
 }
 
-h3, .u-h3 {
-  margin: 1.4em 0 0.75em 0;
+h1, h2, h3, h4, h5, h6,
+.u-h1, .u-h2, .u-h3, .u-h4, .u-h5, .u-h6 {
+  text-align: left;
+  font-family: 'Oceania', sans-serif;
+}
+
+h2, .u-h2 {
+  font-size: 1.4em;
+  font-weight: initial;
+  margin: 1.4em 0 0.55em 0;
 }
 
 p {

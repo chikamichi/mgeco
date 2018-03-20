@@ -4,97 +4,130 @@
 
 
 .c-homepage {
-  padding: $inuit-global-spacing-unit;
-  background: white;
-  text-align: center;
-}
+  &.o-wrapper {
+    max-width: 600 + 2*$spacing;
+    padding: $spacing;
+
+    & > * {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
 
 
-.c-hp-me__logo {
-  /*
-  Responsive Image Replacement:
-  We want a responsive background image, ie. its height must match its evolving
-  width. In order to lock the image's aspect ratio along the height axis, with
-  respect to its current, fluid width, one may set a padding-top/bottom value,
-  in percentage, equal to the image's fixed aspect ratio. The trick here lies in
-  the fact that vertical padding values, when expressed in percentages, are
-  always computed using the element container's *width* as the reference.
-  */
-  padding-top: 95.8333333333%; // 575px / 600px for bienvenue1.jpg
-  width: 100%;
-  height: 0;
-  text-indent: -9999px;
-  background-image: url('/images/bienvenue1.jpg');
-  background-size: 100%;
-  transition: background 0.1s ease-in-out;
-}
-
-
-.c-homepage__carousel {
-  display: none;
-}
-
-
-.c-homepage__extras {
-  margin: 0 auto;
-  max-width: 50%;
-  margin-bottom: $inuit-global-spacing-unit;
-}
-
-
-@include mq($from: 650px) {
-  .c-homepage__main-entrance {
+  .c-hp-main-entrance {
     display: block;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 250px;
+    border-bottom: 1px solid $grey--light;
+    padding-bottom: $spacing;
   }
 
 
-  // Preload hover layer the old-school, reliable way.
-  body:after {
-    position: absolute; overflow: hidden; left: -50000px;
-    content: url(/images/bienvenue2.jpg);
-  }
-
-  .c-hp-me__logo:hover {
-      background-image: url('/images/bienvenue2.jpg');
-  }
-
-
-  .c-homepage__extras {
-    max-width: 600px;
-  }
-
-
-  .c-homepage__carousel {
-    display: inline;
-  }
-
-
-  .c-homepage__carousel {
+  /*
+    1. Responsive Image Replacement:
+    We want a responsive background image, ie. its height must match its evolving
+    width. In order to lock the image's aspect ratio along the height axis, with
+    respect to its current, fluid width, one may set a padding-top/bottom value,
+    in percentage, equal to the image's fixed aspect ratio. The trick here lies in
+    the fact that vertical padding values, when expressed in percentages, are
+    always computed using the element container's *width* as the reference.
+    2. Helps fighting hover's flickering/blinking effect in recent Firefox builds.
+  */
+  .c-hp-main-entrance__logo {
     position: relative;
-    float: left;
-    width: 70%;
-    height: 240px;
-    border: 1px solid black;
+    margin: 0;
+    padding-top: 95.8333333333%; // 1 (575px / 600px for bienvenue1.jpg)
+    width: 100%; // 1
+    height: 0; // 1
+    text-indent: -9999px; // 1
+    background-image: url('/images/bienvenue1.jpg');
+    background-size: 100%;
 
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
 
-    > p {
+    &:after {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       bottom: 0;
       right: 0;
-      width: 50%;
-      height: 50%;
-      margin: auto;
-      overflow: auto;
+      opacity: 0;
+      background-image: url('/images/bienvenue2.jpg');
+      will-change: opacity; // 2
+      transition: opacity 0.2s;
     }
   }
 
 
+  .c-hp-carousel {
+    display: none;
+  }
+
+
+  .c-homepage__footer {
+    padding-top: $spacing;
+    text-align: center;
+  }
+
+
+  .c-contact-infos,
   .c-homepage__rge {
-    float: right;
-    width: 30%;
+    margin-bottom: $spacing;
+  }
+
+  .c-homepage__rge {
+    display: block;
+    margin-top: $spacing/2;
+
+    & > img {
+      max-width: 25%;
+    }
+  }
+}
+
+
+@include mq($from: 650px) {
+  .c-homepage {
+    .c-hp-main-entrance {
+      max-width: 100%;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+
+    .c-hp-carousel {
+      display: block;
+      margin-bottom: $spacing;
+    }
+
+
+    .c-homepage__footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      border: none;
+    }
+
+
+    .c-contact-infos,
+    .c-homepage__rge {
+      margin-bottom: 0;
+    }
+
+
+    .c-homepage__rge {
+      margin: 0 0 0 $spacing;
+
+      & > img {
+        max-width: 50%;
+      }
+    }
   }
 }
