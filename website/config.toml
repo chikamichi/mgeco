@@ -29,10 +29,10 @@ enableRobotsTXT = true
     title = "Les aides à la rénovation"
   [[params.linksTypes]]
     type = "ecologie"
-    title = "L'eau, les assainissements écologiques"
+    title = "Se documenter sur la construction écologique..."
   [[params.linksTypes]]
     type = "fournisseur"
-    title = "Fournisseurs"
+    title = "Nos fournisseurs"
 
   [params.extLinks]
     RGE = "http://www.developpement-durable.gouv.fr/La-mention-RGE-Reconnu-Garant-de-l.html"
