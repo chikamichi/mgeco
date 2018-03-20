@@ -3,6 +3,7 @@ const fs = require('fs')
 const rimraf = require('rimraf')
 const execSync = require('child_process').execSync
 const cl = require('../_utils/config_loader')
+import * as S from '../_utils/settings'
 
 // Not exporting a generator function, this script is executed through babel-node.
 const baseDir = process.cwd() // generators/ that is ^^
@@ -20,9 +21,9 @@ const processGalleryCategory = (category) => {
   process.chdir(category)
   rimraf.sync('thumbnails')
   fs.mkdirSync('thumbnails')
-  execSync(`convert "*.jpg[276x>]" -monitor -depth 8 -quality 75% -set filename:original %t './thumbnails/%[filename:original].jpg'`)
+  execSync(`convert "*.jpg[${S.galleryThumbnailWidth}x>]" -monitor -depth 8 -quality 75% -set filename:original %t './thumbnails/%[filename:original].jpg'`)
   process.chdir('thumbnails')
-  execSync('mogrify -shave 3x3 -bordercolor white -border 3 -format jpg *.jpg')
+  // execSync('mogrify -shave 3x3 -bordercolor white -border 3 -format jpg *.jpg')
   process.chdir(initialLocation)
 }
 fs.readdirSync(process.cwd()).forEach(processGalleryCategory)

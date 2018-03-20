@@ -1,21 +1,16 @@
-import Rx from 'rxjs/Rx';
-import Masonry from 'masonry-layout';
-import imagesLoaded from 'imagesloaded';
+import Rx from 'rxjs/Rx'
+import Masonry from 'masonry-layout'
+import imagesLoaded from 'imagesloaded'
 import Galleries from './galleries.js'
+import * as S from '../_utils/settings'
 
 // TODO: use newly installed domtastic instead
+//       find a way to extract to module altogether (lazy functions?)
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
-
-// TODO: move to shared module
-const galleryClass = 'c-gallery'
-const $gallery = $(`.${galleryClass}`);
-const galleryCategoryClass = 'c-gallery-category'
-const $galleryCategoriesImages = $$(`.${galleryCategoryClass}__images`);
-const galleryImageClass = 'c-gallery__image'
-const galleryImageClassLoading = `${galleryImageClass}--loading`
-const galleryImageClassLoaded = `${galleryImageClass}--loaded`
-const $galleryImages = $$(`.${galleryImageClass}`);
+const $gallery = $(`.${S.galleryClass}`)
+const $galleryCategoriesImages = $$(`.${S.galleryCategoryClass}__images`)
+const $galleryImages = $$(`.${S.galleryImageClass}`)
 
 const galleries = new Galleries()
 
@@ -23,11 +18,12 @@ const galleries = new Galleries()
 // gallery, and update that gallery's layout.
 function revealImage(image, gallery) {
   const imageEl = galleries.closest(image.img, function(el) {
-    return (el.classList && el.classList.contains(galleryImageClass));
+    return (el.classList && el.classList.contains(S.galleryImageClass));
   });
   gallery.appended(image);
-  imageEl.classList.remove(galleryImageClassLoading);
-  imageEl.classList.add(galleryImageClassLoaded);
+  gallery.layout()
+  imageEl.classList.remove(S.galleryImageClassLoading);
+  imageEl.classList.add(S.galleryImageClassLoaded);
 }
 
 // Each gallery category acts as an independent "gallery" on its own: its images
@@ -35,20 +31,21 @@ function revealImage(image, gallery) {
 // instance.
 // TODO: tweak PhotoSwipe instances to display link to prev/next gallery category.
 function loadGalleryCategoryImages(galleryCategoryImages) {
-  const relatedCategoryCheck = (el) => el.classList && el.classList.contains(galleryCategoryClass)
+  const relatedCategoryCheck = (el) => el.classList && el.classList.contains(S.galleryCategoryClass)
   const galleryCategory = galleries.closest(galleryCategoryImages, relatedCategoryCheck)
 
   // Let's create a Masonry layout for the gallery's images.
   const gallery = new Masonry(galleryCategoryImages, {
-    itemSelector: 'a',
-    columnWidth: 276
+    itemSelector: '.c-gallery__image',
+    columnWidth: S.galleryThumbnailWidth,
+    gutter: S.galleryThumbnailSpacing
   })
 
   // Masonry's layout is set. Let's display images placeholders aka. "loading"
   // boxes.
-  const images = gallery.element.querySelectorAll(`.${galleryImageClass}`)
+  const images = gallery.element.querySelectorAll(`.${S.galleryImageClass}`)
   images.forEach((image) => {
-    image.classList.add(galleryImageClassLoading)
+    image.classList.add(S.galleryImageClassLoading)
   })
 
   // Time to setup our PhotoSwipe instance.
