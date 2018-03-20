@@ -1,12 +1,17 @@
 mg-ecoconstruction.com
 ======================
 
-MG Éco is a wooden frame house building company, whose website (mg-ecoconstruction.com) must be revamped.
+* [website/](./website/) pour travailler sur le site web au quotidien
+* [generators/](./generators/) pour des générateurs spécifiques, utilisés occasionnellement
 
-This project aims at:
+## Contexte
 
-1. making the gallery snappy & maintainable
-2. making the whole website responsive
-3. improving SEO
+Le projet correspond à une refonte du site http://mg-ecoconstruction.com.
 
-The stack must be kept simple so that the MG Eco's team is able to quickly and easily claim ownership of the project, including maintenance.
+Les objectifs initiaux étaient :
+
+1. ré-implémentation de la gallerie
+2. adopter une architecture *responsive* et maintenable
+3. améliorer la SEO
+
+Le stack est basé sur des générateurs statiques, de façon à rester utilisable par des non-développeurs.

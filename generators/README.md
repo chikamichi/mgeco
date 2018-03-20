@@ -50,7 +50,9 @@ lance l'ensemble des commandes `build:X` pour réaliser une génération complè
 
 > **Attention**, ces commandes *doivent* être lancées depuis le dossier generators/, et non depuis un éventuel sous-dossier ou depuis le dossier parent contenant generators/ et website/.
 
-## Développement
+## Synosys
+
+> Cf. [Installation sous Windows](../INSTALL.windows.md) pour installer les outils de bases nécessaires aux étapes suivantes.
 
 Installer les dépendances JS du projet : `npm install`.
 
