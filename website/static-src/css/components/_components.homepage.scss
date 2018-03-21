@@ -59,6 +59,7 @@
       right: 0;
       opacity: 0;
       background-image: url('/images/bienvenue2.jpg');
+      background-size: cover;
       will-change: opacity; // 2
       transition: opacity 0.2s;
     }
