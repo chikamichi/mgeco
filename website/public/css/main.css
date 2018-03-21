@@ -1944,6 +1944,7 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
       right: 0;
       opacity: 0;
       background-image: url("/images/bienvenue2.jpg");
+      background-size: cover;
       will-change: opacity;
       transition: opacity 0.2s; }
   .c-homepage .c-hp-carousel {
