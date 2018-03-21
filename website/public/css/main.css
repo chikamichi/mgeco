@@ -1959,9 +1959,8 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
     margin-bottom: 24px; }
   .c-homepage .c-homepage__rge {
     display: block;
-    margin-top: 12px; }
-    .c-homepage .c-homepage__rge > img {
-      max-width: 100px; }
+    margin-top: 12px;
+    max-width: 100px; }
 
 @media (min-width: 40.625em) {
   .c-homepage .c-hp-main-entrance {
