@@ -1568,9 +1568,6 @@ p {
 /* ==========================================================================
    # UI
    ========================================================================== */
-.o-layout__item {
-  text-align: center; }
-
 .c-mgeco {
   position: relative;
   display: flex;
@@ -1627,9 +1624,6 @@ p {
   color: #90993F; }
 
 @media (min-width: 46.25em) {
-  .o-layout__item {
-    text-align: left; }
-
   .c-mgeco {
     flex-direction: row;
     margin: 24px auto; }

@@ -6,11 +6,6 @@
    ========================================================================== */
 
 
-.o-layout__item {
-  text-align: center;
-}
-
-
 .c-mgeco {
   position: relative;
   display: flex;
@@ -93,11 +88,6 @@
 
 
 @include mq($from: tablet) {
-  .o-layout__item {
-    text-align: left;
-  }
-
-
   .c-mgeco {
     flex-direction: row;
     margin: $spacing auto;
