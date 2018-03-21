@@ -2055,7 +2055,8 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
 .c-reflink__title {
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 12px; }
 
 .c-reflink__logo {
   max-height: 80px;
@@ -2084,8 +2085,22 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
     display: grid;
     grid-template-columns: 33.3333% 1fr 1fr; }
 
+  .c-reflinks-type__item:nth-child(3n-2) {
+    padding-right: 24px; }
+
   .c-reflinks-type__item:nth-child(3n-1) {
-    padding: 0 12px; } }
+    padding: 0 24px; }
+
+  .c-reflinks-type__item:nth-child(3n) {
+    padding-left: 24px; }
+
+  .c-reflink__title {
+    justify-content: center;
+    min-height: 100px;
+    margin-bottom: 0; }
+
+  .c-reflink__exturl {
+    flex-grow: initial; } }
 /* ==========================================================================
    #CLEARFIX
    ========================================================================== */
