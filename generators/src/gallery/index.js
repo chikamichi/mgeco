@@ -1,3 +1,4 @@
+import $ from 'domtastic'
 import Rx from 'rxjs/Rx'
 import Masonry from 'masonry-layout'
 import imagesLoaded from 'imagesloaded'
@@ -6,11 +7,11 @@ import * as S from '../_utils/settings'
 
 // TODO: use newly installed domtastic instead
 //       find a way to extract to module altogether (lazy functions?)
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
-const $gallery = $(`.${S.galleryClass}`)
-const $galleryCategoriesImages = $$(`.${S.galleryCategoryClass}__images`)
-const $galleryImages = $$(`.${S.galleryImageClass}`)
+// const $ = document.querySelector.bind(document);
+// const $$ = document.querySelectorAll.bind(document);
+// const $gallery = $(`.${S.galleryClass}`)
+// const $galleryCategoriesImages = $$(`.${S.galleryCategoryClass}__images`)
+// const $galleryImages = $$(`.${S.galleryImageClass}`)
 
 const galleries = new Galleries()
 
@@ -20,8 +21,8 @@ function revealImage(image, gallery) {
   const imageEl = galleries.closest(image.img, function(el) {
     return (el.classList && el.classList.contains(S.galleryImageClass));
   });
-  gallery.appended(image);
-  gallery.layout()
+  // gallery.appended(image);
+  // gallery.layout()
   imageEl.classList.remove(S.galleryImageClassLoading);
   imageEl.classList.add(S.galleryImageClassLoaded);
 }
@@ -39,6 +40,13 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
     itemSelector: '.c-gallery__image',
     columnWidth: S.galleryThumbnailWidth,
     gutter: S.galleryThumbnailSpacing
+  })
+
+  // Schedule re-rendering upon window's dimensions changing but with a slight
+  // delay to accomodate for Masonry's own re-rendering (which fails, that's
+  // why we're enforcing our own ^^).
+  $(window).on('resize', () => {
+    window.setTimeout(gallery.layout.bind(gallery), 1000)
   })
 
   // Masonry's layout is set. Let's display images placeholders aka. "loading"
@@ -64,6 +72,7 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
 }
 
 // Load first gallery eagerly, then lazy-schedule the remaining ones.
+const $galleryCategoriesImages = $(`.${S.galleryCategoryClass}__images`)
 const categories = Array.from($galleryCategoriesImages)
 loadGalleryCategoryImages(categories.shift()).subscribe(
   () => {},
