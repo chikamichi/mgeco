@@ -88,10 +88,7 @@
   .c-homepage__rge {
     display: block;
     margin-top: $spacing/2;
-
-    & > img {
-      max-width: 100px;
-    }
+    max-width: 100px;
   }
 }
 

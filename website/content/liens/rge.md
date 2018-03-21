@@ -2,7 +2,7 @@
 title = "Le label RGE"
 description = "Label « Reconnu Garant de l'Environnement »"
 image = "logo_rge.jpg"
-exturl = "http://www.renovation-info-service.gouv.fr/"
+exturl = "https://www.ecologique-solidaire.gouv.fr/professionnels-du-batiment"
 type = "aides"
 +++
 
