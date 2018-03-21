@@ -1949,6 +1949,9 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
   .c-homepage .c-hp-carousel {
     display: none; }
   .c-homepage .c-homepage__footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     padding-top: 24px;
     text-align: center; }
   .c-homepage .c-contact-infos,
@@ -1958,7 +1961,7 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
     display: block;
     margin-top: 12px; }
     .c-homepage .c-homepage__rge > img {
-      max-width: 25%; }
+      max-width: 100px; }
 
 @media (min-width: 40.625em) {
   .c-homepage .c-hp-main-entrance {
@@ -1969,8 +1972,7 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
     display: block;
     margin-bottom: 24px; }
   .c-homepage .c-homepage__footer {
-    display: flex;
-    align-items: center;
+    flex-direction: row-reverse;
     justify-content: center;
     padding: 0;
     border: none; }
@@ -1978,9 +1980,7 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
   .c-homepage .c-homepage__rge {
     margin-bottom: 0; }
   .c-homepage .c-homepage__rge {
-    margin: 0 0 0 24px; }
-    .c-homepage .c-homepage__rge > img {
-      max-width: 50%; } }
+    margin: 0 24px 0 0; } }
 @keyframes pulsate-border-color {
   0% {
     border-color: #D2D2D2; }
