@@ -13,5 +13,8 @@
     <link rel="preload" href="/images/logo_mg2.jpg" as="image">
     <link rel="preload" href="fonts/Oceania-Regular.ttf" as="font" type="font/ttf">
     <link rel="preload" href="fonts/Oceania-Bold.ttf" as="font" type="font/ttf">
+    {{ range (readDir "./public/images/gallery/CAHORS/thumbnails/") }}
+      <link rel="preload" href="/images/gallery/CAHORS/thumbnails/{{ .Name }}" as="image">
+    {{ end }}
   </head>
   <body>
