@@ -64,7 +64,7 @@ var gallery =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -75,6 +75,12 @@ module.exports = gallery_vendors_c4192c9318bfbf28c621;
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(180);
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -126,7 +132,7 @@ var galleryImageClassLoading = exports.galleryImageClassLoading = galleryImageCl
 var galleryImageClassLoaded = exports.galleryImageClassLoaded = galleryImageClass + '--loaded';
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -138,7 +144,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _domtastic = __webpack_require__(9);
+var _domtastic = __webpack_require__(1);
 
 var _domtastic2 = _interopRequireDefault(_domtastic);
 
@@ -367,48 +373,52 @@ var Galleries = function () {
 exports.default = Galleries;
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(185);
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(187);
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(194);
 
 /***/ }),
-/* 6 */,
-/* 7 */
+/* 7 */,
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _Rx = __webpack_require__(5);
+var _domtastic = __webpack_require__(1);
+
+var _domtastic2 = _interopRequireDefault(_domtastic);
+
+var _Rx = __webpack_require__(6);
 
 var _Rx2 = _interopRequireDefault(_Rx);
 
-var _masonryLayout = __webpack_require__(4);
+var _masonryLayout = __webpack_require__(5);
 
 var _masonryLayout2 = _interopRequireDefault(_masonryLayout);
 
-var _imagesloaded = __webpack_require__(3);
+var _imagesloaded = __webpack_require__(4);
 
 var _imagesloaded2 = _interopRequireDefault(_imagesloaded);
 
-var _galleries = __webpack_require__(2);
+var _galleries = __webpack_require__(3);
 
 var _galleries2 = _interopRequireDefault(_galleries);
 
-var _settings = __webpack_require__(1);
+var _settings = __webpack_require__(2);
 
 var S = _interopRequireWildcard(_settings);
 
@@ -418,11 +428,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // TODO: use newly installed domtastic instead
 //       find a way to extract to module altogether (lazy functions?)
-var $ = document.querySelector.bind(document);
-var $$ = document.querySelectorAll.bind(document);
-var $gallery = $('.' + S.galleryClass);
-var $galleryCategoriesImages = $$('.' + S.galleryCategoryClass + '__images');
-var $galleryImages = $$('.' + S.galleryImageClass);
+// const $ = document.querySelector.bind(document);
+// const $$ = document.querySelectorAll.bind(document);
+// const $gallery = $(`.${S.galleryClass}`)
+// const $galleryCategoriesImages = $$(`.${S.galleryCategoryClass}__images`)
+// const $galleryImages = $$(`.${S.galleryImageClass}`)
 
 var galleries = new _galleries2.default();
 
@@ -432,8 +442,8 @@ function revealImage(image, gallery) {
   var imageEl = galleries.closest(image.img, function (el) {
     return el.classList && el.classList.contains(S.galleryImageClass);
   });
-  gallery.appended(image);
-  gallery.layout();
+  // gallery.appended(image);
+  // gallery.layout()
   imageEl.classList.remove(S.galleryImageClassLoading);
   imageEl.classList.add(S.galleryImageClassLoaded);
 }
@@ -453,6 +463,13 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
     itemSelector: '.c-gallery__image',
     columnWidth: S.galleryThumbnailWidth,
     gutter: S.galleryThumbnailSpacing
+  });
+
+  // Schedule re-rendering upon window's dimensions changing but with a slight
+  // delay to accomodate for Masonry's own re-rendering (which fails, that's
+  // why we're enforcing our own ^^).
+  (0, _domtastic2.default)(window).on('resize', function () {
+    window.setTimeout(gallery.layout.bind(gallery), 1000);
   });
 
   // Masonry's layout is set. Let's display images placeholders aka. "loading"
@@ -478,6 +495,7 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
 }
 
 // Load first gallery eagerly, then lazy-schedule the remaining ones.
+var $galleryCategoriesImages = (0, _domtastic2.default)('.' + S.galleryCategoryClass + '__images');
 var categories = Array.from($galleryCategoriesImages);
 loadGalleryCategoryImages(categories.shift()).subscribe(function () {},
 // TODO: handle errors?
@@ -495,13 +513,7 @@ function (err) {
 });
 
 /***/ }),
-/* 8 */,
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(180);
-
-/***/ }),
+/* 9 */,
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
