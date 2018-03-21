@@ -64,7 +64,7 @@ var gallery =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -83,18 +83,70 @@ module.exports = gallery_vendors_c4192c9318bfbf28c621;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+// Replicate CSS' values below before generating images and documents.
+// TODO: extract values out from Sass' config.
+// main issue with doing that is the galleryThumbnailWidth value is used by
+// images/generator (node-rendered) but also by gallery/index.js (client-side)
+// which is not going to work (no fancy sass-loader on the client side, sass
+// files are no more!).
+// Basically it means gallery/index.js should be *generated* from a template,
+// with ${Css.galleryThumbnailWidth} transpiled/hard-coded into it, then we
+// would let Webpack use it as an entry and perform its usual business of deps
+// resolution & tree building to output gallery.js as expected, but with the
+// hard-coded value.
+var baseFontSize = 16; // px
+var gridSpacing = 24; // px
+var gridMaxWidth = 1200; // px
+var sidebarWidth = 275; // px
+var mainAreaOffset = 3; // em
+var nbImagesPerRow = 3;
+
+// Reflects c-gallery__image's margin-bottom.
+// @see website/static-src/css/components/_components.gallery.scss
+var galleryThumbnailSpacing = exports.galleryThumbnailSpacing = 6; // px
+
+// Thumbnails' spacing value is constrained by the base font size and grid's
+// layout & spacing. An example:
+// - Site has a max-width of 1200px & sidebar is 275px + 2*$spacing/2 wide
+//   ($spacing is inuitcss' grid spacing, ie. defaults to 24px).
+// - Therefore the main area is 901px wide.
+// - The main area has an em-based offset, converted in px through the base font
+//   size. Let's say 3em == 48px.
+// - Leaving N == 901 - 48 = 853 px for the gallery thumbnails to fit within.
+// - Aiming at, say, X = 3 images per row, with an internal spacing of Y = 6 px
+//   between thumbnails, that makes for (N - (X-1)*Y) / X = 280 px thumbnails
+var galleryWidth = gridMaxWidth - (sidebarWidth + 2 * gridSpacing / 2) - mainAreaOffset * baseFontSize;
+var thumbnailWidth = (galleryWidth - (nbImagesPerRow - 1) * galleryThumbnailSpacing) / nbImagesPerRow;
+var galleryThumbnailWidth = exports.galleryThumbnailWidth = Math.round(thumbnailWidth);
+
+var galleryClass = exports.galleryClass = 'c-gallery';
+var galleryCategoryClass = exports.galleryCategoryClass = 'c-gallery-category';
+var galleryImageClass = exports.galleryImageClass = 'c-gallery__image';
+var galleryImageClassLoading = exports.galleryImageClassLoading = galleryImageClass + '--loading';
+var galleryImageClassLoaded = exports.galleryImageClassLoaded = galleryImageClass + '--loaded';
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _domtastic = __webpack_require__(8);
+var _domtastic = __webpack_require__(9);
 
 var _domtastic2 = _interopRequireDefault(_domtastic);
 
-var _photoswipe = __webpack_require__(10);
+var _photoswipe = __webpack_require__(11);
 
 var _photoswipe2 = _interopRequireDefault(_photoswipe);
 
-var _photoswipeUiDefault = __webpack_require__(9);
+var _photoswipeUiDefault = __webpack_require__(10);
 
 var _photoswipeUiDefault2 = _interopRequireDefault(_photoswipeUiDefault);
 
@@ -315,62 +367,62 @@ var Galleries = function () {
 exports.default = Galleries;
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(185);
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(187);
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(194);
 
 /***/ }),
-/* 5 */,
-/* 6 */
+/* 6 */,
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _Rx = __webpack_require__(4);
+var _Rx = __webpack_require__(5);
 
 var _Rx2 = _interopRequireDefault(_Rx);
 
-var _masonryLayout = __webpack_require__(3);
+var _masonryLayout = __webpack_require__(4);
 
 var _masonryLayout2 = _interopRequireDefault(_masonryLayout);
 
-var _imagesloaded = __webpack_require__(2);
+var _imagesloaded = __webpack_require__(3);
 
 var _imagesloaded2 = _interopRequireDefault(_imagesloaded);
 
-var _galleries = __webpack_require__(1);
+var _galleries = __webpack_require__(2);
 
 var _galleries2 = _interopRequireDefault(_galleries);
+
+var _settings = __webpack_require__(1);
+
+var S = _interopRequireWildcard(_settings);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // TODO: use newly installed domtastic instead
+//       find a way to extract to module altogether (lazy functions?)
 var $ = document.querySelector.bind(document);
 var $$ = document.querySelectorAll.bind(document);
-
-// TODO: move to shared module
-var galleryClass = 'c-gallery';
-var $gallery = $('.' + galleryClass);
-var galleryCategoryClass = 'c-gallery-category';
-var $galleryCategoriesImages = $$('.' + galleryCategoryClass + '__images');
-var galleryImageClass = 'c-gallery__image';
-var galleryImageClassLoading = galleryImageClass + '--loading';
-var galleryImageClassLoaded = galleryImageClass + '--loaded';
-var $galleryImages = $$('.' + galleryImageClass);
+var $gallery = $('.' + S.galleryClass);
+var $galleryCategoriesImages = $$('.' + S.galleryCategoryClass + '__images');
+var $galleryImages = $$('.' + S.galleryImageClass);
 
 var galleries = new _galleries2.default();
 
@@ -378,11 +430,12 @@ var galleries = new _galleries2.default();
 // gallery, and update that gallery's layout.
 function revealImage(image, gallery) {
   var imageEl = galleries.closest(image.img, function (el) {
-    return el.classList && el.classList.contains(galleryImageClass);
+    return el.classList && el.classList.contains(S.galleryImageClass);
   });
   gallery.appended(image);
-  imageEl.classList.remove(galleryImageClassLoading);
-  imageEl.classList.add(galleryImageClassLoaded);
+  gallery.layout();
+  imageEl.classList.remove(S.galleryImageClassLoading);
+  imageEl.classList.add(S.galleryImageClassLoaded);
 }
 
 // Each gallery category acts as an independent "gallery" on its own: its images
@@ -391,21 +444,22 @@ function revealImage(image, gallery) {
 // TODO: tweak PhotoSwipe instances to display link to prev/next gallery category.
 function loadGalleryCategoryImages(galleryCategoryImages) {
   var relatedCategoryCheck = function relatedCategoryCheck(el) {
-    return el.classList && el.classList.contains(galleryCategoryClass);
+    return el.classList && el.classList.contains(S.galleryCategoryClass);
   };
   var galleryCategory = galleries.closest(galleryCategoryImages, relatedCategoryCheck);
 
   // Let's create a Masonry layout for the gallery's images.
   var gallery = new _masonryLayout2.default(galleryCategoryImages, {
-    itemSelector: 'a',
-    columnWidth: 276
+    itemSelector: '.c-gallery__image',
+    columnWidth: S.galleryThumbnailWidth,
+    gutter: S.galleryThumbnailSpacing
   });
 
   // Masonry's layout is set. Let's display images placeholders aka. "loading"
   // boxes.
-  var images = gallery.element.querySelectorAll('.' + galleryImageClass);
+  var images = gallery.element.querySelectorAll('.' + S.galleryImageClass);
   images.forEach(function (image) {
-    image.classList.add(galleryImageClassLoading);
+    image.classList.add(S.galleryImageClassLoading);
   });
 
   // Time to setup our PhotoSwipe instance.
@@ -441,20 +495,20 @@ function (err) {
 });
 
 /***/ }),
-/* 7 */,
-/* 8 */
+/* 8 */,
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(180);
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(190);
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(191);
