@@ -147,12 +147,13 @@ $inuit-font-size-h6:  16px !default;
 
 
 // COMPONENTS
+@import "components/components.homepage";
 @import "components/components.ui";
+@import "components/components.nav";
 @import "components/components.mobile_menu";
+@import "components/components.gallery";
 @import "components/components.contact-info";
 @import "components/components.contact-us";
-@import "components/components.homepage";
-@import "components/components.gallery";
 @import "components/components.reflinks";
 
 
