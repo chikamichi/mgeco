@@ -71,6 +71,9 @@
 
 
   .c-homepage__footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     padding-top: $spacing;
     text-align: center;
   }
@@ -81,12 +84,13 @@
     margin-bottom: $spacing;
   }
 
+
   .c-homepage__rge {
     display: block;
     margin-top: $spacing/2;
 
     & > img {
-      max-width: 25%;
+      max-width: 100px;
     }
   }
 }
@@ -108,8 +112,7 @@
 
 
     .c-homepage__footer {
-      display: flex;
-      align-items: center;
+      flex-direction: row-reverse;
       justify-content: center;
       padding: 0;
       border: none;
@@ -123,11 +126,7 @@
 
 
     .c-homepage__rge {
-      margin: 0 0 0 $spacing;
-
-      & > img {
-        max-width: 50%;
-      }
+      margin: 0 $spacing 0 0;
     }
   }
 }
