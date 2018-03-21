@@ -1566,6 +1566,89 @@ p {
   content: "\f0c9"; }
 
 /* ==========================================================================
+   # Homepage
+   ========================================================================== */
+.c-homepage {
+  /*
+    1. Responsive Image Replacement:
+    We want a responsive background image, ie. its height must match its evolving
+    width. In order to lock the image's aspect ratio along the height axis, with
+    respect to its current, fluid width, one may set a padding-top/bottom value,
+    in percentage, equal to the image's fixed aspect ratio. The trick here lies in
+    the fact that vertical padding values, when expressed in percentages, are
+    always computed using the element container's *width* as the reference.
+    2. Helps fighting hover's flickering/blinking effect in recent Firefox builds.
+  */ }
+  .c-homepage.o-wrapper {
+    max-width: 648px;
+    padding: 24px; }
+    .c-homepage.o-wrapper > * {
+      width: 100%;
+      overflow: hidden; }
+  .c-homepage .c-hp-main-entrance {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+    border-bottom: 1px solid #E9E9E9;
+    padding-bottom: 24px; }
+  .c-homepage .c-hp-main-entrance__logo {
+    position: relative;
+    margin: 0;
+    padding-top: 95.8333333333%;
+    width: 100%;
+    height: 0;
+    text-indent: -9999px;
+    background-image: url("/images/bienvenue1.jpg");
+    background-size: 100%; }
+    .c-homepage .c-hp-main-entrance__logo:hover:after {
+      opacity: 1; }
+    .c-homepage .c-hp-main-entrance__logo:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      background-image: url("/images/bienvenue2.jpg");
+      background-size: cover;
+      will-change: opacity;
+      transition: opacity 0.2s; }
+  .c-homepage .c-hp-carousel {
+    display: none; }
+  .c-homepage .c-homepage__footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 24px;
+    text-align: center; }
+  .c-homepage .c-contact-infos,
+  .c-homepage .c-homepage__rge {
+    margin-bottom: 24px; }
+  .c-homepage .c-homepage__rge {
+    display: block;
+    margin-top: 12px;
+    max-width: 100px; }
+
+@media (min-width: 40.625em) {
+  .c-homepage .c-hp-main-entrance {
+    max-width: 100%;
+    padding-bottom: 0;
+    border-bottom: none; }
+  .c-homepage .c-hp-carousel {
+    display: block;
+    margin-bottom: 24px; }
+  .c-homepage .c-homepage__footer {
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 0;
+    border: none; }
+  .c-homepage .c-contact-infos,
+  .c-homepage .c-homepage__rge {
+    margin-bottom: 0; }
+  .c-homepage .c-homepage__rge {
+    margin: 0 24px 0 0; } }
+/* ==========================================================================
    # UI
    ========================================================================== */
 .c-mgeco {
@@ -1590,20 +1673,6 @@ p {
 
 .c-logo,
 .c-contact-area {
-  display: none; }
-
-.c-nav__item--active .c-nav__link, .c-nav__item--active:hover .c-nav__link {
-  color: #90993F; }
-
-.c-nav__link {
-  text-transform: uppercase;
-  font-size: 1.2em;
-  color: #606060; }
-  .c-nav__link:hover {
-    text-decoration: none;
-    color: black; }
-
-.c-nav--desktop {
   display: none; }
 
 .c-main-area {
@@ -1690,40 +1759,63 @@ p {
     .c-contact-area__image::after {
       background-image: url("/images/adresse_mg2.jpg"); }
 
-  .c-nav--desktop {
-    display: block;
-    margin: 24px 0;
-    padding: 24px 0;
-    border-top: 1px solid #E9E9E9;
-    border-bottom: 1px solid #E9E9E9; }
-    .c-nav--desktop .c-nav__items {
-      margin: 0; }
-    .c-nav--desktop .c-nav__item,
-    .c-nav--desktop .c-nav__link {
-      margin: 0; }
-    .c-nav--desktop .c-nav__item {
-      list-style: none; }
-      .c-nav--desktop .c-nav__item::before {
-        content: "•";
-        color: white;
-        display: inline-block;
-        vertical-align: text-top;
-        text-indent: -12px; }
-      .c-nav--desktop .c-nav__item:hover::before {
-        color: black; }
-      .c-nav--desktop .c-nav__item--active::before {
-        color: #90993F; }
-    .c-nav--desktop .c-nav__link {
-      display: inline-block;
-      padding: 0.15em 0;
-      margin-left: 12px;
-      text-indent: -12px; }
-
   .c-main-area {
     padding: 0 0 0 3em; }
 
   .c-main-area__title {
     margin-top: 0; } }
+/* ==========================================================================
+   # Navigation
+   ========================================================================== */
+.c-nav.c-nav--desktop {
+  display: none; }
+.c-nav .c-nav__item--active .c-nav__link, .c-nav .c-nav__item--active:hover .c-nav__link {
+  background: #73793E;
+  font-weight: bold; }
+.c-nav .c-nav__link {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: #606060;
+  transition: color 0.1s; }
+  .c-nav .c-nav__link:hover {
+    text-decoration: none; }
+
+@media (min-width: 46.25em) {
+  .c-nav.c-nav--desktop {
+    display: block;
+    margin: 24px 0;
+    padding: 24px 0;
+    border-top: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9; }
+    .c-nav.c-nav--desktop .c-nav__items {
+      margin: 0; }
+    .c-nav.c-nav--desktop .c-nav__item,
+    .c-nav.c-nav--desktop .c-nav__link {
+      margin: 0; }
+    .c-nav.c-nav--desktop .c-nav__item {
+      list-style: none; }
+      .c-nav.c-nav--desktop .c-nav__item::before {
+        content: "•";
+        color: white;
+        display: inline-block;
+        vertical-align: text-top;
+        text-indent: -12px;
+        transition: color 0.1s; }
+      .c-nav.c-nav--desktop .c-nav__item:hover::before {
+        color: black; }
+      .c-nav.c-nav--desktop .c-nav__item:hover .c-nav__link {
+        color: black; }
+      .c-nav.c-nav--desktop .c-nav__item--active .c-nav__link, .c-nav.c-nav--desktop .c-nav__item--active:hover .c-nav__link {
+        background: transparent;
+        font-weight: initial;
+        color: #90993F; }
+      .c-nav.c-nav--desktop .c-nav__item--active::before {
+        color: #90993F; }
+    .c-nav.c-nav--desktop .c-nav__link {
+      display: inline-block;
+      padding: 0.15em 0;
+      margin-left: 12px;
+      text-indent: -12px; } }
 /*
 Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
 @see https://codepen.io/markcaron/pen/pPZVWO
@@ -1853,128 +1945,6 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
 @media (min-width: 46.25em) {
   .c-nav--mobile {
     display: none; } }
-.c-contact-infos__link {
-  color: #606060; }
-
-.c-contact-infos__link:hover {
-  text-decoration: none; }
-  .c-contact-infos__link:hover .c-contact-infos__email {
-    text-decoration: underline; }
-
-.c-contact-infos__line,
-.c-contact-infos__numbers,
-.c-contact-infos__email {
-  margin: 0; }
-
-.c-contact-infos__numbers > .o-list-inline__item {
-  padding-left: 0.5em; }
-  .c-contact-infos__numbers > .o-list-inline__item::after {
-    content: '–';
-    padding-left: 0.5em; }
-  .c-contact-infos__numbers > .o-list-inline__item:last-child::after {
-    display: none; }
-
-.c-contact-infos__line {
-  font-weight: bold;
-  font-size: 0.85em; }
-
-.c-contact-infos__email {
-  color: #90993F; }
-
-.c-contact-us {
-  text-align: center;
-  font-size: 1.2em; }
-
-.c-contact-us__line > span {
-  display: block; }
-
-.c-contact-us__owner,
-.c-contact-us__channels {
-  font-weight: bold; }
-
-/* ==========================================================================
-   # Homepage
-   ========================================================================== */
-.c-homepage {
-  /*
-    1. Responsive Image Replacement:
-    We want a responsive background image, ie. its height must match its evolving
-    width. In order to lock the image's aspect ratio along the height axis, with
-    respect to its current, fluid width, one may set a padding-top/bottom value,
-    in percentage, equal to the image's fixed aspect ratio. The trick here lies in
-    the fact that vertical padding values, when expressed in percentages, are
-    always computed using the element container's *width* as the reference.
-    2. Helps fighting hover's flickering/blinking effect in recent Firefox builds.
-  */ }
-  .c-homepage.o-wrapper {
-    max-width: 648px;
-    padding: 24px; }
-    .c-homepage.o-wrapper > * {
-      width: 100%;
-      overflow: hidden; }
-  .c-homepage .c-hp-main-entrance {
-    display: block;
-    margin: 0 auto;
-    max-width: 250px;
-    border-bottom: 1px solid #E9E9E9;
-    padding-bottom: 24px; }
-  .c-homepage .c-hp-main-entrance__logo {
-    position: relative;
-    margin: 0;
-    padding-top: 95.8333333333%;
-    width: 100%;
-    height: 0;
-    text-indent: -9999px;
-    background-image: url("/images/bienvenue1.jpg");
-    background-size: 100%; }
-    .c-homepage .c-hp-main-entrance__logo:hover:after {
-      opacity: 1; }
-    .c-homepage .c-hp-main-entrance__logo:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      opacity: 0;
-      background-image: url("/images/bienvenue2.jpg");
-      background-size: cover;
-      will-change: opacity;
-      transition: opacity 0.2s; }
-  .c-homepage .c-hp-carousel {
-    display: none; }
-  .c-homepage .c-homepage__footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 24px;
-    text-align: center; }
-  .c-homepage .c-contact-infos,
-  .c-homepage .c-homepage__rge {
-    margin-bottom: 24px; }
-  .c-homepage .c-homepage__rge {
-    display: block;
-    margin-top: 12px;
-    max-width: 100px; }
-
-@media (min-width: 40.625em) {
-  .c-homepage .c-hp-main-entrance {
-    max-width: 100%;
-    padding-bottom: 0;
-    border-bottom: none; }
-  .c-homepage .c-hp-carousel {
-    display: block;
-    margin-bottom: 24px; }
-  .c-homepage .c-homepage__footer {
-    flex-direction: row-reverse;
-    justify-content: center;
-    padding: 0;
-    border: none; }
-  .c-homepage .c-contact-infos,
-  .c-homepage .c-homepage__rge {
-    margin-bottom: 0; }
-  .c-homepage .c-homepage__rge {
-    margin: 0 24px 0 0; } }
 @keyframes pulsate-border-color {
   0% {
     border-color: #D2D2D2; }
@@ -2035,6 +2005,45 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
     opacity: 1; }
   .c-gallery__image:hover .c-gallery__caption {
     opacity: 1; }
+
+.c-contact-infos__link {
+  color: #606060; }
+
+.c-contact-infos__link:hover {
+  text-decoration: none; }
+  .c-contact-infos__link:hover .c-contact-infos__email {
+    text-decoration: underline; }
+
+.c-contact-infos__line,
+.c-contact-infos__numbers,
+.c-contact-infos__email {
+  margin: 0; }
+
+.c-contact-infos__numbers > .o-list-inline__item {
+  padding-left: 0.5em; }
+  .c-contact-infos__numbers > .o-list-inline__item::after {
+    content: '–';
+    padding-left: 0.5em; }
+  .c-contact-infos__numbers > .o-list-inline__item:last-child::after {
+    display: none; }
+
+.c-contact-infos__line {
+  font-weight: bold;
+  font-size: 0.85em; }
+
+.c-contact-infos__email {
+  color: #90993F; }
+
+.c-contact-us {
+  text-align: center;
+  font-size: 1.2em; }
+
+.c-contact-us__line > span {
+  display: block; }
+
+.c-contact-us__owner,
+.c-contact-us__channels {
+  font-weight: bold; }
 
 .c-reflinks-type__title {
   border-bottom: 1px solid #D2D2D2; }

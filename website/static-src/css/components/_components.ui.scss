@@ -37,33 +37,6 @@
 }
 
 
-.c-nav__item {
-  &--active,
-  &--active:hover {
-    .c-nav__link {
-      color: $green;
-    }
-  }
-}
-
-
-.c-nav__link {
-  text-transform: uppercase;
-  font-size: 1.2em;
-  color: $grey--dark;
-
-  &:hover {
-    text-decoration: none;
-    color: black;
-  }
-}
-
-
-.c-nav--desktop {
-  display: none;
-}
-
-
 .c-main-area {
   padding: 0 $spacing/2;
   text-align: justify;
@@ -168,57 +141,6 @@
 
     &::after {
       background-image: url('/images/adresse_mg2.jpg');
-    }
-  }
-
-
-  .c-nav--desktop {
-    display: block;
-    margin: $spacing 0;
-    padding: $spacing 0;
-    border-top: 1px solid $grey--light;
-    border-bottom: 1px solid $grey--light;
-
-
-    .c-nav__items {
-      margin: 0;
-    }
-
-
-    .c-nav__item,
-    .c-nav__link {
-      margin: 0;
-    }
-
-    .c-nav__item {
-      list-style: none;
-
-      &::before {
-        content: "•";
-        color: white;
-        display: inline-block;
-        vertical-align: text-top;
-        text-indent: -$spacing/2;
-      }
-
-      &:hover {
-        &::before {
-          color: black;
-        }
-      }
-
-      &--active {
-        &::before {
-          color: $green;
-        }
-      }
-    }
-
-    .c-nav__link {
-      display: inline-block;
-      padding: 0.15em 0;
-      margin-left: $spacing/2;
-      text-indent: -$spacing/2;
     }
   }
 
