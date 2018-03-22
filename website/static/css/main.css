@@ -1947,8 +1947,10 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
     border-color: white; }
   100% {
     border-color: #D2D2D2; } }
+.c-gallery-category {
+  margin-bottom: 4em; }
+
 .c-gallery-category__title {
-  margin-top: 4em;
   text-transform: uppercase; }
 
 .c-gallery__image {
