@@ -1953,6 +1953,20 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
 .c-gallery-category__title {
   text-transform: uppercase; }
 
+.c-gallery-category__description dt {
+  float: left;
+  margin-right: 0.25em;
+  font-weight: bold; }
+  .c-gallery-category__description dt::after {
+    content: " :"; }
+.c-gallery-category__description dd, .c-gallery-category__description ul {
+  margin-left: 0; }
+.c-gallery-category__description li {
+  list-style-type: none; }
+
+.c-gallery-category__images {
+  margin-top: 24px; }
+
 .c-gallery__image {
   margin-bottom: 6px; }
   .c-gallery__image .c-gallery__link {
