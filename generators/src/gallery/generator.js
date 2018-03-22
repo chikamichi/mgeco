@@ -1,6 +1,7 @@
 const fs = require('fs')
 const execSync = require('child_process').execSync
-const showdown  = require('showdown')
+var md = require('markdown-it')()
+           .use(require('markdown-it-deflist'))
 const layout = require('./template.pug')
 const cl = require('../_utils/config_loader')
 
@@ -33,10 +34,10 @@ module.exports = () => {
   const normalizeCategory = (category) => {
     // _.invokeMap binds this to undefined somehow.
     category.images = _.map(category.images, (image) => normalizeImage(image, category.folder))
-    if (category.description)
+    if (category.description) {
       category.descriptionRaw = category.description
-      const converter = new showdown.Converter()
-      category.description = converter.makeHtml(category.description)
+      category.description = md.render(category.description)
+    }
     return category
   }
   const galleryCategories = _.map(data, normalizeCategory)

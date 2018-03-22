@@ -15,6 +15,32 @@
 }
 
 
+.c-gallery-category__description {
+  dt {
+    float: left;
+    margin-right: 0.25em;
+    font-weight: bold;
+
+    &::after {
+      content: " :";
+    }
+  }
+
+  dd, ul {
+    margin-left: 0;
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+
+.c-gallery-category__images {
+  margin-top: $spacing;
+}
+
+
 .c-gallery__image {
   // Reflects generators/src/_utils/settings.js#galleryThumbnailSpacing.
   margin-bottom: 6px;
