@@ -529,43 +529,48 @@ fieldset {
 */
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url("../fonts/sourcesanspro-regular-webfont.ttf") format("truetype");
-  font-weight: normal;
+  src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url("../fonts/sourcesanspro-bold-webfont.ttf") format("truetype");
-  font-weight: bold;
+  src: url("../fonts/SourceSansPro-SemiBold.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal; }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url("../fonts/sourcesanspro-italic-webfont.ttf") format("truetype");
-  font-weight: normal;
+  src: url("../fonts/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/SourceSansPro-Italic.ttf") format("truetype");
+  font-weight: 400;
   font-style: italic; }
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url("../fonts/sourcesanspro-bolditalic-webfont.ttf") format("truetype");
-  font-weight: bold;
+  src: url("../fonts/SourceSansPro-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 500;
   font-style: italic; }
 @font-face {
-  font-family: 'Oceania';
-  src: url("../fonts/Oceania-Light.ttf") format("truetype");
-  font-weight: lighter;
-  font-style: normal; }
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/SourceSansPro-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic; }
 @font-face {
   font-family: 'Oceania';
   src: url("../fonts/Oceania-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'Oceania';
   src: url("../fonts/Oceania-Medium.ttf") format("truetype");
-  font-weight: bolder;
+  font-weight: 500;
   font-style: normal; }
 @font-face {
   font-family: 'Oceania';
   src: url("../fonts/Oceania-Bold.ttf") format("truetype");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal; }
 /* ==========================================================================
    #MG ECO RESETS
@@ -1775,6 +1780,7 @@ p {
 .c-nav .c-nav__link {
   text-transform: uppercase;
   font-size: 1.2em;
+  font-weight: 500;
   color: #606060;
   transition: color 0.1s; }
   .c-nav .c-nav__link:hover {
@@ -1783,10 +1789,7 @@ p {
 @media (min-width: 46.25em) {
   .c-nav.c-nav--desktop {
     display: block;
-    margin: 24px 0;
-    padding: 24px 0;
-    border-top: 1px solid #E9E9E9;
-    border-bottom: 1px solid #E9E9E9; }
+    margin: 24px 0; }
     .c-nav.c-nav--desktop .c-nav__items {
       margin: 0; }
     .c-nav.c-nav--desktop .c-nav__item,
@@ -1794,28 +1797,20 @@ p {
       margin: 0; }
     .c-nav.c-nav--desktop .c-nav__item {
       list-style: none; }
-      .c-nav.c-nav--desktop .c-nav__item::before {
-        content: "•";
-        color: white;
-        display: inline-block;
-        vertical-align: text-top;
-        text-indent: -12px;
-        transition: color 0.1s; }
-      .c-nav.c-nav--desktop .c-nav__item:hover::before {
-        color: black; }
       .c-nav.c-nav--desktop .c-nav__item:hover .c-nav__link {
-        color: black; }
+        color: black;
+        border-color: #E9E9E9; }
       .c-nav.c-nav--desktop .c-nav__item--active .c-nav__link, .c-nav.c-nav--desktop .c-nav__item--active:hover .c-nav__link {
         background: transparent;
         font-weight: initial;
-        color: #90993F; }
-      .c-nav.c-nav--desktop .c-nav__item--active::before {
-        color: #90993F; }
+        color: #90993F;
+        border-color: #E9E9E9; }
     .c-nav.c-nav--desktop .c-nav__link {
       display: inline-block;
-      padding: 0.15em 0;
-      margin-left: 12px;
-      text-indent: -12px; } }
+      width: 100%;
+      padding: 0.35em 0 0.1em 0;
+      color: black;
+      border-bottom: 1px solid white; } }
 /*
 Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793
 @see https://codepen.io/markcaron/pen/pPZVWO

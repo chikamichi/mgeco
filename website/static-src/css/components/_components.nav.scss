@@ -24,6 +24,7 @@
   .c-nav__link {
     text-transform: uppercase;
     font-size: 1.2em;
+    font-weight: 500;
     color: $grey--dark;
     transition: color 0.1s;
 
@@ -38,9 +39,6 @@
   .c-nav.c-nav--desktop {
     display: block;
     margin: $spacing 0;
-    padding: $spacing 0;
-    border-top: 1px solid $grey--light;
-    border-bottom: 1px solid $grey--light;
 
 
     .c-nav__items {
@@ -56,22 +54,10 @@
     .c-nav__item {
       list-style: none;
 
-      &::before {
-        content: "•";
-        color: white;
-        display: inline-block;
-        vertical-align: text-top;
-        text-indent: -$spacing/2;
-        transition: color 0.1s;
-      }
-
       &:hover {
-        &::before {
-          color: black;
-        }
-
         .c-nav__link {
           color: black;
+          border-color: $grey--light;
         }
       }
 
@@ -81,12 +67,7 @@
           background: transparent;
           font-weight: initial;
           color: $green;
-        }
-      }
-
-      &--active {
-        &::before {
-          color: $green;
+          border-color: $grey--light;
         }
       }
     }
@@ -94,9 +75,10 @@
 
     .c-nav__link {
       display: inline-block;
-      padding: 0.15em 0;
-      margin-left: $spacing/2;
-      text-indent: -$spacing/2;
+      width: 100%;
+      padding: 0.35em 0 0.1em 0;
+      color: black;
+      border-bottom: 1px solid white;
     }
   }
 }
