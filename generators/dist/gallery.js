@@ -127,6 +127,7 @@ var galleryThumbnailWidth = exports.galleryThumbnailWidth = Math.round(thumbnail
 
 var galleryClass = exports.galleryClass = 'c-gallery';
 var galleryCategoryClass = exports.galleryCategoryClass = 'c-gallery-category';
+var galleryCategoryClassLoading = exports.galleryCategoryClassLoading = galleryCategoryClass + '--loading';
 var galleryImageClass = exports.galleryImageClass = 'c-gallery__image';
 var galleryImageClassLoading = exports.galleryImageClassLoading = galleryImageClass + '--loading';
 var galleryImageClassLoaded = exports.galleryImageClassLoaded = galleryImageClass + '--loaded';
@@ -428,8 +429,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // TODO: use newly installed domtastic instead
 //       find a way to extract to module altogether (lazy functions?)
-// const $ = document.querySelector.bind(document);
-// const $$ = document.querySelectorAll.bind(document);
+// const $ = document.querySelector.bind(document)
+// const $$ = document.querySelectorAll.bind(document)
 // const $gallery = $(`.${S.galleryClass}`)
 // const $galleryCategoriesImages = $$(`.${S.galleryCategoryClass}__images`)
 // const $galleryImages = $$(`.${S.galleryImageClass}`)
@@ -438,14 +439,13 @@ var galleries = new _galleries2.default();
 
 // Reveals an image (which is expected to be fully loaded) within the specified
 // gallery, and update that gallery's layout.
-function revealImage(image, gallery) {
+function revealImage(image, galleryCategory) {
   var imageEl = galleries.closest(image.img, function (el) {
     return el.classList && el.classList.contains(S.galleryImageClass);
   });
-  // gallery.appended(image);
-  // gallery.layout()
   imageEl.classList.remove(S.galleryImageClassLoading);
   imageEl.classList.add(S.galleryImageClassLoaded);
+  galleryCategory.classList.remove(S.galleryCategoryClassLoading);
 }
 
 // Each gallery category acts as an independent "gallery" on its own: its images
@@ -457,6 +457,8 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
     return el.classList && el.classList.contains(S.galleryCategoryClass);
   };
   var galleryCategory = galleries.closest(galleryCategoryImages, relatedCategoryCheck);
+
+  galleryCategory.classList.add(S.galleryCategoryClassLoading);
 
   // Let's create a Masonry layout for the gallery's images.
   var gallery = new _masonryLayout2.default(galleryCategoryImages, {
@@ -485,7 +487,7 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
   // Start loading and revealing gallery's images.
   var imgLoad = (0, _imagesloaded2.default)(galleryCategoryImages);
   imgLoad.on('progress', function (instance, image) {
-    revealImage(image, gallery);
+    revealImage(image, galleryCategory);
   });
 
   // ImagesLoaded exposes weirdos jQuery.Deferred objects.

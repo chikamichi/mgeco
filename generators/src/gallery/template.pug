@@ -45,8 +45,6 @@ h1#main-area-title.c-main-area__title.u-h1
             .c-gallery__image(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject', role='img', aria-labelledby=`${image.path}`)
               a.c-gallery__link(href=`/images/gallery/${image.path}`, title=`${image.description}`, itemprop='contentUrl', data-size=`${image.dimensions}`)
                 img.c-gallery__thumbnail(src=`/images/gallery/${image.pathThumbnail}`, alt=`${image.description}`, itemprop='thumbnail')
-                .c-gallery__loader
-                  div
                 .c-gallery__caption(itemprop='caption description')
                   span(id=`${image.path}`) #{image.description}
   | {{ partial "footer" . }}

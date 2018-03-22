@@ -36,6 +36,7 @@ export const galleryThumbnailWidth = Math.round(thumbnailWidth)
 
 export const galleryClass = 'c-gallery'
 export const galleryCategoryClass = 'c-gallery-category'
+export const galleryCategoryClassLoading = `${galleryCategoryClass}--loading`
 export const galleryImageClass = 'c-gallery__image'
 export const galleryImageClassLoading = `${galleryImageClass}--loading`
 export const galleryImageClassLoaded = `${galleryImageClass}--loaded`

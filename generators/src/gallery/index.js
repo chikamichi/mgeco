@@ -7,8 +7,8 @@ import * as S from '../_utils/settings'
 
 // TODO: use newly installed domtastic instead
 //       find a way to extract to module altogether (lazy functions?)
-// const $ = document.querySelector.bind(document);
-// const $$ = document.querySelectorAll.bind(document);
+// const $ = document.querySelector.bind(document)
+// const $$ = document.querySelectorAll.bind(document)
 // const $gallery = $(`.${S.galleryClass}`)
 // const $galleryCategoriesImages = $$(`.${S.galleryCategoryClass}__images`)
 // const $galleryImages = $$(`.${S.galleryImageClass}`)
@@ -17,14 +17,13 @@ const galleries = new Galleries()
 
 // Reveals an image (which is expected to be fully loaded) within the specified
 // gallery, and update that gallery's layout.
-function revealImage(image, gallery) {
-  const imageEl = galleries.closest(image.img, function(el) {
-    return (el.classList && el.classList.contains(S.galleryImageClass));
-  });
-  // gallery.appended(image);
-  // gallery.layout()
-  imageEl.classList.remove(S.galleryImageClassLoading);
-  imageEl.classList.add(S.galleryImageClassLoaded);
+function revealImage(image, galleryCategory) {
+  const imageEl = galleries.closest(image.img, (el) => {
+    return (el.classList && el.classList.contains(S.galleryImageClass))
+  })
+  imageEl.classList.remove(S.galleryImageClassLoading)
+  imageEl.classList.add(S.galleryImageClassLoaded)
+  galleryCategory.classList.remove(S.galleryCategoryClassLoading)
 }
 
 // Each gallery category acts as an independent "gallery" on its own: its images
@@ -34,6 +33,8 @@ function revealImage(image, gallery) {
 function loadGalleryCategoryImages(galleryCategoryImages) {
   const relatedCategoryCheck = (el) => el.classList && el.classList.contains(S.galleryCategoryClass)
   const galleryCategory = galleries.closest(galleryCategoryImages, relatedCategoryCheck)
+
+  galleryCategory.classList.add(S.galleryCategoryClassLoading)
 
   // Let's create a Masonry layout for the gallery's images.
   const gallery = new Masonry(galleryCategoryImages, {
@@ -57,12 +58,12 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
   })
 
   // Time to setup our PhotoSwipe instance.
-  galleries.add(galleryCategory);
+  galleries.add(galleryCategory)
 
   // Start loading and revealing gallery's images.
   const imgLoad = imagesLoaded(galleryCategoryImages)
-  imgLoad.on('progress', function(instance, image) {
-    revealImage(image, gallery)
+  imgLoad.on('progress', (instance, image) => {
+    revealImage(image, galleryCategory)
   })
 
   // ImagesLoaded exposes weirdos jQuery.Deferred objects.
@@ -89,4 +90,4 @@ loadGalleryCategoryImages(categories.shift()).subscribe(
       }
     )
   }
-);
+)

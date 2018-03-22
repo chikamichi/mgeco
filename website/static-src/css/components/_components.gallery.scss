@@ -1,12 +1,27 @@
-@keyframes pulsate-border-color {
-  0%  { border-color: $grey; }
-  50%   { border-color: white; }
-  100% { border-color: $grey; }
+@keyframes pulsate-opacity {
+  0%  { opacity: 1; }
+  50%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 
 .c-gallery-category {
   margin-bottom: 4em;
+
+  &--loading {
+    .c-gallery-category__images::after {
+      content: "...";
+      color: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+      color: $grey--dark;
+      animation: pulsate-opacity 1s infinite;
+    }
+  }
 }
 
 
@@ -37,11 +52,13 @@
 
 
 .c-gallery-category__images {
+  position: relative;
   margin-top: $spacing;
 }
 
 
 .c-gallery__image {
+  visibility: hidden;
   // Reflects generators/src/_utils/settings.js#galleryThumbnailSpacing.
   margin-bottom: 6px;
 
@@ -52,7 +69,6 @@
   }
 
 
-  .c-gallery__loader,
   .c-gallery__caption {
     position: absolute;
   }
@@ -61,19 +77,6 @@
   .c-gallery__thumbnail {
     opacity: 0;
     transition: opacity 1s ease-in-out;
-  }
-
-
-  .c-gallery__loader {
-    opacity: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 3px;
-    border-width: 1px;
-    border-style: dashed;
-    animation: pulsate-border-color 2s infinite;
   }
 
 
@@ -104,16 +107,10 @@
   }
 
 
-  // Styles applied upon loading an image.
-  &.c-gallery__image--loading {
-    .c-gallery__loader {
-      opacity: 1;
-    }
-  }
-
-
   // Styles applied upon revealing an image.
   &.c-gallery__image--loaded {
+    visibility: initial;
+
     .c-gallery__thumbnail {
       opacity: 1;
     }
