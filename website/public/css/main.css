@@ -1940,15 +1940,26 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
 @media (min-width: 46.25em) {
   .c-nav--mobile {
     display: none; } }
-@keyframes pulsate-border-color {
+@keyframes pulsate-opacity {
   0% {
-    border-color: #D2D2D2; }
+    opacity: 1; }
   50% {
-    border-color: white; }
+    opacity: 0; }
   100% {
-    border-color: #D2D2D2; } }
+    opacity: 1; } }
 .c-gallery-category {
   margin-bottom: 4em; }
+  .c-gallery-category--loading .c-gallery-category__images::after {
+    content: "...";
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    color: #606060;
+    animation: pulsate-opacity 1s infinite; }
 
 .c-gallery-category__title {
   text-transform: uppercase; }
@@ -1965,29 +1976,20 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
   list-style-type: none; }
 
 .c-gallery-category__images {
+  position: relative;
   margin-top: 24px; }
 
 .c-gallery__image {
+  visibility: hidden;
   margin-bottom: 6px; }
   .c-gallery__image .c-gallery__link {
     position: relative;
     display: inline-block; }
-  .c-gallery__image .c-gallery__loader,
   .c-gallery__image .c-gallery__caption {
     position: absolute; }
   .c-gallery__image .c-gallery__thumbnail {
     opacity: 0;
     transition: opacity 1s ease-in-out; }
-  .c-gallery__image .c-gallery__loader {
-    opacity: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 3px;
-    border-width: 1px;
-    border-style: dashed;
-    animation: pulsate-border-color 2s infinite; }
   .c-gallery__image .c-gallery__caption {
     opacity: 0;
     top: 20px;
@@ -2010,10 +2012,10 @@ Adapted from https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger
       letter-spacing: 2px;
       color: black;
       word-break: break-word; }
-  .c-gallery__image.c-gallery__image--loading .c-gallery__loader {
-    opacity: 1; }
-  .c-gallery__image.c-gallery__image--loaded .c-gallery__thumbnail {
-    opacity: 1; }
+  .c-gallery__image.c-gallery__image--loaded {
+    visibility: initial; }
+    .c-gallery__image.c-gallery__image--loaded .c-gallery__thumbnail {
+      opacity: 1; }
   .c-gallery__image:hover .c-gallery__caption {
     opacity: 1; }
 
