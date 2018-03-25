@@ -17,7 +17,8 @@ const galleryImageClassLoaded = `${galleryImageClass}--loaded`
 export default class Galleries {
   constructor() {
     this.galleryElements = []
-    this.galleryNextUUID = 0;
+    this.galleryLayouts = []
+    this.galleryNextUUID = 0
   }
 
   // @private
@@ -37,7 +38,7 @@ export default class Galleries {
     if (linkEl.children.length > 0) {
       item.msrc = linkEl.children[0].attributes.src.value
     }
-    item.el = el; // save link to element for getThumbBoundsFn
+    item.el = el // save link to element for getThumbBoundsFn
     return item
   }
 
@@ -45,8 +46,8 @@ export default class Galleries {
   // Parse slide data (url, title, size ...) from DOM elements.
   parseThumbnailElements(el) {
     const thumbElements = $(el).find(`.${galleryImageClass}`)
-    return thumbElements.map(this.normalizeImageAsItem);
-  };
+    return thumbElements.map(this.normalizeImageAsItem)
+  }
 
   // @private
   // Triggered upon user clicking a thumbnail. Opens PhotoSwipe instance.
@@ -82,12 +83,11 @@ export default class Galleries {
       params[pair[0]] = pair[1]
     }
     return params
-  };
+  }
 
   // @private
   // Open a registered PhotoSwipe instance.
   openPhotoSwipe(index, galleryElement, disableAnimation, fromURL) {
-    // galleryElement = galleryElement[0]
     const pswpElement = $('.pswp')[0]
     const items = this.parseThumbnailElements(galleryElement)
     const uuid = galleryElement.attributes['data-pswp-uid'].value
@@ -136,7 +136,7 @@ export default class Galleries {
     // Pass data to PhotoSwipe and initialize it
     const gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options)
     gallery.init()
-  };
+  }
 
   // @private
   // Parse URL and open gallery if it matches #&pid=3&gid=1.
@@ -150,8 +150,9 @@ export default class Galleries {
 
   // @private
   // Register a new PhotoSwipe instance bound to a specific selector.
-  initPhotoSwipeFromDOM(gallerySelector) {
+  initPhotoSwipeFromDOM(gallerySelector, galleryLayout) {
     this.galleryElements.push(gallerySelector)
+    this.galleryLayouts.push(galleryLayout)
     gallerySelector.setAttribute('data-pswp-uid', this.galleryNextUUID++)
     gallerySelector.onclick = this.onThumbnailsClick.bind(this)
   }
@@ -163,14 +164,22 @@ export default class Galleries {
   }
 
   // @public
+  // @param [Node] gallerySelector - a native DOM node
+  // @param [Node] galleryLayout - wrapped selector, eg. Masonry wrapper
   // TODO: support adding multiple galleries at once, something like
   // [...gallerySelector].map(this.initPhotoSwipeFromDOM)
-  add(gallerySelector) {
-    this.initPhotoSwipeFromDOM(gallerySelector)
+  add(gallerySelector, galleryLayout) {
+    this.initPhotoSwipeFromDOM(gallerySelector, galleryLayout)
   }
 
   // @public
   openFromUrl(gid) {
     this.initPhotoSwipeFromHash()
+  }
+
+  map(fn) {
+    this.galleryElements.map((el, i) => {
+      return fn(this.galleryElements[i], this.galleryLayouts[i])
+    })
   }
 }

@@ -181,6 +181,7 @@ var Galleries = function () {
     _classCallCheck(this, Galleries);
 
     this.galleryElements = [];
+    this.galleryLayouts = [];
     this.galleryNextUUID = 0;
   }
 
@@ -217,12 +218,12 @@ var Galleries = function () {
       var thumbElements = (0, _domtastic2.default)(el).find('.' + galleryImageClass);
       return thumbElements.map(this.normalizeImageAsItem);
     }
-  }, {
-    key: 'onThumbnailsClick',
-
 
     // @private
     // Triggered upon user clicking a thumbnail. Opens PhotoSwipe instance.
+
+  }, {
+    key: 'onThumbnailsClick',
     value: function onThumbnailsClick(e) {
       e = e || window.event;
       e.preventDefault ? e.preventDefault() : e.returnValue = false;
@@ -259,14 +260,13 @@ var Galleries = function () {
       }
       return params;
     }
-  }, {
-    key: 'openPhotoSwipe',
-
 
     // @private
     // Open a registered PhotoSwipe instance.
+
+  }, {
+    key: 'openPhotoSwipe',
     value: function openPhotoSwipe(index, galleryElement, disableAnimation, fromURL) {
-      // galleryElement = galleryElement[0]
       var pswpElement = (0, _domtastic2.default)('.pswp')[0];
       var items = this.parseThumbnailElements(galleryElement);
       var uuid = galleryElement.attributes['data-pswp-uid'].value;
@@ -315,12 +315,12 @@ var Galleries = function () {
       var gallery = new _photoswipe2.default(pswpElement, _photoswipeUiDefault2.default, items, options);
       gallery.init();
     }
-  }, {
-    key: 'initPhotoSwipeFromHash',
-
 
     // @private
     // Parse URL and open gallery if it matches #&pid=3&gid=1.
+
+  }, {
+    key: 'initPhotoSwipeFromHash',
     value: function initPhotoSwipeFromHash() {
       var hashData = this.photoswipeParseHash();
       if (hashData.pid && hashData.gid) {
@@ -334,8 +334,9 @@ var Galleries = function () {
 
   }, {
     key: 'initPhotoSwipeFromDOM',
-    value: function initPhotoSwipeFromDOM(gallerySelector) {
+    value: function initPhotoSwipeFromDOM(gallerySelector, galleryLayout) {
       this.galleryElements.push(gallerySelector);
+      this.galleryLayouts.push(galleryLayout);
       gallerySelector.setAttribute('data-pswp-uid', this.galleryNextUUID++);
       gallerySelector.onclick = this.onThumbnailsClick.bind(this);
     }
@@ -350,13 +351,15 @@ var Galleries = function () {
     }
 
     // @public
+    // @param [Node] gallerySelector - a native DOM node
+    // @param [Node] galleryLayout - wrapped selector, eg. Masonry wrapper
     // TODO: support adding multiple galleries at once, something like
     // [...gallerySelector].map(this.initPhotoSwipeFromDOM)
 
   }, {
     key: 'add',
-    value: function add(gallerySelector) {
-      this.initPhotoSwipeFromDOM(gallerySelector);
+    value: function add(gallerySelector, galleryLayout) {
+      this.initPhotoSwipeFromDOM(gallerySelector, galleryLayout);
     }
 
     // @public
@@ -365,6 +368,15 @@ var Galleries = function () {
     key: 'openFromUrl',
     value: function openFromUrl(gid) {
       this.initPhotoSwipeFromHash();
+    }
+  }, {
+    key: 'map',
+    value: function map(fn) {
+      var _this = this;
+
+      this.galleryElements.map(function (el, i) {
+        return fn(_this.galleryElements[i], _this.galleryLayouts[i]);
+      });
     }
   }]);
 
@@ -427,14 +439,6 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// TODO: use newly installed domtastic instead
-//       find a way to extract to module altogether (lazy functions?)
-// const $ = document.querySelector.bind(document)
-// const $$ = document.querySelectorAll.bind(document)
-// const $gallery = $(`.${S.galleryClass}`)
-// const $galleryCategoriesImages = $$(`.${S.galleryCategoryClass}__images`)
-// const $galleryImages = $$(`.${S.galleryImageClass}`)
-
 var galleries = new _galleries2.default();
 
 // Reveals an image (which is expected to be fully loaded) within the specified
@@ -482,7 +486,7 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
   });
 
   // Time to setup our PhotoSwipe instance.
-  galleries.add(galleryCategory);
+  galleries.add(galleryCategory, gallery);
 
   // Start loading and revealing gallery's images.
   var imgLoad = (0, _imagesloaded2.default)(galleryCategoryImages);
@@ -510,6 +514,11 @@ function (err) {
   function (err) {
     return console.log;
   }, function () {
+    galleries.map(function (galleryEl, galleryLayout) {
+      window.setTimeout(function () {
+        return galleryLayout.layout.bind(galleryLayout);
+      }, 0);
+    });
     galleries.openFromUrl();
   });
 });
