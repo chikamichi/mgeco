@@ -5,14 +5,6 @@ import imagesLoaded from 'imagesloaded'
 import Galleries from './galleries.js'
 import * as S from '../_utils/settings'
 
-// TODO: use newly installed domtastic instead
-//       find a way to extract to module altogether (lazy functions?)
-// const $ = document.querySelector.bind(document)
-// const $$ = document.querySelectorAll.bind(document)
-// const $gallery = $(`.${S.galleryClass}`)
-// const $galleryCategoriesImages = $$(`.${S.galleryCategoryClass}__images`)
-// const $galleryImages = $$(`.${S.galleryImageClass}`)
-
 const galleries = new Galleries()
 
 // Reveals an image (which is expected to be fully loaded) within the specified
@@ -58,7 +50,7 @@ function loadGalleryCategoryImages(galleryCategoryImages) {
   })
 
   // Time to setup our PhotoSwipe instance.
-  galleries.add(galleryCategory)
+  galleries.add(galleryCategory, gallery)
 
   // Start loading and revealing gallery's images.
   const imgLoad = imagesLoaded(galleryCategoryImages)
@@ -86,6 +78,9 @@ loadGalleryCategoryImages(categories.shift()).subscribe(
       // TODO: handle errors?
       (err) => console.log,
       () => {
+        galleries.map((galleryEl, galleryLayout) => {
+          window.setTimeout(() => galleryLayout.layout.bind(galleryLayout), 0)
+        })
         galleries.openFromUrl()
       }
     )
