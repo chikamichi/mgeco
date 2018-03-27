@@ -1,6 +1,8 @@
 mg-ecoconstruction.com
 ======================
 
+Le projet est scindé en plusieurs parties :
+
 * [website/](./website/) pour travailler sur le site web au quotidien
 * [generators/](./generators/) pour des générateurs spécifiques, utilisés occasionnellement
 
