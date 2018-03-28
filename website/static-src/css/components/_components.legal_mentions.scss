@@ -1,0 +1,29 @@
+.c-legal-mentions {
+  margin-top: $spacing;
+  font-size: 0.8em;
+
+  &,
+  & a,
+  & a:hover {
+    color: $grey;
+  }
+}
+
+.c-sidebar .c-legal-mentions {
+  display: none;
+}
+
+.c-main-area .c-legal-mentions {
+  display: block;
+}
+
+
+@include mq($from: tablet) {
+  .c-sidebar .c-legal-mentions {
+    display: block;
+  }
+
+  .c-main-area .c-legal-mentions {
+    display: none;
+  }
+}
