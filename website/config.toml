@@ -34,7 +34,7 @@ enableRobotsTXT = true
     title = "Se documenter sur la construction écologique..."
   [[params.linksTypes]]
     type = "fournisseur"
-    title = "Nos fournisseurs"
+    title = "Nos partenaires"
 
   [params.extLinks]
     RGE = "http://www.developpement-durable.gouv.fr/La-mention-RGE-Reconnu-Garant-de-l.html"
