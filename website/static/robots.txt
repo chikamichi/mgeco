@@ -1,6 +1,4 @@
 User-agent: *
-Disallow: /css
-Disallow: /js
 Disallow: /tags
 
 Sitemap: http://mg-ecoconstruction.com/sitemap.xml
