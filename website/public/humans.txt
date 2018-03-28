@@ -1,0 +1,18 @@
+/* TEAM */
+Web developer, owner: Lisa Grimaud <lisa@sur-mesure.org>
+Site: http://sur-mesure.org/
+Location: Lot, France
+
+Web developer: Jean-Denis Vauguet <jd@vauguet.fr>
+Site: https://kaibun.net/
+Location: Lot, France
+
+
+
+/* THANKS */
+MG ÉCO: http://mg-ecoconstruction.com
+
+
+
+/* SITE */
+Source: https://github.com/chikamichi/mgeco/
