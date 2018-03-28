@@ -15,5 +15,6 @@
     {{ range (readDir "./public/images/gallery/CAHORS/thumbnails/") }}
       <link rel="preload" href="/images/gallery/CAHORS/thumbnails/{{ .Name }}" as="image">
     {{ end }}
+    <link rel="author" href="humans.txt" />
   </head>
   <body>
