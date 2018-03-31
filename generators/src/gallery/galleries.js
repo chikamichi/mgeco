@@ -1,13 +1,7 @@
 import $ from 'domtastic'
 import PhotoSwipe from 'photoswipe'
 import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default'
-
-// TODO: move to shared module
-const galleryClass = 'c-gallery'
-const galleryCategoryClass = 'c-gallery-category'
-const galleryImageClass = 'c-gallery__image'
-const galleryImageClassLoading = `${galleryImageClass}--loading`
-const galleryImageClassLoaded = `${galleryImageClass}--loaded`
+import * as S from '../_utils/settings'
 
 // Galleries manager.
 //
@@ -45,7 +39,7 @@ export default class Galleries {
   // @private
   // Parse slide data (url, title, size ...) from DOM elements.
   parseThumbnailElements(el) {
-    const thumbElements = $(el).find(`.${galleryImageClass}`)
+    const thumbElements = $(el).find(`.${S.galleryImageClass}`)
     return thumbElements.map(this.normalizeImageAsItem)
   }
 
@@ -53,13 +47,13 @@ export default class Galleries {
   // Triggered upon user clicking a thumbnail. Opens PhotoSwipe instance.
   onThumbnailsClick(e) {
     e = e || window.event
-    e.preventDefault ? e.preventDefault() : e.returnValue = false
     const eTarget = e.target || e.srcElement
-    const clickedImage = $(eTarget).closest(`.${galleryImageClass}`)
-    if (!clickedImage) return
+    const clickedImage = $(eTarget).closest(`.${S.galleryImageClass}`)
+    if (!clickedImage.length) return
+    e.preventDefault ? e.preventDefault() : e.returnValue = false
     // find index of clicked item by looping through all child nodes
     // alternatively, you may define index via data- attribute
-    const clickedGallery = $(eTarget).closest(`.${galleryCategoryClass}`)
+    const clickedGallery = $(eTarget).closest(`.${S.galleryCategoryClass}`)
     const images = clickedImage.siblings().concat(clickedImage)
     const numImages = images.length
     // domtastic#indexOf hasn't qualified for production use just yet…

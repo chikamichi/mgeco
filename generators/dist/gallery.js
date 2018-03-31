@@ -77,12 +77,6 @@ module.exports = gallery_vendors_c4192c9318bfbf28c621;
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(180);
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 
 
@@ -133,6 +127,12 @@ var galleryImageClassLoading = exports.galleryImageClassLoading = galleryImageCl
 var galleryImageClassLoaded = exports.galleryImageClassLoaded = galleryImageClass + '--loaded';
 
 /***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(180);
+
+/***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -145,7 +145,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _domtastic = __webpack_require__(1);
+var _domtastic = __webpack_require__(2);
 
 var _domtastic2 = _interopRequireDefault(_domtastic);
 
@@ -157,25 +157,23 @@ var _photoswipeUiDefault = __webpack_require__(10);
 
 var _photoswipeUiDefault2 = _interopRequireDefault(_photoswipeUiDefault);
 
+var _settings = __webpack_require__(1);
+
+var S = _interopRequireWildcard(_settings);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-// TODO: move to shared module
-var galleryClass = 'c-gallery';
-var galleryCategoryClass = 'c-gallery-category';
-var galleryImageClass = 'c-gallery__image';
-var galleryImageClassLoading = galleryImageClass + '--loading';
-var galleryImageClassLoaded = galleryImageClass + '--loaded';
-
 // Galleries manager.
 //
 // Merely a PhotoSwipe wrapper with support for multi-galleries.
 // Adapted from http://photoswipe.com/documentation/getting-started.html.
 // TODO: simplify, refactor using RxJS, ramda or something.
-
 var Galleries = function () {
   function Galleries() {
     _classCallCheck(this, Galleries);
@@ -215,7 +213,7 @@ var Galleries = function () {
   }, {
     key: 'parseThumbnailElements',
     value: function parseThumbnailElements(el) {
-      var thumbElements = (0, _domtastic2.default)(el).find('.' + galleryImageClass);
+      var thumbElements = (0, _domtastic2.default)(el).find('.' + S.galleryImageClass);
       return thumbElements.map(this.normalizeImageAsItem);
     }
 
@@ -226,13 +224,13 @@ var Galleries = function () {
     key: 'onThumbnailsClick',
     value: function onThumbnailsClick(e) {
       e = e || window.event;
-      e.preventDefault ? e.preventDefault() : e.returnValue = false;
       var eTarget = e.target || e.srcElement;
-      var clickedImage = (0, _domtastic2.default)(eTarget).closest('.' + galleryImageClass);
-      if (!clickedImage) return;
+      var clickedImage = (0, _domtastic2.default)(eTarget).closest('.' + S.galleryImageClass);
+      if (!clickedImage.length) return;
+      e.preventDefault ? e.preventDefault() : e.returnValue = false;
       // find index of clicked item by looping through all child nodes
       // alternatively, you may define index via data- attribute
-      var clickedGallery = (0, _domtastic2.default)(eTarget).closest('.' + galleryCategoryClass);
+      var clickedGallery = (0, _domtastic2.default)(eTarget).closest('.' + S.galleryCategoryClass);
       var images = clickedImage.siblings().concat(clickedImage);
       var numImages = images.length;
       // domtastic#indexOf hasn't qualified for production use just yet…
@@ -411,7 +409,7 @@ module.exports = (__webpack_require__(0))(194);
 "use strict";
 
 
-var _domtastic = __webpack_require__(1);
+var _domtastic = __webpack_require__(2);
 
 var _domtastic2 = _interopRequireDefault(_domtastic);
 
@@ -431,7 +429,7 @@ var _galleries = __webpack_require__(3);
 
 var _galleries2 = _interopRequireDefault(_galleries);
 
-var _settings = __webpack_require__(2);
+var _settings = __webpack_require__(1);
 
 var S = _interopRequireWildcard(_settings);
 
