@@ -1,5 +1,5 @@
-mg-ecoconstruction.com
-======================
+mg-eco.com
+==========
 
 Le projet est scindé en plusieurs parties :
 
@@ -8,7 +8,7 @@ Le projet est scindé en plusieurs parties :
 
 ## Contexte
 
-Le projet correspond à une refonte du site http://mg-ecoconstruction.com.
+Le projet correspond à une refonte du site http://mg-eco.com.
 
 Les objectifs initiaux étaient :
 

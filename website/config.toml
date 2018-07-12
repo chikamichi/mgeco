@@ -1,4 +1,4 @@
-baseURL = "http://www.mg-ecoconstruction.com/"
+baseURL = "http://www.mg-eco.com/"
 ignoreFiles = ["static-src"]
 languageCode = "fr-FR"
 title = "MG Éco-construction"
@@ -18,7 +18,7 @@ enableRobotsTXT = true
   gps_long = "1.7649764"
   phoneLandline = "05 65 21 73 08"
   phoneMobile = "06 74 66 08 92"
-  email = "contact@mg-ecoconstruction.com"
+  email = "contact@mg-eco.com"
   rcs = "538 164 120"
   siret = "538 164 120 000 15"
   ape = "4120B"

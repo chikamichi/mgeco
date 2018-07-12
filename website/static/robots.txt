@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /tags
 
-Sitemap: http://mg-ecoconstruction.com/sitemap.xml
+Sitemap: http://mg-eco.com/sitemap.xml

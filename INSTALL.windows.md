@@ -7,7 +7,7 @@ Installation sous Windows
 
 * on récupère le code source du projet, stocké sur [GitHub](https://github.com/), avec `git clone` ;
 * à chaque micro-étape de la vie du projet (implémentation d'une nouvelle fonctionnalité, correction typographique, travail exploratoire sur une idée… peu importe), on utilise `git commit` pour enregistrer un « point de sauvegarde » ou *commit*.
-* on utilise `git push` pour envoyer son code modifié sur GitHub, et éventuellement déclencher le déploiement du site en production sur http://mg-ecoconstruction.com/.
+* on utilise `git push` pour envoyer son code modifié sur GitHub, et éventuellement déclencher le déploiement du site en production sur http://mg-eco.com/.
 
 **Télécharger `git` sur https://gitforwindows.org/ et l'installer.**
 
