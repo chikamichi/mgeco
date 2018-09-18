@@ -2,13 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Poursuivre vos on MG Éco-construction</title>
-    <link>http://www.mg-ecoconstruction.com/liens/</link>
+    <link>http://www.mg-ecoconstruction.com/liens/index.xml</link>
     <description>Recent content in Poursuivre vos on MG Éco-construction</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    
-	<atom:link href="http://www.mg-ecoconstruction.com/liens/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="http://www.mg-ecoconstruction.com/liens/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ADEME</title>
@@ -16,7 +14,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/ademe/</guid>
-      <description>Pour suivre législations, aides au financement des travaux, subventions et prescriptions institutionnelles.</description>
+      <description>&lt;p&gt;Pour suivre législations, aides au financement des travaux, subventions et prescriptions institutionnelles.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -25,7 +24,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/anah/</guid>
-      <description>Une réponse territoriale aux enjeux de l&amp;rsquo;habitat privé : infos sur les aides à la rénovation, que vous soyez propriétaires habitants ou bailleurs.</description>
+      <description>&lt;p&gt;Une réponse territoriale aux enjeux de l&amp;rsquo;habitat privé : infos sur les aides à la rénovation, que vous soyez propriétaires habitants ou bailleurs.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -34,7 +34,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/biofib/</guid>
-      <description>Gamme d&amp;rsquo;isolants performants à base de chanvre, dont la filière complète (du champ à l&amp;rsquo;usine) est française et en circuit court.</description>
+      <description>&lt;p&gt;Gamme d&amp;rsquo;isolants performants à base de chanvre, dont la filière complète (du champ à l&amp;rsquo;usine) est française et en circuit court.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -43,7 +44,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/caue/</guid>
-      <description>Le CAUE a pour objet la promotion de la qualité architecturale, urbaine et paysagère, notamment par l’information et la sensibilisation du public dans le domaine de l’architecture, de l’urbanisme et de l’environnement.</description>
+      <description>&lt;p&gt;Le CAUE a pour objet la promotion de la qualité architecturale, urbaine et paysagère, notamment par l’information et la sensibilisation du public dans le domaine de l’architecture, de l’urbanisme et de l’environnement.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -52,7 +54,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/rt2012/</guid>
-      <description>Présentation officielle de la réglementation thermique actuelle.</description>
+      <description>&lt;p&gt;Présentation officielle de la réglementation thermique actuelle.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -61,7 +64,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/courrege/</guid>
-      <description>Basée dans le sud du Lot, la société Courrège Productions SARL affiche son métier de base : la menuiserie. Bois, alu, bois/alu, volets, portes…</description>
+      <description>&lt;p&gt;Basée dans le sud du Lot, la société Courrège Productions SARL affiche son métier de base : la menuiserie. Bois, alu, bois/alu, volets, portes…&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -70,8 +74,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/enercoop/</guid>
-      <description>Notre fournisseur d&amp;rsquo;électricité.
-Branchez-vous sur une énergie renouvelable, coopérative et locale !</description>
+      <description>&lt;p&gt;Notre fournisseur d&amp;rsquo;électricité.&lt;/p&gt;
+
+&lt;p&gt;Branchez-vous sur une  énergie renouvelable, coopérative et locale !&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -80,7 +86,8 @@ Branchez-vous sur une énergie renouvelable, coopérative et locale !</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/eautarcie/</guid>
-      <description>Site d&amp;rsquo;information très documenté, basé sur les travaux de Josef Orszagh, sur la gestion durable et écologique de l&amp;rsquo;eau. Récupération des eaux pluviales, potabilisation de l&amp;rsquo;eau, toilettes sèches etc.</description>
+      <description>&lt;p&gt;Site d&amp;rsquo;information très documenté, basé sur les travaux de Josef Orszagh, sur la gestion durable et écologique de l&amp;rsquo;eau. Récupération des eaux pluviales, potabilisation de l&amp;rsquo;eau, toilettes sèches etc.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -89,7 +96,8 @@ Branchez-vous sur une énergie renouvelable, coopérative et locale !</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/empreinte/</guid>
-      <description>Donne des informations sur la conception bioclimatique et les matériaux écologiques, et propose une bonne bibliographie.</description>
+      <description>&lt;p&gt;Donne des informations sur la conception bioclimatique et les matériaux écologiques, et propose une bonne bibliographie.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -98,7 +106,8 @@ Branchez-vous sur une énergie renouvelable, coopérative et locale !</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/graine_d_eau/</guid>
-      <description>Se mobilise pour proposer un mode de gestion écologique de l’eau qui considère le problème dans sa globalité : valorisation de l’eau de pluie, toilettes sèches, pratique du compostage, phyto-épuration. Stage, conférences, documentation… Dans le Sud-Ouest.</description>
+      <description>&lt;p&gt;Se mobilise pour proposer un mode de gestion écologique de l’eau qui considère le problème dans sa globalité : valorisation de l’eau de pluie, toilettes sèches, pratique du compostage, phyto-épuration. Stage, conférences, documentation… Dans le Sud-Ouest.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -107,7 +116,8 @@ Branchez-vous sur une énergie renouvelable, coopérative et locale !</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/rge/</guid>
-      <description>Votre artisan doit être labellisé pour pouvoir obtenir des aides institutionnelles (prêts à taux 0 et crédits d&amp;rsquo;impôts).</description>
+      <description>&lt;p&gt;Votre artisan doit être labellisé pour pouvoir obtenir des aides institutionnelles (prêts à taux 0 et crédits d&amp;rsquo;impôts).&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -116,7 +126,8 @@ Branchez-vous sur une énergie renouvelable, coopérative et locale !</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/ouateco/</guid>
-      <description>La seule ouate de cellulose produite avec des matières propres, exclusivement françaises, achetées auprès d’associations partenaires telles Emmaüs, Envie, Landes Partage… puis transformées dans une usine biosourcée, pour un projet global, écologique et local.</description>
+      <description>&lt;p&gt;La seule ouate de cellulose produite avec des matières propres, exclusivement françaises, achetées auprès d’associations partenaires telles Emmaüs, Envie, Landes Partage… puis transformées dans une usine biosourcée, pour un projet global, écologique et local.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -125,8 +136,10 @@ Branchez-vous sur une énergie renouvelable, coopérative et locale !</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/quercy_energie/</guid>
-      <description>Agence locale de l&amp;rsquo;énergie de Cahors, prodiguant conseils et informations sur les modes de chauffage, l&amp;rsquo;isolation, les rénovation énergétiques, les aides, etc.
-À rencontrer en préalable aux projets.</description>
+      <description>&lt;p&gt;Agence locale de l&amp;rsquo;énergie de Cahors, prodiguant conseils et informations sur les modes de chauffage, l&amp;rsquo;isolation, les rénovation énergétiques, les aides, etc.&lt;/p&gt;
+
+&lt;p&gt;À rencontrer en préalable aux projets.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -135,7 +148,8 @@ Branchez-vous sur une énergie renouvelable, coopérative et locale !</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/terre_vivante/</guid>
-      <description>Site généraliste sur l&amp;rsquo;éco-construction, qui présente les matériaux, les isolants, etc. Le point est fait régulièrement sur les réglementations thermiques et les aides.</description>
+      <description>&lt;p&gt;Site généraliste sur l&amp;rsquo;éco-construction, qui présente les matériaux, les isolants, etc. Le point est fait régulièrement sur les réglementations thermiques et les aides.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

@@ -47,9 +47,9 @@ Travailler avec les **filières de proximité** c'est aussi limiter l'impact du 
 
 ## Rapidité d'exécution
 
-4 mois en moyenne pour la réalisation de votre maison clef en main, 2 mois pour un gros-œuvre seul ou une extension.
+Notre **atelier de fabrication** situé à Limogne en Quercy nous permet de réaliser l’ossature et la charpente dans des conditions optimales et dégagées des aléas climatiques, assurant un **respect des délais** convenus à la signature du devis et une **mise en œuvre soignée**.
 
-Notre **atelier de fabrication** situé à Limogne en Quercy nous permet de réaliser l'ossature et la charpente dans des conditions optimales et dégagées des aléas climatiques, assurant un respect des délais annoncés et **une mise en œuvre soigneuse**.
+La phase chantier pour le gros-œuvre (clos/couvert + finitions extérieures) est d'environ 2 mois. Les finitions ont une durée variable, qui dépend des artisans, des lots assumés en auto-construction et des techniques choisies (temps de séchages par exemple).
 
 ## Esthétique et modularité
 
@@ -57,4 +57,4 @@ Contrairement aux idées reçues, une maison ossature bois permet une **grande s
 
 L'ossature bois vous autorise une **modularité presque infinie** afin que votre maison évolue tout au long de votre vie, en fonction de vos besoins. Chez nous, **chaque maison est unique, avec des plans personnalisés** : nous pouvons réfléchir avec vous à concevoir la possibilité de futures extensions pour **échelonner les dépenses**.
 
-**Pour conclure, [choisir un maître d’œuvre local](/ethique), qui travaille avec des fournisseurs et des collaborateurs locaux, est une bonne manière de limiter les impacts négatifs sur l’environnement en limitant les transports, de favoriser l'économie locale, et de prendre l'assurance d'un suivi en confiance sur le long terme.**
+**Pour conclure, [choisir une entreprise de construction locale](/ethique), qui travaille avec des fournisseurs et des collaborateurs locaux, est une manière de limiter les impacts négatifs sur l’environnement en limitant les transports, de favoriser l’économie locale, tout en prenant l’assurance d’un suivi en confiance sur le long terme.**

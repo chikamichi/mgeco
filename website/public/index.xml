@@ -2,13 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Accueil on MG Éco-construction</title>
-    <link>http://www.mg-ecoconstruction.com/</link>
+    <link>http://www.mg-ecoconstruction.com/index.xml</link>
     <description>Recent content in Accueil on MG Éco-construction</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    
-	<atom:link href="http://www.mg-ecoconstruction.com/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="http://www.mg-ecoconstruction.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ADEME</title>
@@ -16,7 +14,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/ademe/</guid>
-      <description>Pour suivre législations, aides au financement des travaux, subventions et prescriptions institutionnelles.</description>
+      <description>&lt;p&gt;Pour suivre législations, aides au financement des travaux, subventions et prescriptions institutionnelles.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -25,7 +24,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/anah/</guid>
-      <description>Une réponse territoriale aux enjeux de l&amp;rsquo;habitat privé : infos sur les aides à la rénovation, que vous soyez propriétaires habitants ou bailleurs.</description>
+      <description>&lt;p&gt;Une réponse territoriale aux enjeux de l&amp;rsquo;habitat privé : infos sur les aides à la rénovation, que vous soyez propriétaires habitants ou bailleurs.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -34,7 +34,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/biofib/</guid>
-      <description>Gamme d&amp;rsquo;isolants performants à base de chanvre, dont la filière complète (du champ à l&amp;rsquo;usine) est française et en circuit court.</description>
+      <description>&lt;p&gt;Gamme d&amp;rsquo;isolants performants à base de chanvre, dont la filière complète (du champ à l&amp;rsquo;usine) est française et en circuit court.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -43,17 +44,98 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/caue/</guid>
-      <description>Le CAUE a pour objet la promotion de la qualité architecturale, urbaine et paysagère, notamment par l’information et la sensibilisation du public dans le domaine de l’architecture, de l’urbanisme et de l’environnement.</description>
+      <description>&lt;p&gt;Le CAUE a pour objet la promotion de la qualité architecturale, urbaine et paysagère, notamment par l’information et la sensibilisation du public dans le domaine de l’architecture, de l’urbanisme et de l’environnement.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Comment nous</title>
-      <link>http://www.mg-ecoconstruction.com/contact/</link>
+      <link>http://www.mg-ecoconstruction.com/contact</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/contact/</guid>
-      <description>MG ECO est installée à Limogne en Quercy, dans le département du Lot (46), au cœur du Parc naturel Régional des Causses du Quercy (PNRCQ), en région Occitanie.
-Pour les constructions complètes, nous nous limitons à un rayon d&amp;rsquo;environ 100km ; en revanche, les maisons en kit peuvent être livrées partout dans la région. Pour les chantiers où nous n&amp;rsquo;assumons que le gros œuvre, nous pouvons élargir notre rayon d&amp;rsquo;action aux départements voisins du Lot, sous conditions.</description>
+      <guid>http://www.mg-ecoconstruction.com/contact</guid>
+      <description>&lt;p&gt;&lt;strong&gt;MG ECO est installée à Limogne en Quercy&lt;/strong&gt;, dans le département du Lot (46), au cœur du Parc naturel Régional des Causses du Quercy (PNRCQ), en région Occitanie.&lt;/p&gt;
+
+&lt;p&gt;Pour les constructions complètes, nous nous limitons à un rayon d&amp;rsquo;environ 100km ; en revanche, les maisons en kit peuvent être livrées partout dans la région. Pour les chantiers où nous n&amp;rsquo;assumons que le gros œuvre, nous pouvons élargir notre rayon d&amp;rsquo;action aux départements voisins du Lot, sous conditions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Contactez-nous afin d&amp;rsquo;obtenir un devis estimatif et d&amp;rsquo;engager la réflexion, quel que soit le stade de développement de votre projet.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&#34;c-contact-us&#34;&gt;
+  &lt;p class=&#34;c-contact-us__line  c-contact-us__owner&#34;&gt;
+    SAS MG ECO
+    &lt;br/&gt;
+    Mathieu Thiberville
+  &lt;/p&gt;
+  &lt;p class=&#34;c-contact-us__line&#34;&gt;
+    Atelier de fabrication :
+    &lt;br/&gt;
+    32 rue des alisiers (route de Cénevières)
+    &lt;br/&gt;
+    46260 LIMOGNE EN QUERCY
+  &lt;/p&gt;
+  &lt;div class=&#34;c-contact-us__line  c-contact-us__channels&#34;&gt;
+    &lt;ul class=&#34;o-list-bare&#34;&gt;
+      &lt;li class=&#34;c-contact-us__email&#34;&gt;
+        &lt;a href=&#34;mailto:contact@mg-ecoconstruction.com&#34;&gt;contact@mg-ecoconstruction.com&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&#34;c-contact-us__number&#34;&gt;06 74 66 08 92&lt;/li&gt;
+      &lt;li class=&#34;c-contact-us__number&#34;&gt;05 65 21 73 08&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type=&#34;application/ld+json&#34;&gt;
+{
+  &#34;@context&#34;: &#34;http://schema.org&#34;,
+  &#34;@type&#34;: &#34;ContactPage&#34;,
+  &#34;url&#34;: &#34;http://mg-ecoconstruction/contact&#34;,
+  &#34;mainEntity&#34;: {
+    &#34;@type&#34;: &#34;HomeAndConstructionBusiness&#34;,
+    &#34;name&#34;: &#34;MG Éco&#34;,
+    &#34;image&#34;: &#34;http://mg-ecoconstruction.com/images/logo_mg.jpg&#34;,
+    &#34;geo&#34;: {
+      &#34;@type&#34;: &#34;GeoCoordinates&#34;,
+      &#34;latitude&#34;: &#34;44.3977773&#34;,
+      &#34;longitude&#34;: &#34;1.7649764&#34;
+    },
+    &#34;address&#34;: {
+      &#34;@type&#34;: &#34;PostalAddress&#34;,
+      &#34;streetAddress&#34;: &#34;32 rue des alisiers&#34;,
+      &#34;postalCode&#34;: &#34;46260&#34;,
+      &#34;addressLocality&#34;: &#34;Limogne en Quercy&#34;,
+      &#34;addressCountry&#34;: &#34;FR&#34;,
+      &#34;telephone&#34;: [
+        &#34;05 65 21 73 08&#34;,
+        &#34;06 74 66 08 92&#34;
+      ],
+      &#34;email&#34;: &#34;contact@mg-ecoconstruction.com&#34;,
+      &#34;availableLanguage&#34;: [
+        &#34;English&#34;,
+        &#34;French&#34;
+      ]
+    },
+    &#34;telephone&#34;: &#34;05 65 21 73 08&#34;,
+    &#34;hasMap&#34;: &#34;https:\/\/www.google.com\/maps\/place\/MG\x2b%C3%A9coconstruction\/@44.4005686,1.7685543,17z\/data=!4m5!3m4!1s0x12ac564fe0a6d721:0x39547eaab69564d7!8m2!3d44.4032985!4d1.7686893?hl=fr-FR&#34;,
+    &#34;logo&#34;: &#34;http://mg-ecoconstruction.com/images/logo_mg.jpg&#34;,
+    &#34;brand&#34;: {
+    },
+    &#34;founder&#34;: {
+      &#34;@type&#34;: &#34;Person&#34;,
+      &#34;name&#34;: &#34;Mathieu Thiberville&#34;
+    },
+    &#34;legalName&#34;: &#34;SAS MG ECO&#34;,
+    &#34;description&#34;: &#34;Constructions écologiques - ossature bois, maison paille, charpente, couverture, isolation, rénovation, conception de plans, étude thermique&#34;,
+    &#34;mainEntityOfPage&#34;: &#34;http:\/\/www.mg-ecoconstruction.com\/&#34;
+  }
+}
+&lt;/script&gt;
+
+
+&lt;p&gt;&lt;div class=&#34;u-text-centered&#34;&gt;
+  &lt;iframe src=&#34;https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d32236.82863898417!2d1.7588630567514885!3d44.42577679952371!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x39547eaab69564d7!2sMG&amp;#43;%C3%A9coconstruction!5e0!3m2!1sfr!2sfr!4v1521158395192&#34; width=&#34;400&#34; height=&#34;300&#34; frameborder=&#34;0&#34; style=&#34;border:0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -62,19 +144,50 @@ Pour les constructions complètes, nous nous limitons à un rayon d&amp;rsquo;en
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/rt2012/</guid>
-      <description>Présentation officielle de la réglementation thermique actuelle.</description>
+      <description>&lt;p&gt;Présentation officielle de la réglementation thermique actuelle.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Concevoir</title>
-      <link>http://www.mg-ecoconstruction.com/votre-projet/</link>
+      <link>http://www.mg-ecoconstruction.com/votre-projet</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/votre-projet/</guid>
-      <description>Si vous souhaitez concevoir votre projet avec des professionnels, MG ECO peut vous accompagner dès les premiers croquis pour une prestation de conception de plans, avec dépose de permis de construire et étude thermique RT2012.
-Chaque prestation est personnalisée et se fait sur devis.
-Conception de plans Cette prestation se déroule en plusieurs étapes :
- Rendez-vous sur site, établissement d&amp;rsquo;un cahier des charges (besoins, envies, délais, budget, contraintes&amp;hellip;), étude du site, de son potentiel bioclimatique et de ses contraintes administratives et topographiques.</description>
+      <guid>http://www.mg-ecoconstruction.com/votre-projet</guid>
+      <description>
+
+&lt;p&gt;Si vous souhaitez &lt;strong&gt;concevoir votre projet avec des professionnels&lt;/strong&gt;, MG ECO vous propose de travailler avec une dessinatrice d&amp;rsquo;architecture partenaire, dont la proximité éthique et géographique permet de discuter des choix techniques et de chercher ensemble la pertinence globale dès les premiers croquis.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lisa Grimaud&lt;/strong&gt;/&lt;strong&gt;Sur Mesure&lt;/strong&gt; vous accompagne dans l&amp;rsquo;établissement de votre projet avec une prestation de &lt;strong&gt;conception de plans&lt;/strong&gt;, avec &lt;strong&gt;dépose de permis de construire&lt;/strong&gt; et &lt;strong&gt;étude thermique RT2012&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Chaque prestation est personnalisée et se fait sur devis détaillé.&lt;/p&gt;
+
+&lt;h2 id=&#34;conception-de-plans&#34;&gt;Conception de plans&lt;/h2&gt;
+
+&lt;p&gt;Cette prestation se déroule en plusieurs étapes :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rendez-vous sur site, établissement d’un cahier des charges (besoins, envies, délais, budget, contraintes…), étude du site, de son potentiel bioclimatique et de ses contraintes administratives et topographiques.&lt;/li&gt;
+&lt;li&gt;Avant-projets avec plans de distribution des pièces, plan de masse définissant l’implantation et les accès, visuels d’intégrations sur photos du site, plans des façades, recherche de matériaux pour les parements, conception des parois.&lt;/li&gt;
+&lt;li&gt;Réalisation des plans définitifs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cette recherche se fait dans le respect des principes &lt;strong&gt;bioclimatiques&lt;/strong&gt; (implantation, volumes, apports solaires…) et conjointement à la conception de l’enveloppe.&lt;/p&gt;
+
+&lt;h2 id=&#34;étude-thermique-rt-2012&#34;&gt;Étude thermique RT 2012&lt;/h2&gt;
+
+&lt;p&gt;Depuis le 1er janvier 2013, la Réglementation Thermique (RT2012) vise le BBC (Bâtiment Basse Consommation) pour toutes les nouvelles constructions, et impose la réalisation d’une étude thermique dont le compte rendu doit être joint à la dépose du permis de construire. Ce type d’étude thermique est réalisé avec un logiciel agréé par le CSTB (Centre Scientifique et Technique du Bâtiment).&lt;/p&gt;
+
+&lt;h2 id=&#34;obtention-du-permis-de-construire&#34;&gt;Obtention du permis de construire&lt;/h2&gt;
+
+&lt;p&gt;Lisa grimaud réalise les dossiers de permis de construire pour &lt;strong&gt;tous bâtiments inférieurs à 150 m²&lt;/strong&gt;, prêt à déposer en mairie, en format A3 couleur, avec &lt;strong&gt;suivi administratif&lt;/strong&gt; jusqu’à obtention du PC (permis de construire).&lt;/p&gt;
+
+&lt;h2 id=&#34;plans-d-exécution&#34;&gt;Plans d’exécution&lt;/h2&gt;
+
+&lt;p&gt;Les plans d’exécution sont ensuite réalisés par MG ECO avec le logiciel CADWORK, ce qui assure une grande précision à la taille des pièces et une &lt;strong&gt;conception parfaitement maîtrisée&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dans la formule « maison en kit », ces plans vous sont livrés avec une notice de montage et une assistance sur chantier puis par téléphone.&lt;/strong&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -83,7 +196,8 @@ Conception de plans Cette prestation se déroule en plusieurs étapes :
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/courrege/</guid>
-      <description>Basée dans le sud du Lot, la société Courrège Productions SARL affiche son métier de base : la menuiserie. Bois, alu, bois/alu, volets, portes…</description>
+      <description>&lt;p&gt;Basée dans le sud du Lot, la société Courrège Productions SARL affiche son métier de base : la menuiserie. Bois, alu, bois/alu, volets, portes…&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -92,8 +206,10 @@ Conception de plans Cette prestation se déroule en plusieurs étapes :
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/enercoop/</guid>
-      <description>Notre fournisseur d&amp;rsquo;électricité.
-Branchez-vous sur une énergie renouvelable, coopérative et locale !</description>
+      <description>&lt;p&gt;Notre fournisseur d&amp;rsquo;électricité.&lt;/p&gt;
+
+&lt;p&gt;Branchez-vous sur une  énergie renouvelable, coopérative et locale !&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -102,7 +218,8 @@ Branchez-vous sur une énergie renouvelable, coopérative et locale !</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/eautarcie/</guid>
-      <description>Site d&amp;rsquo;information très documenté, basé sur les travaux de Josef Orszagh, sur la gestion durable et écologique de l&amp;rsquo;eau. Récupération des eaux pluviales, potabilisation de l&amp;rsquo;eau, toilettes sèches etc.</description>
+      <description>&lt;p&gt;Site d&amp;rsquo;information très documenté, basé sur les travaux de Josef Orszagh, sur la gestion durable et écologique de l&amp;rsquo;eau. Récupération des eaux pluviales, potabilisation de l&amp;rsquo;eau, toilettes sèches etc.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -111,7 +228,8 @@ Branchez-vous sur une énergie renouvelable, coopérative et locale !</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/empreinte/</guid>
-      <description>Donne des informations sur la conception bioclimatique et les matériaux écologiques, et propose une bonne bibliographie.</description>
+      <description>&lt;p&gt;Donne des informations sur la conception bioclimatique et les matériaux écologiques, et propose une bonne bibliographie.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -120,7 +238,8 @@ Branchez-vous sur une énergie renouvelable, coopérative et locale !</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/graine_d_eau/</guid>
-      <description>Se mobilise pour proposer un mode de gestion écologique de l’eau qui considère le problème dans sa globalité : valorisation de l’eau de pluie, toilettes sèches, pratique du compostage, phyto-épuration. Stage, conférences, documentation… Dans le Sud-Ouest.</description>
+      <description>&lt;p&gt;Se mobilise pour proposer un mode de gestion écologique de l’eau qui considère le problème dans sa globalité : valorisation de l’eau de pluie, toilettes sèches, pratique du compostage, phyto-épuration. Stage, conférences, documentation… Dans le Sud-Ouest.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -129,76 +248,64 @@ Branchez-vous sur une énergie renouvelable, coopérative et locale !</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.mg-ecoconstruction.com/liens/rge/</guid>
-      <description>Votre artisan doit être labellisé pour pouvoir obtenir des aides institutionnelles (prêts à taux 0 et crédits d&amp;rsquo;impôts).</description>
+      <description>&lt;p&gt;Votre artisan doit être labellisé pour pouvoir obtenir des aides institutionnelles (prêts à taux 0 et crédits d&amp;rsquo;impôts).&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Nos réalisations</title>
-      <link>http://www.mg-ecoconstruction.com/galerie/</link>
+      <link>http://www.mg-ecoconstruction.com/galerie</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/galerie/</guid>
-      <description>Vous trouverez ici un aperçu des matériaux et techniques que nous mettons en œuvre :
- Différents types de toitures : bardeaux de bois, platelage bois (mélèze), tuiles plates, tuiles canals, tuiles losangées, toiture en zinc, bac-acier, toiture-terrasse (couverte en bâche EPDM Firestone) pouvant être végétalisées&amp;hellip; Différents types de finitions intérieures : enduits terre (ARGILUS), enduits chaux, volige peuplier, volige mélèze brute ou rabotée, volige chêne, plancher chêne, plancher frêne olivier, tommettes de la tuilerie de Condat&amp;hellip; Différents types de parements extérieurs : plancher de terrasse en acacia de pays ou chêne de pays, bardages mélèze (bardage à clins, bardage vertical à couvre-joints, bardage à claire-voie), bardage Red cedar, enduits à la chaux&amp;hellip; Ainsi que différents modes constructifs : murs d&amp;rsquo;ossature bois réalisés dans notre atelier à Limogne et assemblés sur site, charpente traditionnelle, charpente lamellé-collé, structure poteaux-poutres et chevrons porteurs&amp;hellip;  </description>
+      <guid>http://www.mg-ecoconstruction.com/galerie</guid>
+      <description>&lt;p&gt;Vous trouverez ici un aperçu des matériaux et techniques que nous mettons en œuvre :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Différents types de toitures&lt;/strong&gt; : bardeaux de bois, platelage bois (mélèze), tuiles plates, tuiles canals, tuiles losangées, toiture en zinc, bac-acier, toiture-terrasse (couverte en bâche EPDM Firestone) pouvant être végétalisées&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Différents types de finitions intérieures&lt;/strong&gt; : enduits terre (ARGILUS), enduits chaux, volige peuplier, volige mélèze brute ou rabotée, volige chêne, plancher chêne, plancher frêne olivier, tommettes de la tuilerie de Condat&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Différents types de parements extérieurs&lt;/strong&gt; : plancher de terrasse en acacia de pays ou chêne de pays, bardages mélèze (bardage à clins, bardage vertical à couvre-joints, bardage à claire-voie), bardage Red cedar, enduits à la chaux&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ainsi que différents modes constructifs&lt;/strong&gt; : murs d&amp;rsquo;ossature bois réalisés dans notre atelier à Limogne et assemblés sur site, charpente traditionnelle, charpente lamellé-collé, structure poteaux-poutres et chevrons porteurs&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>Notre</title>
-      <link>http://www.mg-ecoconstruction.com/ethique/</link>
+      <link>http://www.mg-ecoconstruction.com/ethique</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/ethique/</guid>
-      <description>Valoriser le travail artisanal MG ECO transforme au maximum les matériaux bruts et locaux plutôt que d&amp;rsquo;utiliser des matériaux préfabriqués en usine. Nous concevons et façonnons dans notre atelier nos charpentes et nos ossatures.
-Nous revendiquons l&amp;rsquo;homme et le savoir-faire au centre des techniques de construction.
-Cette revendication est le gage d&amp;rsquo;une relation de proximité avec nos clients afin d&amp;rsquo;être en mesure de leurs apporter un service personnalisé, un suivi au fil des ans, et d&amp;rsquo;assurer une mise en œuvre méticuleuse, qui valorise au mieux le projet.</description>
-    </item>
-    
-    <item>
-      <title>Notre conception de la</title>
-      <link>http://www.mg-ecoconstruction.com/concept/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.mg-ecoconstruction.com/concept/</guid>
-      <description>Nous nous attachons à cultiver la souplesse et le goût de l&amp;rsquo;innovation technique pour nous adapter à chaque projet dans sa singularité.
-Nous répondons à chaque projet avec des techniques adaptées aux objectifs, en veillant à la cohérence d&amp;rsquo;ensemble ; nous vous orientons, en respectant votre budget, dans la recherche de matériaux sains, locaux et écologiques, et de mise en œuvre adaptées, tant dans l&amp;rsquo;optique de préserver votre santé et notre environnement que d&amp;rsquo;assurer la performance énergétique de votre projet et la pérennité de votre ouvrage.</description>
-    </item>
-    
-    <item>
-      <title>OUATECO</title>
-      <link>http://www.mg-ecoconstruction.com/liens/ouateco/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.mg-ecoconstruction.com/liens/ouateco/</guid>
-      <description>La seule ouate de cellulose produite avec des matières propres, exclusivement françaises, achetées auprès d’associations partenaires telles Emmaüs, Envie, Landes Partage… puis transformées dans une usine biosourcée, pour un projet global, écologique et local.</description>
-    </item>
-    
-    <item>
-      <title>Quercy Énergie</title>
-      <link>http://www.mg-ecoconstruction.com/liens/quercy_energie/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.mg-ecoconstruction.com/liens/quercy_energie/</guid>
-      <description>Agence locale de l&amp;rsquo;énergie de Cahors, prodiguant conseils et informations sur les modes de chauffage, l&amp;rsquo;isolation, les rénovation énergétiques, les aides, etc.
-À rencontrer en préalable aux projets.</description>
-    </item>
-    
-    <item>
-      <title>Qui sommes</title>
-      <link>http://www.mg-ecoconstruction.com/presentation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.mg-ecoconstruction.com/presentation/</guid>
-      <description>MG ECO est une entreprise artisanale à taille humaine basée dans la région Occitanie, dans le Lot (46), à Limogne en Quercy, qualifiée RGE, qui réalise tous type d&amp;rsquo;ouvrages autour de l&amp;rsquo;ossature bois, en neuf comme en rénovation.
-Loin des standards de fabrication des grandes chaînes de constructeurs, avec MG ECO c’est le savoir-faire et la personnalisation qui sont au cœur de la mise en œuvre de vos projets. Chez nous, chaque projet est unique.</description>
-    </item>
-    
-    <item>
-      <title>Terre Vivante</title>
-      <link>http://www.mg-ecoconstruction.com/liens/terre_vivante/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.mg-ecoconstruction.com/liens/terre_vivante/</guid>
-      <description>Site généraliste sur l&amp;rsquo;éco-construction, qui présente les matériaux, les isolants, etc. Le point est fait régulièrement sur les réglementations thermiques et les aides.</description>
+      <guid>http://www.mg-ecoconstruction.com/ethique</guid>
+      <description>
+
+&lt;h2 id=&#34;valoriser-le-travail-artisanal&#34;&gt;Valoriser le travail artisanal&lt;/h2&gt;
+
+&lt;p&gt;MG ECO transforme au maximum les matériaux bruts et locaux plutôt que d&amp;rsquo;utiliser des matériaux préfabriqués en usine. Nous concevons et façonnons dans notre atelier nos charpentes et nos ossatures.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nous revendiquons l&amp;rsquo;homme et le savoir-faire au centre des techniques de construction.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Cette revendication est le gage d&amp;rsquo;une relation de proximité avec nos clients afin d&amp;rsquo;être en mesure de leurs apporter un service personnalisé, un suivi au fil des ans, et d&amp;rsquo;assurer une mise en œuvre méticuleuse, qui valorise au mieux le projet.&lt;/p&gt;
+
+&lt;h2 id=&#34;respecter-l-homme-et-l-environnement&#34;&gt;Respecter l’homme et l’environnement&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;MG ECO c’est avant tout la convergence de points de vue humains et responsables sur les questions environnementales.&lt;/strong&gt; L’environnement, nous le concevons globalement. Il n’est pas question de respect de l’environnement sans respect des humains, et de prospérité des humains au détriment de l’environnement. C’est pourquoi nous considérons qu’il n’est pas pertinent d’entreprendre un ouvrage sans faire coïncider les besoins de nos clients avec le cercle vertueux de la construction écologique.&lt;/p&gt;
+
+&lt;h2 id=&#34;valoriser-les-filières-locales-de-production&#34;&gt;Valoriser les filières locales de production&lt;/h2&gt;
+
+&lt;p&gt;De la même manière, nous avons conscience que &lt;strong&gt;notre activité contribue à la structuration et la pérennisation des filières locales&lt;/strong&gt; (filière du bois notamment) et nous agissons en conséquence en choisissant la proximité pour les matériaux que nous mettons en œuvre (produits, fournisseurs, corps de métiers complémentaires).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Choisir MG ECO, c&amp;rsquo;est encourager l&amp;rsquo;économie locale.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;bâtir-avec-des-matériaux-sains-et-locaux&#34;&gt;Bâtir avec des matériaux sains et locaux&lt;/h2&gt;
+
+&lt;p&gt;Si MG ECO travaille essentiellement le bois, de plus issu de filières locales gérées durablement, c’est par souci écologique. Le bois est en effet le seul matériaux de construction entièrement renouvelable, puit de carbone, et sain s’il n’est pas traité.&lt;/p&gt;
+
+&lt;p&gt;C’est pour cette raison que &lt;strong&gt;tous nos bois proviennent de France, sont issus de forêts gérées durablement, et sans traitement&lt;/strong&gt;. Nos isolants favoris, dans la même logique, sont issus des rémanents de forêts françaises (laines de bois), de rémanents de l&amp;rsquo;agriculture locale (paille, chanvre), ou issus du recyclage (Ouate de cellulose).
+Ils sont ainsi sans impact négatif sur l&amp;rsquo;environnement la santé.&lt;/p&gt;
+
+&lt;h2 id=&#34;promouvoir-la-performance-énergétique&#34;&gt;Promouvoir la performance énergétique&lt;/h2&gt;
+
+&lt;p&gt;Nous sommes convaincus de la pertinence d&amp;rsquo;une isolation renforcé ainsi que d&amp;rsquo;une étanchéité à l&amp;rsquo;air aussi soignée que possible, tant pour &lt;strong&gt;le confort de vie&lt;/strong&gt; apporté que pour &lt;strong&gt;les économies d&amp;rsquo;énergies&lt;/strong&gt; qui en résultent. Nos modes constructifs assurent l&amp;rsquo;une et l&amp;rsquo;autre, et nous cherchons avec vous les solutions permettant de concilier ces objectifs avec votre budget. Nous réalisons l&amp;rsquo;étude thermique en vue de mettre votre habitat en conformité avec la RT2012, et de tendre vers le standard maisons passives.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

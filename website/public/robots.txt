@@ -1,4 +1,1 @@
 User-agent: *
-Disallow: /tags
-
-Sitemap: http://mg-ecoconstruction.com/sitemap.xml
