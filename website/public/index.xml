@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Accueil on MG Éco-construction</title>
-    <link>http://www.mg-ecoconstruction.com/index.xml</link>
+    <link>http://www.mg-eco.com/index.xml</link>
     <description>Recent content in Accueil on MG Éco-construction</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    <atom:link href="http://www.mg-ecoconstruction.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.mg-eco.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ADEME</title>
-      <link>http://www.mg-ecoconstruction.com/liens/ademe/</link>
+      <link>http://www.mg-eco.com/liens/ademe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/liens/ademe/</guid>
+      <guid>http://www.mg-eco.com/liens/ademe/</guid>
       <description>&lt;p&gt;Pour suivre législations, aides au financement des travaux, subventions et prescriptions institutionnelles.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>ANAH</title>
-      <link>http://www.mg-ecoconstruction.com/liens/anah/</link>
+      <link>http://www.mg-eco.com/liens/anah/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/liens/anah/</guid>
+      <guid>http://www.mg-eco.com/liens/anah/</guid>
       <description>&lt;p&gt;Une réponse territoriale aux enjeux de l&amp;rsquo;habitat privé : infos sur les aides à la rénovation, que vous soyez propriétaires habitants ou bailleurs.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Biofib</title>
-      <link>http://www.mg-ecoconstruction.com/liens/biofib/</link>
+      <link>http://www.mg-eco.com/liens/biofib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/liens/biofib/</guid>
+      <guid>http://www.mg-eco.com/liens/biofib/</guid>
       <description>&lt;p&gt;Gamme d&amp;rsquo;isolants performants à base de chanvre, dont la filière complète (du champ à l&amp;rsquo;usine) est française et en circuit court.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>CAUE</title>
-      <link>http://www.mg-ecoconstruction.com/liens/caue/</link>
+      <link>http://www.mg-eco.com/liens/caue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/liens/caue/</guid>
+      <guid>http://www.mg-eco.com/liens/caue/</guid>
       <description>&lt;p&gt;Le CAUE a pour objet la promotion de la qualité architecturale, urbaine et paysagère, notamment par l’information et la sensibilisation du public dans le domaine de l’architecture, de l’urbanisme et de l’environnement.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Comment nous</title>
-      <link>http://www.mg-ecoconstruction.com/contact</link>
+      <link>http://www.mg-eco.com/contact</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/contact</guid>
+      <guid>http://www.mg-eco.com/contact</guid>
       <description>&lt;p&gt;&lt;strong&gt;MG ECO est installée à Limogne en Quercy&lt;/strong&gt;, dans le département du Lot (46), au cœur du Parc naturel Régional des Causses du Quercy (PNRCQ), en région Occitanie.&lt;/p&gt;
 
 &lt;p&gt;Pour les constructions complètes, nous nous limitons à un rayon d&amp;rsquo;environ 100km ; en revanche, les maisons en kit peuvent être livrées partout dans la région. Pour les chantiers où nous n&amp;rsquo;assumons que le gros œuvre, nous pouvons élargir notre rayon d&amp;rsquo;action aux départements voisins du Lot, sous conditions.&lt;/p&gt;
@@ -76,7 +76,7 @@
   &lt;div class=&#34;c-contact-us__line  c-contact-us__channels&#34;&gt;
     &lt;ul class=&#34;o-list-bare&#34;&gt;
       &lt;li class=&#34;c-contact-us__email&#34;&gt;
-        &lt;a href=&#34;mailto:contact@mg-ecoconstruction.com&#34;&gt;contact@mg-ecoconstruction.com&lt;/a&gt;
+        &lt;a href=&#34;mailto:contact@mg-eco.com&#34;&gt;contact@mg-eco.com&lt;/a&gt;
       &lt;/li&gt;
       &lt;li class=&#34;c-contact-us__number&#34;&gt;06 74 66 08 92&lt;/li&gt;
       &lt;li class=&#34;c-contact-us__number&#34;&gt;05 65 21 73 08&lt;/li&gt;
@@ -88,11 +88,11 @@
 {
   &#34;@context&#34;: &#34;http://schema.org&#34;,
   &#34;@type&#34;: &#34;ContactPage&#34;,
-  &#34;url&#34;: &#34;http://mg-ecoconstruction/contact&#34;,
+  &#34;url&#34;: &#34;http://mg-eco.com/contact&#34;,
   &#34;mainEntity&#34;: {
     &#34;@type&#34;: &#34;HomeAndConstructionBusiness&#34;,
     &#34;name&#34;: &#34;MG Éco&#34;,
-    &#34;image&#34;: &#34;http://mg-ecoconstruction.com/images/logo_mg.jpg&#34;,
+    &#34;image&#34;: &#34;http://mg-eco.com/images/logo_mg.jpg&#34;,
     &#34;geo&#34;: {
       &#34;@type&#34;: &#34;GeoCoordinates&#34;,
       &#34;latitude&#34;: &#34;44.3977773&#34;,
@@ -108,7 +108,7 @@
         &#34;05 65 21 73 08&#34;,
         &#34;06 74 66 08 92&#34;
       ],
-      &#34;email&#34;: &#34;contact@mg-ecoconstruction.com&#34;,
+      &#34;email&#34;: &#34;contact@mg-eco.com&#34;,
       &#34;availableLanguage&#34;: [
         &#34;English&#34;,
         &#34;French&#34;
@@ -116,7 +116,7 @@
     },
     &#34;telephone&#34;: &#34;05 65 21 73 08&#34;,
     &#34;hasMap&#34;: &#34;https:\/\/www.google.com\/maps\/place\/MG\x2b%C3%A9coconstruction\/@44.4005686,1.7685543,17z\/data=!4m5!3m4!1s0x12ac564fe0a6d721:0x39547eaab69564d7!8m2!3d44.4032985!4d1.7686893?hl=fr-FR&#34;,
-    &#34;logo&#34;: &#34;http://mg-ecoconstruction.com/images/logo_mg.jpg&#34;,
+    &#34;logo&#34;: &#34;http://mg-eco.com/images/logo_mg.jpg&#34;,
     &#34;brand&#34;: {
     },
     &#34;founder&#34;: {
@@ -125,7 +125,7 @@
     },
     &#34;legalName&#34;: &#34;SAS MG ECO&#34;,
     &#34;description&#34;: &#34;Constructions écologiques - ossature bois, maison paille, charpente, couverture, isolation, rénovation, conception de plans, étude thermique&#34;,
-    &#34;mainEntityOfPage&#34;: &#34;http:\/\/www.mg-ecoconstruction.com\/&#34;
+    &#34;mainEntityOfPage&#34;: &#34;http:\/\/www.mg-eco.com\/&#34;
   }
 }
 &lt;/script&gt;
@@ -140,20 +140,20 @@
     
     <item>
       <title>Comprendre la RT2012</title>
-      <link>http://www.mg-ecoconstruction.com/liens/rt2012/</link>
+      <link>http://www.mg-eco.com/liens/rt2012/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/liens/rt2012/</guid>
+      <guid>http://www.mg-eco.com/liens/rt2012/</guid>
       <description>&lt;p&gt;Présentation officielle de la réglementation thermique actuelle.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Concevoir</title>
-      <link>http://www.mg-ecoconstruction.com/votre-projet</link>
+      <link>http://www.mg-eco.com/votre-projet</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/votre-projet</guid>
+      <guid>http://www.mg-eco.com/votre-projet</guid>
       <description>
 
 &lt;p&gt;Si vous souhaitez &lt;strong&gt;concevoir votre projet avec des professionnels&lt;/strong&gt;, MG ECO vous propose de travailler avec une dessinatrice d&amp;rsquo;architecture partenaire, dont la proximité éthique et géographique permet de discuter des choix techniques et de chercher ensemble la pertinence globale dès les premiers croquis.&lt;/p&gt;
@@ -192,20 +192,20 @@
     
     <item>
       <title>Courrège Production</title>
-      <link>http://www.mg-ecoconstruction.com/liens/courrege/</link>
+      <link>http://www.mg-eco.com/liens/courrege/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/liens/courrege/</guid>
+      <guid>http://www.mg-eco.com/liens/courrege/</guid>
       <description>&lt;p&gt;Basée dans le sud du Lot, la société Courrège Productions SARL affiche son métier de base : la menuiserie. Bois, alu, bois/alu, volets, portes…&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>ENERCOOP</title>
-      <link>http://www.mg-ecoconstruction.com/liens/enercoop/</link>
+      <link>http://www.mg-eco.com/liens/enercoop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/liens/enercoop/</guid>
+      <guid>http://www.mg-eco.com/liens/enercoop/</guid>
       <description>&lt;p&gt;Notre fournisseur d&amp;rsquo;électricité.&lt;/p&gt;
 
 &lt;p&gt;Branchez-vous sur une  énergie renouvelable, coopérative et locale !&lt;/p&gt;
@@ -214,50 +214,50 @@
     
     <item>
       <title>Eautarcie</title>
-      <link>http://www.mg-ecoconstruction.com/liens/eautarcie/</link>
+      <link>http://www.mg-eco.com/liens/eautarcie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/liens/eautarcie/</guid>
+      <guid>http://www.mg-eco.com/liens/eautarcie/</guid>
       <description>&lt;p&gt;Site d&amp;rsquo;information très documenté, basé sur les travaux de Josef Orszagh, sur la gestion durable et écologique de l&amp;rsquo;eau. Récupération des eaux pluviales, potabilisation de l&amp;rsquo;eau, toilettes sèches etc.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>L&#39;association Empreinte</title>
-      <link>http://www.mg-ecoconstruction.com/liens/empreinte/</link>
+      <link>http://www.mg-eco.com/liens/empreinte/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/liens/empreinte/</guid>
+      <guid>http://www.mg-eco.com/liens/empreinte/</guid>
       <description>&lt;p&gt;Donne des informations sur la conception bioclimatique et les matériaux écologiques, et propose une bonne bibliographie.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>L&#39;association Graine d&#39;eau</title>
-      <link>http://www.mg-ecoconstruction.com/liens/graine_d_eau/</link>
+      <link>http://www.mg-eco.com/liens/graine_d_eau/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/liens/graine_d_eau/</guid>
+      <guid>http://www.mg-eco.com/liens/graine_d_eau/</guid>
       <description>&lt;p&gt;Se mobilise pour proposer un mode de gestion écologique de l’eau qui considère le problème dans sa globalité : valorisation de l’eau de pluie, toilettes sèches, pratique du compostage, phyto-épuration. Stage, conférences, documentation… Dans le Sud-Ouest.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Le label RGE</title>
-      <link>http://www.mg-ecoconstruction.com/liens/rge/</link>
+      <link>http://www.mg-eco.com/liens/rge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/liens/rge/</guid>
+      <guid>http://www.mg-eco.com/liens/rge/</guid>
       <description>&lt;p&gt;Votre artisan doit être labellisé pour pouvoir obtenir des aides institutionnelles (prêts à taux 0 et crédits d&amp;rsquo;impôts).&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Nos réalisations</title>
-      <link>http://www.mg-ecoconstruction.com/galerie</link>
+      <link>http://www.mg-eco.com/galerie</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/galerie</guid>
+      <guid>http://www.mg-eco.com/galerie</guid>
       <description>&lt;p&gt;Vous trouverez ici un aperçu des matériaux et techniques que nous mettons en œuvre :&lt;/p&gt;
 
 &lt;ul&gt;
@@ -271,10 +271,10 @@
     
     <item>
       <title>Notre</title>
-      <link>http://www.mg-ecoconstruction.com/ethique</link>
+      <link>http://www.mg-eco.com/ethique</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/ethique</guid>
+      <guid>http://www.mg-eco.com/ethique</guid>
       <description>
 
 &lt;h2 id=&#34;valoriser-le-travail-artisanal&#34;&gt;Valoriser le travail artisanal&lt;/h2&gt;

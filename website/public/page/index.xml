@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on MG Éco-construction</title>
-    <link>http://www.mg-ecoconstruction.com/page/index.xml</link>
+    <link>http://www.mg-eco.com/page/index.xml</link>
     <description>Recent content in Pages on MG Éco-construction</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    <atom:link href="http://www.mg-ecoconstruction.com/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.mg-eco.com/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Comment nous</title>
-      <link>http://www.mg-ecoconstruction.com/contact</link>
+      <link>http://www.mg-eco.com/contact</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/contact</guid>
+      <guid>http://www.mg-eco.com/contact</guid>
       <description>&lt;p&gt;&lt;strong&gt;MG ECO est installée à Limogne en Quercy&lt;/strong&gt;, dans le département du Lot (46), au cœur du Parc naturel Régional des Causses du Quercy (PNRCQ), en région Occitanie.&lt;/p&gt;
 
 &lt;p&gt;Pour les constructions complètes, nous nous limitons à un rayon d&amp;rsquo;environ 100km ; en revanche, les maisons en kit peuvent être livrées partout dans la région. Pour les chantiers où nous n&amp;rsquo;assumons que le gros œuvre, nous pouvons élargir notre rayon d&amp;rsquo;action aux départements voisins du Lot, sous conditions.&lt;/p&gt;
@@ -36,7 +36,7 @@
   &lt;div class=&#34;c-contact-us__line  c-contact-us__channels&#34;&gt;
     &lt;ul class=&#34;o-list-bare&#34;&gt;
       &lt;li class=&#34;c-contact-us__email&#34;&gt;
-        &lt;a href=&#34;mailto:contact@mg-ecoconstruction.com&#34;&gt;contact@mg-ecoconstruction.com&lt;/a&gt;
+        &lt;a href=&#34;mailto:contact@mg-eco.com&#34;&gt;contact@mg-eco.com&lt;/a&gt;
       &lt;/li&gt;
       &lt;li class=&#34;c-contact-us__number&#34;&gt;06 74 66 08 92&lt;/li&gt;
       &lt;li class=&#34;c-contact-us__number&#34;&gt;05 65 21 73 08&lt;/li&gt;
@@ -48,11 +48,11 @@
 {
   &#34;@context&#34;: &#34;http://schema.org&#34;,
   &#34;@type&#34;: &#34;ContactPage&#34;,
-  &#34;url&#34;: &#34;http://mg-ecoconstruction/contact&#34;,
+  &#34;url&#34;: &#34;http://mg-eco.com/contact&#34;,
   &#34;mainEntity&#34;: {
     &#34;@type&#34;: &#34;HomeAndConstructionBusiness&#34;,
     &#34;name&#34;: &#34;MG Éco&#34;,
-    &#34;image&#34;: &#34;http://mg-ecoconstruction.com/images/logo_mg.jpg&#34;,
+    &#34;image&#34;: &#34;http://mg-eco.com/images/logo_mg.jpg&#34;,
     &#34;geo&#34;: {
       &#34;@type&#34;: &#34;GeoCoordinates&#34;,
       &#34;latitude&#34;: &#34;44.3977773&#34;,
@@ -68,7 +68,7 @@
         &#34;05 65 21 73 08&#34;,
         &#34;06 74 66 08 92&#34;
       ],
-      &#34;email&#34;: &#34;contact@mg-ecoconstruction.com&#34;,
+      &#34;email&#34;: &#34;contact@mg-eco.com&#34;,
       &#34;availableLanguage&#34;: [
         &#34;English&#34;,
         &#34;French&#34;
@@ -76,7 +76,7 @@
     },
     &#34;telephone&#34;: &#34;05 65 21 73 08&#34;,
     &#34;hasMap&#34;: &#34;https:\/\/www.google.com\/maps\/place\/MG\x2b%C3%A9coconstruction\/@44.4005686,1.7685543,17z\/data=!4m5!3m4!1s0x12ac564fe0a6d721:0x39547eaab69564d7!8m2!3d44.4032985!4d1.7686893?hl=fr-FR&#34;,
-    &#34;logo&#34;: &#34;http://mg-ecoconstruction.com/images/logo_mg.jpg&#34;,
+    &#34;logo&#34;: &#34;http://mg-eco.com/images/logo_mg.jpg&#34;,
     &#34;brand&#34;: {
     },
     &#34;founder&#34;: {
@@ -85,7 +85,7 @@
     },
     &#34;legalName&#34;: &#34;SAS MG ECO&#34;,
     &#34;description&#34;: &#34;Constructions écologiques - ossature bois, maison paille, charpente, couverture, isolation, rénovation, conception de plans, étude thermique&#34;,
-    &#34;mainEntityOfPage&#34;: &#34;http:\/\/www.mg-ecoconstruction.com\/&#34;
+    &#34;mainEntityOfPage&#34;: &#34;http:\/\/www.mg-eco.com\/&#34;
   }
 }
 &lt;/script&gt;
@@ -100,10 +100,10 @@
     
     <item>
       <title>Concevoir</title>
-      <link>http://www.mg-ecoconstruction.com/votre-projet</link>
+      <link>http://www.mg-eco.com/votre-projet</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/votre-projet</guid>
+      <guid>http://www.mg-eco.com/votre-projet</guid>
       <description>
 
 &lt;p&gt;Si vous souhaitez &lt;strong&gt;concevoir votre projet avec des professionnels&lt;/strong&gt;, MG ECO vous propose de travailler avec une dessinatrice d&amp;rsquo;architecture partenaire, dont la proximité éthique et géographique permet de discuter des choix techniques et de chercher ensemble la pertinence globale dès les premiers croquis.&lt;/p&gt;
@@ -142,10 +142,10 @@
     
     <item>
       <title>Nos réalisations</title>
-      <link>http://www.mg-ecoconstruction.com/galerie</link>
+      <link>http://www.mg-eco.com/galerie</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/galerie</guid>
+      <guid>http://www.mg-eco.com/galerie</guid>
       <description>&lt;p&gt;Vous trouverez ici un aperçu des matériaux et techniques que nous mettons en œuvre :&lt;/p&gt;
 
 &lt;ul&gt;
@@ -159,10 +159,10 @@
     
     <item>
       <title>Notre</title>
-      <link>http://www.mg-ecoconstruction.com/ethique</link>
+      <link>http://www.mg-eco.com/ethique</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/ethique</guid>
+      <guid>http://www.mg-eco.com/ethique</guid>
       <description>
 
 &lt;h2 id=&#34;valoriser-le-travail-artisanal&#34;&gt;Valoriser le travail artisanal&lt;/h2&gt;
@@ -198,10 +198,10 @@ Ils sont ainsi sans impact négatif sur l&amp;rsquo;environnement la santé.&lt;
     
     <item>
       <title>Notre conception de la</title>
-      <link>http://www.mg-ecoconstruction.com/concept</link>
+      <link>http://www.mg-eco.com/concept</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/concept</guid>
+      <guid>http://www.mg-eco.com/concept</guid>
       <description>
 
 &lt;p&gt;Nous nous attachons à cultiver la souplesse et le goût de l&amp;rsquo;innovation technique pour nous adapter à chaque projet dans sa singularité.&lt;/p&gt;
@@ -254,16 +254,16 @@ Ils sont ainsi sans impact négatif sur l&amp;rsquo;environnement la santé.&lt;
 
 &lt;p&gt;L&amp;rsquo;ossature bois vous autorise une &lt;strong&gt;modularité presque infinie&lt;/strong&gt; afin que votre maison évolue tout au long de votre vie, en fonction de vos besoins. Chez nous, &lt;strong&gt;chaque maison est unique, avec des plans personnalisés&lt;/strong&gt; : nous pouvons réfléchir avec vous à concevoir la possibilité de futures extensions pour &lt;strong&gt;échelonner les dépenses&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Pour conclure, &lt;a href=&#34;http://www.mg-ecoconstruction.com/ethique&#34;&gt;choisir une entreprise de construction locale&lt;/a&gt;, qui travaille avec des fournisseurs et des collaborateurs locaux, est une manière de limiter les impacts négatifs sur l’environnement en limitant les transports, de favoriser l’économie locale, tout en prenant l’assurance d’un suivi en confiance sur le long terme.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pour conclure, &lt;a href=&#34;http://www.mg-eco.com/ethique&#34;&gt;choisir une entreprise de construction locale&lt;/a&gt;, qui travaille avec des fournisseurs et des collaborateurs locaux, est une manière de limiter les impacts négatifs sur l’environnement en limitant les transports, de favoriser l’économie locale, tout en prenant l’assurance d’un suivi en confiance sur le long terme.&lt;/strong&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Qui sommes</title>
-      <link>http://www.mg-ecoconstruction.com/presentation</link>
+      <link>http://www.mg-eco.com/presentation</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.mg-ecoconstruction.com/presentation</guid>
+      <guid>http://www.mg-eco.com/presentation</guid>
       <description>&lt;p&gt;MG ECO est une &lt;strong&gt;entreprise artisanale&lt;/strong&gt; à taille humaine basée dans la région Occitanie, dans le Lot (46), à Limogne en Quercy, qualifiée RGE, qui réalise tous type d&amp;rsquo;ouvrages autour de l&amp;rsquo;ossature bois, en neuf comme en rénovation.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Loin des standards de fabrication des grandes chaînes de constructeurs, avec MG ECO c’est le savoir-faire et la personnalisation qui sont au cœur de la mise en œuvre de vos projets. Chez nous, chaque projet est unique.&lt;/strong&gt;&lt;/p&gt;
@@ -278,7 +278,7 @@ Ils sont ainsi sans impact négatif sur l&amp;rsquo;environnement la santé.&lt;
 
 &lt;p&gt;Nous vous accompagnons dans votre rôle de maître d’ouvrage, mais habituellement nous réalisons le &lt;strong&gt;gros œuvre&lt;/strong&gt; avec suivi du second œuvre réalisé par les artisans de votre choix. Nous collaborons avec les auto-constructeurs, notamment avec la formule &lt;strong&gt;maison en kit&lt;/strong&gt; + assistance suivi de chantier (sur site et par téléphone).&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.mg-ecoconstruction.com/contact&#34;&gt;Contactez-nous&lt;/a&gt; afin d&amp;rsquo;obtenir un devis estimatif et d&amp;rsquo;engager la réflexion, quel que soit le stade de développement de votre projet.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.mg-eco.com/contact&#34;&gt;Contactez-nous&lt;/a&gt; afin d&amp;rsquo;obtenir un devis estimatif et d&amp;rsquo;engager la réflexion, quel que soit le stade de développement de votre projet.&lt;/strong&gt;&lt;/p&gt;
 </description>
     </item>
     
